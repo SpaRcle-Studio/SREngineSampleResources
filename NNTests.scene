@@ -1,0 +1,33 @@
+sra format
+use tabs: true
+0-r:Root
+	1-v:entityId
+		2-i:2602478712754820644
+	1-o:logic
+		2-v:type
+			3-s:SceneAssetLogic
+		2-o:ptr
+	1-a:root
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:4110708965661776132
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:NNModelComponent
+								8-o:ptr
+									9-v:entityId
+										10-i:3063953769852050652
+									9-v:text
+										10-s:cats
+					5-v:name
+						6-s:NNTests
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
