@@ -13,6 +13,8 @@ use tabs: true
 	1-o:data
 		2-v:entityId
 			3-i:3568973054696400457
+		2-v:tag
+			3-s:Player
 		2-v:name
 			3-s:Female
 		2-a:children
@@ -27,10 +29,42 @@ use tabs: true
 							7-k:i
 								8-o:d
 									9-v:type
+										10-s:IKFootSolverConfig
+									9-o:ptr
+										10-v:entityId
+											11-i:3324512038314329391
+										10-v:distanceToStep
+											11-f:0.3
+										10-v:forceStepDistance
+											11-f:1.95
+										10-v:footXAngle
+											11-f:-30
+										10-v:stepSpeed
+											11-f:1.6
+										10-v:stepRelaxTime
+											11-f:0.2
+										10-v:stepHeight
+											11-f:0.035
+										10-v:walkDirPredictionFactor
+											11-f:8
+										10-v:distanceToStepSpeedFactor
+											11-f:4
+										10-v:maxWaitingTimeAnotherFoot
+											11-f:0.12
+										10-v:uncompletedStepResetProgress
+											11-f:0.82
+										10-v:minProgressToAllowStep
+											11-f:0.84
+							7-k:i
+								8-o:d
+									9-v:type
 										10-s:IKFootSolver
 									9-o:ptr
 										10-v:entityId
 											11-i:3453384633218614699
+										10-o:config
+											11-v:entityId
+												12-i:3324512038314329391
 										10-o:anotherFoot
 											11-v:entityId
 												12-i:3742228958832595095
@@ -52,14 +86,6 @@ use tabs: true
 												12-f:-0.08
 											11-v:z
 												12-f:0.16
-										10-v:distanceToStep
-											11-f:0.7
-										10-v:forceStepDistance
-											11-f:1.7
-										10-v:footXAngle
-											11-f:-30
-										10-v:stepSpeed
-											11-f:3
 							7-k:i
 								8-o:d
 									9-v:type
@@ -67,6 +93,9 @@ use tabs: true
 									9-o:ptr
 										10-v:entityId
 											11-i:3742228958832595095
+										10-o:config
+											11-v:entityId
+												12-i:3324512038314329391
 										10-o:anotherFoot
 											11-v:entityId
 												12-i:3453384633218614699
@@ -88,14 +117,6 @@ use tabs: true
 												12-f:-0.08
 											11-v:z
 												12-f:0.16
-										10-v:distanceToStep
-											11-f:0.7
-										10-v:forceStepDistance
-											11-f:1.7
-										10-v:footXAngle
-											11-f:-30
-										10-v:stepSpeed
-											11-f:3
 						6-v:name
 							7-s:IK
 						6-a:children
@@ -271,19 +292,66 @@ use tabs: true
 										10-v:rotationSpeed
 											11-f:15
 										10-v:walkSpeed
-											11-f:1
+											11-f:2
 										10-o:walkDirection
 											11-v:z
 												12-f:-1
+										10-o:velocityLimit
+											11-v:x
+												12-f:1.5
+											11-v:y
+												12-f:1.5
 										10-o:walkResetPos
 											11-v:z
 												12-f:5
 										10-v:walkResetDistance
-											11-f:10
+											11-f:50
+										10-v:bodyYOffset
+											11-f:0.08
 										10-v:yStepShakeOffset
-											11-f:-0.1
+											11-f:0.1
 										10-v:yStepShakeSpeed
-											11-f:2
+											11-f:3.38
+							7-k:i
+								8-o:d
+									9-v:type
+										10-s:Rigidbody3D
+									9-o:ptr
+										10-v:entityId
+											11-i:2439304745949623658
+										10-o:angularLock
+											11-v:x
+												12-b:true
+											11-v:y
+												12-b:true
+											11-v:z
+												12-b:true
+							7-k:i
+								8-o:d
+									9-v:type
+										10-s:CollisionShape
+									9-o:ptr
+										10-v:entityId
+											11-i:4575351121118446735
+										10-o:rigidbody
+											11-v:entityId
+												12-i:2439304745949623658
+										10-v:type
+											11-s:Capsule3D
+										10-o:center
+											11-v:x
+												12-f:0.04
+											11-v:y
+												12-f:1.97
+											11-v:z
+												12-f:-0.12
+										10-o:bounds
+											11-v:x
+												12-f:0.7
+											11-v:y
+												12-f:1.25
+											11-v:z
+												12-f:0.7
 						6-v:name
 							7-s:Root
 						6-a:children
@@ -11114,6 +11182,11 @@ use tabs: true
 															15-v:type
 																16-s:Transform3D
 															15-o:ptr
+																16-o:translation
+																	17-v:y
+																		18-f:-0.413171
+																	17-v:z
+																		18-f:0.199673
 											11-k:i
 												12-o:d
 													13-v:type
