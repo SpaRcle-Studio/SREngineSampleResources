@@ -2500,6 +2500,24 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0.344
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:tiling
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:1
+																											27-v:y
+																												28-f:1
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:offset
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -2623,6 +2641,24 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:tiling
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:1
+																											27-v:y
+																												28-f:1
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:offset
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -2750,6 +2786,24 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:tiling
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:1
+																											27-v:y
+																												28-f:1
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:offset
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -2888,6 +2942,24 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:tiling
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:1
+																											27-v:y
+																												28-f:1
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:offset
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -3026,6 +3098,24 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:tiling
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:1
+																											27-v:y
+																												28-f:1
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:offset
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -3126,7 +3216,7 @@ use tabs: true
 																										26-v:type
 																											27-s:Float
 																										26-v:value
-																											27-f:1
+																											27-f:2.701
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -3134,7 +3224,7 @@ use tabs: true
 																										26-v:type
 																											27-s:Float
 																										26-v:value
-																											27-f:1
+																											27-f:2.3
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -3151,6 +3241,28 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:tiling
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:6
+																											27-v:y
+																												28-f:6
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:offset
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:1.086
+																											27-v:y
+																												28-f:-0.29
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -3159,7 +3271,7 @@ use tabs: true
 																										26-v:type
 																											27-s:Sampler2D
 																										26-v:value
-																											27-s:Engine/Textures/default_improved.png
+																											27-s:Samples/Female/Eyes.png
 																		18-o:skeleton
 																			19-v:entityId
 																				20-i:3926704422872797630
@@ -3289,6 +3401,24 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:tiling
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:1
+																											27-v:y
+																												28-f:1
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:offset
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -3414,6 +3544,24 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:tiling
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:1
+																											27-v:y
+																												28-f:1
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:offset
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -4768,7 +4916,7 @@ use tabs: true
 																																													45-v:y
 																																														46-f:-0.0813219
 																																													45-v:z
-																																														46-f:0.0828927
+																																														46-f:0.0828924
 																																													45-v:w
 																																														46-f:0.760143
 																																						38-o:transform
@@ -10294,6 +10442,24 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:tiling
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:1
+																											27-v:y
+																												28-f:1
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:offset
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -10421,6 +10587,24 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:tiling
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:1
+																											27-v:y
+																												28-f:1
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:offset
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -10550,6 +10734,24 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:tiling
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:1
+																											27-v:y
+																												28-f:1
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:offset
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -10675,6 +10877,24 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:tiling
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
+																											27-v:x
+																												28-f:1
+																											27-v:y
+																												28-f:1
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:offset
+																										26-v:type
+																											27-s:Vec2
+																										26-o:value
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
