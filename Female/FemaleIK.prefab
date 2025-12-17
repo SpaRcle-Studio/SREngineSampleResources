@@ -13,6 +13,23 @@ use tabs: true
 	1-o:data
 		2-v:entityId
 			3-i:3568973054696400457
+		2-a:components
+			3-k:i
+				4-o:d
+					5-v:type
+						6-s:Behaviour
+					5-o:ptr
+						6-v:entityId
+							7-i:4092367331326781791
+						6-v:behaviourName
+							7-s:IKCharacterController
+						6-o:data
+							7-o:rigidbody
+								8-v:entityId
+									9-i:2439304745949623658
+							7-o:cameraObject
+								8-v:entityId
+									9-i:3771061506185546371
 		2-v:tag
 			3-s:Player
 		2-v:name
@@ -48,9 +65,9 @@ use tabs: true
 										10-v:stepHeight
 											11-f:0.045
 										10-v:walkDirPredictionFactor
-											11-f:10
+											11-f:7
 										10-v:distanceToStepSpeedFactor
-											11-f:4
+											11-f:3.51
 										10-v:maxWaitingTimeAnotherFoot
 											11-f:0.12
 										10-v:uncompletedStepResetProgress
@@ -103,7 +120,7 @@ use tabs: true
 											11-v:y
 												12-f:-0.08
 											11-v:z
-												12-f:0.16
+												12-f:0.12
 							7-k:i
 								8-o:d
 									9-v:type
@@ -137,7 +154,7 @@ use tabs: true
 											11-v:y
 												12-f:-0.08
 											11-v:z
-												12-f:0.16
+												12-f:0.12
 						6-v:name
 							7-s:IK
 						6-a:children
@@ -410,21 +427,21 @@ use tabs: true
 											11-v:entityId
 												12-i:2439304745949623658
 										10-v:type
-											11-s:Capsule3D
+											11-s:Box3D
 										10-o:center
 											11-v:x
 												12-f:0.04
 											11-v:y
-												12-f:1.97
+												12-f:1.95
 											11-v:z
 												12-f:-0.25
 										10-o:bounds
 											11-v:x
-												12-f:0.49
+												12-f:0.34
 											11-v:y
-												12-f:1.377
+												12-f:1.82
 											11-v:z
-												12-f:0.49
+												12-f:0.38
 						6-v:name
 							7-s:Root
 						6-a:children
@@ -3621,6 +3638,11 @@ use tabs: true
 																						22-s:MaterialData
 																					21-o:ptr
 																						22-a:shaderDefines
+																							23-k:item
+																								24-v:first
+																									25-s:DISABLE_CULLING
+																								24-v:second
+																									25-s:
 																							23-k:item
 																								24-v:first
 																									25-s:HAS_SKELETON
@@ -9835,21 +9857,19 @@ use tabs: true
 																																																								56-s:Transform3D
 																																																							55-o:ptr
 																																																								56-o:translation
-																																																									57-v:x
-																																																										58-f:-2.79397e-11
 																																																									57-v:y
 																																																										58-f:0.000412826
 																																																									57-v:z
 																																																										58-f:6.64731e-10
 																																																								56-o:quaternion
 																																																									57-v:x
-																																																										58-f:0.183501
+																																																										58-f:0.183047
 																																																									57-v:y
-																																																										58-f:-0.0225787
+																																																										58-f:-0.0260049
 																																																									57-v:z
-																																																										58-f:0.0232134
+																																																										58-f:0.00484369
 																																																									57-v:w
-																																																										58-f:0.982486
+																																																										58-f:0.982748
 																																																		50-o:transform
 																																																			51-v:type
 																																																				52-s:Transform3D
@@ -9863,53 +9883,49 @@ use tabs: true
 																																																						54-f:-3.83006e-10
 																																																				52-o:quaternion
 																																																					53-v:x
-																																																						54-f:-0.0222467
+																																																						54-f:-0.0244659
 																																																					53-v:y
-																																																						54-f:0.054722
+																																																						54-f:0.0537665
 																																																					53-v:z
-																																																						54-f:-0.0395054
+																																																						54-f:0.00131775
 																																																					53-v:w
-																																																						54-f:0.997472
+																																																						54-f:0.998253
 																																														46-o:transform
 																																															47-v:type
 																																																48-s:Transform3D
 																																															47-o:ptr
 																																																48-o:translation
-																																																	49-v:x
-																																																		50-f:-4.16185e-11
 																																																	49-v:y
 																																																		50-f:0.000324898
 																																																	49-v:z
 																																																		50-f:-1.31549e-10
 																																																48-o:quaternion
 																																																	49-v:x
-																																																		50-f:0.109688
+																																																		50-f:0.108991
 																																																	49-v:y
-																																																		50-f:-0.0355525
+																																																		50-f:-0.0376347
 																																																	49-v:z
-																																																		50-f:0.0230434
+																																																		50-f:0.00412943
 																																																	49-v:w
-																																																		50-f:0.993063
+																																																		50-f:0.993321
 																																										42-o:transform
 																																											43-v:type
 																																												44-s:Transform3D
 																																											43-o:ptr
 																																												44-o:translation
-																																													45-v:x
-																																														46-f:-5.89353e-11
 																																													45-v:y
 																																														46-f:0.00139543
 																																													45-v:z
 																																														46-f:-1.20073e-10
 																																												44-o:quaternion
 																																													45-v:x
-																																														46-f:-0.319694
+																																														46-f:-0.319711
 																																													45-v:y
-																																														46-f:0.00400554
+																																														46-f:0.00225188
 																																													45-v:z
-																																														46-f:-0.0044375
+																																														46-f:0.000759835
 																																													45-v:w
-																																														46-f:0.947502
+																																														46-f:0.947512
 																																							39-k:i
 																																								40-o:d
 																																									41-v:type
@@ -10186,6 +10202,47 @@ use tabs: true
 																																														46-f:0.462042
 																																													45-v:w
 																																														46-f:0.288016
+																																							39-k:i
+																																								40-o:d
+																																									41-v:type
+																																										42-s:GameObject
+																																									41-o:ptr
+																																										42-v:entityId
+																																											43-i:3771061506185546371
+																																										42-a:components
+																																											43-k:i
+																																												44-o:d
+																																													45-v:type
+																																														46-s:Camera
+																																													45-o:ptr
+																																														46-v:entityId
+																																															47-i:3889174101173318245
+																																														46-v:near
+																																															47-f:0.15
+																																														46-v:FOV
+																																															47-f:75
+																																										42-v:name
+																																											43-s:Camera
+																																										42-o:transform
+																																											43-v:type
+																																												44-s:Transform3D
+																																											43-o:ptr
+																																												44-o:translation
+																																													45-v:x
+																																														46-f:-4.36967e-05
+																																													45-v:y
+																																														46-f:0.00212186
+																																													45-v:z
+																																														46-f:-0.00228565
+																																												44-o:quaternion
+																																													45-v:x
+																																														46-f:7.5314e-08
+																																													45-v:y
+																																														46-f:-0.997564
+																																													45-v:z
+																																														46-f:0.0697565
+																																													45-v:w
+																																														46-f:-5.26647e-09
 																																						38-o:transform
 																																							39-v:type
 																																								40-s:Transform3D
@@ -10201,9 +10258,9 @@ use tabs: true
 																																									41-v:x
 																																										42-f:0.0669258
 																																									41-v:y
-																																										42-f:-0.000171295
+																																										42-f:-0.000169601
 																																									41-v:z
-																																										42-f:-1.3874e-05
+																																										42-f:1.13762e-05
 																																									41-v:w
 																																										42-f:0.997758
 																																		34-o:transform
@@ -10211,19 +10268,15 @@ use tabs: true
 																																				36-s:Transform3D
 																																			35-o:ptr
 																																				36-o:translation
-																																					37-v:x
-																																						38-f:-2.50293e-11
 																																					37-v:y
 																																						38-f:0.000758646
-																																					37-v:z
-																																						38-f:7.17409e-11
 																																				36-o:quaternion
 																																					37-v:x
 																																						38-f:0.0640425
 																																					37-v:y
-																																						38-f:8.57292e-11
+																																						38-f:1.0387e-16
 																																					37-v:z
-																																						38-f:1.33588e-09
+																																						38-f:-6.66576e-18
 																																					37-v:w
 																																						38-f:0.997947
 																														30-o:transform
@@ -10231,8 +10284,6 @@ use tabs: true
 																																32-s:Transform3D
 																															31-o:ptr
 																																32-o:translation
-																																	33-v:x
-																																		34-f:1.10595e-11
 																																	33-v:y
 																																		34-f:0.000572515
 																																	33-v:z
@@ -10251,17 +10302,15 @@ use tabs: true
 																														30-f:9.31323e-12
 																													29-v:y
 																														30-f:0.000774238
-																													29-v:z
-																														30-f:1.86265e-10
 																												28-o:quaternion
 																													29-v:x
-																														30-f:-0.442918
+																														30-f:-0.442887
 																													29-v:y
-																														30-f:0.000430534
+																														30-f:-0.00527028
 																													29-v:z
-																														30-f:-0.0141428
+																														30-f:-0.00260344
 																													29-v:w
-																														30-f:0.896451
+																														30-f:0.896558
 																						22-o:transform
 																							23-v:type
 																								24-s:Transform3D
@@ -10269,8 +10318,6 @@ use tabs: true
 																								24-o:translation
 																									25-v:y
 																										26-f:0.00076684
-																									25-v:z
-																										26-f:1.81026e-10
 																								24-o:quaternion
 																									25-v:x
 																										26-f:0.882043
@@ -10490,11 +10537,11 @@ use tabs: true
 																		18-f:0.707107
 																16-o:scale
 																	17-v:x
-																		18-f:300
+																		18-f:250
 																	17-v:y
-																		18-f:300
+																		18-f:250
 																	17-v:z
-																		18-f:300
+																		18-f:250
 											11-k:i
 												12-o:d
 													13-v:type
@@ -11314,72 +11361,6 @@ use tabs: true
 															15-v:type
 																16-s:Transform3D
 															15-o:ptr
-											11-k:i
-												12-o:d
-													13-v:type
-														14-s:GameObject
-													13-o:ptr
-														14-v:entityId
-															15-i:3771061506185546371
-														14-a:components
-															15-k:i
-																16-o:d
-																	17-v:type
-																		18-s:Camera
-																	17-o:ptr
-																		18-v:entityId
-																			19-i:3889174101173318245
-															15-k:i
-																16-o:d
-																	17-v:type
-																		18-s:CameraFlyMover
-																	17-o:ptr
-																		18-v:entityId
-																			19-i:4598635722154809878
-																		18-v:lockCursor
-																			19-b:true
-																		18-v:rightMouseButtonToRotate
-																			19-b:true
-																		18-v:velocityDegree
-																			19-f:0
-																		18-v:velocityFactor
-																			19-f:0
-																		18-v:seekSpeed
-																			19-f:0
-																		18-v:wheelSpeed
-																			19-f:0
-																		18-o:rotateSpeed
-																			19-v:x
-																				20-f:-0.1
-																			19-v:y
-																				20-f:0.1
-																		18-v:moveSpeed
-																			19-f:0
-																		18-o:maxVelocity
-																			19-v:x
-																				20-f:0.5
-																			19-v:y
-																				20-f:0.5
-																			19-v:z
-																				20-f:2
-														14-v:name
-															15-s:Camera
-														14-o:transform
-															15-v:type
-																16-s:Transform3D
-															15-o:ptr
-																16-o:translation
-																	17-v:x
-																		18-f:0.071754
-																	17-v:y
-																		18-f:3.96638
-																	17-v:z
-																		18-f:-0.650694
-																16-o:quaternion
-																	17-v:y
-																		18-f:1
-																	17-v:w
-																		18-f:-4.37114e-08
 										10-o:transform
 											11-v:type
 												12-s:Transform3D
