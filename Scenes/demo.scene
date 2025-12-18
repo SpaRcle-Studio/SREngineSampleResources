@@ -46,8 +46,12 @@ use tabs: true
 									9-v:entityId
 										10-i:4193520828818589059
 									9-o:associative
-									9-v:platformType
-										10-s:Windows
+										10-a:associativeMapAtom
+										10-a:associativeMapString
+										10-a:associativeMap2
+										10-a:associativeMap33
+										10-a:associativeMap3
+										10-a:associativeMap4
 									9-o:data
 									9-o:logic
 										10-v:type
@@ -276,13 +280,6 @@ use tabs: true
 										10-b:true
 									9-v:velocityFactor
 										10-f:0.2
-									9-o:maxVelocity
-										10-v:x
-											11-f:0.5
-										10-v:y
-											11-f:0.5
-										10-v:z
-											11-f:2
 						6-k:i
 							7-o:d
 								8-v:type
@@ -336,7 +333,7 @@ use tabs: true
 												12-v:type
 													13-s:MaterialData
 												12-o:ptr
-													13-o:defaultShader
+													13-a:shaderDefines
 									9-v:meshPath
 										10-s:Engine/Models/sphere.obj
 					5-v:name
@@ -405,8 +402,6 @@ use tabs: true
 							7-o:translation
 								8-v:x
 									9-f:12.4124
-								8-v:y
-									9-f:2.37243e-06
 								8-v:z
 									9-f:-11.5705
 							7-o:scale
@@ -494,7 +489,7 @@ use tabs: true
 												12-v:type
 													13-s:MaterialData
 												12-o:ptr
-													13-o:defaultShader
+													13-a:shaderDefines
 									9-v:text
 										10-m:5
 2222😁👀😀📂⚙️🍿🥩😊
@@ -508,8 +503,6 @@ ddddцццゔぅヾボ
 										10-i:65
 									9-v:kerning
 										10-b:false
-					5-v:tag
-						6-s:Untagged
 					5-v:name
 						6-s:Test text
 					5-v:isEnabled
@@ -518,25 +511,8 @@ ddddцццゔぅヾボ
 						6-s:UI
 					5-o:transform
 						6-v:type
-							7-s:Transform2D
+							7-s:Transform3D
 						6-o:ptr
-							7-o:translation
-								8-v:x
-									9-f:-1.12
-							7-o:scale
-								8-v:x
-									9-f:0.135
-								8-v:y
-									9-f:0.172
-								8-v:z
-									9-f:1
-							7-o:skew
-								8-v:x
-									9-f:1
-								8-v:y
-									9-f:1
-								8-v:z
-									9-f:1
 		2-k:i
 			3-o:d
 				4-v:type
@@ -617,13 +593,6 @@ ddddцццゔぅヾボ
 									9-v:behaviourName
 										10-s:ChunkRenderer
 									9-o:data
-										10-o:size
-											11-v:x
-												12-i:16
-											11-v:y
-												12-i:64
-											11-v:z
-												12-i:16
 						6-k:i
 							7-o:d
 								8-v:type
@@ -668,13 +637,6 @@ ddddцццゔぅヾボ
 									9-v:behaviourName
 										10-s:ChunkRendererSSBO
 									9-o:data
-										10-o:size
-											11-v:x
-												12-i:16
-											11-v:y
-												12-i:64
-											11-v:z
-												12-i:16
 						6-k:i
 							7-o:d
 								8-v:type
@@ -690,7 +652,7 @@ ddddцццゔぅヾボ
 												12-v:type
 													13-s:MaterialData
 												12-o:ptr
-													13-o:defaultShader
+													13-a:shaderDefines
 									9-v:useSSBOInsteadOfVertices
 										10-b:true
 					5-v:name
@@ -792,6 +754,7 @@ ddddцццゔぅヾボ
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
+																	17-a:shaderDefines
 																	17-o:defaultShader
 																		18-v:shaderPath
 																			19-s:Engine/Shaders/standard.srsl
@@ -851,6 +814,24 @@ ddddцццゔぅヾボ
 																						22-s:Float
 																					21-v:value
 																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:tiling
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																						22-v:x
+																							23-f:1
+																						22-v:y
+																							23-f:1
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:offset
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -918,6 +899,7 @@ ddddцццゔぅヾボ
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
+																	17-a:shaderDefines
 																	17-o:defaultShader
 																		18-v:shaderPath
 																			19-s:Engine/Shaders/standard.srsl
@@ -977,6 +959,24 @@ ddddцццゔぅヾボ
 																						22-s:Float
 																					21-v:value
 																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:tiling
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																						22-v:x
+																							23-f:1
+																						22-v:y
+																							23-f:1
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:offset
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -1044,6 +1044,7 @@ ddddцццゔぅヾボ
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
+																	17-a:shaderDefines
 																	17-o:defaultShader
 																		18-v:shaderPath
 																			19-s:Engine/Shaders/standard.srsl
@@ -1103,6 +1104,24 @@ ddddцццゔぅヾボ
 																						22-s:Float
 																					21-v:value
 																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:tiling
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																						22-v:x
+																							23-f:1
+																						22-v:y
+																							23-f:1
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:offset
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -1146,8 +1165,12 @@ ddddцццゔぅヾボ
 									9-v:entityId
 										10-i:4321541742137885967
 									9-o:associative
-									9-v:platformType
-										10-s:Windows
+										10-a:associativeMapAtom
+										10-a:associativeMapString
+										10-a:associativeMap2
+										10-a:associativeMap33
+										10-a:associativeMap3
+										10-a:associativeMap4
 									9-o:data
 										10-v:baseField
 											11-b:true
@@ -1486,2403 +1509,6 @@ ddddцццゔぅヾボ
 												12-b:true
 					5-v:name
 						6-s:UI
-					5-a:children
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:UIViewportNode
-								8-o:ptr
-									9-v:entityId
-										10-i:2427840121447656876
-									9-a:components
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Sprite
-												12-o:ptr
-													13-v:entityId
-														14-i:2373305869614461622
-													13-v:isEnabled
-														14-b:false
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-o:defaultShader
-													13-o:textureBorder
-														14-v:x
-															15-f:0.15
-														14-v:y
-															15-f:0.15
-													13-o:windowBorder
-														14-v:x
-															15-f:0.15
-														14-v:y
-															15-f:0.15
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Text
-												12-o:ptr
-													13-v:entityId
-														14-i:2762945378965017705
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-o:defaultShader
-																		18-v:shaderPath
-																			19-s:Engine/Shaders/text.srsl
-													13-v:font
-														14-s:Engine/Fonts/CalibriL.ttf
-									9-v:name
-										10-s:UIViewportNovel
-									9-a:children
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:UIContainerNode
-												12-o:ptr
-													13-v:entityId
-														14-i:2739658345792123191
-													13-a:components
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:Sprite
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3752833984141731924
-																	17-o:material
-																		18-v:type
-																			19-s:UniqueMaterial
-																		18-o:ptr
-																			19-o:data
-																				20-v:type
-																					21-s:MaterialData
-																				20-o:ptr
-																					21-o:defaultShader
-																	17-o:textureBorder
-																		18-v:x
-																			19-f:0.1
-																		18-v:y
-																			19-f:0.15
-																	17-o:windowBorder
-																		18-v:x
-																			19-f:0.08
-																		18-v:y
-																			19-f:0.15
-													13-v:name
-														14-s:UIContainerNode
-													13-a:children
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIContainerNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:2361023641244283932
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:2743827993235728718
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.15
-																						22-v:y
-																							23-f:0.03
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.15
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIContainerNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:14
-																		18-v:height
-																			19-f:34
-																		18-o:margin
-																			19-v:x
-																				20-f:7.53
-																			19-v:y
-																				20-f:-14.36
-																		18-v:align
-																			19-s:Center
-																	17-v:containerAlign
-																		18-s:Center
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIContainerNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:2791296403889253489
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:4113239825259274262
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.15
-																						22-v:y
-																							23-f:0.15
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.15
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIContainerNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:7.94
-																		18-v:height
-																			19-f:17.31
-																		18-o:margin
-																			19-v:x
-																				20-f:24.54
-																			19-v:h
-																				20-f:-0.83
-																		18-v:align
-																			19-s:End
-																	17-v:containerAlign
-																		18-s:Center
-													13-v:layer
-														14-s:UI
-													13-o:layout
-														14-v:widthPolicy
-															15-s:Percent
-														14-v:width
-															15-f:64
-														14-v:aspectRatio
-															15-f:5.71
-														14-v:align
-															15-s:Center
-													13-v:containerAlign
-														14-s:Center
-									9-v:layer
-										10-s:UI
-									9-o:layout
-										10-v:widthPolicy
-											11-s:Fixed
-										10-v:heightPolicy
-											11-s:Fixed
-										10-v:width
-											11-f:1227
-										10-v:height
-											11-f:1020
-									9-v:direction
-										10-s:Column
-									9-v:containerAlign
-										10-s:Center
-									9-v:justify
-										10-s:FlexEnd
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:UIViewportNode
-								8-o:ptr
-									9-v:entityId
-										10-i:2875884892123716356
-									9-a:components
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Sprite
-												12-o:ptr
-													13-v:entityId
-														14-i:3229566560065187340
-													13-v:isEnabled
-														14-b:false
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-o:defaultShader
-													13-o:textureBorder
-														14-v:x
-															15-f:0.15
-														14-v:y
-															15-f:0.15
-													13-o:windowBorder
-														14-v:x
-															15-f:0.15
-														14-v:y
-															15-f:0.15
-									9-v:name
-										10-s:UIViewportNodeLeft
-									9-a:children
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:UIContainerNode
-												12-o:ptr
-													13-v:entityId
-														14-i:2380933764109414951
-													13-a:components
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:Sprite
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3688453556435111254
-																	17-o:material
-																		18-v:type
-																			19-s:UniqueMaterial
-																		18-o:ptr
-																			19-o:data
-																				20-v:type
-																					21-s:MaterialData
-																				20-o:ptr
-																					21-o:defaultShader
-																	17-o:textureBorder
-																		18-v:x
-																			19-f:0.15
-																		18-v:y
-																			19-f:0.15
-																	17-o:windowBorder
-																		18-v:x
-																			19-f:0.15
-																		18-v:y
-																			19-f:0.15
-													13-v:name
-														14-s:UIContainerNode
-													13-a:children
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIControlNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3701949753062514653
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3706456327769065285
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.15
-																						22-v:y
-																							23-f:0.15
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.15
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIControlNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:25
-																		18-v:height
-																			19-f:25
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIContainerNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:2900276545800117735
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:2496689605241546671
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.15
-																						22-v:y
-																							23-f:0.15
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.15
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIContainerNode
-																	17-a:children
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:UIControlNode
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3861380965032389822
-																					21-a:components
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:Sprite
-																								24-o:ptr
-																									25-v:entityId
-																										26-i:3463297650340490637
-																									25-o:material
-																										26-v:type
-																											27-s:UniqueMaterial
-																										26-o:ptr
-																											27-o:data
-																												28-v:type
-																													29-s:MaterialData
-																												28-o:ptr
-																													29-o:defaultShader
-																									25-o:textureBorder
-																										26-v:x
-																											27-f:0.15
-																										26-v:y
-																											27-f:0.15
-																									25-o:windowBorder
-																										26-v:x
-																											27-f:0.15
-																										26-v:y
-																											27-f:0.15
-																					21-v:name
-																						22-s:UIControlNode
-																					21-v:layer
-																						22-s:UI
-																					21-o:layout
-																						22-v:widthPolicy
-																							23-s:Percent
-																						22-v:heightPolicy
-																							23-s:Percent
-																						22-v:width
-																							23-f:25
-																						22-v:height
-																							23-f:25
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:50
-																		18-v:height
-																			19-f:50
-													13-v:layer
-														14-s:UI
-													13-o:layout
-														14-v:widthPolicy
-															15-s:Percent
-														14-v:heightPolicy
-															15-s:Percent
-														14-v:width
-															15-f:40
-														14-v:height
-															15-f:100
-														14-o:padding
-															15-v:x
-																16-f:5
-															15-v:y
-																16-f:5
-															15-v:w
-																16-f:5
-															15-v:h
-																16-f:5
-									9-v:layer
-										10-s:UI
-									9-o:layout
-										10-v:widthPolicy
-											11-s:Fixed
-										10-v:heightPolicy
-											11-s:Fixed
-										10-v:width
-											11-f:1227
-										10-v:height
-											11-f:1020
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:UIViewportNode
-								8-o:ptr
-									9-v:entityId
-										10-i:4527929477990255084
-									9-a:components
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Sprite
-												12-o:ptr
-													13-v:entityId
-														14-i:2820671203804027281
-													13-v:isEnabled
-														14-b:false
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-o:defaultShader
-													13-o:textureBorder
-														14-v:x
-															15-f:0.15
-														14-v:y
-															15-f:0.15
-													13-o:windowBorder
-														14-v:x
-															15-f:0.15
-														14-v:y
-															15-f:0.15
-									9-v:name
-										10-s:UIViewportNode
-									9-a:children
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:UIContainerNode
-												12-o:ptr
-													13-v:entityId
-														14-i:2665835573731488309
-													13-a:components
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:Sprite
-																16-o:ptr
-																	17-v:entityId
-																		18-i:2900046238309580231
-																	17-o:material
-																		18-v:type
-																			19-s:UniqueMaterial
-																		18-o:ptr
-																			19-o:data
-																				20-v:type
-																					21-s:MaterialData
-																				20-o:ptr
-																					21-o:defaultShader
-																						22-v:shaderPath
-																							23-s:Engine/Shaders/UI/sliced.srsl
-																						22-a:uniforms
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:color
-																									25-v:type
-																										26-s:Vec4
-																									25-o:value
-																										26-v:x
-																											27-f:1
-																										26-v:y
-																											27-f:1
-																										26-v:z
-																											27-f:1
-																										26-v:w
-																											27-f:1
-																						22-a:samplers
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:diffuse
-																									25-v:type
-																										26-s:Sampler2D
-																									25-v:value
-																										26-s:Engine/Textures/uv.png
-																	17-o:textureBorder
-																		18-v:x
-																			19-f:0.15
-																		18-v:y
-																			19-f:0.15
-																	17-o:windowBorder
-																		18-v:x
-																			19-f:0.15
-																		18-v:y
-																			19-f:0.15
-													13-v:name
-														14-s:UIContainerNode
-													13-a:children
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIControlNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:4603065060399518588
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3312395041810271151
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																										26-v:shaderPath
-																											27-s:Engine/Shaders/UI/sliced.srsl
-																										26-a:uniforms
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:color
-																													29-v:type
-																														30-s:Vec4
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:1
-																														30-v:z
-																															31-f:1
-																														30-v:w
-																															31-f:1
-																										26-a:samplers
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:diffuse
-																													29-v:type
-																														30-s:Sampler2D
-																													29-v:value
-																														30-s:Engine/Textures/uv.png
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.15
-																						22-v:y
-																							23-f:0.15
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.15
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIControlNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:25
-																		18-v:height
-																			19-f:25
-																		18-v:align
-																			19-s:Center
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIContainerNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3230664782438655797
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:4125478247690306150
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																										26-v:shaderPath
-																											27-s:Engine/Shaders/UI/sliced.srsl
-																										26-a:uniforms
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:color
-																													29-v:type
-																														30-s:Vec4
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:1
-																														30-v:z
-																															31-f:1
-																														30-v:w
-																															31-f:1
-																										26-a:samplers
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:diffuse
-																													29-v:type
-																														30-s:Sampler2D
-																													29-v:value
-																														30-s:Engine/Textures/uv.png
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.15
-																						22-v:y
-																							23-f:0.15
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.15
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIContainerNode
-																	17-a:children
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:UIControlNode
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:4016548396023401609
-																					21-a:components
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:Sprite
-																								24-o:ptr
-																									25-v:entityId
-																										26-i:3582352738294218430
-																									25-o:material
-																										26-v:type
-																											27-s:UniqueMaterial
-																										26-o:ptr
-																											27-o:data
-																												28-v:type
-																													29-s:MaterialData
-																												28-o:ptr
-																													29-o:defaultShader
-																														30-v:shaderPath
-																															31-s:Engine/Shaders/UI/sliced.srsl
-																														30-a:uniforms
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																														30-a:samplers
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:diffuse
-																																	33-v:type
-																																		34-s:Sampler2D
-																																	33-v:value
-																																		34-s:Engine/Textures/uv.png
-																									25-o:textureBorder
-																										26-v:x
-																											27-f:0.15
-																										26-v:y
-																											27-f:0.15
-																									25-o:windowBorder
-																										26-v:x
-																											27-f:0.15
-																										26-v:y
-																											27-f:0.15
-																					21-v:name
-																						22-s:UIControlNode
-																					21-v:layer
-																						22-s:UI
-																					21-o:layout
-																						22-v:widthPolicy
-																							23-s:Percent
-																						22-v:heightPolicy
-																							23-s:Percent
-																						22-v:width
-																							23-f:25
-																						22-v:height
-																							23-f:25
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:50
-																		18-v:height
-																			19-f:50
-																		18-v:align
-																			19-s:End
-																	17-v:direction
-																		18-s:Column
-																	17-v:containerAlign
-																		18-s:Center
-													13-v:layer
-														14-s:UI
-													13-o:layout
-														14-v:widthPolicy
-															15-s:Percent
-														14-v:heightPolicy
-															15-s:Percent
-														14-v:width
-															15-f:30
-														14-v:height
-															15-f:75
-														14-o:padding
-															15-v:x
-																16-f:5
-															15-v:y
-																16-f:5
-															15-v:w
-																16-f:5
-															15-v:h
-																16-f:5
-														14-v:align
-															15-s:Center
-									9-v:layer
-										10-s:UI
-									9-o:layout
-										10-v:widthPolicy
-											11-s:Fixed
-										10-v:heightPolicy
-											11-s:Fixed
-										10-v:width
-											11-f:1227
-										10-v:height
-											11-f:1020
-										10-v:align
-											11-s:Center
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:UIViewportNode
-								8-o:ptr
-									9-v:entityId
-										10-i:3204085521418915596
-									9-a:components
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Sprite
-												12-o:ptr
-													13-v:entityId
-														14-i:2660614469252031421
-													13-v:isEnabled
-														14-b:false
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-o:defaultShader
-													13-o:textureBorder
-														14-v:x
-															15-f:0.15
-														14-v:y
-															15-f:0.15
-													13-o:windowBorder
-														14-v:x
-															15-f:0.15
-														14-v:y
-															15-f:0.15
-									9-v:name
-										10-s:UIViewportButtons
-									9-a:children
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:UIContainerNode
-												12-o:ptr
-													13-v:entityId
-														14-i:4288823215770007338
-													13-a:components
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:Sprite
-																16-o:ptr
-																	17-v:entityId
-																		18-i:2481562944775224216
-																	17-o:material
-																		18-v:type
-																			19-s:UniqueMaterial
-																		18-o:ptr
-																			19-o:data
-																				20-v:type
-																					21-s:MaterialData
-																				20-o:ptr
-																					21-o:defaultShader
-																	17-o:textureBorder
-																		18-v:x
-																			19-f:0.21
-																		18-v:y
-																			19-f:0.79
-																	17-o:windowBorder
-																		18-v:x
-																			19-f:0.19
-																		18-v:y
-																			19-f:0.16
-													13-v:name
-														14-s:UIContainerNode
-													13-a:children
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIControlNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:2595733147408475164
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:4174412439807602975
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.71
-																						22-v:y
-																							23-f:0.1
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.18
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIControlNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:79
-																		18-v:height
-																			19-f:8
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIControlNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3453853337321634782
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3065709718332454338
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.71
-																						22-v:y
-																							23-f:0.1
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.18
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIControlNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:79
-																		18-v:height
-																			19-f:8
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIControlNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3561460839633599238
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3475471134807272643
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.71
-																						22-v:y
-																							23-f:0.1
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.18
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIControlNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:79
-																		18-v:height
-																			19-f:8
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIControlNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:2446670833931599071
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:4473965692255779841
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.71
-																						22-v:y
-																							23-f:0.1
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.18
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIControlNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:79
-																		18-v:height
-																			19-f:8
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIControlNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:4404612856269643118
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:4360288308409273867
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.71
-																						22-v:y
-																							23-f:0.1
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.18
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIControlNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:79
-																		18-v:height
-																			19-f:8
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIContainerNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3050949200916577449
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3606226456916216855
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.27
-																						22-v:y
-																							23-f:2.28
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:2.08
-																						22-v:y
-																							23-f:-0.1
-																	17-v:name
-																		18-s:UIContainerNode
-																	17-a:children
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:UIControlNode
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3060902973654651534
-																					21-a:components
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:Sprite
-																								24-o:ptr
-																									25-v:entityId
-																										26-i:2568730588912334010
-																									25-o:material
-																										26-v:type
-																											27-s:UniqueMaterial
-																										26-o:ptr
-																											27-o:data
-																												28-v:type
-																													29-s:MaterialData
-																												28-o:ptr
-																													29-o:defaultShader
-																									25-o:textureBorder
-																										26-v:x
-																											27-f:0.71
-																										26-v:y
-																											27-f:-0.03
-																									25-o:windowBorder
-																										26-v:x
-																											27-f:0.18
-																										26-v:y
-																											27-f:0.54
-																					21-v:name
-																						22-s:UIControlNode
-																					21-v:layer
-																						22-s:UI
-																					21-o:layout
-																						22-v:widthPolicy
-																							23-s:Percent
-																						22-v:heightPolicy
-																							23-s:Percent
-																						22-v:width
-																							23-f:92
-																						22-v:height
-																							23-f:25
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:UIControlNode
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3927498879068211843
-																					21-a:components
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:Sprite
-																								24-o:ptr
-																									25-v:entityId
-																										26-i:3636990582249559967
-																									25-o:material
-																										26-v:type
-																											27-s:UniqueMaterial
-																										26-o:ptr
-																											27-o:data
-																												28-v:type
-																													29-s:MaterialData
-																												28-o:ptr
-																													29-o:defaultShader
-																									25-o:textureBorder
-																										26-v:x
-																											27-f:0.71
-																										26-v:y
-																											27-f:-0.03
-																									25-o:windowBorder
-																										26-v:x
-																											27-f:0.18
-																										26-v:y
-																											27-f:0.54
-																					21-v:name
-																						22-s:UIControlNode
-																					21-v:layer
-																						22-s:UI
-																					21-o:layout
-																						22-v:widthPolicy
-																							23-s:Percent
-																						22-v:heightPolicy
-																							23-s:Percent
-																						22-v:width
-																							23-f:92
-																						22-v:height
-																							23-f:25
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:UIControlNode
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:4247853914631250898
-																					21-a:components
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:Sprite
-																								24-o:ptr
-																									25-v:entityId
-																										26-i:4336805745735947321
-																									25-o:material
-																										26-v:type
-																											27-s:UniqueMaterial
-																										26-o:ptr
-																											27-o:data
-																												28-v:type
-																													29-s:MaterialData
-																												28-o:ptr
-																													29-o:defaultShader
-																									25-o:textureBorder
-																										26-v:x
-																											27-f:0.71
-																										26-v:y
-																											27-f:-0.03
-																									25-o:windowBorder
-																										26-v:x
-																											27-f:0.18
-																										26-v:y
-																											27-f:0.54
-																					21-v:name
-																						22-s:UIControlNode
-																					21-v:layer
-																						22-s:UI
-																					21-o:layout
-																						22-v:widthPolicy
-																							23-s:Percent
-																						22-v:heightPolicy
-																							23-s:Percent
-																						22-v:width
-																							23-f:92
-																						22-v:height
-																							23-f:25
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:79
-																		18-v:height
-																			19-f:32
-																		18-o:padding
-																			19-v:x
-																				20-f:5
-																			19-v:y
-																				20-f:5
-																			19-v:w
-																				20-f:5
-																			19-v:h
-																				20-f:5
-																	17-v:direction
-																		18-s:Column
-																	17-v:containerAlign
-																		18-s:Center
-																	17-v:justify
-																		18-s:SpaceBetween
-													13-v:layer
-														14-s:UI
-													13-o:layout
-														14-v:heightPolicy
-															15-s:Percent
-														14-v:height
-															15-f:100
-														14-v:aspectRatio
-															15-f:0.2
-													13-v:direction
-														14-s:Column
-													13-v:containerAlign
-														14-s:Center
-													13-v:justify
-														14-s:SpaceAround
-									9-v:layer
-										10-s:UI
-									9-o:layout
-										10-v:widthPolicy
-											11-s:Fixed
-										10-v:heightPolicy
-											11-s:Fixed
-										10-v:width
-											11-f:1227
-										10-v:height
-											11-f:1020
-									9-v:containerAlign
-										10-s:Center
-									9-v:justify
-										10-s:FlexStart
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:UIViewportNode
-								8-o:ptr
-									9-v:entityId
-										10-i:4205144881341605462
-									9-a:components
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Sprite
-												12-o:ptr
-													13-v:entityId
-														14-i:4008601222429991508
-													13-v:isEnabled
-														14-b:false
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-o:defaultShader
-																		18-v:shaderPath
-																			19-s:Engine/Shaders/UI/sliced.srsl
-																		18-a:uniforms
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec4
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
-																						22-v:w
-																							23-f:1
-																		18-a:samplers
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:diffuse
-																					21-v:type
-																						22-s:Sampler2D
-																					21-v:value
-																						22-s:Engine/Textures/uv.png
-													13-o:textureBorder
-														14-v:x
-															15-f:0.15
-														14-v:y
-															15-f:0.15
-													13-o:windowBorder
-														14-v:x
-															15-f:0.15
-														14-v:y
-															15-f:0.15
-									9-v:name
-										10-s:UIViewportTopMenu
-									9-a:children
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:UIContainerNode
-												12-o:ptr
-													13-v:entityId
-														14-i:3205308296826532819
-													13-v:name
-														14-s:UIContainerNode
-													13-a:children
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIContainerNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:4030445734059312901
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3582775809166723843
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																										26-v:shaderPath
-																											27-s:Engine/Shaders/UI/sliced.srsl
-																										26-a:uniforms
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:color
-																													29-v:type
-																														30-s:Vec4
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:1
-																														30-v:z
-																															31-f:1
-																														30-v:w
-																															31-f:1
-																										26-a:samplers
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:diffuse
-																													29-v:type
-																														30-s:Sampler2D
-																													29-v:value
-																														30-s:Engine/Textures/uv.png
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.41
-																						22-v:y
-																							23-f:0.02
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.39
-																						22-v:y
-																							23-f:0.18
-																	17-v:name
-																		18-s:UIContainerNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:36
-																		18-v:height
-																			19-f:82
-																		18-o:margin
-																			19-v:h
-																				20-f:7.79
-																		18-v:align
-																			19-s:End
-																	17-v:containerAlign
-																		18-s:Center
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIContainerNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3311703568411701010
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3037982426826000964
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																										26-v:shaderPath
-																											27-s:Engine/Shaders/UI/sliced.srsl
-																										26-a:uniforms
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:color
-																													29-v:type
-																														30-s:Vec4
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:1
-																														30-v:z
-																															31-f:1
-																														30-v:w
-																															31-f:1
-																										26-a:samplers
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:diffuse
-																													29-v:type
-																														30-s:Sampler2D
-																													29-v:value
-																														30-s:Engine/Textures/uv.png
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.41
-																						22-v:y
-																							23-f:0.02
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.39
-																						22-v:y
-																							23-f:0.18
-																	17-v:name
-																		18-s:UIContainerNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:36
-																		18-v:height
-																			19-f:82
-																		18-o:margin
-																			19-v:h
-																				20-f:7.79
-																		18-v:align
-																			19-s:End
-																	17-v:containerAlign
-																		18-s:Center
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIContainerNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:4073353094185612460
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3622287129493047418
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																										26-v:shaderPath
-																											27-s:Engine/Shaders/UI/sliced.srsl
-																										26-a:uniforms
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:color
-																													29-v:type
-																														30-s:Vec4
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:1
-																														30-v:z
-																															31-f:1
-																														30-v:w
-																															31-f:1
-																										26-a:samplers
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:diffuse
-																													29-v:type
-																														30-s:Sampler2D
-																													29-v:value
-																														30-s:Engine/Textures/uv.png
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.41
-																						22-v:y
-																							23-f:0.02
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.39
-																						22-v:y
-																							23-f:0.18
-																	17-v:name
-																		18-s:UIContainerNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:36
-																		18-v:height
-																			19-f:82
-																		18-o:margin
-																			19-v:h
-																				20-f:7.79
-																		18-v:align
-																			19-s:End
-																	17-v:containerAlign
-																		18-s:Center
-													13-v:layer
-														14-s:UI
-													13-o:layout
-														14-v:heightPolicy
-															15-s:Percent
-														14-v:height
-															15-f:10
-														14-v:aspectRatio
-															15-f:3.85
-														14-v:align
-															15-s:End
-													13-v:containerAlign
-														14-s:Center
-													13-v:justify
-														14-s:FlexEnd
-									9-v:layer
-										10-s:UI
-									9-o:layout
-										10-v:widthPolicy
-											11-s:Fixed
-										10-v:heightPolicy
-											11-s:Fixed
-										10-v:width
-											11-f:1227
-										10-v:height
-											11-f:1020
-									9-v:direction
-										10-s:Column
-									9-v:containerAlign
-										10-s:Center
-									9-v:justify
-										10-s:FlexStart
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:UIViewportNode
-								8-o:ptr
-									9-v:entityId
-										10-i:2755364320454831653
-									9-a:components
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Sprite
-												12-o:ptr
-													13-v:entityId
-														14-i:2311192610925393374
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-o:defaultShader
-																		18-v:shaderPath
-																			19-s:Engine/Shaders/UI/sliced.srsl
-																		18-a:uniforms
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec4
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
-																						22-v:w
-																							23-f:1
-																		18-a:samplers
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:diffuse
-																					21-v:type
-																						22-s:Sampler2D
-																					21-v:value
-																						22-s:Engine/Textures/uv.png
-													13-o:textureBorder
-														14-v:x
-															15-f:0.15
-														14-v:y
-															15-f:0.15
-													13-o:windowBorder
-														14-v:x
-															15-f:0.15
-														14-v:y
-															15-f:0.15
-									9-v:name
-										10-s:UIViewportWindow
-									9-a:children
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:UIContainerNode
-												12-o:ptr
-													13-v:entityId
-														14-i:4280529658997363444
-													13-a:components
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:Sprite
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3030064502807352793
-																	17-o:material
-																		18-v:type
-																			19-s:UniqueMaterial
-																		18-o:ptr
-																			19-o:data
-																				20-v:type
-																					21-s:MaterialData
-																				20-o:ptr
-																					21-o:defaultShader
-																	17-o:textureBorder
-																		18-v:x
-																			19-f:0.21
-																		18-v:y
-																			19-f:0.79
-																	17-o:windowBorder
-																		18-v:x
-																			19-f:0.19
-																		18-v:y
-																			19-f:0.16
-													13-v:name
-														14-s:UIContainerNode
-													13-a:children
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIControlNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3554892170472917336
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:4454919030636083122
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.71
-																						22-v:y
-																							23-f:0.1
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.18
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIControlNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:79
-																		18-v:height
-																			19-f:8
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIControlNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:2633205129961537531
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3988383737938589153
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.71
-																						22-v:y
-																							23-f:0.1
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.18
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIControlNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:79
-																		18-v:height
-																			19-f:8
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIControlNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:2772876701320954917
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3913408788046379864
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.71
-																						22-v:y
-																							23-f:0.1
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.18
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIControlNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:79
-																		18-v:height
-																			19-f:8
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIControlNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3786986751159873412
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:4186702886713471282
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.71
-																						22-v:y
-																							23-f:0.1
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.18
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIControlNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:79
-																		18-v:height
-																			19-f:8
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIControlNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3753936974024029093
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:2523691859472043680
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.71
-																						22-v:y
-																							23-f:0.1
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:0.18
-																						22-v:y
-																							23-f:0.15
-																	17-v:name
-																		18-s:UIControlNode
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:79
-																		18-v:height
-																			19-f:8
-														14-k:i
-															15-o:d
-																16-v:type
-																	17-s:UIContainerNode
-																16-o:ptr
-																	17-v:entityId
-																		18-i:3171333466547796624
-																	17-a:components
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:Sprite
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3679433245136279847
-																					21-o:material
-																						22-v:type
-																							23-s:UniqueMaterial
-																						22-o:ptr
-																							23-o:data
-																								24-v:type
-																									25-s:MaterialData
-																								24-o:ptr
-																									25-o:defaultShader
-																					21-o:textureBorder
-																						22-v:x
-																							23-f:0.27
-																						22-v:y
-																							23-f:2.28
-																					21-o:windowBorder
-																						22-v:x
-																							23-f:2.08
-																						22-v:y
-																							23-f:-0.1
-																	17-v:name
-																		18-s:UIContainerNode
-																	17-a:children
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:UIControlNode
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3747292760198290179
-																					21-a:components
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:Sprite
-																								24-o:ptr
-																									25-v:entityId
-																										26-i:2681494190809919155
-																									25-o:material
-																										26-v:type
-																											27-s:UniqueMaterial
-																										26-o:ptr
-																											27-o:data
-																												28-v:type
-																													29-s:MaterialData
-																												28-o:ptr
-																													29-o:defaultShader
-																									25-o:textureBorder
-																										26-v:x
-																											27-f:0.71
-																										26-v:y
-																											27-f:-0.03
-																									25-o:windowBorder
-																										26-v:x
-																											27-f:0.18
-																										26-v:y
-																											27-f:0.54
-																					21-v:name
-																						22-s:UIControlNode
-																					21-v:layer
-																						22-s:UI
-																					21-o:layout
-																						22-v:widthPolicy
-																							23-s:Percent
-																						22-v:heightPolicy
-																							23-s:Percent
-																						22-v:width
-																							23-f:92
-																						22-v:height
-																							23-f:25
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:UIControlNode
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3576121373138035214
-																					21-a:components
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:Sprite
-																								24-o:ptr
-																									25-v:entityId
-																										26-i:4361108555365468336
-																									25-o:material
-																										26-v:type
-																											27-s:UniqueMaterial
-																										26-o:ptr
-																											27-o:data
-																												28-v:type
-																													29-s:MaterialData
-																												28-o:ptr
-																													29-o:defaultShader
-																									25-o:textureBorder
-																										26-v:x
-																											27-f:0.71
-																										26-v:y
-																											27-f:-0.03
-																									25-o:windowBorder
-																										26-v:x
-																											27-f:0.18
-																										26-v:y
-																											27-f:0.54
-																					21-v:name
-																						22-s:UIControlNode
-																					21-v:layer
-																						22-s:UI
-																					21-o:layout
-																						22-v:widthPolicy
-																							23-s:Percent
-																						22-v:heightPolicy
-																							23-s:Percent
-																						22-v:width
-																							23-f:92
-																						22-v:height
-																							23-f:25
-																		18-k:i
-																			19-o:d
-																				20-v:type
-																					21-s:UIControlNode
-																				20-o:ptr
-																					21-v:entityId
-																						22-i:3490838646982493332
-																					21-a:components
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:Sprite
-																								24-o:ptr
-																									25-v:entityId
-																										26-i:3857725286006118206
-																									25-o:material
-																										26-v:type
-																											27-s:UniqueMaterial
-																										26-o:ptr
-																											27-o:data
-																												28-v:type
-																													29-s:MaterialData
-																												28-o:ptr
-																													29-o:defaultShader
-																									25-o:textureBorder
-																										26-v:x
-																											27-f:0.71
-																										26-v:y
-																											27-f:-0.03
-																									25-o:windowBorder
-																										26-v:x
-																											27-f:0.18
-																										26-v:y
-																											27-f:0.54
-																					21-v:name
-																						22-s:UIControlNode
-																					21-v:layer
-																						22-s:UI
-																					21-o:layout
-																						22-v:widthPolicy
-																							23-s:Percent
-																						22-v:heightPolicy
-																							23-s:Percent
-																						22-v:width
-																							23-f:92
-																						22-v:height
-																							23-f:25
-																	17-v:layer
-																		18-s:UI
-																	17-o:layout
-																		18-v:widthPolicy
-																			19-s:Percent
-																		18-v:heightPolicy
-																			19-s:Percent
-																		18-v:width
-																			19-f:79
-																		18-v:height
-																			19-f:32
-																		18-o:padding
-																			19-v:x
-																				20-f:5
-																			19-v:y
-																				20-f:5
-																			19-v:w
-																				20-f:5
-																			19-v:h
-																				20-f:5
-																	17-v:direction
-																		18-s:Column
-																	17-v:containerAlign
-																		18-s:Center
-																	17-v:justify
-																		18-s:SpaceBetween
-													13-v:isEnabled
-														14-b:false
-													13-v:layer
-														14-s:UI
-													13-o:layout
-														14-v:widthPolicy
-															15-s:Fixed
-														14-v:heightPolicy
-															15-s:Percent
-														14-v:height
-															15-f:100
-														14-v:aspectRatio
-															15-f:0.75
-														14-v:positionType
-															15-s:Absolute
-													13-v:direction
-														14-s:Column
-													13-v:containerAlign
-														14-s:Center
-													13-v:justify
-														14-s:SpaceAround
-									9-v:isEnabled
-										10-b:false
-									9-o:layout
-										10-v:widthPolicy
-											11-s:Fixed
-										10-v:heightPolicy
-											11-s:Fixed
-										10-v:width
-											11-f:1213
-										10-v:height
-											11-f:1020
-									9-v:direction
-										10-s:Column
-									9-v:containerAlign
-										10-s:Center
-									9-v:justify
-										10-s:Center
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:UIWindowNode
-								8-o:ptr
-									9-v:entityId
-										10-i:3835944822720001445
-									9-a:components
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Sprite
-												12-o:ptr
-													13-v:entityId
-														14-i:3954357744334764605
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-o:defaultShader
-													13-o:textureBorder
-														14-v:x
-															15-f:0.71
-														14-v:y
-															15-f:0.1
-													13-o:windowBorder
-														14-v:x
-															15-f:0.18
-														14-v:y
-															15-f:0.15
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Sprite
-												12-o:ptr
-													13-v:entityId
-														14-i:2371051644986324699
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-o:defaultShader
-													13-o:textureBorder
-														14-v:x
-															15-f:0.71
-														14-v:y
-															15-f:0.1
-													13-o:windowBorder
-														14-v:x
-															15-f:0.18
-														14-v:y
-															15-f:0.15
-									9-v:name
-										10-s:UIWindowNode
-									9-o:layout
-									9-o:border
-										10-v:entityId
-											11-i:2371051644986324699
 					5-v:isEnabled
 						6-b:false
 					5-o:transform
@@ -6517,6 +4143,24 @@ ddddцццゔぅヾボ
 																						22-s:Float
 																					21-v:value
 																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:tiling
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																						22-v:x
+																							23-f:1
+																						22-v:y
+																							23-f:1
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:offset
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -6643,6 +4287,24 @@ ddddцццゔぅヾボ
 																						22-s:Float
 																					21-v:value
 																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:tiling
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																						22-v:x
+																							23-f:1
+																						22-v:y
+																							23-f:1
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:offset
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -6755,6 +4417,24 @@ ddddцццゔぅヾボ
 																						22-s:Float
 																					21-v:value
 																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:tiling
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																						22-v:x
+																							23-f:1
+																						22-v:y
+																							23-f:1
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:offset
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -6883,6 +4563,24 @@ ddddцццゔぅヾボ
 																						22-s:Float
 																					21-v:value
 																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:tiling
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																						22-v:x
+																							23-f:1
+																						22-v:y
+																							23-f:1
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:offset
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -6995,6 +4693,24 @@ ddddцццゔぅヾボ
 																						22-s:Float
 																					21-v:value
 																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:tiling
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																						22-v:x
+																							23-f:1
+																						22-v:y
+																							23-f:1
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:offset
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -7105,6 +4821,24 @@ ddddцццゔぅヾボ
 																						22-s:Float
 																					21-v:value
 																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:tiling
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																						22-v:x
+																							23-f:1
+																						22-v:y
+																							23-f:1
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:offset
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -7215,6 +4949,24 @@ ddddцццゔぅヾボ
 																						22-s:Float
 																					21-v:value
 																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:tiling
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																						22-v:x
+																							23-f:1
+																						22-v:y
+																							23-f:1
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:offset
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -7325,6 +5077,24 @@ ddddцццゔぅヾボ
 																						22-s:Float
 																					21-v:value
 																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:tiling
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																						22-v:x
+																							23-f:1
+																						22-v:y
+																							23-f:1
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:offset
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -7643,13 +5413,6 @@ ddddцццゔぅヾボ
 											11-i:4091622810159070019
 									9-v:type
 										10-s:Sphere3D
-									9-o:bounds
-										10-v:x
-											11-f:1
-										10-v:y
-											11-f:1
-										10-v:z
-											11-f:1
 					5-v:name
 						6-s:Sphere
 					5-o:transform
@@ -7898,8 +5661,6 @@ ddddцццゔぅヾボ
 							7-o:translation
 								8-v:x
 									9-f:1.51869
-								8-v:y
-									9-f:-2.24401e-07
 								8-v:z
 									9-f:-5.01956
 		2-k:i
@@ -8220,6 +5981,10 @@ ddddцццゔぅヾボ
 																	17-s:qwwert
 																16-v:second
 																	17-i:27
+														14-a:associativeMapString
+														14-a:associativeMap2
+														14-a:associativeMap33
+														14-a:associativeMap3
 														14-a:associativeMap4
 															15-k:item
 																16-v:first
@@ -8231,8 +5996,6 @@ ddddцццゔぅヾボ
 																	17-s:Emscripten
 																16-v:second
 																	17-s:asdas
-													13-v:platformType
-														14-s:Windows
 													13-o:data
 														14-a:test
 															15-k:i
@@ -8257,16 +6020,7 @@ ddddцццゔぅヾボ
 													13-o:size2
 														14-o:width
 														14-o:height
-													13-a:test3
-														14-k:i
-															15-v:d
-																16-i:1
-														14-k:i
-															15-v:d
-																16-i:2
-														14-k:i
-															15-v:d
-																16-i:3
+													13-a:bitSet
 										10-k:i
 											11-o:d
 												12-v:type
@@ -8279,13 +6033,6 @@ ddddцццゔぅヾボ
 															15-i:3020958402533982344
 													13-v:type
 														14-s:Box3D
-													13-o:bounds
-														14-v:x
-															15-f:1
-														14-v:y
-															15-f:1
-														14-v:z
-															15-f:1
 									9-v:name
 										10-s:Cube
 									9-o:transform
@@ -8348,6 +6095,10 @@ ddddцццゔぅヾボ
 																	17-s:qwwert
 																16-v:second
 																	17-i:27
+														14-a:associativeMapString
+														14-a:associativeMap2
+														14-a:associativeMap33
+														14-a:associativeMap3
 														14-a:associativeMap4
 															15-k:item
 																16-v:first
@@ -8359,8 +6110,6 @@ ddddцццゔぅヾボ
 																	17-s:Emscripten
 																16-v:second
 																	17-s:asdas
-													13-v:platformType
-														14-s:Windows
 													13-o:data
 														14-a:test
 															15-k:i
@@ -8385,16 +6134,7 @@ ddddцццゔぅヾボ
 													13-o:size2
 														14-o:width
 														14-o:height
-													13-a:test3
-														14-k:i
-															15-v:d
-																16-i:1
-														14-k:i
-															15-v:d
-																16-i:2
-														14-k:i
-															15-v:d
-																16-i:3
+													13-a:bitSet
 										10-k:i
 											11-o:d
 												12-v:type
@@ -8407,13 +6147,6 @@ ddddцццゔぅヾボ
 															15-i:4012245804352601281
 													13-v:type
 														14-s:Box3D
-													13-o:bounds
-														14-v:x
-															15-f:1
-														14-v:y
-															15-f:1
-														14-v:z
-															15-f:1
 									9-v:name
 										10-s:Cube
 									9-o:transform
@@ -8476,6 +6209,10 @@ ddddцццゔぅヾボ
 																	17-s:qwwert
 																16-v:second
 																	17-i:27
+														14-a:associativeMapString
+														14-a:associativeMap2
+														14-a:associativeMap33
+														14-a:associativeMap3
 														14-a:associativeMap4
 															15-k:item
 																16-v:first
@@ -8487,8 +6224,6 @@ ddddцццゔぅヾボ
 																	17-s:Emscripten
 																16-v:second
 																	17-s:asdas
-													13-v:platformType
-														14-s:Windows
 													13-o:data
 														14-a:test
 															15-k:i
@@ -8513,16 +6248,7 @@ ddddцццゔぅヾボ
 													13-o:size2
 														14-o:width
 														14-o:height
-													13-a:test3
-														14-k:i
-															15-v:d
-																16-i:1
-														14-k:i
-															15-v:d
-																16-i:2
-														14-k:i
-															15-v:d
-																16-i:3
+													13-a:bitSet
 										10-k:i
 											11-o:d
 												12-v:type
@@ -8535,13 +6261,6 @@ ddddцццゔぅヾボ
 															15-i:4028536780220786775
 													13-v:type
 														14-s:Box3D
-													13-o:bounds
-														14-v:x
-															15-f:1
-														14-v:y
-															15-f:1
-														14-v:z
-															15-f:1
 									9-v:name
 										10-s:Cube
 									9-o:transform
@@ -8679,6 +6398,10 @@ ddddцццゔぅヾボ
 																	17-s:qwwert
 																16-v:second
 																	17-i:27
+														14-a:associativeMapString
+														14-a:associativeMap2
+														14-a:associativeMap33
+														14-a:associativeMap3
 														14-a:associativeMap4
 															15-k:item
 																16-v:first
@@ -8690,8 +6413,6 @@ ddddцццゔぅヾボ
 																	17-s:Emscripten
 																16-v:second
 																	17-s:asdas
-													13-v:platformType
-														14-s:Windows
 													13-o:data
 														14-a:test
 															15-k:i
@@ -8716,16 +6437,7 @@ ddddцццゔぅヾボ
 													13-o:size2
 														14-o:width
 														14-o:height
-													13-a:test3
-														14-k:i
-															15-v:d
-																16-i:1
-														14-k:i
-															15-v:d
-																16-i:2
-														14-k:i
-															15-v:d
-																16-i:3
+													13-a:bitSet
 										10-k:i
 											11-o:d
 												12-v:type
@@ -8738,13 +6450,6 @@ ddddцццゔぅヾボ
 															15-i:3732698943543304606
 													13-v:type
 														14-s:Box3D
-													13-o:bounds
-														14-v:x
-															15-f:1
-														14-v:y
-															15-f:1
-														14-v:z
-															15-f:1
 									9-v:name
 										10-s:Cube
 									9-o:transform
@@ -8807,6 +6512,10 @@ ddddцццゔぅヾボ
 																	17-s:qwwert
 																16-v:second
 																	17-i:27
+														14-a:associativeMapString
+														14-a:associativeMap2
+														14-a:associativeMap33
+														14-a:associativeMap3
 														14-a:associativeMap4
 															15-k:item
 																16-v:first
@@ -8818,8 +6527,6 @@ ddddцццゔぅヾボ
 																	17-s:Emscripten
 																16-v:second
 																	17-s:asdas
-													13-v:platformType
-														14-s:Windows
 													13-o:data
 														14-a:test
 															15-k:i
@@ -8844,16 +6551,7 @@ ddddцццゔぅヾボ
 													13-o:size2
 														14-o:width
 														14-o:height
-													13-a:test3
-														14-k:i
-															15-v:d
-																16-i:1
-														14-k:i
-															15-v:d
-																16-i:2
-														14-k:i
-															15-v:d
-																16-i:3
+													13-a:bitSet
 										10-k:i
 											11-o:d
 												12-v:type
@@ -8866,13 +6564,6 @@ ddddцццゔぅヾボ
 															15-i:3692932959675892614
 													13-v:type
 														14-s:Box3D
-													13-o:bounds
-														14-v:x
-															15-f:1
-														14-v:y
-															15-f:1
-														14-v:z
-															15-f:1
 										10-k:i
 											11-o:d
 												12-v:type
@@ -8954,6 +6645,10 @@ ddddцццゔぅヾボ
 																	17-s:qwwert
 																16-v:second
 																	17-i:27
+														14-a:associativeMapString
+														14-a:associativeMap2
+														14-a:associativeMap33
+														14-a:associativeMap3
 														14-a:associativeMap4
 															15-k:item
 																16-v:first
@@ -8965,8 +6660,6 @@ ddddцццゔぅヾボ
 																	17-s:Emscripten
 																16-v:second
 																	17-s:asdas
-													13-v:platformType
-														14-s:Windows
 													13-o:data
 														14-a:test
 															15-k:i
@@ -8991,16 +6684,7 @@ ddddцццゔぅヾボ
 													13-o:size2
 														14-o:width
 														14-o:height
-													13-a:test3
-														14-k:i
-															15-v:d
-																16-i:1
-														14-k:i
-															15-v:d
-																16-i:2
-														14-k:i
-															15-v:d
-																16-i:3
+													13-a:bitSet
 										10-k:i
 											11-o:d
 												12-v:type
@@ -9013,13 +6697,6 @@ ddddцццゔぅヾボ
 															15-i:2544195126707265876
 													13-v:type
 														14-s:Box3D
-													13-o:bounds
-														14-v:x
-															15-f:1
-														14-v:y
-															15-f:1
-														14-v:z
-															15-f:1
 									9-v:name
 										10-s:Cube
 									9-o:transform
@@ -9154,6 +6831,10 @@ ddddцццゔぅヾボ
 																	17-s:qwwert
 																16-v:second
 																	17-i:27
+														14-a:associativeMapString
+														14-a:associativeMap2
+														14-a:associativeMap33
+														14-a:associativeMap3
 														14-a:associativeMap4
 															15-k:item
 																16-v:first
@@ -9165,8 +6846,6 @@ ddddцццゔぅヾボ
 																	17-s:Emscripten
 																16-v:second
 																	17-s:asdas
-													13-v:platformType
-														14-s:Windows
 													13-o:data
 														14-a:test
 															15-k:i
@@ -9191,16 +6870,7 @@ ddddцццゔぅヾボ
 													13-o:size2
 														14-o:width
 														14-o:height
-													13-a:test3
-														14-k:i
-															15-v:d
-																16-i:1
-														14-k:i
-															15-v:d
-																16-i:2
-														14-k:i
-															15-v:d
-																16-i:3
+													13-a:bitSet
 										10-k:i
 											11-o:d
 												12-v:type
@@ -9213,13 +6883,6 @@ ddddцццゔぅヾボ
 															15-i:3190196421964012705
 													13-v:type
 														14-s:Box3D
-													13-o:bounds
-														14-v:x
-															15-f:1
-														14-v:y
-															15-f:1
-														14-v:z
-															15-f:1
 									9-v:name
 										10-s:Cube
 									9-o:transform
@@ -9260,13 +6923,6 @@ ddddцццゔぅヾボ
 															15-i:2906223744920217893
 													13-v:type
 														14-s:Capsule3D
-													13-o:bounds
-														14-v:x
-															15-f:1
-														14-v:y
-															15-f:1
-														14-v:z
-															15-f:1
 										10-k:i
 											11-o:d
 												12-v:type
@@ -11237,12 +8893,8 @@ ddddцццゔぅヾボ
 																																											43-s:Transform3D
 																																										42-o:ptr
 																																											43-o:translation
-																																												44-v:x
-																																													45-f:-1.17719e-08
 																																												44-v:y
 																																													45-f:0.11074
-																																												44-v:z
-																																													45-f:-1.48639e-08
 																																											43-o:quaternion
 																																												44-v:x
 																																													45-f:0.380878
@@ -11257,12 +8909,8 @@ ddddцццゔぅヾボ
 																																							39-s:Transform3D
 																																						38-o:ptr
 																																							39-o:translation
-																																								40-v:x
-																																									41-f:-6.34696e-09
 																																								40-v:y
 																																									41-f:0.374814
-																																								40-v:z
-																																									41-f:-3.12366e-08
 																																							39-o:quaternion
 																																								40-v:x
 																																									41-f:0.50672
@@ -11277,12 +8925,8 @@ ddddцццゔぅヾボ
 																																			35-s:Transform3D
 																																		34-o:ptr
 																																			35-o:translation
-																																				36-v:x
-																																					37-f:-1.31316e-09
 																																				36-v:y
 																																					37-f:0.367563
-																																				36-v:z
-																																					37-f:-4.76837e-09
 																																			35-o:quaternion
 																																				36-v:x
 																																					37-f:-0.148332
@@ -11465,19 +9109,11 @@ ddddцццゔぅヾボ
 																																											43-s:Transform3D
 																																										42-o:ptr
 																																											43-o:translation
-																																												44-v:x
-																																													45-f:1.06916e-08
 																																												44-v:y
 																																													45-f:0.11069
-																																												44-v:z
-																																													45-f:-1.97813e-08
 																																											43-o:quaternion
 																																												44-v:x
 																																													45-f:0.318419
-																																												44-v:y
-																																													45-f:2.86047e-06
-																																												44-v:z
-																																													45-f:-8.15617e-06
 																																												44-v:w
 																																													45-f:0.94795
 																																					37-o:transform
@@ -11485,12 +9121,8 @@ ddddцццゔぅヾボ
 																																							39-s:Transform3D
 																																						38-o:ptr
 																																							39-o:translation
-																																								40-v:x
-																																									41-f:6.89179e-09
 																																								40-v:y
 																																									41-f:0.374862
-																																								40-v:z
-																																									41-f:-3.39746e-08
 																																							39-o:quaternion
 																																								40-v:x
 																																									41-f:0.368991
@@ -11531,32 +9163,20 @@ ddddцццゔぅヾボ
 																																							39-s:Transform3D
 																																						38-o:ptr
 																																							39-o:translation
-																																								40-v:x
-																																									41-f:3.241e-09
 																																								40-v:y
 																																									41-f:0.000909001
-																																								40-v:z
-																																									41-f:-3.8743e-09
 																																							39-o:quaternion
 																																								40-v:x
 																																									41-f:-0.707107
-																																								40-v:y
-																																									41-f:-3.30592e-08
 																																								40-v:z
 																																									41-f:0.707107
-																																								40-v:w
-																																									41-f:-3.30592e-08
 																																	33-o:transform
 																																		34-v:type
 																																			35-s:Transform3D
 																																		34-o:ptr
 																																			35-o:translation
-																																				36-v:x
-																																					37-f:1.05053e-08
 																																				36-v:y
 																																					37-f:0.367366
-																																				36-v:z
-																																					37-f:-7.30902e-08
 																																			35-o:quaternion
 																																				36-v:x
 																																					37-f:-0.0553195
@@ -11597,21 +9217,11 @@ ddddцццゔぅヾボ
 																																			35-s:Transform3D
 																																		34-o:ptr
 																																			35-o:translation
-																																				36-v:x
-																																					37-f:9.12696e-10
 																																				36-v:y
 																																					37-f:0.000909052
-																																				36-v:z
-																																					37-f:9.16421e-09
 																																			35-o:quaternion
 																																				36-v:x
 																																					37-f:-1
-																																				36-v:y
-																																					37-f:-3.27944e-15
-																																				36-v:z
-																																					37-f:-4.34375e-08
-																																				36-v:w
-																																					37-f:7.54979e-08
 																														30-k:i
 																															31-o:d
 																																32-v:type
@@ -11643,12 +9253,8 @@ ddddцццゔぅヾボ
 																																			35-s:Transform3D
 																																		34-o:ptr
 																																			35-o:translation
-																																				36-v:x
-																																					37-f:7.1153e-09
 																																				36-v:y
 																																					37-f:0.181812
-																																				36-v:z
-																																					37-f:-2.45869e-08
 																																			35-o:quaternion
 																																				36-v:x
 																																					37-f:0.00949958
@@ -11779,8 +9385,6 @@ ddddцццゔぅヾボ
 																																																											59-s:Transform3D
 																																																										58-o:ptr
 																																																											59-o:translation
-																																																												60-v:x
-																																																													61-f:1.29512e-10
 																																																												60-v:y
 																																																													61-f:0.00265829
 																																																												60-v:z
@@ -11790,8 +9394,6 @@ ddddцццゔぅヾボ
 																																																							55-s:Transform3D
 																																																						54-o:ptr
 																																																							55-o:translation
-																																																								56-v:x
-																																																									57-f:-1.51995e-09
 																																																								56-v:y
 																																																									57-f:-0.016109
 																																																								56-v:z
@@ -13645,12 +11247,8 @@ ddddцццゔぅヾボ
 																																											43-s:Transform3D
 																																										42-o:ptr
 																																											43-o:translation
-																																												44-v:x
-																																													45-f:-1.49012e-09
 																																												44-v:y
 																																													45-f:0.0747622
-																																												44-v:z
-																																													45-f:9.68575e-10
 																																											43-o:quaternion
 																																												44-v:x
 																																													45-f:0.137212
@@ -13665,8 +11263,6 @@ ddddцццゔぅヾボ
 																																							39-s:Transform3D
 																																						38-o:ptr
 																																							39-o:translation
-																																								40-v:x
-																																									41-f:9.94303e-09
 																																								40-v:y
 																																									41-f:0.221811
 																																								40-v:z
@@ -13909,12 +11505,8 @@ ddddцццゔぅヾボ
 																																																															63-s:Transform3D
 																																																														62-o:ptr
 																																																															63-o:translation
-																																																																64-v:x
-																																																																	65-f:-1.19209e-08
 																																																																64-v:y
 																																																																	65-f:0.0228931
-																																																																64-v:z
-																																																																	65-f:-8.34465e-09
 																																																															63-o:quaternion
 																																																																64-v:x
 																																																																	65-f:-0.0529546
@@ -13929,12 +11521,8 @@ ddddцццゔぅヾボ
 																																																											59-s:Transform3D
 																																																										58-o:ptr
 																																																											59-o:translation
-																																																												60-v:x
-																																																													61-f:-1.49012e-10
 																																																												60-v:y
 																																																													61-f:0.0283875
-																																																												60-v:z
-																																																													61-f:-2.38419e-09
 																																																											59-o:quaternion
 																																																												60-v:x
 																																																													61-f:-0.172936
@@ -14015,12 +11603,8 @@ ddddцццゔぅヾボ
 																																																															63-s:Transform3D
 																																																														62-o:ptr
 																																																															63-o:translation
-																																																																64-v:x
-																																																																	65-f:-2.38419e-09
 																																																																64-v:y
 																																																																	65-f:0.018187
-																																																																64-v:z
-																																																																	65-f:5.96046e-09
 																																																															63-o:quaternion
 																																																																64-v:x
 																																																																	65-f:0.075303
@@ -14037,8 +11621,6 @@ ddddцццゔぅヾボ
 																																																											59-o:translation
 																																																												60-v:y
 																																																													61-f:0.0281898
-																																																												60-v:z
-																																																													61-f:-9.53674e-09
 																																																											59-o:quaternion
 																																																												60-v:x
 																																																													61-f:0.0782694
@@ -14119,12 +11701,8 @@ ddddцццゔぅヾボ
 																																																															63-s:Transform3D
 																																																														62-o:ptr
 																																																															63-o:translation
-																																																																64-v:x
-																																																																	65-f:-1.19209e-09
 																																																																64-v:y
 																																																																	65-f:0.0199993
-																																																																64-v:z
-																																																																	65-f:-1.01328e-08
 																																																															63-o:quaternion
 																																																																64-v:x
 																																																																	65-f:0.0557789
@@ -14139,12 +11717,8 @@ ddddцццゔぅヾボ
 																																																											59-s:Transform3D
 																																																										58-o:ptr
 																																																											59-o:translation
-																																																												60-v:x
-																																																													61-f:8.34465e-09
 																																																												60-v:y
 																																																													61-f:0.0318171
-																																																												60-v:z
-																																																													61-f:1.07288e-08
 																																																											59-o:quaternion
 																																																												60-v:x
 																																																													61-f:0.119028
@@ -14235,12 +11809,8 @@ ddddцццゔぅヾボ
 																																																																			67-s:Transform3D
 																																																																		66-o:ptr
 																																																																			67-o:translation
-																																																																				68-v:x
-																																																																					69-f:2.08616e-09
 																																																																				68-v:y
 																																																																					69-f:0.0190956
-																																																																				68-v:z
-																																																																					69-f:-2.98023e-09
 																																																																			67-o:quaternion
 																																																																				68-v:x
 																																																																					69-f:0.08844
@@ -14255,12 +11825,8 @@ ddddцццゔぅヾボ
 																																																															63-s:Transform3D
 																																																														62-o:ptr
 																																																															63-o:translation
-																																																																64-v:x
-																																																																	65-f:-4.17233e-09
 																																																																64-v:y
 																																																																	65-f:0.0281889
-																																																																64-v:z
-																																																																	65-f:-1.78814e-09
 																																																															63-o:quaternion
 																																																																64-v:x
 																																																																	65-f:0.147194
@@ -14341,12 +11907,8 @@ ddddцццゔぅヾボ
 																																																																			67-s:Transform3D
 																																																																		66-o:ptr
 																																																																			67-o:translation
-																																																																				68-v:x
-																																																																					69-f:1.19209e-09
 																																																																				68-v:y
 																																																																					69-f:0.0145654
-																																																																				68-v:z
-																																																																					69-f:-9.83477e-09
 																																																																			67-o:quaternion
 																																																																				68-v:x
 																																																																					69-f:0.036698
@@ -14361,12 +11923,8 @@ ddddцццゔぅヾボ
 																																																															63-s:Transform3D
 																																																														62-o:ptr
 																																																															63-o:translation
-																																																																64-v:x
-																																																																	65-f:1.19209e-09
 																																																																64-v:y
 																																																																	65-f:0.0227583
-																																																																64-v:z
-																																																																	65-f:2.80142e-08
 																																																															63-o:quaternion
 																																																																64-v:x
 																																																																	65-f:0.18462
@@ -14421,12 +11979,8 @@ ddddцццゔぅヾボ
 																																																			51-s:Transform3D
 																																																		50-o:ptr
 																																																			51-o:translation
-																																																				52-v:x
-																																																					53-f:8.70228e-08
 																																																				52-v:y
 																																																					53-f:0.210237
-																																																				52-v:z
-																																																					53-f:7.15256e-09
 																																																			51-o:quaternion
 																																																				52-v:x
 																																																					53-f:-1.21705e-05
@@ -14579,12 +12133,8 @@ ddddцццゔぅヾボ
 																																															47-s:Transform3D
 																																														46-o:ptr
 																																															47-o:translation
-																																																48-v:x
-																																																	49-f:-9.53674e-09
 																																																48-v:y
 																																																	49-f:0.232202
-																																																48-v:z
-																																																	49-f:-6.55651e-09
 																																															47-o:quaternion
 																																																48-v:x
 																																																	49-f:-0.000347228
@@ -14599,12 +12149,8 @@ ddddцццゔぅヾボ
 																																											43-s:Transform3D
 																																										42-o:ptr
 																																											43-o:translation
-																																												44-v:x
-																																													45-f:7.30157e-09
 																																												44-v:y
 																																													45-f:0.0874114
-																																												44-v:z
-																																													45-f:-5.90086e-08
 																																											43-o:quaternion
 																																												44-v:x
 																																													45-f:0.250932
@@ -14771,12 +12317,8 @@ ddddцццゔぅヾボ
 																																																															63-s:Transform3D
 																																																														62-o:ptr
 																																																															63-o:translation
-																																																																64-v:x
-																																																																	65-f:3.57628e-09
 																																																																64-v:y
 																																																																	65-f:0.0232982
-																																																																64-v:z
-																																																																	65-f:4.76837e-09
 																																																															63-o:quaternion
 																																																																64-v:x
 																																																																	65-f:-0.144346
@@ -14791,17 +12333,11 @@ ddddцццゔぅヾボ
 																																																											59-s:Transform3D
 																																																										58-o:ptr
 																																																											59-o:translation
-																																																												60-v:x
-																																																													61-f:3.57628e-09
 																																																												60-v:y
 																																																													61-f:0.0283875
-																																																												60-v:z
-																																																													61-f:-9.53674e-09
 																																																											59-o:quaternion
 																																																												60-v:x
 																																																													61-f:-0.00828644
-																																																												60-v:y
-																																																													61-f:1.7212e-06
 																																																												60-v:z
 																																																													61-f:0.0624504
 																																																												60-v:w
@@ -14877,12 +12413,8 @@ ddddцццゔぅヾボ
 																																																															63-s:Transform3D
 																																																														62-o:ptr
 																																																															63-o:translation
-																																																																64-v:x
-																																																																	65-f:9.53674e-09
 																																																																64-v:y
 																																																																	65-f:0.018187
-																																																																64-v:z
-																																																																	65-f:-1.90735e-08
 																																																															63-o:quaternion
 																																																																64-v:x
 																																																																	65-f:0.229782
@@ -14897,12 +12429,8 @@ ddddцццゔぅヾボ
 																																																											59-s:Transform3D
 																																																										58-o:ptr
 																																																											59-o:translation
-																																																												60-v:x
-																																																													61-f:5.36442e-09
 																																																												60-v:y
 																																																													61-f:0.0281898
-																																																												60-v:z
-																																																													61-f:-2.38419e-09
 																																																											59-o:quaternion
 																																																												60-v:x
 																																																													61-f:0.141952
@@ -14985,8 +12513,6 @@ ddddцццゔぅヾボ
 																																																															63-o:translation
 																																																																64-v:y
 																																																																	65-f:0.0199993
-																																																																64-v:z
-																																																																	65-f:-2.38419e-09
 																																																															63-o:quaternion
 																																																																64-v:x
 																																																																	65-f:0.24214
@@ -15001,12 +12527,8 @@ ddddцццゔぅヾボ
 																																																											59-s:Transform3D
 																																																										58-o:ptr
 																																																											59-o:translation
-																																																												60-v:x
-																																																													61-f:-1.3113e-08
 																																																												60-v:y
 																																																													61-f:0.031817
-																																																												60-v:z
-																																																													61-f:2.38419e-08
 																																																											59-o:quaternion
 																																																												60-v:x
 																																																													61-f:0.0888741
@@ -15097,12 +12619,8 @@ ddddцццゔぅヾボ
 																																																																			67-s:Transform3D
 																																																																		66-o:ptr
 																																																																			67-o:translation
-																																																																				68-v:x
-																																																																					69-f:-3.57628e-08
 																																																																				68-v:y
 																																																																					69-f:0.0190958
-																																																																				68-v:z
-																																																																					69-f:-1.90735e-08
 																																																																			67-o:quaternion
 																																																																				68-v:x
 																																																																					69-f:0.171131
@@ -15117,12 +12635,8 @@ ddddцццゔぅヾボ
 																																																															63-s:Transform3D
 																																																														62-o:ptr
 																																																															63-o:translation
-																																																																64-v:x
-																																																																	65-f:7.7486e-09
 																																																																64-v:y
 																																																																	65-f:0.0281889
-																																																																64-v:z
-																																																																	65-f:4.76837e-09
 																																																															63-o:quaternion
 																																																																64-v:x
 																																																																	65-f:0.106298
@@ -15203,12 +12717,8 @@ ddddцццゔぅヾボ
 																																																																			67-s:Transform3D
 																																																																		66-o:ptr
 																																																																			67-o:translation
-																																																																				68-v:x
-																																																																					69-f:-7.15256e-09
 																																																																				68-v:y
 																																																																					69-f:0.0145654
-																																																																				68-v:z
-																																																																					69-f:-7.15256e-09
 																																																																			67-o:quaternion
 																																																																				68-v:x
 																																																																					69-f:0.171174
@@ -15223,12 +12733,8 @@ ddddцццゔぅヾボ
 																																																															63-s:Transform3D
 																																																														62-o:ptr
 																																																															63-o:translation
-																																																																64-v:x
-																																																																	65-f:8.34465e-09
 																																																																64-v:y
 																																																																	65-f:0.0227584
-																																																																64-v:z
-																																																																	65-f:-8.34465e-09
 																																																															63-o:quaternion
 																																																																64-v:x
 																																																																	65-f:0.0556058
@@ -15283,12 +12789,8 @@ ddddцццゔぅヾボ
 																																																			51-s:Transform3D
 																																																		50-o:ptr
 																																																			51-o:translation
-																																																				52-v:x
-																																																					53-f:3.57628e-09
 																																																				52-v:y
 																																																					53-f:0.218174
-																																																				52-v:z
-																																																					53-f:-5.36442e-09
 																																																			51-o:quaternion
 																																																				52-v:x
 																																																					53-f:-0.000536019
@@ -15329,12 +12831,8 @@ ddddцццゔぅヾボ
 																																																			51-s:Transform3D
 																																																		50-o:ptr
 																																																			51-o:translation
-																																																				52-v:x
-																																																					53-f:3.33786e-08
 																																																				52-v:y
 																																																					53-f:0.000909023
-																																																				52-v:z
-																																																					53-f:1.96695e-08
 																																																			51-o:quaternion
 																																																				52-v:x
 																																																					53-f:-0.853553
@@ -15375,12 +12873,8 @@ ddddцццゔぅヾボ
 																																																			51-s:Transform3D
 																																																		50-o:ptr
 																																																			51-o:translation
-																																																				52-v:x
-																																																					53-f:2.35438e-08
 																																																				52-v:y
 																																																					53-f:0.0727247
-																																																				52-v:z
-																																																					53-f:-8.49366e-09
 																																																			51-o:quaternion
 																																																				52-v:x
 																																																					53-f:-0.853554
@@ -15421,12 +12915,8 @@ ddddцццゔぅヾボ
 																																																			51-s:Transform3D
 																																																		50-o:ptr
 																																																			51-o:translation
-																																																				52-v:x
-																																																					53-f:2.44379e-08
 																																																				52-v:y
 																																																					53-f:0.136359
-																																																				52-v:z
-																																																					53-f:1.93715e-08
 																																																			51-o:quaternion
 																																																				52-v:x
 																																																					53-f:-0.853553
@@ -15441,12 +12931,8 @@ ddddцццゔぅヾボ
 																																															47-s:Transform3D
 																																														46-o:ptr
 																																															47-o:translation
-																																																48-v:x
-																																																	49-f:-8.34465e-09
 																																																48-v:y
 																																																	49-f:0.23231
-																																																48-v:z
-																																																	49-f:-3.09944e-08
 																																															47-o:quaternion
 																																																48-v:x
 																																																	49-f:0.000236913
@@ -15685,12 +13171,8 @@ ddddцццゔぅヾボ
 																																			35-s:Transform3D
 																																		34-o:ptr
 																																			35-o:translation
-																																				36-v:x
-																																					37-f:6.93835e-10
 																																				36-v:y
 																																					37-f:0.112626
-																																				36-v:z
-																																					37-f:-1.44704e-09
 																																			35-o:quaternion
 																																				36-v:x
 																																					37-f:-0.00243393
@@ -15705,12 +13187,8 @@ ddddцццゔぅヾボ
 																															31-s:Transform3D
 																														30-o:ptr
 																															31-o:translation
-																																32-v:x
-																																	33-f:5.58794e-10
 																																32-v:y
 																																	33-f:0.039774
-																																32-v:z
-																																	33-f:-8.78208e-11
 																															31-o:quaternion
 																																32-v:x
 																																	33-f:0.0118417
@@ -16007,8 +13485,6 @@ ddddцццゔぅヾボ
 																									25-f:0.00816248
 																								24-v:y
 																									25-f:-6.09139e-05
-																								24-v:z
-																									25-f:-4.97225e-07
 																								24-v:w
 																									25-f:0.999967
 																		18-k:i
@@ -16145,8 +13621,6 @@ ddddцццゔぅヾボ
 																									25-f:0.00816248
 																								24-v:y
 																									25-f:-6.09139e-05
-																								24-v:z
-																									25-f:-4.97225e-07
 																								24-v:w
 																									25-f:0.999967
 																		18-k:i
@@ -16189,12 +13663,6 @@ ddddцццゔぅヾボ
 																							23-o:quaternion
 																								24-v:x
 																									25-f:1
-																								24-v:y
-																									25-f:-6.87003e-14
-																								24-v:z
-																									25-f:9.09963e-07
-																								24-v:w
-																									25-f:7.54979e-08
 																		18-k:i
 																			19-o:d
 																				20-v:type
@@ -16349,6 +13817,24 @@ ddddцццゔぅヾボ
 																										26-s:Float
 																									25-v:value
 																										26-f:0
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:tiling
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
+																										26-v:x
+																											27-f:1
+																										26-v:y
+																											27-f:1
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:offset
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -16479,6 +13965,24 @@ ddddцццゔぅヾボ
 																										26-s:Float
 																									25-v:value
 																										26-f:0
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:tiling
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
+																										26-v:x
+																											27-f:1
+																										26-v:y
+																											27-f:1
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:offset
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -16612,6 +14116,24 @@ ddddцццゔぅヾボ
 																										26-s:Float
 																									25-v:value
 																										26-f:0
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:tiling
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
+																										26-v:x
+																											27-f:1
+																										26-v:y
+																											27-f:1
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:offset
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -16750,6 +14272,24 @@ ddddцццゔぅヾボ
 																										26-s:Float
 																									25-v:value
 																										26-f:0
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:tiling
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
+																										26-v:x
+																											27-f:1
+																										26-v:y
+																											27-f:1
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:offset
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -16877,6 +14417,24 @@ ddddцццゔぅヾボ
 																										26-s:Float
 																									25-v:value
 																										26-f:0
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:tiling
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
+																										26-v:x
+																											27-f:1
+																										26-v:y
+																											27-f:1
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:offset
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -17015,6 +14573,24 @@ ddddцццゔぅヾボ
 																										26-s:Float
 																									25-v:value
 																										26-f:0
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:tiling
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
+																										26-v:x
+																											27-f:1
+																										26-v:y
+																											27-f:1
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:offset
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -17142,6 +14718,24 @@ ddddцццゔぅヾボ
 																										26-s:Float
 																									25-v:value
 																										26-f:0
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:tiling
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
+																										26-v:x
+																											27-f:1
+																										26-v:y
+																											27-f:1
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:offset
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -17267,6 +14861,24 @@ ddddцццゔぅヾボ
 																										26-s:Float
 																									25-v:value
 																										26-f:0
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:tiling
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
+																										26-v:x
+																											27-f:1
+																										26-v:y
+																											27-f:1
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:offset
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -17392,6 +15004,24 @@ ddddцццゔぅヾボ
 																										26-s:Float
 																									25-v:value
 																										26-f:0
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:tiling
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
+																										26-v:x
+																											27-f:1
+																										26-v:y
+																											27-f:1
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:offset
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -17517,6 +15147,24 @@ ddddцццゔぅヾボ
 																										26-s:Float
 																									25-v:value
 																										26-f:0
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:tiling
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
+																										26-v:x
+																											27-f:1
+																										26-v:y
+																											27-f:1
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:offset
+																									25-v:type
+																										26-s:Vec2
+																									25-o:value
 																						22-a:samplers
 																							23-k:i
 																								24-o:d

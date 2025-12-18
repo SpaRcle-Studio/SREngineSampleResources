@@ -3925,12 +3925,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:2.32831e-11
 																																																					53-v:y
 																																																						54-f:0.000201344
-																																																					53-v:z
-																																																						54-f:-2.18861e-10
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:0.0165775
@@ -4011,12 +4007,8 @@ use tabs: true
 																																																								56-s:Transform3D
 																																																							55-o:ptr
 																																																								56-o:translation
-																																																									57-v:x
-																																																										58-f:-1.11759e-10
 																																																									57-v:y
 																																																										58-f:0.000103387
-																																																									57-v:z
-																																																										58-f:-1.49012e-10
 																																																								56-o:quaternion
 																																																									57-v:x
 																																																										58-f:-0.0349758
@@ -4031,12 +4023,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:1.39698e-10
 																																																					53-v:y
 																																																						54-f:0.000169476
-																																																					53-v:z
-																																																						54-f:-6.0536e-11
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:-0.0517656
@@ -4117,12 +4105,8 @@ use tabs: true
 																																																								56-s:Transform3D
 																																																							55-o:ptr
 																																																								56-o:translation
-																																																									57-v:x
-																																																										58-f:-2.04891e-10
 																																																									57-v:y
 																																																										58-f:0.000109679
-																																																									57-v:z
-																																																										58-f:1.11759e-10
 																																																								56-o:quaternion
 																																																									57-v:x
 																																																										58-f:0.0119411
@@ -4137,12 +4121,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:7.45058e-11
 																																																					53-v:y
 																																																						54-f:0.000143557
-																																																					53-v:z
-																																																						54-f:-7.45058e-11
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:-0.0734549
@@ -4223,12 +4203,8 @@ use tabs: true
 																																																								56-s:Transform3D
 																																																							55-o:ptr
 																																																								56-o:translation
-																																																									57-v:x
-																																																										58-f:-3.72529e-11
 																																																									57-v:y
 																																																										58-f:9.20349e-05
-																																																									57-v:z
-																																																										58-f:-3.72529e-11
 																																																								56-o:quaternion
 																																																									57-v:x
 																																																										58-f:-0.222636
@@ -4243,12 +4219,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:-9.31323e-11
 																																																					53-v:y
 																																																						54-f:0.000134734
-																																																					53-v:z
-																																																						54-f:3.72529e-11
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:0.145534
@@ -4329,12 +4301,8 @@ use tabs: true
 																																																								56-s:Transform3D
 																																																							55-o:ptr
 																																																								56-o:translation
-																																																									57-v:x
-																																																										58-f:-5.58794e-11
 																																																									57-v:y
 																																																										58-f:8.41911e-05
-																																																									57-v:z
-																																																										58-f:1.86265e-10
 																																																								56-o:quaternion
 																																																									57-v:x
 																																																										58-f:0.100318
@@ -4349,12 +4317,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:-1.30385e-10
 																																																					53-v:y
 																																																						54-f:7.49564e-05
-																																																					53-v:z
-																																																						54-f:-3.35276e-10
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:-0.101443
@@ -4389,12 +4353,8 @@ use tabs: true
 																																												44-s:Transform3D
 																																											43-o:ptr
 																																												44-o:translation
-																																													45-v:x
-																																														46-f:-5.58794e-11
 																																													45-v:y
 																																														46-f:0.0019375
-																																													45-v:z
-																																														46-f:-5.12227e-11
 																																												44-o:quaternion
 																																													45-v:x
 																																														46-f:0.623923
@@ -4409,12 +4369,8 @@ use tabs: true
 																																								40-s:Transform3D
 																																							39-o:ptr
 																																								40-o:translation
-																																									41-v:x
-																																										42-f:-3.25963e-11
 																																									41-v:y
 																																										42-f:0.00199192
-																																									41-v:z
-																																										42-f:2.4098e-10
 																																								40-o:quaternion
 																																									41-v:x
 																																										42-f:0.0119995
@@ -4429,12 +4385,8 @@ use tabs: true
 																																				36-s:Transform3D
 																																			35-o:ptr
 																																				36-o:translation
-																																					37-v:x
-																																						38-f:7.45058e-11
 																																					37-v:y
 																																						38-f:0.00269317
-																																					37-v:z
-																																						38-f:1.76951e-10
 																																				36-o:quaternion
 																																					37-v:x
 																																						38-f:-0.186762
@@ -4449,12 +4401,8 @@ use tabs: true
 																																32-s:Transform3D
 																															31-o:ptr
 																																32-o:translation
-																																	33-v:x
-																																		34-f:1.53814e-10
 																																	33-v:y
 																																		34-f:0.000721904
-																																	33-v:z
-																																		34-f:-3.25963e-10
 																																32-o:quaternion
 																																	33-v:x
 																																		34-f:-0.131876
@@ -4469,12 +4417,8 @@ use tabs: true
 																												28-s:Transform3D
 																											27-o:ptr
 																												28-o:translation
-																													29-v:x
-																														30-f:4.65661e-11
 																													29-v:y
 																														30-f:0.000845618
-																													29-v:z
-																														30-f:-5.58794e-10
 																												28-o:quaternion
 																													29-v:x
 																														30-f:-0.589566
@@ -4491,8 +4435,6 @@ use tabs: true
 																								24-o:translation
 																									25-v:y
 																										26-f:0.00076684
-																									25-v:z
-																										26-f:1.81026e-10
 																								24-o:quaternion
 																									25-v:x
 																										26-f:0.225591
@@ -4603,12 +4545,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:3.84171e-11
 																																																					53-v:y
 																																																						54-f:0.000201345
-																																																					53-v:z
-																																																						54-f:8.84756e-11
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:0.0165775
@@ -4689,12 +4627,8 @@ use tabs: true
 																																																								56-s:Transform3D
 																																																							55-o:ptr
 																																																								56-o:translation
-																																																									57-v:x
-																																																										58-f:-8.84756e-11
 																																																									57-v:y
 																																																										58-f:0.000103387
-																																																									57-v:z
-																																																										58-f:1.58325e-10
 																																																								56-o:quaternion
 																																																									57-v:x
 																																																										58-f:-0.0349758
@@ -4709,12 +4643,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:1.55997e-10
 																																																					53-v:y
 																																																						54-f:0.000169476
-																																																					53-v:z
-																																																						54-f:-4.65661e-11
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:-0.0517656
@@ -4795,12 +4725,8 @@ use tabs: true
 																																																								56-s:Transform3D
 																																																							55-o:ptr
 																																																								56-o:translation
-																																																									57-v:x
-																																																										58-f:-6.0536e-11
 																																																									57-v:y
 																																																										58-f:0.000109679
-																																																									57-v:z
-																																																										58-f:-1.39698e-10
 																																																								56-o:quaternion
 																																																									57-v:x
 																																																										58-f:0.011941
@@ -4815,12 +4741,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:9.31323e-12
 																																																					53-v:y
 																																																						54-f:0.000143556
-																																																					53-v:z
-																																																						54-f:-9.31323e-12
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:-0.0734549
@@ -4901,12 +4823,8 @@ use tabs: true
 																																																								56-s:Transform3D
 																																																							55-o:ptr
 																																																								56-o:translation
-																																																									57-v:x
-																																																										58-f:9.31323e-12
 																																																									57-v:y
 																																																										58-f:9.2035e-05
-																																																									57-v:z
-																																																										58-f:-4.77303e-11
 																																																								56-o:quaternion
 																																																									57-v:x
 																																																										58-f:-0.222636
@@ -4921,12 +4839,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:-2.73576e-11
 																																																					53-v:y
 																																																						54-f:0.000134733
-																																																					53-v:z
-																																																						54-f:-8.3819e-11
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:0.145533
@@ -5007,12 +4921,8 @@ use tabs: true
 																																																								56-s:Transform3D
 																																																							55-o:ptr
 																																																								56-o:translation
-																																																									57-v:x
-																																																										58-f:-2.79397e-11
 																																																									57-v:y
 																																																										58-f:8.4191e-05
-																																																									57-v:z
-																																																										58-f:1.67638e-10
 																																																								56-o:quaternion
 																																																									57-v:x
 																																																										58-f:0.100318
@@ -5027,12 +4937,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:-1.86265e-11
 																																																					53-v:y
 																																																						54-f:7.4957e-05
-																																																					53-v:z
-																																																						54-f:1.86265e-10
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:-0.101443
@@ -5067,12 +4973,8 @@ use tabs: true
 																																												44-s:Transform3D
 																																											43-o:ptr
 																																												44-o:translation
-																																													45-v:x
-																																														46-f:5.58794e-11
 																																													45-v:y
 																																														46-f:0.0019375
-																																													45-v:z
-																																														46-f:5.58794e-11
 																																												44-o:quaternion
 																																													45-v:x
 																																														46-f:0.639296
@@ -5087,12 +4989,8 @@ use tabs: true
 																																								40-s:Transform3D
 																																							39-o:ptr
 																																								40-o:translation
-																																									41-v:x
-																																										42-f:2.04891e-10
 																																									41-v:y
 																																										42-f:0.00199192
-																																									41-v:z
-																																										42-f:-2.14204e-10
 																																								40-o:quaternion
 																																									41-v:x
 																																										42-f:0.0119469
@@ -5107,12 +5005,8 @@ use tabs: true
 																																				36-s:Transform3D
 																																			35-o:ptr
 																																				36-o:translation
-																																					37-v:x
-																																						38-f:-3.35276e-10
 																																					37-v:y
 																																						38-f:0.00269317
-																																					37-v:z
-																																						38-f:-3.72529e-11
 																																				36-o:quaternion
 																																					37-v:x
 																																						38-f:-0.094519
@@ -5127,12 +5021,8 @@ use tabs: true
 																																32-s:Transform3D
 																															31-o:ptr
 																																32-o:translation
-																																	33-v:x
-																																		34-f:1.39698e-11
 																																	33-v:y
 																																		34-f:0.000721905
-																																	33-v:z
-																																		34-f:1.72295e-10
 																																32-o:quaternion
 																																	33-v:x
 																																		34-f:-0.163752
@@ -5149,8 +5039,6 @@ use tabs: true
 																												28-o:translation
 																													29-v:y
 																														30-f:0.000845618
-																													29-v:z
-																														30-f:5.07571e-10
 																												28-o:quaternion
 																													29-v:x
 																														30-f:-0.483808
@@ -5167,8 +5055,6 @@ use tabs: true
 																								24-o:translation
 																									25-v:y
 																										26-f:0.00076684
-																									25-v:z
-																										26-f:1.81026e-10
 																								24-o:quaternion
 																									25-v:x
 																										26-f:0.0946088
@@ -5249,12 +5135,8 @@ use tabs: true
 																																								40-s:Transform3D
 																																							39-o:ptr
 																																								40-o:translation
-																																									41-v:x
-																																										42-f:-1.36788e-11
 																																									41-v:y
 																																										42-f:0.00139378
-																																									41-v:z
-																																										42-f:2.24099e-11
 																																								40-o:quaternion
 																																									41-v:x
 																																										42-f:-0.329398
@@ -5295,12 +5177,8 @@ use tabs: true
 																																								40-s:Transform3D
 																																							39-o:ptr
 																																								40-o:translation
-																																									41-v:x
-																																										42-f:-1.36788e-11
 																																									41-v:y
 																																										42-f:0.00139378
-																																									41-v:z
-																																										42-f:2.24099e-11
 																																								40-o:quaternion
 																																									41-v:x
 																																										42-f:-0.329804
@@ -5441,12 +5319,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:-3.21306e-10
 																																																																																	81-v:y
 																																																																																		82-f:0.000287167
-																																																																																	81-v:z
-																																																																																		82-f:1.49012e-10
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:-0.27697
@@ -5461,12 +5335,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:-3.72529e-10
 																																																																													77-v:y
 																																																																														78-f:0.000245931
-																																																																													77-v:z
-																																																																														78-f:-7.45058e-10
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:-0.255235
@@ -5557,12 +5427,8 @@ use tabs: true
 																																																																																				84-s:Transform3D
 																																																																																			83-o:ptr
 																																																																																				84-o:translation
-																																																																																					85-v:x
-																																																																																						86-f:3.63216e-10
 																																																																																					85-v:y
 																																																																																						86-f:0.000183789
-																																																																																					85-v:z
-																																																																																						86-f:-1.49012e-10
 																																																																																				84-o:quaternion
 																																																																																					85-v:x
 																																																																																						86-f:-0.371825
@@ -5577,12 +5443,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:-3.91155e-10
 																																																																																	81-v:y
 																																																																																		82-f:0.000205161
-																																																																																	81-v:z
-																																																																																		82-f:2.98023e-10
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:-0.634548
@@ -5597,12 +5459,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:9.67557e-10
 																																																																													77-v:y
 																																																																														78-f:0.00059846
-																																																																													77-v:z
-																																																																														78-f:-2.28174e-10
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:-0.61295
@@ -5663,12 +5521,8 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:1.30385e-10
 																																																																									73-v:y
 																																																																										74-f:0.00025314
-																																																																									73-v:z
-																																																																										74-f:4.09782e-10
 																																																																								72-o:quaternion
 																																																																									73-v:x
 																																																																										74-f:-0.0644258
@@ -5739,12 +5593,8 @@ use tabs: true
 																																																																																				84-s:Transform3D
 																																																																																			83-o:ptr
 																																																																																				84-o:translation
-																																																																																					85-v:x
-																																																																																						86-f:-1.86265e-10
 																																																																																					85-v:y
 																																																																																						86-f:0.000222073
-																																																																																					85-v:z
-																																																																																						86-f:2.98023e-10
 																																																																																				84-o:quaternion
 																																																																																					85-v:x
 																																																																																						86-f:-0.515678
@@ -5759,12 +5609,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:6.0536e-11
 																																																																																	81-v:y
 																																																																																		82-f:0.00027276
-																																																																																	81-v:z
-																																																																																		82-f:1.67638e-10
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:-0.681635
@@ -5779,12 +5625,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:-3.72529e-11
 																																																																													77-v:y
 																																																																														78-f:0.000562196
-																																																																													77-v:z
-																																																																														78-f:4.28408e-10
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:-0.567585
@@ -5845,12 +5687,8 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:1.30385e-10
 																																																																									73-v:y
 																																																																										74-f:0.00025314
-																																																																									73-v:z
-																																																																										74-f:4.09782e-10
 																																																																								72-o:quaternion
 																																																																									73-v:x
 																																																																										74-f:0.0873973
@@ -5921,12 +5759,8 @@ use tabs: true
 																																																																																				84-s:Transform3D
 																																																																																			83-o:ptr
 																																																																																				84-o:translation
-																																																																																					85-v:x
-																																																																																						86-f:1.30385e-10
 																																																																																					85-v:y
 																																																																																						86-f:0.000199056
-																																																																																					85-v:z
-																																																																																						86-f:3.44589e-10
 																																																																																				84-o:quaternion
 																																																																																					85-v:x
 																																																																																						86-f:-0.49656
@@ -5941,12 +5775,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:-9.31323e-11
 																																																																																	81-v:y
 																																																																																		82-f:0.000236336
-																																																																																	81-v:z
-																																																																																		82-f:-3.21015e-10
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:-0.678134
@@ -5961,12 +5791,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:7.07805e-10
 																																																																													77-v:y
 																																																																														78-f:0.000479091
-																																																																													77-v:z
-																																																																														78-f:1.49012e-10
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:-0.561865
@@ -6027,8 +5853,6 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:-9.01848e-06
 																																																																									73-v:y
 																																																																										74-f:0.000276939
 																																																																									73-v:z
@@ -6103,12 +5927,8 @@ use tabs: true
 																																																																																				84-s:Transform3D
 																																																																																			83-o:ptr
 																																																																																				84-o:translation
-																																																																																					85-v:x
-																																																																																						86-f:-6.51926e-11
 																																																																																					85-v:y
 																																																																																						86-f:0.000124853
-																																																																																					85-v:z
-																																																																																						86-f:-2.04891e-10
 																																																																																				84-o:quaternion
 																																																																																					85-v:x
 																																																																																						86-f:-0.324699
@@ -6123,12 +5943,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:-3.0268e-11
 																																																																																	81-v:y
 																																																																																		82-f:0.000171107
-																																																																																	81-v:z
-																																																																																		82-f:7.21775e-10
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:-0.698184
@@ -6143,12 +5959,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:-1.49012e-10
 																																																																													77-v:y
 																																																																														78-f:0.00042838
-																																																																													77-v:z
-																																																																														78-f:1.86265e-11
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:-0.506253
@@ -6209,8 +6021,6 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:-9.01848e-06
 																																																																									73-v:y
 																																																																										74-f:0.000276939
 																																																																									73-v:z
@@ -6275,12 +6085,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:2.79397e-11
 																																																																					69-v:y
 																																																																						70-f:0.00107203
-																																																																					69-v:z
-																																																																						70-f:-8.84756e-11
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:-0.0377387
@@ -6295,12 +6101,8 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:-7.24103e-10
 																																																																	65-v:y
 																																																																		66-f:0.000967121
-																																																																	65-v:z
-																																																																		66-f:7.45058e-11
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:-0.0368132
@@ -6315,12 +6117,8 @@ use tabs: true
 																																																												60-s:Transform3D
 																																																											59-o:ptr
 																																																												60-o:translation
-																																																													61-v:x
-																																																														62-f:-2.76486e-10
 																																																													61-v:y
 																																																														62-f:0.00149684
-																																																													61-v:z
-																																																														62-f:6.98492e-11
 																																																												60-o:quaternion
 																																																													61-v:x
 																																																														62-f:-0.270588
@@ -6335,12 +6133,8 @@ use tabs: true
 																																																								56-s:Transform3D
 																																																							55-o:ptr
 																																																								56-o:translation
-																																																									57-v:x
-																																																										58-f:-8.9407e-10
 																																																									57-v:y
 																																																										58-f:0.000710668
-																																																									57-v:z
-																																																										58-f:-1.97324e-10
 																																																								56-o:quaternion
 																																																									57-v:x
 																																																										58-f:-0.0337249
@@ -6355,12 +6149,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:-4.95929e-10
 																																																					53-v:y
 																																																						54-f:0.000674769
-																																																					53-v:z
-																																																						54-f:1.11759e-10
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:0.0547089
@@ -6375,12 +6165,8 @@ use tabs: true
 																																																48-s:Transform3D
 																																															47-o:ptr
 																																																48-o:translation
-																																																	49-v:x
-																																																		50-f:-9.36998e-10
 																																																	49-v:y
 																																																		50-f:0.000673974
-																																																	49-v:z
-																																																		50-f:-1.14087e-10
 																																																48-o:quaternion
 																																																	49-v:x
 																																																		50-f:0.0442839
@@ -6531,12 +6317,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:2.98023e-10
 																																																																																	81-v:y
 																																																																																		82-f:0.000287166
-																																																																																	81-v:z
-																																																																																		82-f:1.41561e-09
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:-0.100354
@@ -6551,12 +6333,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:-1.04308e-09
 																																																																													77-v:y
 																																																																														78-f:0.000245931
-																																																																													77-v:z
-																																																																														78-f:-2.42144e-09
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:-0.398207
@@ -6647,12 +6425,8 @@ use tabs: true
 																																																																																				84-s:Transform3D
 																																																																																			83-o:ptr
 																																																																																				84-o:translation
-																																																																																					85-v:x
-																																																																																						86-f:-1.49012e-10
 																																																																																					85-v:y
 																																																																																						86-f:0.000183789
-																																																																																					85-v:z
-																																																																																						86-f:-3.53903e-10
 																																																																																				84-o:quaternion
 																																																																																					85-v:x
 																																																																																						86-f:-0.371826
@@ -6667,12 +6441,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:2.98023e-10
 																																																																																	81-v:y
 																																																																																		82-f:0.000205161
-																																																																																	81-v:z
-																																																																																		82-f:-1.02445e-10
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:-0.63455
@@ -6687,12 +6457,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:4.47035e-10
 																																																																													77-v:y
 																																																																														78-f:0.000598461
-																																																																													77-v:z
-																																																																														78-f:-2.98023e-10
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:-0.612947
@@ -6753,12 +6519,8 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:3.72529e-11
 																																																																									73-v:y
 																																																																										74-f:0.000253139
-																																																																									73-v:z
-																																																																										74-f:-1.67638e-10
 																																																																								72-o:quaternion
 																																																																									73-v:x
 																																																																										74-f:-0.064426
@@ -6829,12 +6591,8 @@ use tabs: true
 																																																																																				84-s:Transform3D
 																																																																																			83-o:ptr
 																																																																																				84-o:translation
-																																																																																					85-v:x
-																																																																																						86-f:-7.45058e-11
 																																																																																					85-v:y
 																																																																																						86-f:0.000222073
-																																																																																					85-v:z
-																																																																																						86-f:4.65661e-11
 																																																																																				84-o:quaternion
 																																																																																					85-v:x
 																																																																																						86-f:-0.51568
@@ -6849,12 +6607,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:-4.47035e-10
 																																																																																	81-v:y
 																																																																																		82-f:0.000272761
-																																																																																	81-v:z
-																																																																																		82-f:4.47035e-10
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:-0.681633
@@ -6869,12 +6623,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:7.45058e-11
 																																																																													77-v:y
 																																																																														78-f:0.000562196
-																																																																													77-v:z
-																																																																														78-f:2.98023e-10
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:-0.567587
@@ -6935,12 +6685,8 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:3.72529e-11
 																																																																									73-v:y
 																																																																										74-f:0.000253139
-																																																																									73-v:z
-																																																																										74-f:-1.67638e-10
 																																																																								72-o:quaternion
 																																																																									73-v:x
 																																																																										74-f:0.0873972
@@ -7011,12 +6757,8 @@ use tabs: true
 																																																																																				84-s:Transform3D
 																																																																																			83-o:ptr
 																																																																																				84-o:translation
-																																																																																					85-v:x
-																																																																																						86-f:-7.45058e-11
 																																																																																					85-v:y
 																																																																																						86-f:0.000199056
-																																																																																					85-v:z
-																																																																																						86-f:-3.00352e-10
 																																																																																				84-o:quaternion
 																																																																																					85-v:x
 																																																																																						86-f:-0.496561
@@ -7031,12 +6773,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:2.23517e-10
 																																																																																	81-v:y
 																																																																																		82-f:0.000236336
-																																																																																	81-v:z
-																																																																																		82-f:-1.49012e-10
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:-0.678136
@@ -7051,12 +6789,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:5.21541e-10
 																																																																													77-v:y
 																																																																														78-f:0.00047909
-																																																																													77-v:z
-																																																																														78-f:2.98023e-10
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:-0.561864
@@ -7117,8 +6851,6 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:9.01848e-06
 																																																																									73-v:y
 																																																																										74-f:0.000276939
 																																																																									73-v:z
@@ -7193,12 +6925,8 @@ use tabs: true
 																																																																																				84-s:Transform3D
 																																																																																			83-o:ptr
 																																																																																				84-o:translation
-																																																																																					85-v:x
-																																																																																						86-f:-8.19564e-10
 																																																																																					85-v:y
 																																																																																						86-f:0.000124852
-																																																																																					85-v:z
-																																																																																						86-f:-7.26432e-10
 																																																																																				84-o:quaternion
 																																																																																					85-v:x
 																																																																																						86-f:-0.324697
@@ -7213,12 +6941,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:6.70552e-10
 																																																																																	81-v:y
 																																																																																		82-f:0.000171106
-																																																																																	81-v:z
-																																																																																		82-f:-5.21541e-10
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:-0.698184
@@ -7233,12 +6957,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:1.11759e-10
 																																																																													77-v:y
 																																																																														78-f:0.00042838
-																																																																													77-v:z
-																																																																														78-f:4.09782e-10
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:-0.506258
@@ -7299,8 +7019,6 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:9.01848e-06
 																																																																									73-v:y
 																																																																										74-f:0.000276939
 																																																																									73-v:z
@@ -7367,8 +7085,6 @@ use tabs: true
 																																																																				68-o:translation
 																																																																					69-v:y
 																																																																						70-f:0.00107203
-																																																																					69-v:z
-																																																																						70-f:1.11759e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:-0.0390297
@@ -7383,12 +7099,8 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:6.14673e-10
 																																																																	65-v:y
 																																																																		66-f:0.000967121
-																																																																	65-v:z
-																																																																		66-f:7.07805e-10
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:-0.0367856
@@ -7403,12 +7115,8 @@ use tabs: true
 																																																												60-s:Transform3D
 																																																											59-o:ptr
 																																																												60-o:translation
-																																																													61-v:x
-																																																														62-f:1.02445e-09
 																																																													61-v:y
 																																																														62-f:0.00149684
-																																																													61-v:z
-																																																														62-f:3.72529e-11
 																																																												60-o:quaternion
 																																																													61-v:x
 																																																														62-f:-0.292663
@@ -7423,12 +7131,8 @@ use tabs: true
 																																																								56-s:Transform3D
 																																																							55-o:ptr
 																																																								56-o:translation
-																																																									57-v:x
-																																																										58-f:1.8999e-09
 																																																									57-v:y
 																																																										58-f:0.000710668
-																																																									57-v:z
-																																																										58-f:1.11759e-10
 																																																								56-o:quaternion
 																																																									57-v:x
 																																																										58-f:-0.0336932
@@ -7443,12 +7147,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:1.00816e-09
 																																																					53-v:y
 																																																						54-f:0.000674768
-																																																					53-v:z
-																																																						54-f:1.58325e-10
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:0.00123573
@@ -7463,12 +7163,8 @@ use tabs: true
 																																																48-s:Transform3D
 																																															47-o:ptr
 																																																48-o:translation
-																																																	49-v:x
-																																																		50-f:-1.55531e-09
 																																																	49-v:y
 																																																		50-f:0.000673973
-																																																	49-v:z
-																																																		50-f:3.49246e-10
 																																																48-o:quaternion
 																																																	49-v:x
 																																																		50-f:-0.00703134
@@ -7599,12 +7295,8 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:-5.82077e-12
 																																																																									73-v:y
 																																																																										74-f:0.000117932
-																																																																									73-v:z
-																																																																										74-f:8.64384e-10
 																																																																								72-o:quaternion
 																																																																									73-v:x
 																																																																										74-f:0.240672
@@ -7615,21 +7307,13 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:-6.98492e-12
 																																																																					69-v:y
 																																																																						70-f:0.000294448
-																																																																					69-v:z
-																																																																						70-f:2.93716e-09
 																																																																				68-o:quaternion
-																																																																					69-v:x
-																																																																						70-f:-1.10181e-07
 																																																																					69-v:y
 																																																																						70-f:0.982775
 																																																																					69-v:z
 																																																																						70-f:-0.184806
-																																																																					69-v:w
-																																																																						70-f:-1.77401e-07
 																																																															63-k:i
 																																																																64-o:d
 																																																																	65-v:type
@@ -7671,12 +7355,8 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:-9.68575e-10
 																																																																									73-v:y
 																																																																										74-f:0.000135303
-																																																																									73-v:z
-																																																																										74-f:3.63216e-10
 																																																																								72-o:quaternion
 																																																																									73-v:x
 																																																																										74-f:-0.268466
@@ -7691,12 +7371,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:-6.98492e-12
 																																																																					69-v:y
 																																																																						70-f:0.000294448
-																																																																					69-v:z
-																																																																						70-f:2.93716e-09
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:-0.206555
@@ -7747,12 +7423,8 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:-7.54371e-10
 																																																																									73-v:y
 																																																																										74-f:0.000135304
-																																																																									73-v:z
-																																																																										74-f:5.09899e-10
 																																																																								72-o:quaternion
 																																																																									73-v:x
 																																																																										74-f:-0.268466
@@ -7767,12 +7439,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:-6.98492e-12
 																																																																					69-v:y
 																																																																						70-f:0.000294448
-																																																																					69-v:z
-																																																																						70-f:2.93716e-09
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:-0.206555
@@ -7787,21 +7455,13 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:-1.5134e-11
 																																																																	65-v:y
 																																																																		66-f:0.000771779
-																																																																	65-v:z
-																																																																		66-f:8.50268e-10
 																																																																64-o:quaternion
-																																																																	65-v:x
-																																																																		66-f:8.55875e-08
 																																																																	65-v:y
 																																																																		66-f:0.752005
 																																																																	65-v:z
 																																																																		66-f:0.659157
-																																																																	65-v:w
-																																																																		66-f:1.68938e-08
 																																																											59-k:i
 																																																												60-o:d
 																																																													61-v:type
@@ -7873,12 +7533,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:1.39698e-11
 																																																																																	81-v:y
 																																																																																		82-f:8.18564e-05
-																																																																																	81-v:z
-																																																																																		82-f:1.81142e-09
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:-0.271721
@@ -7919,12 +7575,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:1.39698e-11
 																																																																																	81-v:y
 																																																																																		82-f:8.18564e-05
-																																																																																	81-v:z
-																																																																																		82-f:1.81142e-09
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:0.413984
@@ -7965,12 +7617,8 @@ use tabs: true
 																																																																																80-s:Transform3D
 																																																																															79-o:ptr
 																																																																																80-o:translation
-																																																																																	81-v:x
-																																																																																		82-f:1.39698e-11
 																																																																																	81-v:y
 																																																																																		82-f:8.18564e-05
-																																																																																	81-v:z
-																																																																																		82-f:1.81142e-09
 																																																																																80-o:quaternion
 																																																																																	81-v:x
 																																																																																		82-f:0.447047
@@ -7985,12 +7633,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:1.39698e-11
 																																																																													77-v:y
 																																																																														78-f:0.000185115
-																																																																													77-v:z
-																																																																														78-f:9.30158e-10
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:0.385244
@@ -8031,12 +7675,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:1.39698e-11
 																																																																													77-v:y
 																																																																														78-f:0.000185115
-																																																																													77-v:z
-																																																																														78-f:9.30158e-10
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:0.619752
@@ -8077,12 +7717,8 @@ use tabs: true
 																																																																												76-s:Transform3D
 																																																																											75-o:ptr
 																																																																												76-o:translation
-																																																																													77-v:x
-																																																																														78-f:1.39698e-11
 																																																																													77-v:y
 																																																																														78-f:0.000185115
-																																																																													77-v:z
-																																																																														78-f:9.30158e-10
 																																																																												76-o:quaternion
 																																																																													77-v:x
 																																																																														78-f:0.619752
@@ -8099,15 +7735,9 @@ use tabs: true
 																																																																								72-o:translation
 																																																																									73-v:y
 																																																																										74-f:0.000266328
-																																																																									73-v:z
-																																																																										74-f:2.66009e-10
 																																																																								72-o:quaternion
 																																																																									73-v:x
 																																																																										74-f:0.0687446
-																																																																									73-v:y
-																																																																										74-f:-4.24949e-10
-																																																																									73-v:z
-																																																																										74-f:-6.16693e-09
 																																																																									73-v:w
 																																																																										74-f:0.997634
 																																																																			67-k:i
@@ -8143,8 +7773,6 @@ use tabs: true
 																																																																								72-o:translation
 																																																																									73-v:y
 																																																																										74-f:0.000266328
-																																																																									73-v:z
-																																																																										74-f:2.66009e-10
 																																																																								72-o:quaternion
 																																																																									73-v:x
 																																																																										74-f:0.537416
@@ -8187,8 +7815,6 @@ use tabs: true
 																																																																								72-o:translation
 																																																																									73-v:y
 																																																																										74-f:0.000266328
-																																																																									73-v:z
-																																																																										74-f:2.66009e-10
 																																																																								72-o:quaternion
 																																																																									73-v:x
 																																																																										74-f:0.537416
@@ -8203,19 +7829,11 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:1.45519e-12
 																																																																					69-v:y
 																																																																						70-f:0.000474172
-																																																																					69-v:z
-																																																																						70-f:1.74914e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:0.890339
-																																																																					69-v:y
-																																																																						70-f:1.39907e-08
-																																																																					69-v:z
-																																																																						70-f:-1.06254e-07
 																																																																					69-v:w
 																																																																						70-f:0.455299
 																																																														62-o:transform
@@ -8223,39 +7841,23 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:-1.5134e-11
 																																																																	65-v:y
 																																																																		66-f:0.000771779
-																																																																	65-v:z
-																																																																		66-f:8.50268e-10
 																																																																64-o:quaternion
-																																																																	65-v:x
-																																																																		66-f:6.72088e-08
 																																																																	65-v:y
 																																																																		66-f:-0.0942779
 																																																																	65-v:z
 																																																																		66-f:0.995546
-																																																																	65-v:w
-																																																																		66-f:8.22003e-08
 																																																										58-o:transform
 																																																											59-v:type
 																																																												60-s:Transform3D
 																																																											59-o:ptr
 																																																												60-o:translation
-																																																													61-v:x
-																																																														62-f:8.14907e-12
-																																																													61-v:y
-																																																														62-f:5.19989e-06
 																																																													61-v:z
 																																																														62-f:-9.96556e-05
 																																																												60-o:quaternion
 																																																													61-v:x
 																																																														62-f:-0.966264
-																																																													61-v:y
-																																																														62-f:-2.57902e-09
-																																																													61-v:z
-																																																														62-f:8.55407e-09
 																																																													61-v:w
 																																																														62-f:0.257555
 																																																							55-k:i
@@ -8319,12 +7921,8 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:1.39698e-10
 																																																																									73-v:y
 																																																																										74-f:0.000150163
-																																																																									73-v:z
-																																																																										74-f:-1.11759e-10
 																																																																								72-o:quaternion
 																																																																									73-v:x
 																																																																										74-f:-0.37016
@@ -8339,12 +7937,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:-8.75443e-10
 																																																																					69-v:y
 																																																																						70-f:0.000183806
-																																																																					69-v:z
-																																																																						70-f:-1.49012e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:-0.0615558
@@ -8359,12 +7953,8 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:1.30385e-10
 																																																																	65-v:y
 																																																																		66-f:0.000198606
-																																																																	65-v:z
-																																																																		66-f:-1.60187e-09
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:-0.344826
@@ -8455,12 +8045,8 @@ use tabs: true
 																																																																								72-s:Transform3D
 																																																																							71-o:ptr
 																																																																								72-o:translation
-																																																																									73-v:x
-																																																																										74-f:-1.90921e-10
 																																																																									73-v:y
 																																																																										74-f:0.000150163
-																																																																									73-v:z
-																																																																										74-f:-2.11876e-10
 																																																																								72-o:quaternion
 																																																																									73-v:x
 																																																																										74-f:-0.37016
@@ -8475,12 +8061,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:6.58329e-10
 																																																																					69-v:y
 																																																																						70-f:0.000183807
-																																																																					69-v:z
-																																																																						70-f:-3.24799e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:-0.0615559
@@ -8495,12 +8077,8 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:-6.0536e-11
 																																																																	65-v:y
 																																																																		66-f:0.000198606
-																																																																	65-v:z
-																																																																		66-f:-1.57161e-10
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:-0.344826
@@ -8581,12 +8159,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:1.67638e-10
 																																																																					69-v:y
 																																																																						70-f:0.000126344
-																																																																					69-v:z
-																																																																						70-f:1.00117e-09
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:-0.42389
@@ -8601,12 +8175,8 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:-7.567e-12
 																																																																	65-v:y
 																																																																		66-f:0.00147214
-																																																																	65-v:z
-																																																																		66-f:2.66591e-10
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:0.749017
@@ -8657,12 +8227,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:-6.8685e-11
 																																																																					69-v:y
 																																																																						70-f:0.000126344
-																																																																					69-v:z
-																																																																						70-f:-5.97211e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:-0.42389
@@ -8677,12 +8243,8 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:-7.567e-12
 																																																																	65-v:y
 																																																																		66-f:0.00147214
-																																																																	65-v:z
-																																																																		66-f:2.66591e-10
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:0.749017
@@ -8733,19 +8295,11 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:-2.96859e-11
 																																																																					69-v:y
 																																																																						70-f:5.78069e-05
-																																																																					69-v:z
-																																																																						70-f:1.35769e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:-0.389656
-																																																																					69-v:y
-																																																																						70-f:3.79216e-10
-																																																																					69-v:z
-																																																																						70-f:3.41613e-08
 																																																																					69-v:w
 																																																																						70-f:0.92096
 																																																														62-o:transform
@@ -8753,19 +8307,11 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:-7.567e-12
 																																																																	65-v:y
 																																																																		66-f:0.00147214
-																																																																	65-v:z
-																																																																		66-f:2.66591e-10
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:0.768744
-																																																																	65-v:y
-																																																																		66-f:2.17878e-08
-																																																																	65-v:z
-																																																																		66-f:-9.35163e-08
 																																																																	65-v:w
 																																																																		66-f:0.639556
 																																																										58-o:transform
@@ -8773,21 +8319,15 @@ use tabs: true
 																																																												60-s:Transform3D
 																																																											59-o:ptr
 																																																												60-o:translation
-																																																													61-v:x
-																																																														62-f:-2.69893e-12
 																																																													61-v:y
 																																																														62-f:-8.59407e-05
 																																																													61-v:z
 																																																														62-f:0.00056252
 																																																												60-o:quaternion
-																																																													61-v:x
-																																																														62-f:-6.02507e-08
 																																																													61-v:y
 																																																														62-f:0.685438
 																																																													61-v:z
 																																																														62-f:-0.728131
-																																																													61-v:w
-																																																														62-f:4.69693e-08
 																																																							55-k:i
 																																																								56-o:d
 																																																									57-v:type
@@ -8895,21 +8435,13 @@ use tabs: true
 																																																												60-s:Transform3D
 																																																											59-o:ptr
 																																																												60-o:translation
-																																																													61-v:x
-																																																														62-f:8.14907e-12
-																																																													61-v:y
-																																																														62-f:5.19989e-06
 																																																													61-v:z
 																																																														62-f:-9.96556e-05
 																																																												60-o:quaternion
-																																																													61-v:x
-																																																														62-f:-5.92948e-08
 																																																													61-v:y
 																																																														62-f:0.688742
 																																																													61-v:z
 																																																														62-f:-0.725006
-																																																													61-v:w
-																																																														62-f:4.78052e-08
 																																																							55-k:i
 																																																								56-o:d
 																																																									57-v:type
@@ -8961,12 +8493,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:2.70084e-10
 																																																																					69-v:y
 																																																																						70-f:0.000921397
-																																																																					69-v:z
-																																																																						70-f:7.63685e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:-0.00805568
@@ -9007,12 +8535,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:1.21072e-10
 																																																																					69-v:y
 																																																																						70-f:0.0009214
-																																																																					69-v:z
-																																																																						70-f:5.30854e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:0.130642
@@ -9053,12 +8577,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:1.21072e-10
 																																																																					69-v:y
 																																																																						70-f:0.0009214
-																																																																					69-v:z
-																																																																						70-f:5.30854e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:0.0710423
@@ -9073,12 +8593,8 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:-3.72529e-11
 																																																																	65-v:y
 																																																																		66-f:0.000492496
-																																																																	65-v:z
-																																																																		66-f:-3.81842e-10
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:-0.48787
@@ -9093,12 +8609,8 @@ use tabs: true
 																																																												60-s:Transform3D
 																																																											59-o:ptr
 																																																												60-o:translation
-																																																													61-v:x
-																																																														62-f:4.01633e-11
 																																																													61-v:y
 																																																														62-f:0.00127102
-																																																													61-v:z
-																																																														62-f:7.69796e-11
 																																																												60-o:quaternion
 																																																													61-v:x
 																																																														62-f:-0.780971
@@ -9159,12 +8671,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:-3.23635e-10
 																																																																					69-v:y
 																																																																						70-f:0.000921401
-																																																																					69-v:z
-																																																																						70-f:-3.38769e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:-0.00805569
@@ -9205,12 +8713,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:-1.60653e-10
 																																																																					69-v:y
 																																																																						70-f:0.000921401
-																																																																					69-v:z
-																																																																						70-f:-1.42027e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:0.130642
@@ -9251,12 +8755,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:-1.60653e-10
 																																																																					69-v:y
 																																																																						70-f:0.000921401
-																																																																					69-v:z
-																																																																						70-f:-1.42027e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:0.0710423
@@ -9271,12 +8771,8 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:-2.28174e-10
 																																																																	65-v:y
 																																																																		66-f:0.000492496
-																																																																	65-v:z
-																																																																		66-f:-4.65661e-10
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:-0.48787
@@ -9291,12 +8787,8 @@ use tabs: true
 																																																												60-s:Transform3D
 																																																											59-o:ptr
 																																																												60-o:translation
-																																																													61-v:x
-																																																														62-f:4.01633e-11
 																																																													61-v:y
 																																																														62-f:0.00127102
-																																																													61-v:z
-																																																														62-f:7.69796e-11
 																																																												60-o:quaternion
 																																																													61-v:x
 																																																														62-f:-0.780971
@@ -9357,12 +8849,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:-7.45058e-11
 																																																																					69-v:y
 																																																																						70-f:0.000241387
-																																																																					69-v:z
-																																																																						70-f:9.31323e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:0.0457937
@@ -9377,12 +8865,8 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:-9.68575e-10
 																																																																	65-v:y
 																																																																		66-f:0.000205369
-																																																																	65-v:z
-																																																																		66-f:2.6077e-10
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:-0.0137473
@@ -9463,12 +8947,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:3.74857e-10
 																																																																					69-v:y
 																																																																						70-f:0.000241386
-																																																																					69-v:z
-																																																																						70-f:3.49246e-11
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:0.0457937
@@ -9483,12 +8963,8 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:-5.96046e-10
 																																																																	65-v:y
 																																																																		66-f:0.000205369
-																																																																	65-v:z
-																																																																		66-f:-8.00937e-10
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:-0.0137473
@@ -9569,12 +9045,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:-1.11759e-10
 																																																																					69-v:y
 																																																																						70-f:0.000258827
-																																																																					69-v:z
-																																																																						70-f:2.23517e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:0.424105
@@ -9589,12 +9061,8 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:1.49012e-10
 																																																																	65-v:y
 																																																																		66-f:0.000204742
-																																																																	65-v:z
-																																																																		66-f:9.77889e-10
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:0.697515
@@ -9675,12 +9143,8 @@ use tabs: true
 																																																																				68-s:Transform3D
 																																																																			67-o:ptr
 																																																																				68-o:translation
-																																																																					69-v:x
-																																																																						70-f:9.31323e-11
 																																																																					69-v:y
 																																																																						70-f:0.000258826
-																																																																					69-v:z
-																																																																						70-f:-3.72529e-10
 																																																																				68-o:quaternion
 																																																																					69-v:x
 																																																																						70-f:0.424106
@@ -9695,12 +9159,8 @@ use tabs: true
 																																																																64-s:Transform3D
 																																																															63-o:ptr
 																																																																64-o:translation
-																																																																	65-v:x
-																																																																		66-f:4.09782e-10
 																																																																	65-v:y
 																																																																		66-f:0.000204742
-																																																																	65-v:z
-																																																																		66-f:6.30971e-10
 																																																																64-o:quaternion
 																																																																	65-v:x
 																																																																		66-f:0.697515
@@ -9773,8 +9233,6 @@ use tabs: true
 																																																																64-o:translation
 																																																																	65-v:x
 																																																																		66-f:-0.000168162
-																																																																	65-v:y
-																																																																		66-f:3.40515e-11
 																																																																	65-v:z
 																																																																		66-f:-0.000314539
 																																																																64-o:quaternion
@@ -9819,8 +9277,6 @@ use tabs: true
 																																																																64-o:translation
 																																																																	65-v:x
 																																																																		66-f:0.000168165
-																																																																	65-v:y
-																																																																		66-f:3.85407e-10
 																																																																	65-v:z
 																																																																		66-f:0.00031454
 																																																																64-o:quaternion
@@ -9837,8 +9293,6 @@ use tabs: true
 																																																												60-s:Transform3D
 																																																											59-o:ptr
 																																																												60-o:translation
-																																																													61-v:x
-																																																														62-f:-6.98492e-11
 																																																													61-v:y
 																																																														62-f:0.000156305
 																																																													61-v:z
@@ -9859,8 +9313,6 @@ use tabs: true
 																																																								56-o:translation
 																																																									57-v:y
 																																																										58-f:0.000412826
-																																																									57-v:z
-																																																										58-f:6.64731e-10
 																																																								56-o:quaternion
 																																																									57-v:x
 																																																										58-f:0.183047
@@ -9875,12 +9327,8 @@ use tabs: true
 																																																				52-s:Transform3D
 																																																			51-o:ptr
 																																																				52-o:translation
-																																																					53-v:x
-																																																						54-f:5.70435e-11
 																																																					53-v:y
 																																																						54-f:0.00041427
-																																																					53-v:z
-																																																						54-f:-3.83006e-10
 																																																				52-o:quaternion
 																																																					53-v:x
 																																																						54-f:-0.0244659
@@ -9897,8 +9345,6 @@ use tabs: true
 																																																48-o:translation
 																																																	49-v:y
 																																																		50-f:0.000324898
-																																																	49-v:z
-																																																		50-f:-1.31549e-10
 																																																48-o:quaternion
 																																																	49-v:x
 																																																		50-f:0.108991
@@ -9915,8 +9361,6 @@ use tabs: true
 																																												44-o:translation
 																																													45-v:y
 																																														46-f:0.00139543
-																																													45-v:z
-																																														46-f:-1.20073e-10
 																																												44-o:quaternion
 																																													45-v:x
 																																														46-f:-0.319711
@@ -10007,8 +9451,6 @@ use tabs: true
 																																														46-f:0.00297502
 																																													45-v:y
 																																														46-f:-0.00106882
-																																													45-v:z
-																																														46-f:-1.23542e-06
 																																												44-o:quaternion
 																																													45-v:x
 																																														46-f:0.864478
@@ -10145,8 +9587,6 @@ use tabs: true
 																																														46-f:-0.00297502
 																																													45-v:y
 																																														46-f:-0.00106882
-																																													45-v:z
-																																														46-f:-1.23535e-06
 																																												44-o:quaternion
 																																													45-v:x
 																																														46-f:0.864478
@@ -10235,25 +9675,17 @@ use tabs: true
 																																													45-v:z
 																																														46-f:-0.00228565
 																																												44-o:quaternion
-																																													45-v:x
-																																														46-f:7.5314e-08
 																																													45-v:y
 																																														46-f:-0.997564
 																																													45-v:z
 																																														46-f:0.0697565
-																																													45-v:w
-																																														46-f:-5.26647e-09
 																																						38-o:transform
 																																							39-v:type
 																																								40-s:Transform3D
 																																							39-o:ptr
 																																								40-o:translation
-																																									41-v:x
-																																										42-f:-1.36788e-11
 																																									41-v:y
 																																										42-f:0.00139378
-																																									41-v:z
-																																										42-f:2.24099e-11
 																																								40-o:quaternion
 																																									41-v:x
 																																										42-f:0.0669258
@@ -10273,10 +9705,6 @@ use tabs: true
 																																				36-o:quaternion
 																																					37-v:x
 																																						38-f:0.0640425
-																																					37-v:y
-																																						38-f:1.0387e-16
-																																					37-v:z
-																																						38-f:-6.66576e-18
 																																					37-v:w
 																																						38-f:0.997947
 																														30-o:transform
@@ -10286,8 +9714,6 @@ use tabs: true
 																																32-o:translation
 																																	33-v:y
 																																		34-f:0.000572515
-																																	33-v:z
-																																		34-f:-1.82918e-10
 																																32-o:quaternion
 																																	33-v:x
 																																		34-f:0.106015
@@ -10298,8 +9724,6 @@ use tabs: true
 																												28-s:Transform3D
 																											27-o:ptr
 																												28-o:translation
-																													29-v:x
-																														30-f:9.31323e-12
 																													29-v:y
 																														30-f:0.000774238
 																												28-o:quaternion
@@ -10425,8 +9849,6 @@ use tabs: true
 																				20-o:quaternion
 																					21-v:x
 																						22-f:0.0974069
-																					21-v:y
-																						22-f:-3.72529e-09
 																					21-v:z
 																						22-f:-0.686402
 																					21-v:w
@@ -10517,8 +9939,6 @@ use tabs: true
 																				20-o:quaternion
 																					21-v:x
 																						22-f:0.0974069
-																					21-v:y
-																						22-f:3.72529e-09
 																					21-v:z
 																						22-f:0.686402
 																					21-v:w
@@ -11214,6 +10634,9 @@ use tabs: true
 																			19-v:type
 																				20-s:Transform3D
 																			19-o:ptr
+																				20-o:translation
+																					21-v:x
+																						22-f:0.145
 															15-k:i
 																16-o:d
 																	17-v:type
@@ -11298,15 +10721,18 @@ use tabs: true
 																			19-v:type
 																				20-s:Transform3D
 																			19-o:ptr
+																				20-o:translation
+																					21-v:x
+																						22-f:-0.145
 														14-o:transform
 															15-v:type
 																16-s:Transform3D
 															15-o:ptr
 																16-o:translation
 																	17-v:y
-																		18-f:-0.413171
+																		18-f:-0.712172
 																	17-v:z
-																		18-f:0.199673
+																		18-f:0.25469
 											11-k:i
 												12-o:d
 													13-v:type
