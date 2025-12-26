@@ -93,27 +93,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:ambientIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:shadowIntensity
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:diffuseMin
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:0
 															15-k:i
 																16-o:d
 																	17-v:id
@@ -145,6 +129,8 @@ use tabs: true
 										10-s:Engine/Models/plane.obj
 					5-v:name
 						6-s:Plane
+					5-v:isEnabled
+						6-b:false
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
@@ -210,9 +196,9 @@ use tabs: true
 																		18-s:Vec2
 																	17-o:value
 																		18-v:x
-																			19-f:1
+																			19-f:50
 																		18-v:y
-																			19-f:1
+																			19-f:50
 															15-k:i
 																16-o:d
 																	17-v:id
@@ -235,15 +221,7 @@ use tabs: true
 																	17-v:type
 																		18-s:Float
 																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:ambientIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
+																		18-f:0
 															15-k:i
 																16-o:d
 																	17-v:id
@@ -252,14 +230,6 @@ use tabs: true
 																		18-s:Float
 																	17-v:value
 																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:diffuseMin
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:0
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -278,6 +248,10 @@ use tabs: true
 								8-o:ptr
 									9-v:entityId
 										10-i:2339071504085736563
+									9-v:isStatic
+										10-b:true
+									9-v:useGravity
+										10-b:false
 						6-k:i
 							7-o:d
 								8-v:type
@@ -297,12 +271,15 @@ use tabs: true
 							7-s:Transform3D
 						6-o:ptr
 							7-o:translation
-								8-v:x
-									9-f:0.107091
 								8-v:y
-									9-f:1.04092
+									9-f:-0.5
+							7-o:scale
+								8-v:x
+									9-f:50
+								8-v:y
+									9-f:0.5
 								8-v:z
-									9-f:-12.3183
+									9-f:50
 		2-k:i
 			3-o:d
 				4-v:type
@@ -409,27 +386,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:ambientIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:shadowIntensity
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:diffuseMin
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:0
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -553,27 +514,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:ambientIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:shadowIntensity
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:diffuseMin
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:0
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -697,27 +642,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:ambientIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:shadowIntensity
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:diffuseMin
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:0
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -841,27 +770,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:ambientIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:shadowIntensity
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:diffuseMin
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:0
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -985,27 +898,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:ambientIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:shadowIntensity
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:diffuseMin
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:0
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -1044,9 +941,9 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:2.50866
+									9-f:7.09177
 								8-v:y
-									9-f:1.21419
+									9-f:1.0916
 								8-v:z
 									9-f:-15.1584
 		2-k:i
@@ -1129,27 +1026,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:ambientIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:shadowIntensity
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:diffuseMin
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:0
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -1188,11 +1069,11 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:1.06845
+									9-f:13.2142
 								8-v:y
-									9-f:6.15336
+									9-f:5.57838
 								8-v:z
-									9-f:-15.4498
+									9-f:-0.516101
 		2-k:i
 			3-o:d
 				4-v:type
@@ -1305,27 +1186,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:ambientIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:shadowIntensity
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:diffuseMin
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:0
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -1449,27 +1314,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:ambientIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:shadowIntensity
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:diffuseMin
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:0
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -2149,14 +1998,14 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:799.5
+									9-f:755
 								8-v:y
-									9-f:447
+									9-f:620
 							7-o:size
 								8-v:x
-									9-f:1599
+									9-f:1510
 								8-v:y
-									9-f:894
+									9-f:1240
 							7-o:anchors
 								8-o:min
 								8-o:max
@@ -2183,13 +2032,13 @@ use tabs: true
 						6-o:ptr
 							7-o:quaternion
 								8-v:x
-									9-f:0.439073
+									9-f:0.0442813
 								8-v:y
-									9-f:-0.363224
+									9-f:-0.935297
 								8-v:z
-									9-f:0.200097
+									9-f:0.126457
 								8-v:w
-									9-f:0.797022
+									9-f:0.327518
 		2-k:i
 			3-o:d
 				4-v:type
@@ -2300,27 +2149,11 @@ use tabs: true
 																			19-k:i
 																				20-o:d
 																					21-v:id
-																						22-s:ambientIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
 																						22-s:shadowIntensity
 																					21-v:type
 																						22-s:Float
 																					21-v:value
 																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:diffuseMin
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:0
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -2418,27 +2251,11 @@ use tabs: true
 																			19-k:i
 																				20-o:d
 																					21-v:id
-																						22-s:ambientIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
 																						22-s:shadowIntensity
 																					21-v:type
 																						22-s:Float
 																					21-v:value
 																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:diffuseMin
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:0
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -2538,27 +2355,11 @@ use tabs: true
 																			19-k:i
 																				20-o:d
 																					21-v:id
-																						22-s:ambientIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
 																						22-s:shadowIntensity
 																					21-v:type
 																						22-s:Float
 																					21-v:value
 																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:diffuseMin
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:0
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -2658,27 +2459,11 @@ use tabs: true
 																			19-k:i
 																				20-o:d
 																					21-v:id
-																						22-s:ambientIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
 																						22-s:shadowIntensity
 																					21-v:type
 																						22-s:Float
 																					21-v:value
 																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:diffuseMin
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:0
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -2751,7 +2536,176 @@ use tabs: true
 											11-f:0.5
 					5-v:name
 						6-s:Camera
+					5-v:isEnabled
+						6-b:false
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
 						6-o:ptr
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:4031730367583910379
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Mesh3D
+								8-o:ptr
+									9-v:entityId
+										10-i:2412064192960541079
+									9-o:material
+										10-v:type
+											11-s:UniqueMaterial
+										10-o:ptr
+											11-o:data
+												12-v:type
+													13-s:MaterialData
+												12-o:ptr
+													13-a:shaderDefines
+													13-o:defaultShader
+														14-v:shaderPath
+															15-s:Engine/Shaders/standard.srsl
+														14-a:uniforms
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:color
+																	17-v:type
+																		18-s:Vec4
+																	17-o:value
+																		18-v:x
+																			19-f:1
+																		18-v:y
+																			19-f:1
+																		18-v:z
+																			19-f:1
+																		18-v:w
+																			19-f:1
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:tiling
+																	17-v:type
+																		18-s:Vec2
+																	17-o:value
+																		18-v:x
+																			19-f:10
+																		18-v:y
+																			19-f:10
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:offset
+																	17-v:type
+																		18-s:Vec2
+																	17-o:value
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:specularSharpness
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:1
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:specularIntensity
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:1
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:shadowIntensity
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:1
+														14-a:samplers
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:diffuse
+																	17-v:type
+																		18-s:Sampler2D
+																	17-v:value
+																		18-s:Engine/Textures/grid_prototype.png
+									9-v:meshPath
+										10-s:Engine/Models/cube_uv.obj
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Rigidbody3D
+								8-o:ptr
+									9-v:entityId
+										10-i:2636222657918671248
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:CollisionShape
+								8-o:ptr
+									9-v:entityId
+										10-i:3118687194537343434
+									9-o:rigidbody
+										10-v:entityId
+											11-i:2636222657918671248
+									9-v:type
+										10-s:Box3D
+					5-v:name
+						6-s:Cube
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:4.64806
+								8-v:y
+									9-f:10
+								8-v:z
+									9-f:35
+							7-o:scale
+								8-v:x
+									9-f:10
+								8-v:y
+									9-f:10
+								8-v:z
+									9-f:1
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:2445094078801785759
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:DirectionalLight
+								8-o:ptr
+									9-v:entityId
+										10-i:2709604941663742509
+					5-v:name
+						6-s:Directional light
+					5-v:isEnabled
+						6-b:false
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:quaternion
+								8-v:x
+									9-f:0.431136
+								8-v:y
+									9-f:-0.485233
+								8-v:z
+									9-f:0.299101
+								8-v:w
+									9-f:0.699435

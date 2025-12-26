@@ -2637,27 +2637,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:ambientIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1.146
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:shadowIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
-																											27-f:0.485
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:diffuseMin
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0.344
+																											27-f:1
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -2778,27 +2762,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:ambientIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:shadowIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:diffuseMin
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -2923,27 +2891,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:ambientIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:shadowIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:diffuseMin
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -3079,27 +3031,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:ambientIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:shadowIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:diffuseMin
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -3235,27 +3171,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:ambientIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:shadowIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:diffuseMin
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -3378,27 +3298,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:ambientIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:2.3
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:shadowIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:diffuseMin
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -3538,27 +3442,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:ambientIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:shadowIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:diffuseMin
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -3686,27 +3574,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:ambientIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:shadowIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:diffuseMin
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -10029,27 +9901,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:ambientIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:shadowIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:diffuseMin
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -10174,27 +10030,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:ambientIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:shadowIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:diffuseMin
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -10321,27 +10161,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:ambientIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:shadowIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:diffuseMin
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -10464,27 +10288,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:ambientIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:shadowIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:diffuseMin
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0
 																								24-k:i
 																									25-o:d
 																										26-v:id
