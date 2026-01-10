@@ -931,7 +931,7 @@ use tabs: true
 						6-v:tolerance
 							7-f:0.001
 						6-v:graph
-							7-s:Samples/MechanicGirl/Animator.xml
+							7-s:Samples/MechanicGirl/girl.animator
 		2-v:name
 			3-s:MechanicGirl/SK_MechanicGirl_03
 		2-a:children
