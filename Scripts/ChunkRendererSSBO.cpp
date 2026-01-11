@@ -14,7 +14,7 @@
 
 #include "ChunkRendererHelper.h"
 
-namespace SpaRcle::Scripts::Samples {
+namespace Samples {
     class ChunkRendererSSBO : public SpaRcle::Scripting::CppBehaviour {
         SR_CLASS()
     public:

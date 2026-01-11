@@ -1209,6 +1209,8 @@ use tabs: true
 								8-o:ptr
 									9-v:entityId
 										10-i:2881571860448838536
+									9-v:mass
+										10-f:100
 						6-k:i
 							7-o:d
 								8-v:type
@@ -1337,6 +1339,8 @@ use tabs: true
 								8-o:ptr
 									9-v:entityId
 										10-i:4590072085047695223
+									9-v:mass
+										10-f:100
 						6-k:i
 							7-o:d
 								8-v:type
@@ -2048,6 +2052,8 @@ use tabs: true
 				4-o:ptr
 					5-v:entityId
 						6-i:4567291599035681517
+					5-v:tag
+						6-s:Player
 					5-v:name
 						6-s:MechanicGirl/SK_MechanicGirl_03
 					5-v:prefab
@@ -2058,9 +2064,9 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:4.75253
+									9-f:3.71656
 								8-v:z
-									9-f:3.52935
+									9-f:3.8424
 		2-k:i
 			3-o:d
 				4-v:type

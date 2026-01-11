@@ -13,7 +13,7 @@
 
 #include "ChunkRendererHelper.h"
 
-namespace SpaRcle::Scripts::Samples {
+namespace Samples {
     class ChunkRenderer : public SpaRcle::Scripting::CppBehaviour {
         SR_CLASS()
     public:

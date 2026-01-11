@@ -16,7 +16,7 @@
 
 #include <Scripting/Cpp/CppBehaviour.h>
 
-namespace SpaRcle::Scripts::Samples {
+namespace Samples {
     class RaptoidController : public SpaRcle::Scripting::CppBehaviour {
         SR_CLASS()
     public:

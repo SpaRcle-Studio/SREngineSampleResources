@@ -3,7 +3,7 @@
 #include <Utils/Math/Vector2.h>
 #include <Utils/Math/Vector3.h>
 
-namespace SpaRcle::Scripts::Samples {
+namespace Samples {
     enum class BlockSide {
         Top,
         Bottom,

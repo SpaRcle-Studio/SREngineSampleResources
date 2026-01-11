@@ -13,7 +13,7 @@
 
 #include <Scripting/Cpp/CppBehaviour.h>
 
-namespace SpaRcle::Scripts::Samples {
+namespace Samples {
     class MarchingCubesOptimized : public SpaRcle::Scripting::CppBehaviour {
         SR_CLASS()
     public:

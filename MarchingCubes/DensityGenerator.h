@@ -12,7 +12,7 @@
 #include <Graphics/Render/RenderContext.h>
 #include <Graphics/Memory/SSBO.h>
 
-namespace SpaRcle::Scripts::Samples {
+namespace Samples {
     SR_ENUM_NS_CLASS_T(MarchingCubesShape, uint32_t,
         Sphere,
         Cube,
