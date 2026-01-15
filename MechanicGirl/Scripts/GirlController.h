@@ -30,6 +30,8 @@ namespace Samples {
         SpaRcle::Utils::EntityRef<SpaRcle::Graphics::Animations::Animator> animator;
         /// @property
         SpaRcle::Utils::EntityRef<SpaRcle::Utils::GameObject> headObject;
+        /// @property
+        SpaRcle::Utils::EntityRef<SpaRcle::Utils::GameObject> bodyRoot;
 
         /// @property @group(Camera)
         SpaRcle::Utils::EntityRef<SpaRcle::Utils::GameObject> cameraObject;
@@ -45,6 +47,8 @@ namespace Samples {
         /// @property @group(Movement)
         float_t bodyRotateSpeed = 1.0f;
         /// @property @group(Movement)
+        float_t bodyWalkRotateSpeed = 1.0f;
+        /// @property @group(Movement)
         float_t walkSpeed = 1.0f;
         /// @property @group(Movement)
         float_t runSpeed = 1.0f;
@@ -52,6 +56,7 @@ namespace Samples {
     private:
         float_t m_targetCameraPitch = 0.f;
         std::optional<SpaRcle::Utils::CursorLock> m_lock;
+        float_t m_bodyYawTarget = 0.f;
 
     };
 } // Samples

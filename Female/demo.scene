@@ -2051,28 +2051,6 @@ use tabs: true
 					5-s:GameObject
 				4-o:ptr
 					5-v:entityId
-						6-i:4567291599035681517
-					5-v:tag
-						6-s:Player
-					5-v:name
-						6-s:MechanicGirl/SK_MechanicGirl_03
-					5-v:prefab
-						6-s:Samples/MechanicGirl/Girl.prefab
-					5-o:transform
-						6-v:type
-							7-s:Transform3D
-						6-o:ptr
-							7-o:translation
-								8-v:x
-									9-f:3.71656
-								8-v:z
-									9-f:3.8424
-		2-k:i
-			3-o:d
-				4-v:type
-					5-s:GameObject
-				4-o:ptr
-					5-v:entityId
 						6-i:3355457717646375002
 					5-v:name
 						6-s:Stairs/Wooden Spiral Stair
@@ -2767,3 +2745,23 @@ use tabs: true
 									9-f:-0.397148
 								8-v:w
 									9-f:0.917755
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:3545353555745053999
+					5-v:name
+						6-s:Girl
+					5-v:prefab
+						6-s:Samples/MechanicGirl/Girl.prefab
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:4.71661
+								8-v:z
+									9-f:2.10371
