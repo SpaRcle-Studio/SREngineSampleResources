@@ -31,7 +31,7 @@ namespace Samples {
         }
 
         auto&& pTransform = pRigidbody->GetGameObject()->GetTransform();
-        pTransform->Rotate(SR_MATH_NS::FVector3(0.f, drag.x * (bodyRotateSpeed / 50.f), 0.f));
+        pTransform->Rotate(SR_MATH_NS::FVector3(0.f, drag.x * (bodyRotateSpeed / 10.f), 0.f));
 
         /// Walk and Run logic
 
@@ -69,7 +69,7 @@ namespace Samples {
                 pCamera->GetTransform()->SetGlobalTranslation(cameraTranslation.Lerp(headTranslation, cameraShakeSpeed));
             }
 
-            m_targetCameraPitch += drag.y * (cameraDragSpeed / 50.0);
+            m_targetCameraPitch += drag.y * (cameraDragSpeed / 10.0);
             m_targetCameraPitch = SR_MATH_NS::Clamp(m_targetCameraPitch, -cameraPitchLimit, cameraPitchLimit);
 
             SR_MATH_NS::FVector3 cameraRotation = pCamera->GetTransform()->GetRotation();
