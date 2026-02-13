@@ -3804,6 +3804,8 @@ use tabs: true
 													13-f:600
 												12-v:y
 													13-f:600
+					5-v:isEnabled
+						6-b:false
 					5-v:layer
 						6-s:UI
 					5-o:transform
@@ -3812,14 +3814,14 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:755.5
+									9-f:575.5
 								8-v:y
-									9-f:477
+									9-f:406.5
 							7-o:size
 								8-v:x
-									9-f:1511
+									9-f:1151
 								8-v:y
-									9-f:954
+									9-f:813
 							7-o:anchors
 								8-o:min
 								8-o:max
@@ -4509,52 +4511,203 @@ use tabs: true
 					5-s:GameObject
 				4-o:ptr
 					5-v:entityId
-						6-i:4473857507269933643
+						6-i:3707998041577561974
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Camera
+								8-o:ptr
+									9-v:entityId
+										10-i:3659237248921321047
 					5-v:name
-						6-s:ArmyBox
-					5-v:prefab
-						6-s:Samples/ArmyBox/army-box.prefab
+						6-s:Camera
+					5-v:isEnabled
+						6-b:false
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
 						6-o:ptr
-							7-o:translation
-								8-v:x
-									9-f:6.47987
-								8-v:z
-									9-f:9.27594
-							7-o:quaternion
-								8-v:y
-									9-f:-0.395545
-								8-v:w
-									9-f:0.918447
 		2-k:i
 			3-o:d
 				4-v:type
 					5-s:GameObject
 				4-o:ptr
 					5-v:entityId
-						6-i:4437053244498864353
+						6-i:3798515990264710165
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Camera
+								8-o:ptr
+									9-v:entityId
+										10-i:2411826560778551855
+									9-v:renderTechnique
+										10-s:Engine/Render/DebugShadows.srtech
 					5-v:name
-						6-s:ArmyBox
-					5-v:prefab
-						6-s:Samples/ArmyBox/army-box.prefab
+						6-s:Camera
+					5-v:isEnabled
+						6-b:false
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:3830890723089710100
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Camera
+								8-o:ptr
+									9-v:entityId
+										10-i:3215482487057794732
+									9-v:renderTechnique
+										10-s:Engine/Render/Render.srptech
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:CameraFlyMover
+								8-o:ptr
+									9-v:entityId
+										10-i:2994053323488210929
+									9-v:gameSpeedCorrection
+										10-b:false
+									9-v:lockCursor
+										10-b:true
+					5-v:name
+						6-s:Camera
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:6.49104
+									9-f:3.57483
 								8-v:y
-									9-f:0.648724
+									9-f:5.28587
 								8-v:z
-									9-f:9.27594
-							7-o:quaternion
+									9-f:-0.355308
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:3505283310920220465
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Mesh3D
+								8-o:ptr
+									9-v:entityId
+										10-i:3323042840534275462
+									9-o:material
+										10-v:type
+											11-s:UniqueMaterial
+										10-o:ptr
+											11-o:data
+												12-v:type
+													13-s:MaterialData
+												12-o:ptr
+													13-a:shaderDefines
+													13-o:defaultShader
+														14-v:shaderPath
+															15-s:Engine/Shaders/bubble.srsl
+														14-a:uniforms
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:BubbleColor
+																	17-v:type
+																		18-s:Vec3
+																	17-o:value
+																		18-v:x
+																			19-f:1.308
+																		18-v:y
+																			19-f:0.539
+																		18-v:z
+																			19-f:0.676
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:NoiseSampleSize
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:12.411
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:AnimationSpeed
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:0.021
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:HeightMultiplier
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:0.493
+														14-a:samplers
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:NoiseTex
+																	17-v:type
+																		18-s:Sampler2D
+																	17-v:value
+																		18-s:Engine/Textures/noise.png
+									9-v:meshPath
+										10-s:Engine/Models/sphere.obj
+					5-v:name
+						6-s:Sphere
+					5-v:layer
+						6-s:Transparent
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:6.57912
 								8-v:y
-									9-f:-0.397148
-								8-v:w
-									9-f:0.917755
+									9-f:2.98993
+								8-v:z
+									9-f:-2.98279
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:2446260512018402653
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:SkyboxComponent
+								8-o:ptr
+									9-v:entityId
+										10-i:2487055581209525447
+									9-v:shaderPath
+										10-s:Engine/Shaders/skybox-procedural.srsl
+					5-v:name
+						6-s:Skybox
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
 		2-k:i
 			3-o:d
 				4-v:type
@@ -4577,26 +4730,3 @@ use tabs: true
 									9-f:4.71661
 								8-v:z
 									9-f:2.10371
-		2-k:i
-			3-o:d
-				4-v:type
-					5-s:GameObject
-				4-o:ptr
-					5-v:entityId
-						6-i:3830890723089710100
-					5-a:components
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:Camera
-								8-o:ptr
-									9-v:entityId
-										10-i:3215482487057794732
-					5-v:name
-						6-s:Camera
-					5-v:isEnabled
-						6-b:false
-					5-o:transform
-						6-v:type
-							7-s:Transform3D
-						6-o:ptr
