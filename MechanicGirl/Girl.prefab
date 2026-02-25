@@ -3574,7 +3574,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:1
+																															31-f:0.3
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -3955,7 +3955,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:1
+																															31-f:0.3
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -4082,7 +4082,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:1
+																															31-f:0.4
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -4336,7 +4336,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:1
+																															31-f:0.2
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -4774,11 +4774,11 @@ use tabs: true
 																															31-s:Vec3
 																														30-o:value
 																															31-v:x
-																																32-f:1.4
+																																32-f:1.9
 																															31-v:y
 																																32-f:1
 																															31-v:z
-																																32-f:1
+																																32-f:1.4
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -4786,7 +4786,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:1
+																															31-f:0.3
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -4906,11 +4906,11 @@ use tabs: true
 																															31-s:Vec3
 																														30-o:value
 																															31-v:x
-																																32-f:1.4
+																																32-f:1.9
 																															31-v:y
 																																32-f:1
 																															31-v:z
-																																32-f:1
+																																32-f:1.4
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -4918,7 +4918,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:1
+																															31-f:0.3
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -5289,7 +5289,7 @@ use tabs: true
 																																		34-v:type
 																																			35-s:Float
 																																		34-v:value
-																																			35-f:1
+																																			35-f:0.2
 																																32-k:i
 																																	33-o:d
 																																		34-v:id
@@ -5330,8 +5330,6 @@ use tabs: true
 																							23-v:type
 																								24-s:Transform3D
 																							23-o:ptr
-																		18-v:isEnabled
-																			19-b:false
 																		18-o:transform
 																			19-v:type
 																				20-s:Transform3D

@@ -286,32 +286,6 @@ use tabs: true
 					5-s:GameObject
 				4-o:ptr
 					5-v:entityId
-						6-i:3568973054696400457
-					5-v:tag
-						6-s:Player
-					5-v:name
-						6-s:Female
-					5-v:isEnabled
-						6-b:false
-					5-v:prefab
-						6-s:Samples/Female/FemaleIK.prefab
-					5-o:transform
-						6-v:type
-							7-s:Transform3D
-						6-o:ptr
-							7-o:translation
-								8-v:x
-									9-f:0.969764
-								8-v:y
-									9-f:-0.0147367
-								8-v:z
-									9-f:3.58447
-		2-k:i
-			3-o:d
-				4-v:type
-					5-s:GameObject
-				4-o:ptr
-					5-v:entityId
 						6-i:2324132470524369356
 					5-a:components
 						6-k:i
@@ -431,7 +405,7 @@ use tabs: true
 								8-v:x
 									9-f:3.19297
 								8-v:y
-									9-f:2.3061
+									9-f:2.70121
 								8-v:z
 									9-f:-9.26431
 		2-k:i
@@ -1272,9 +1246,9 @@ use tabs: true
 																		18-s:Vec4
 																	17-o:value
 																		18-v:x
-																			19-f:1
+																			19-f:50
 																		18-v:y
-																			19-f:1
+																			19-f:50
 																		18-v:z
 																			19-f:1
 																		18-v:w
@@ -3814,491 +3788,17 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:575.5
+									9-f:556.5
 								8-v:y
-									9-f:406.5
+									9-f:345
 							7-o:size
 								8-v:x
-									9-f:1151
+									9-f:1113
 								8-v:y
-									9-f:813
+									9-f:690
 							7-o:anchors
 								8-o:min
 								8-o:max
-		2-k:i
-			3-o:d
-				4-v:type
-					5-s:GameObject
-				4-o:ptr
-					5-v:entityId
-						6-i:2509454353428504760
-					5-a:components
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:DirectionalLight
-								8-o:ptr
-									9-v:entityId
-										10-i:2394491792303681438
-					5-v:name
-						6-s:Directional light
-					5-v:isEnabled
-						6-b:false
-					5-o:transform
-						6-v:type
-							7-s:Transform3D
-						6-o:ptr
-							7-o:quaternion
-								8-v:x
-									9-f:0.354085
-								8-v:y
-									9-f:-0.480283
-								8-v:z
-									9-f:0.220399
-								8-v:w
-									9-f:0.771607
-		2-k:i
-			3-o:d
-				4-v:type
-					5-s:GameObject
-				4-o:ptr
-					5-v:entityId
-						6-i:3355457717646375002
-					5-v:name
-						6-s:Stairs/Wooden Spiral Stair
-					5-a:children
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:GameObject
-								8-o:ptr
-									9-v:entityId
-										10-i:2797633198500460821
-									9-a:components
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Mesh3D
-												12-o:ptr
-													13-v:entityId
-														14-i:2410196228997944604
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-a:shaderDefines
-																	17-o:defaultShader
-																		18-v:shaderPath
-																			19-s:Engine/Shaders/standard.srsl
-																		18-a:uniforms
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec4
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
-																						22-v:w
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:tiling
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:offset
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularSharpness
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:shadowIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																		18-a:samplers
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:diffuse
-																					21-v:type
-																						22-s:Sampler2D
-																					21-v:value
-																						22-s:Engine/Textures/default_improved.png
-													13-v:meshPath
-														14-s:Samples/Stairs/Wooden Spiral Stair.obj
-									9-v:name
-										10-s:HandRail
-									9-o:transform
-										10-v:type
-											11-s:Transform3D
-										10-o:ptr
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:GameObject
-								8-o:ptr
-									9-v:entityId
-										10-i:3968406441938420857
-									9-a:components
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Mesh3D
-												12-o:ptr
-													13-v:entityId
-														14-i:2352026041822224109
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-a:shaderDefines
-																	17-o:defaultShader
-																		18-v:shaderPath
-																			19-s:Engine/Shaders/standard.srsl
-																		18-a:uniforms
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec4
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
-																						22-v:w
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:tiling
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:offset
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularSharpness
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:shadowIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																		18-a:samplers
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:diffuse
-																					21-v:type
-																						22-s:Sampler2D
-																					21-v:value
-																						22-s:Engine/Textures/default_improved.png
-													13-v:meshPath
-														14-s:Samples/Stairs/Wooden Spiral Stair.obj
-													13-v:meshId
-														14-i:1
-									9-v:name
-										10-s:Stair_Side_Right
-									9-o:transform
-										10-v:type
-											11-s:Transform3D
-										10-o:ptr
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:GameObject
-								8-o:ptr
-									9-v:entityId
-										10-i:4062314596603081264
-									9-a:components
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Mesh3D
-												12-o:ptr
-													13-v:entityId
-														14-i:4010416975045161721
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-a:shaderDefines
-																	17-o:defaultShader
-																		18-v:shaderPath
-																			19-s:Engine/Shaders/standard.srsl
-																		18-a:uniforms
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec4
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
-																						22-v:w
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:tiling
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:offset
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularSharpness
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:shadowIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																		18-a:samplers
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:diffuse
-																					21-v:type
-																						22-s:Sampler2D
-																					21-v:value
-																						22-s:Engine/Textures/default_improved.png
-													13-v:meshPath
-														14-s:Samples/Stairs/Wooden Spiral Stair.obj
-													13-v:meshId
-														14-i:2
-									9-v:name
-										10-s:Stair_Side_Left
-									9-o:transform
-										10-v:type
-											11-s:Transform3D
-										10-o:ptr
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:GameObject
-								8-o:ptr
-									9-v:entityId
-										10-i:4225524321379156641
-									9-a:components
-										10-k:i
-											11-o:d
-												12-v:type
-													13-s:Mesh3D
-												12-o:ptr
-													13-v:entityId
-														14-i:3658412170873904595
-													13-o:material
-														14-v:type
-															15-s:UniqueMaterial
-														14-o:ptr
-															15-o:data
-																16-v:type
-																	17-s:MaterialData
-																16-o:ptr
-																	17-a:shaderDefines
-																	17-o:defaultShader
-																		18-v:shaderPath
-																			19-s:Engine/Shaders/standard.srsl
-																		18-a:uniforms
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec4
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
-																						22-v:w
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:tiling
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:offset
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularSharpness
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:shadowIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																		18-a:samplers
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:diffuse
-																					21-v:type
-																						22-s:Sampler2D
-																					21-v:value
-																						22-s:Engine/Textures/default_improved.png
-													13-v:meshPath
-														14-s:Samples/Stairs/Wooden Spiral Stair.obj
-													13-v:meshId
-														14-i:3
-									9-v:name
-										10-s:Stair
-									9-o:transform
-										10-v:type
-											11-s:Transform3D
-										10-o:ptr
-					5-v:isEnabled
-						6-b:false
-					5-o:transform
-						6-v:type
-							7-s:Transform3D
-						6-o:ptr
-							7-o:translation
-								8-v:x
-									9-f:15.137
-								8-v:z
-									9-f:6.58046
-							7-o:scale
-								8-v:x
-									9-f:0.02
-								8-v:y
-									9-f:0.02
-								8-v:z
-									9-f:0.02
 		2-k:i
 			3-o:d
 				4-v:type
@@ -4489,7 +3989,7 @@ use tabs: true
 									9-s:DirectionalLight
 								8-o:ptr
 									9-v:entityId
-										10-i:4506636783102874323
+										10-i:3187941994103187520
 					5-v:name
 						6-s:Directional light
 					5-o:transform
@@ -4498,13 +3998,13 @@ use tabs: true
 						6-o:ptr
 							7-o:quaternion
 								8-v:x
-									9-f:0.357922
+									9-f:0.0728929
 								8-v:y
-									9-f:-0.569258
+									9-f:-0.824742
 								8-v:z
-									9-f:0.301397
+									9-f:0.550033
 								8-v:w
-									9-f:0.676016
+									9-f:0.109317
 		2-k:i
 			3-o:d
 				4-v:type
@@ -4583,6 +4083,8 @@ use tabs: true
 										10-b:true
 					5-v:name
 						6-s:Camera
+					5-v:isEnabled
+						6-b:false
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
@@ -4680,11 +4182,11 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:6.57912
+									9-f:6.5456
 								8-v:y
 									9-f:2.98993
 								8-v:z
-									9-f:-2.98279
+									9-f:-2.27193
 		2-k:i
 			3-o:d
 				4-v:type
@@ -4717,8 +4219,6 @@ use tabs: true
 						6-i:3545353555745053999
 					5-v:name
 						6-s:Girl
-					5-v:isEnabled
-						6-b:false
 					5-v:prefab
 						6-s:Samples/MechanicGirl/Girl.prefab
 					5-o:transform
@@ -4730,3 +4230,208 @@ use tabs: true
 									9-f:4.71661
 								8-v:z
 									9-f:2.10371
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:2979066320777328746
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:PostProcessComponent
+								8-o:ptr
+									9-v:entityId
+										10-i:2318795259951932223
+									9-o:settings
+										10-v:id
+											11-s:Engine/Render/PostProcess.postprocess
+					5-v:name
+						6-s:Post process
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:3438800489327238006
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Rigidbody3D
+								8-o:ptr
+									9-v:entityId
+										10-i:3318188149637680331
+									9-v:isTrigger
+										10-b:true
+									9-v:isStatic
+										10-b:true
+									9-v:useGravity
+										10-b:false
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:CollisionShape
+								8-o:ptr
+									9-v:entityId
+										10-i:2656908887865157320
+									9-o:rigidbody
+										10-v:entityId
+											11-i:3318188149637680331
+									9-v:type
+										10-s:Box3D
+					5-v:name
+						6-s:Post process volume
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:1.70055
+								8-v:y
+									9-f:5.02175
+								8-v:z
+									9-f:18.1172
+							7-o:scale
+								8-v:x
+									9-f:5
+								8-v:y
+									9-f:5
+								8-v:z
+									9-f:5
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:3138066543324427024
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Mesh3D
+								8-o:ptr
+									9-v:entityId
+										10-i:3510180099013079930
+									9-o:material
+										10-v:type
+											11-s:UniqueMaterial
+										10-o:ptr
+											11-o:data
+												12-v:type
+													13-s:MaterialData
+												12-o:ptr
+													13-a:shaderDefines
+													13-o:defaultShader
+														14-v:shaderPath
+															15-s:Engine/Shaders/standard.srsl
+														14-a:uniforms
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:color
+																	17-v:type
+																		18-s:Vec4
+																	17-o:value
+																		18-v:x
+																			19-f:1
+																		18-v:y
+																			19-f:1
+																		18-v:w
+																			19-f:1
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:tiling
+																	17-v:type
+																		18-s:Vec2
+																	17-o:value
+																		18-v:x
+																			19-f:1
+																		18-v:y
+																			19-f:1
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:offset
+																	17-v:type
+																		18-s:Vec2
+																	17-o:value
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:specularSharpness
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:1
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:specularIntensity
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:1
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:shadowIntensity
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:1
+														14-a:samplers
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:diffuse
+																	17-v:type
+																		18-s:Sampler2D
+																	17-v:value
+																		18-s:Engine/Textures/grid_prototype.png
+									9-v:meshPath
+										10-s:Engine/Models/cube_uv.obj
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Rigidbody3D
+								8-o:ptr
+									9-v:entityId
+										10-i:2411762626513760074
+									9-v:mass
+										10-f:100
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:CollisionShape
+								8-o:ptr
+									9-v:entityId
+										10-i:2397411308662792313
+									9-o:rigidbody
+										10-v:entityId
+											11-i:2411762626513760074
+									9-v:type
+										10-s:Box3D
+					5-v:name
+						6-s:Cube
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:-1.44286
+								8-v:y
+									9-f:1.03514
+								8-v:z
+									9-f:5.07341
