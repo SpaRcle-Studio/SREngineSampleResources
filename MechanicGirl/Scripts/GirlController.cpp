@@ -30,6 +30,10 @@ namespace Samples {
             return;
         }
 
+        if (auto&& pHeadModel = headModel.Get()) {
+            pHeadModel->SetEnabled(pHeadModel->GetScene()->IsEditorMode());
+        }
+
         auto&& pTransform = pRigidbody->GetGameObject()->GetTransform();
         pTransform->Rotate(SR_MATH_NS::FVector3(0.f, drag.x * (bodyRotateSpeed / 10.f), 0.f));
 

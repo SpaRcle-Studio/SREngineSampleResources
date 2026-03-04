@@ -31,6 +31,8 @@ namespace Samples {
         /// @property
         SpaRcle::Utils::EntityRef<SpaRcle::Utils::GameObject> headObject;
         /// @property
+        SpaRcle::Utils::EntityRef<SpaRcle::Utils::GameObject> headModel;
+        /// @property
         SpaRcle::Utils::EntityRef<SpaRcle::Utils::GameObject> bodyRoot;
 
         /// @property @group(Camera)

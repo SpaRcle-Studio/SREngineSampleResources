@@ -156,7 +156,7 @@ namespace Samples {
 
                 auto&& range = std::views::iota(0, static_cast<int>(verticesCount));
 
-                std::for_each(std::execution::par_unseq, range.begin(), range.end(), [&](int index) {
+                SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(range.begin(), range.end(), [&](int index) {
                     const Vertex& vertex = pVertices[index];
                     vertices[index] = SR_GRAPH_NS::Vertices::StaticMeshVertex{
                         .pos = vertex.position,

@@ -65,7 +65,7 @@ namespace Samples {
 
             std::atomic<uint32_t> blockIndex = 0;
 
-            std::for_each(std::execution::par_unseq, chunkRange.begin(), chunkRange.end(), [&](const auto& pos) {
+            SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(chunkRange.begin(), chunkRange.end(), [&](const auto& pos) {
                 BlockInfo& block = GetBlockUnsafe(pos.x, pos.y, pos.z);
                 block.sides = 0;
                 if (block.exists) {
@@ -80,7 +80,7 @@ namespace Samples {
                 }
             });
 
-            totalSides = std::transform_reduce(std::execution::par_unseq, chunkRange.begin(), chunkRange.end(), 0u, std::plus<>(), [&](const SR_MATH_NS::UVector3& pos) {
+            totalSides = SR_UTILS_NS::TransformReduce<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(chunkRange.begin(), chunkRange.end(), 0u, std::plus<>(), [&](const SR_MATH_NS::UVector3& pos) {
                 return static_cast<uint32_t>(GetBlockUnsafe(pos.x, pos.y, pos.z).sides);
             });
         }
@@ -90,7 +90,7 @@ namespace Samples {
 
             SR_MATH_NS::UVector3Range chunkRange(size.x, size.y, size.z);
 
-            std::for_each(std::execution::par_unseq, chunkRange.begin(), chunkRange.end(), [&](const auto& pos) {
+            SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(chunkRange.begin(), chunkRange.end(), [&](const auto& pos) {
                 const BlockInfo& blockInfo = GetBlockUnsafe(pos.x, pos.y, pos.z);
 
                 if (blockInfo.sides == 0) {
@@ -128,7 +128,7 @@ namespace Samples {
 
             SR_MATH_NS::UVector3Range chunkRange(size.x, size.y, size.z);
 
-            std::for_each(std::execution::par_unseq, chunkRange.begin(), chunkRange.end(), [&](const auto& pos) {
+            SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(chunkRange.begin(), chunkRange.end(), [&](const auto& pos) {
                 const double dx = static_cast<double>(pos.x) / noiseScale + seed;
                 const double dy = static_cast<double>(pos.y) / noiseScale + seed;
                 const double dz = static_cast<double>(pos.z) / noiseScale + seed;

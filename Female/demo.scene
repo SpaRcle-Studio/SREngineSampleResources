@@ -1043,11 +1043,11 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:8.65182
+									9-f:-4.36619
 								8-v:y
-									9-f:1.12234
+									9-f:1.7979
 								8-v:z
-									9-f:6.61397
+									9-f:24.7952
 		2-k:i
 			3-o:d
 				4-v:type
@@ -1246,11 +1246,11 @@ use tabs: true
 																		18-s:Vec4
 																	17-o:value
 																		18-v:x
-																			19-f:50
+																			19-f:1000
 																		18-v:y
-																			19-f:50
+																			19-f:1000
 																		18-v:z
-																			19-f:1
+																			19-f:1000
 																		18-v:w
 																			19-f:1
 															15-k:i
@@ -1335,9 +1335,9 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:-1.44286
+									9-f:-17.1353
 								8-v:y
-									9-f:3.02793
+									9-f:8.45568
 								8-v:z
 									9-f:2.99436
 		2-k:i
@@ -3788,14 +3788,14 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:556.5
+									9-f:803.5
 								8-v:y
-									9-f:345
+									9-f:462
 							7-o:size
 								8-v:x
-									9-f:1113
+									9-f:1607
 								8-v:y
-									9-f:690
+									9-f:924
 							7-o:anchors
 								8-o:min
 								8-o:max
@@ -3975,36 +3975,6 @@ use tabs: true
 									9-f:10
 								8-v:z
 									9-f:1
-		2-k:i
-			3-o:d
-				4-v:type
-					5-s:GameObject
-				4-o:ptr
-					5-v:entityId
-						6-i:3533905577679262169
-					5-a:components
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:DirectionalLight
-								8-o:ptr
-									9-v:entityId
-										10-i:3187941994103187520
-					5-v:name
-						6-s:Directional light
-					5-o:transform
-						6-v:type
-							7-s:Transform3D
-						6-o:ptr
-							7-o:quaternion
-								8-v:x
-									9-f:0.0728929
-								8-v:y
-									9-f:-0.824742
-								8-v:z
-									9-f:0.550033
-								8-v:w
-									9-f:0.109317
 		2-k:i
 			3-o:d
 				4-v:type
@@ -4227,9 +4197,9 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:4.71661
+									9-f:6.2507
 								8-v:z
-									9-f:2.10371
+									9-f:3.63282
 		2-k:i
 			3-o:d
 				4-v:type
@@ -4435,3 +4405,157 @@ use tabs: true
 									9-f:1.03514
 								8-v:z
 									9-f:5.07341
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:2810833491789969846
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:DirectionalLight
+								8-o:ptr
+									9-v:entityId
+										10-i:2903621743795574097
+					5-v:name
+						6-s:Directional light
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:quaternion
+								8-v:x
+									9-f:0.829793
+								8-v:y
+									9-f:-0.150992
+								8-v:z
+									9-f:0.269616
+								8-v:w
+									9-f:0.464706
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:3302527271755589904
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Mesh3D
+								8-o:ptr
+									9-v:entityId
+										10-i:3204322500641354003
+									9-o:material
+										10-v:type
+											11-s:UniqueMaterial
+										10-o:ptr
+											11-o:data
+												12-v:type
+													13-s:MaterialData
+												12-o:ptr
+													13-a:shaderDefines
+													13-o:defaultShader
+														14-v:shaderPath
+															15-s:Engine/Shaders/standard.srsl
+														14-a:uniforms
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:color
+																	17-v:type
+																		18-s:Vec4
+																	17-o:value
+																		18-v:w
+																			19-f:1
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:tiling
+																	17-v:type
+																		18-s:Vec2
+																	17-o:value
+																		18-v:x
+																			19-f:1
+																		18-v:y
+																			19-f:1
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:offset
+																	17-v:type
+																		18-s:Vec2
+																	17-o:value
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:specularSharpness
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:0
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:specularIntensity
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:0
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:shadowIntensity
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:0
+														14-a:samplers
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:diffuse
+																	17-v:type
+																		18-s:Sampler2D
+																	17-v:value
+																		18-s:Engine/Textures/grid_prototype.png
+									9-v:meshPath
+										10-s:Engine/Models/cube_uv.obj
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Rigidbody3D
+								8-o:ptr
+									9-v:entityId
+										10-i:4007460741077825463
+									9-v:mass
+										10-f:100
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:CollisionShape
+								8-o:ptr
+									9-v:entityId
+										10-i:2475294351788430919
+									9-o:rigidbody
+										10-v:entityId
+											11-i:4007460741077825463
+									9-v:type
+										10-s:Box3D
+					5-v:name
+						6-s:Cube
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:-1.44286
+								8-v:y
+									9-f:1.03514
+								8-v:z
+									9-f:8.84472

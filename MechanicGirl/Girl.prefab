@@ -33,6 +33,9 @@ use tabs: true
 							7-o:headObject
 								8-v:entityId
 									9-i:3649400130990012633
+							7-o:headModel
+								8-v:entityId
+									9-i:4291032275102761000
 							7-o:bodyRoot
 								8-v:entityId
 									9-i:4576157519027742504
@@ -5281,7 +5284,7 @@ use tabs: true
 																																		34-v:type
 																																			35-s:Float
 																																		34-v:value
-																																			35-f:1
+																																			35-f:0
 																																32-k:i
 																																	33-o:d
 																																		34-v:id
@@ -5289,7 +5292,7 @@ use tabs: true
 																																		34-v:type
 																																			35-s:Float
 																																		34-v:value
-																																			35-f:0.2
+																																			35-f:0
 																																32-k:i
 																																	33-o:d
 																																		34-v:id
