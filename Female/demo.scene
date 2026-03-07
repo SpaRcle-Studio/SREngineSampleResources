@@ -4186,26 +4186,6 @@ use tabs: true
 					5-s:GameObject
 				4-o:ptr
 					5-v:entityId
-						6-i:3545353555745053999
-					5-v:name
-						6-s:Girl
-					5-v:prefab
-						6-s:Samples/MechanicGirl/Girl.prefab
-					5-o:transform
-						6-v:type
-							7-s:Transform3D
-						6-o:ptr
-							7-o:translation
-								8-v:x
-									9-f:6.2507
-								8-v:z
-									9-f:3.63282
-		2-k:i
-			3-o:d
-				4-v:type
-					5-s:GameObject
-				4-o:ptr
-					5-v:entityId
 						6-i:2979066320777328746
 					5-a:components
 						6-k:i
@@ -4428,13 +4408,13 @@ use tabs: true
 						6-o:ptr
 							7-o:quaternion
 								8-v:x
-									9-f:0.829793
+									9-f:0.792614
 								8-v:y
-									9-f:-0.150992
+									9-f:-0.170783
 								8-v:z
-									9-f:0.269616
+									9-f:0.257536
 								8-v:w
-									9-f:0.464706
+									9-f:0.525615
 		2-k:i
 			3-o:d
 				4-v:type
@@ -4559,3 +4539,18 @@ use tabs: true
 									9-f:1.03514
 								8-v:z
 									9-f:8.84472
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:3016680973613170317
+					5-v:name
+						6-s:Girl
+					5-v:prefab
+						6-s:Samples/MechanicGirl/Girl.prefab
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr

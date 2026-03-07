@@ -186,6 +186,9 @@ namespace Samples {
                     pProceduralMesh->SwapIndices(indices);
                     pProceduralMesh->SwapIndexedVertices(vertices);
                 }
+                else {
+                    SR_WARN("MarchingCubes::GenerateMesh() : ProceduralMesh component not found on the GameObject! Mesh generation skipped.");
+                }
             }
         }
 
