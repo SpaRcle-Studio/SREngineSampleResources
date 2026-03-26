@@ -3,6 +3,13 @@
 //
 
 #include "ChunkManager.h"
+#include "GreedyBoxes.h"
+
+#include <Graphics/Types/Geometry/ProceduralMesh.h>
+
+#include <Physics/CollisionShape.h>
+
+#include <Utils/DebugDraw.h>
 
 #include <Codegen/ChunkManager.generated.hpp>
 
@@ -26,14 +33,7 @@ namespace ProceduralWorld {
             return;
         }
 
-        const int numVoxelsPerAxis = static_cast<int>(m_numPointsPerAxis) - 1;
-        const int numVoxels = numVoxelsPerAxis * numVoxelsPerAxis * numVoxelsPerAxis;
-        const int maxTriangleCount = numVoxels * 5;
-        const int maxVertexCount = maxTriangleCount * 3;
-
-        m_pHashTableSSBO = SR_GRAPH_NS::SSBOInstance::Create<uint32_t>(m_vertexHashTableSize, SR_GRAPH_NS::SSBOUsage::CPUToGPU, "hashTable");
-        m_pVerticesSSBO = SR_GRAPH_NS::SSBOInstance::Create<Vertex>(maxVertexCount, SR_GRAPH_NS::SSBOUsage::GPUToCPU, "vertices", SR_GRAPH_NS::SSBOFlags::StructuredCounter);
-        m_pIndicesSSBO = SR_GRAPH_NS::SSBOInstance::Create<uint32_t>(maxVertexCount, SR_GRAPH_NS::SSBOUsage::GPUToCPU, "indices", SR_GRAPH_NS::SSBOFlags::Counter);
+        ReInit();
 
         Super::Awake();
     }
@@ -49,6 +49,35 @@ namespace ProceduralWorld {
             return;
         }
         m_chunksToLoad.emplace_back(position);
+    }
+
+    void ChunkManager::ReloadChunks() {
+        SR_TRACY_ZONE;
+
+        m_observerPosition = ChunkPosition(SR_INF);
+        UnloadChunks(true);
+    }
+
+    void ChunkManager::ReInit() {
+        const int numVoxelsPerAxis = static_cast<int>(m_numPointsPerAxis) - 1;
+        if (numVoxelsPerAxis <= 0) {
+            SRHalt("ChunkManager::ReInit() : numPointsPerAxis must be greater than 1!");
+            return;
+        }
+
+        const int numVoxels = numVoxelsPerAxis * numVoxelsPerAxis * numVoxelsPerAxis;
+        const int maxTriangleCount = numVoxels * 5;
+        const int maxVertexCount = maxTriangleCount * 3;
+
+        m_pHashTableSSBO.reset();
+        m_pVerticesSSBO.reset();
+        m_pIndicesSSBO.reset();
+
+        m_pHashTableSSBO = SR_GRAPH_NS::SSBOInstance::Create<uint32_t>(m_vertexHashTableSize, SR_GRAPH_NS::SSBOUsage::CPUToGPU, "hashTable");
+        m_pVerticesSSBO = SR_GRAPH_NS::SSBOInstance::Create<Vertex>(maxVertexCount, SR_GRAPH_NS::SSBOUsage::GPUToCPU, "vertices", SR_GRAPH_NS::SSBOFlags::StructuredCounter);
+        m_pIndicesSSBO = SR_GRAPH_NS::SSBOInstance::Create<uint32_t>(maxVertexCount, SR_GRAPH_NS::SSBOUsage::GPUToCPU, "indices", SR_GRAPH_NS::SSBOFlags::Counter);
+
+        ReloadChunks();
     }
 
     void ChunkManager::UpdateChunks() {
@@ -114,20 +143,24 @@ namespace ProceduralWorld {
             }
         }
 
-        UnloadChunks();
+        UnloadChunks(false);
     }
 
     void ChunkManager::GenerateChunkDensity(const ChunkPosition& position) {
         SR_TRACY_ZONE;
 
-        const uint32_t countPexAxis = m_densityCountAxis;
-        const auto densitiesCount = static_cast<uint64_t>(countPexAxis * countPexAxis * countPexAxis);
-        m_pDensitySSBO = SR_GRAPH_NS::SSBOInstance::Create<float_t>(densitiesCount, SR_GRAPH_NS::SSBOUsage::CPUToGPU, "densities");
+        const auto densitiesCount = static_cast<uint64_t>(std::pow(m_densityCountAxis, 3));
+        if (densitiesCount == 0) {
+            SR_WARN("ChunkManager::GenerateChunkDensity() : densityCountAxis must be greater than 0!");
+            return;
+        }
+
+        m_pDensitySSBO = SR_GRAPH_NS::SSBOInstance::Create<float_t>(densitiesCount, SR_GRAPH_NS::SSBOUsage::AutoPreferDevice, "densities");
         m_pDensitySSBO->Memset(0);
 
         if (m_pDensityComputeShader->BeginCompute()) {
             m_pDensitySSBO->Bind();
-            m_pDensityComputeShader->GetShader()->SetConstInt("densityCountAxis"_atom, static_cast<int>(countPexAxis));
+            m_pDensityComputeShader->GetShader()->SetConstInt("densityCountAxis"_atom, static_cast<int>(m_densityCountAxis));
             m_pDensityComputeShader->GetShader()->SetConstInt("seed"_atom, static_cast<int>(m_seed));
             m_pDensityComputeShader->GetShader()->SetConstFloat("isoLevel"_atom, m_isoLevel);
             m_pDensityComputeShader->GetShader()->SetConstFloat("noiseScale"_atom, m_noiseScale);
@@ -236,20 +269,25 @@ namespace ProceduralWorld {
         }
 
         pTransform->SetTranslation({
-            static_cast<float_t>(position.x * (m_chunkSize - 2)),
-            static_cast<float_t>(position.y * (m_chunkSize - 2)),
-            static_cast<float_t>(position.z * (m_chunkSize - 2))
+            static_cast<float_t>(position.x * m_chunkSize),
+            static_cast<float_t>(position.y * m_chunkSize),
+            static_cast<float_t>(position.z * m_chunkSize)
         });
 
+        float_t scale = static_cast<float_t>(m_chunkSize) / static_cast<float_t>(m_densityCountAxis);
+        scale /= static_cast<float_t>(m_densityCountAxis - 2) / static_cast<float_t>(m_densityCountAxis);
+
         const auto aabb = SpaRcle::Utils::Math::AABB(SpaRcle::Utils::Math::FVector3(), {
-            static_cast<float_t>(m_chunkSize - 2),
-            static_cast<float_t>(m_chunkSize - 2),
-            static_cast<float_t>(m_chunkSize - 2)});
+            static_cast<float_t>(m_chunkSize),
+            static_cast<float_t>(m_chunkSize),
+            static_cast<float_t>(m_chunkSize)});
 
         pTransform->SetAABB(aabb);
+        pTransform->SetScale({ scale, scale, scale });
+
+        GenerateChunkDensity(position);
 
         if (auto&& pProceduralMesh = pChunkObject->GetComponent<SR_GTYPES_NS::ProceduralMesh>()) {
-            GenerateChunkDensity(position);
             GenerateGeometry();
             ReadIndices();
             ReadVertices();
@@ -260,6 +298,64 @@ namespace ProceduralWorld {
             SR_ERROR("ChunkManager::GenerateChunks() : chunk object does not have ProceduralMesh component!");
         }
 
+        if (auto&& pCollisionShape = pChunkObject->GetComponent<SR_PTYPES_NS::CollisionShape>()) {
+            m_densities.resize(std::pow(m_densityCountAxis, 3));
+            m_solidDensities.resize(m_densities.size());
+
+            if (void* pData = m_pDensitySSBO->MapData()) {
+                std::memcpy(m_densities.data(), pData, sizeof(float_t) * m_densities.size());
+                m_pDensitySSBO->UnMap();
+            }
+
+            std::ranges::transform(m_densities, m_solidDensities.begin(), [isoLevel = m_isoLevel](float_t density) {
+                return static_cast<uint8_t>(density > isoLevel);
+            });
+
+            const int32_t padding = 0;
+            const int32_t maxAxis = static_cast<int32_t>(m_densityCountAxis) - padding;
+
+            auto&& surface = BuildSurface(m_solidDensities, m_densityCountAxis, m_densityCountAxis, m_densityCountAxis,
+                padding, padding, padding,
+                maxAxis, maxAxis, maxAxis
+            );
+
+            auto&& boxes = BuildGreedyBoxes(m_solidDensities, surface, m_densityCountAxis, m_densityCountAxis, m_densityCountAxis,
+                padding, padding, padding,
+                maxAxis, maxAxis, maxAxis
+            );
+
+            const SR_MATH_NS::FVector3 chunkWorldPos(
+                static_cast<float_t>(position.x * static_cast<int32_t>(m_chunkSize)),
+                static_cast<float_t>(position.y * static_cast<int32_t>(m_chunkSize)),
+                static_cast<float_t>(position.z * static_cast<int32_t>(m_chunkSize))
+            );
+
+            for (auto&& box : boxes) {
+                const SR_MATH_NS::FVector3 greedySize = box.max - box.min;
+                const SR_MATH_NS::FVector3 greedyCenter = (box.min + box.max) * 0.5f;
+
+                const SR_MATH_NS::FVector3 centerOffset = greedyCenter * scale;
+                const SR_MATH_NS::FVector3 halfExtents = greedySize * 0.5f * scale;
+
+                box.min = centerOffset;
+                box.max = centerOffset + halfExtents;
+
+                //SR_UTILS_NS::DebugDraw::Instance().DrawCube(
+                //    SR_ID_INVALID,
+                //    (chunkWorldPos + centerOffset) + transform->GetTranslation(),
+                //    SR_MATH_NS::Quaternion::Identity(),
+                //    halfExtents,
+                //    SR_MATH_NS::FColor(255, 0, 0, 100),
+                //    30.f
+                //);
+            }
+
+            pCollisionShape->SwapBoxes(boxes);
+        }
+        else {
+            SR_ERROR("ChunkManager::GenerateChunks() : chunk object does not have CollisionShape component!");
+        }
+
         pChunkObject->SetEnabled(true);
 
         ChunkInfo& chunkInfo = m_chunks[position];
@@ -267,17 +363,18 @@ namespace ProceduralWorld {
         chunkInfo.pChunkObject = pChunkObject;
     }
 
-    void ChunkManager::UnloadChunks() {
+    void ChunkManager::UnloadChunks(bool all) {
         SR_TRACY_ZONE;
 
         const int unloadRadius = m_unloadRadius;
         m_chunksToUnload.clear();
 
         for (auto&& [position, chunkInfo] : m_chunks) {
-            if (std::abs(position.x - m_observerPosition.x) > unloadRadius ||
-                std::abs(position.y - m_observerPosition.y) > unloadRadius ||
-                std::abs(position.z - m_observerPosition.z) > unloadRadius)
-            {
+            if (all
+                || std::abs(position.x - m_observerPosition.x) > unloadRadius
+                || std::abs(position.y - m_observerPosition.y) > unloadRadius
+                || std::abs(position.z - m_observerPosition.z) > unloadRadius
+            ) {
                 m_chunksToUnload.emplace_back(position);
             }
         }
@@ -300,7 +397,7 @@ namespace ProceduralWorld {
 
         Super::Update(dt);
 
-        if (!gameObject) {
+        if (!gameObject || !m_pMarchingComputeShader || !m_pDensityComputeShader) {
             return;
         }
 

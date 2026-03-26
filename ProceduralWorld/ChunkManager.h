@@ -22,15 +22,19 @@ namespace ProceduralWorld {
         void Update(float_t dt) override;
 
     private:
+        void ReInit();
+
         void UpdateChunks();
         void RequestChunk(const ChunkPosition& position);
         void GenerateChunks();
-        void UnloadChunks();
+        void UnloadChunks(bool all);
 
         void GenerateChunkDensity(const ChunkPosition& position);
         void GenerateGeometry();
         void ReadVertices();
         void ReadIndices();
+
+        void ReloadChunks();
 
     private:
         /// @property
@@ -45,31 +49,36 @@ namespace ProceduralWorld {
         /// @customArgs(pick: enabled, filter name: Prefab, relative: resources)
         /// @customArg(filter value: prefab)
         SpaRcle::Utils::Path m_chunkPrefabPath;
-        /// @property
+        /// @property @onChanged(ReloadChunks)
         uint8_t m_chunkSize = 64;
-        /// @property
+        /// @property @onChanged(ReloadChunks)
+        float_t m_chunkScale = 2.0f;
+        /// @property @onChanged(ReloadChunks)
         uint8_t m_loadRadius = 5;
-        /// @property
+        /// @property @onChanged(ReloadChunks)
         uint8_t m_unloadRadius = 6;
 
-        /// @property
-        uint32_t m_numPointsPerAxis = 16;
-        /// @property
-        uint32_t m_vertexHashTableSize = 65536;
-        /// @property
+        /// @property @onChanged(ReloadChunks)
         uint32_t m_densityCountAxis = 64;
-        /// @property
+        /// @property @onChanged(ReloadChunks)
         uint32_t m_densityComputeGroups = 8;
-        /// @property
+        /// @property @onChanged(ReloadChunks)
         float_t m_noiseScale = 10.0f;
-        /// @property
+        /// @property @onChanged(ReloadChunks)
         int64_t m_seed = 1;
-        /// @property
+        /// @property @onChanged(ReloadChunks)
         float_t m_isoLevel = 0.2f;
+
+        /// @property @onChanged(ReInit) @group(SSBO)
+        uint32_t m_numPointsPerAxis = 16;
+        /// @property @onChanged(ReInit) @group(SSBO)
+        uint32_t m_vertexHashTableSize = 65536;
 
     private:
         SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::StaticMeshVertex> m_vertices;
         SR_HTYPES_NS::FastMemoryArray<uint32_t> m_indices;
+        SR_HTYPES_NS::FastMemoryArray<float_t> m_densities;
+        SR_HTYPES_NS::FastMemoryArray<uint8_t> m_solidDensities;
 
         SR_GTYPES_NS::ComputeShader::Ptr m_pMarchingComputeShader = nullptr;
         SR_GTYPES_NS::ComputeShader::Ptr m_pDensityComputeShader = nullptr;
