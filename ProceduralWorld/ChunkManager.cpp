@@ -10,6 +10,7 @@
 #include <Physics/CollisionShape.h>
 
 #include <Utils/DebugDraw.h>
+#include <Utils/Common/Vertices.h>
 
 #include <Codegen/ChunkManager.generated.hpp>
 
@@ -287,10 +288,26 @@ namespace ProceduralWorld {
 
         GenerateChunkDensity(position);
 
+        GenerateGeometry();
+        ReadIndices();
+        ReadVertices();
+
+        if (auto&& pCollisionShape = pChunkObject->GetComponent<SR_PTYPES_NS::CollisionShape>()) {
+            m_verticesPositions.resize(m_vertices.size());
+            std::ranges::transform(m_vertices, m_verticesPositions.begin(), [scale](const SR_GRAPH_NS::Vertices::StaticMeshVertex& vertex) {
+                return vertex.pos * scale;
+            });
+
+            SR_UTILS_NS::OptimizeVertices(m_verticesPositions, m_indices, m_indices.size() / 4, 1e-2f, m_optimizedIndices);
+
+            pCollisionShape->SwapCustomTriangleMeshVertices(m_verticesPositions);
+            pCollisionShape->SwapCustomTriangleMeshIndices(m_optimizedIndices);
+        }
+        else {
+            SR_ERROR("ChunkManager::GenerateChunks() : chunk object does not have CollisionShape component!");
+        }
+
         if (auto&& pProceduralMesh = pChunkObject->GetComponent<SR_GTYPES_NS::ProceduralMesh>()) {
-            GenerateGeometry();
-            ReadIndices();
-            ReadVertices();
             pProceduralMesh->SwapIndices(m_indices);
             pProceduralMesh->SwapIndexedVertices(m_vertices);
         }
@@ -298,7 +315,7 @@ namespace ProceduralWorld {
             SR_ERROR("ChunkManager::GenerateChunks() : chunk object does not have ProceduralMesh component!");
         }
 
-        if (auto&& pCollisionShape = pChunkObject->GetComponent<SR_PTYPES_NS::CollisionShape>()) {
+        /*if (auto&& pCollisionShape = pChunkObject->GetComponent<SR_PTYPES_NS::CollisionShape>()) {
             m_densities.resize(std::pow(m_densityCountAxis, 3));
             m_solidDensities.resize(m_densities.size());
 
@@ -313,13 +330,14 @@ namespace ProceduralWorld {
 
             const int32_t padding = 0;
             const int32_t maxAxis = static_cast<int32_t>(m_densityCountAxis) - padding;
+            const int32_t density = static_cast<int32_t>(m_densityCountAxis);
 
-            auto&& surface = BuildSurface(m_solidDensities, m_densityCountAxis, m_densityCountAxis, m_densityCountAxis,
+            auto&& surface = BuildSurface(m_solidDensities, density, density, density,
                 padding, padding, padding,
                 maxAxis, maxAxis, maxAxis
             );
 
-            auto&& boxes = BuildGreedyBoxes(m_solidDensities, surface, m_densityCountAxis, m_densityCountAxis, m_densityCountAxis,
+            auto&& boxes = BuildGreedyBoxes(m_solidDensities, surface, density, density, density,
                 padding, padding, padding,
                 maxAxis, maxAxis, maxAxis
             );
@@ -354,7 +372,7 @@ namespace ProceduralWorld {
         }
         else {
             SR_ERROR("ChunkManager::GenerateChunks() : chunk object does not have CollisionShape component!");
-        }
+        }*/
 
         pChunkObject->SetEnabled(true);
 

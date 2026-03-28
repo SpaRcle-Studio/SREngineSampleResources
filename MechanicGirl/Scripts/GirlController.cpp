@@ -20,8 +20,8 @@ namespace Samples {
             m_lock = SR_UTILS_NS::CursorLock(SpaRcle::Utils::CursorLockMode::PlayMode);
         }
 
-        auto&& pRigidbody = rigidbody.Get();
-        if (!pRigidbody) {
+        auto&& pCharacterController = characterController.Get();
+        if (!pCharacterController) {
             return;
         }
 
@@ -34,7 +34,7 @@ namespace Samples {
             pHeadModel->SetEnabled(pHeadModel->GetScene()->IsEditorMode());
         }
 
-        auto&& pTransform = pRigidbody->GetGameObject()->GetTransform();
+        auto&& pTransform = pCharacterController->GetGameObject()->GetTransform();
         pTransform->Rotate(SR_MATH_NS::FVector3(0.f, drag.x * (bodyRotateSpeed / 10.f), 0.f));
 
         /// Walk and Run logic
@@ -94,8 +94,6 @@ namespace Samples {
         const float_t runSpeedCoefficient = runSpeed * 10.f;
         const float_t maxSpeed = (isShift ? runSpeedCoefficient : walkSpeedCoefficient);
 
-        SR_MATH_NS::FVector3 wishVelocity = wishDir * maxSpeed;
-
         if (wishDir.Length() > 0.f) {
             if (isShift) {
                 pAnimator->SetBool("Walk", false);
@@ -111,23 +109,24 @@ namespace Samples {
             pAnimator->SetBool("Run", false);
         }
 
-        SR_MATH_NS::FVector3 velocity = pRigidbody->GetLinearVelocity();
-        SR_MATH_NS::FVector3 horizontalVel = SR_MATH_NS::FVector3(velocity.x, 0.f, velocity.z);
-        SR_MATH_NS::FVector3 deltaV = wishVelocity - horizontalVel;
-        deltaV.y = 0.f;
+        // 3. Рассчитываем горизонтальную скорость
+        const SR_MATH_NS::FVector3 horizontalVelocity = wishDir * maxSpeed;
+
+        // 4. Вертикальная скорость
+        m_verticalVelocity -= SR_EARTH_GRAVITY_CONST * dt;
+
+        // 5. Дислокация для move
+        SR_MATH_NS::FVector3 displacement = horizontalVelocity * dt;
+        displacement.y = m_verticalVelocity * dt;
+
+        const auto flags = pCharacterController->Move(displacement, 0.01f, dt);
+
+        if (flags & SR_PHYSICS_NS::CharacterControllerCollisionFlags::Down) {
+            m_verticalVelocity = 0.f;
+        }
 
         if (auto&& pBody = bodyRoot.Get()) {
             pBody->GetTransform()->SetRotation(pBody->GetTransform()->GetQuaternion().Slerp(targetBodyRootQuat, bodyWalkRotateSpeed * dt * 5.f));
-        }
-
-        if (deltaV.LengthSq() > 0.0001f) {
-            const bool isGrounded = true;
-            const float_t groundAccel = 20.f;
-            const float_t airAccel = 1.f;
-            const float_t maxAccel = isGrounded ? groundAccel : airAccel;
-            const auto&& impulse = deltaV * maxAccel * dt;
-
-            pRigidbody->AddImpulse(impulse);
         }
     }
 }

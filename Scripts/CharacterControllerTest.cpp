@@ -11,7 +11,7 @@
 #include <Scripting/Cpp/CppBehaviour.h>
 
 namespace SpaRcle::Scripts::SREngine {
-    class CharacterController : public SpaRcle::Scripting::CppBehaviour {
+    class CharacterControllerTest : public SpaRcle::Scripting::CppBehaviour {
         SR_CLASS()
     public:
         SR_NODISCARD bool ExecuteInEditMode() const noexcept override { return false; }

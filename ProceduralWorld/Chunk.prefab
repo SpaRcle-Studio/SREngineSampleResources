@@ -135,7 +135,9 @@ use tabs: true
 							7-v:entityId
 								8-i:3551964285296701963
 						6-v:type
-							7-s:Boxes3D
+							7-s:TriangleMesh3D
+						6-v:meshId
+							7-i:-1
 		2-v:name
 			3-s:Chunk
 		2-v:layer

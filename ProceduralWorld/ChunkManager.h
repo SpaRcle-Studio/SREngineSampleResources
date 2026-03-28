@@ -76,6 +76,8 @@ namespace ProceduralWorld {
 
     private:
         SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::StaticMeshVertex> m_vertices;
+        SR_HTYPES_NS::FastMemoryArray<SR_MATH_NS::FVector3> m_verticesPositions;
+        SR_HTYPES_NS::FastMemoryArray<uint32_t> m_optimizedIndices;
         SR_HTYPES_NS::FastMemoryArray<uint32_t> m_indices;
         SR_HTYPES_NS::FastMemoryArray<float_t> m_densities;
         SR_HTYPES_NS::FastMemoryArray<uint8_t> m_solidDensities;

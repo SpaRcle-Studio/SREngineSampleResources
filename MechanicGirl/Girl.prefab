@@ -24,9 +24,9 @@ use tabs: true
 						6-v:behaviourName
 							7-s:GirlController
 						6-o:data
-							7-o:rigidbody
+							7-o:characterController
 								8-v:entityId
-									9-i:3263333063896277555
+									9-i:2495413186136658263
 							7-o:animator
 								8-v:entityId
 									9-i:3994431057642410439
@@ -52,41 +52,18 @@ use tabs: true
 			3-k:i
 				4-o:d
 					5-v:type
-						6-s:Rigidbody3D
+						6-s:CharacterController
 					5-o:ptr
 						6-v:entityId
-							7-i:3263333063896277555
-						6-o:angularLock
-							7-v:x
-								8-b:true
-							7-v:y
-								8-b:true
-							7-v:z
-								8-b:true
-			3-k:i
-				4-o:d
-					5-v:type
-						6-s:CollisionShape
-					5-o:ptr
-						6-v:entityId
-							7-i:4565899709560706563
-						6-o:rigidbody
-							7-v:entityId
-								8-i:3263333063896277555
-						6-v:type
-							7-s:Box3D
-						6-v:material
-							7-s:Samples/MechanicGirl/Player.sras
-						6-o:center
-							7-v:y
-								8-f:1.8
-						6-o:bounds
-							7-v:x
-								8-f:0.45
-							7-v:y
-								8-f:1.8
-							7-v:z
-								8-f:0.37
+							7-i:2495413186136658263
+						6-o:config
+							7-o:offset
+								8-v:y
+									9-f:2
+							7-v:radius
+								8-f:1
+							7-v:height
+								8-f:2
 		2-v:name
 			3-s:Girl
 		2-a:children

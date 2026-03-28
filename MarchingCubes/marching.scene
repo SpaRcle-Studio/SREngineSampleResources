@@ -31,13 +31,13 @@ use tabs: true
 						6-o:ptr
 							7-o:quaternion
 								8-v:x
-									9-f:0.330336
+									9-f:0.289999
 								8-v:y
-									9-f:-0.357386
+									9-f:-0.546288
 								8-v:z
-									9-f:0.13683
+									9-f:0.209154
 								8-v:w
-									9-f:0.862804
+									9-f:0.757446
 		2-k:i
 			3-o:d
 				4-v:type
@@ -605,6 +605,8 @@ use tabs: true
 										10-s:Engine/Models/cube.obj
 					5-v:name
 						6-s:Cube
+					5-v:isEnabled
+						6-b:false
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
@@ -677,6 +679,8 @@ use tabs: true
 										10-s:Engine/Models/cube.obj
 					5-v:name
 						6-s:Cube
+					5-v:isEnabled
+						6-b:false
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
@@ -730,19 +734,15 @@ use tabs: true
 										10-s:Engine/Models/cube.obj
 					5-v:name
 						6-s:Cube
-					5-v:isEnabled
-						6-b:false
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
 						6-o:ptr
-							7-o:scale
+							7-o:translation
 								8-v:x
-									9-f:50
+									9-f:9.08945
 								8-v:y
-									9-f:1
-								8-v:z
-									9-f:50
+									9-f:-4.82982
 		2-k:i
 			3-o:d
 				4-v:type
@@ -791,13 +791,20 @@ use tabs: true
 						6-v:type
 							7-s:Transform3D
 						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:-10.1475
+								8-v:y
+									9-f:-4.12253
+								8-v:z
+									9-f:5.82727
 							7-o:scale
 								8-v:x
-									9-f:25
+									9-f:5
 								8-v:y
-									9-f:25
+									9-f:5
 								8-v:z
-									9-f:25
+									9-f:5
 		2-k:i
 			3-o:d
 				4-v:type
@@ -923,6 +930,200 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:-84.0272
+									9-f:9.05797
 								8-v:y
-									9-f:2.82375
+									9-f:-15.7324
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:4143110276887097702
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Mesh3D
+								8-o:ptr
+									9-v:entityId
+										10-i:3679273215989156413
+									9-o:material
+										10-v:type
+											11-s:FileMaterial
+										10-o:ptr
+											11-v:materialPath
+												12-s:Engine/Materials/default.mat
+									9-v:meshPath
+										10-s:Engine/Models/capsule.obj
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:CharacterController
+								8-o:ptr
+									9-v:entityId
+										10-i:2638699592496992739
+									9-o:config
+					5-v:name
+						6-s:Capsule
+					5-v:isEnabled
+						6-b:false
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:-82.0639
+								8-v:y
+									9-f:4.55766
+								8-v:z
+									9-f:-1.59671
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:3867603203515341387
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Rigidbody3D
+								8-o:ptr
+									9-v:entityId
+										10-i:2532332287149710068
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:CollisionShape
+								8-o:ptr
+									9-v:entityId
+										10-i:3310256865687071569
+									9-o:rigidbody
+										10-v:entityId
+											11-i:2532332287149710068
+									9-v:type
+										10-s:Capsule3D
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Mesh3D
+								8-o:ptr
+									9-v:entityId
+										10-i:2738528534516439738
+									9-o:material
+										10-v:type
+											11-s:FileMaterial
+										10-o:ptr
+											11-v:materialPath
+												12-s:Engine/Materials/default.mat
+									9-v:meshPath
+										10-s:Engine/Models/capsule.obj
+					5-v:name
+						6-s:Capsule
+					5-v:isEnabled
+						6-b:false
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:2768919561801336922
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Rigidbody3D
+								8-o:ptr
+									9-v:entityId
+										10-i:3933796914080320772
+									9-v:isStatic
+										10-b:true
+									9-v:useGravity
+										10-b:false
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:CollisionShape
+								8-o:ptr
+									9-v:entityId
+										10-i:2369366453895353801
+									9-o:rigidbody
+										10-v:entityId
+											11-i:3933796914080320772
+									9-v:type
+										10-s:Box3D
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Mesh3D
+								8-o:ptr
+									9-v:entityId
+										10-i:3284957035471819382
+									9-o:material
+										10-v:type
+											11-s:FileMaterial
+										10-o:ptr
+											11-v:materialPath
+												12-s:Engine/Materials/default.mat
+									9-v:meshPath
+										10-s:Engine/Models/cube.obj
+					5-v:name
+						6-s:Cube
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:9.08945
+								8-v:y
+									9-f:-17.8245
+							7-o:scale
+								8-v:x
+									9-f:4
+								8-v:y
+									9-f:1
+								8-v:z
+									9-f:4
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:3659199294096381822
+					5-v:name
+						6-s:Stair
+					5-v:prefab
+						6-s:Samples/Stairs/Stair.prefab
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:10.8712
+								8-v:y
+									9-f:-16.8779
+								8-v:z
+									9-f:-7.07008
+							7-o:quaternion
+								8-v:y
+									9-f:0.707107
+								8-v:w
+									9-f:0.707107
+							7-o:scale
+								8-v:x
+									9-f:5
+								8-v:y
+									9-f:5
+								8-v:z
+									9-f:5

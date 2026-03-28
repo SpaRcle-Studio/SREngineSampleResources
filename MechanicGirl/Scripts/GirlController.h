@@ -11,6 +11,7 @@
 #include <Graphics/Animations/Animator.h>
 
 #include <Physics/3D/Rigidbody3D.h>
+#include <Physics/CharacterController.h>
 
 #include <Utils/ECS/GameObject.h>
 #include <Utils/Input/InputSystem.h>
@@ -25,7 +26,7 @@ namespace Samples {
 
     public:
         /// @property
-        SpaRcle::Utils::EntityRef<SpaRcle::Physics::Types::Rigidbody3D> rigidbody;
+        SpaRcle::Utils::EntityRef<SpaRcle::Physics::CharacterController> characterController;
         /// @property
         SpaRcle::Utils::EntityRef<SpaRcle::Graphics::Animations::Animator> animator;
         /// @property
@@ -56,6 +57,8 @@ namespace Samples {
         float_t runSpeed = 1.0f;
 
     private:
+        float_t m_verticalVelocity = 0.f;
+        SR_MATH_NS::FVector3 m_velocity;
         float_t m_targetCameraPitch = 0.f;
         std::optional<SpaRcle::Utils::CursorLock> m_lock;
         float_t m_bodyYawTarget = 0.f;
