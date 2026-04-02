@@ -107,39 +107,40 @@ namespace ProceduralWorld {
         const int r = m_loadRadius;
         const int r2 = r * r;
 
-        int x = 0, z = 0;
-        int dx = 1, dz = 0;
+        for (int y = -r; y <= r; ++y) {
+            int x = 0, z = 0;
+            int dx = 1, dz = 0;
 
-        int segmentLength = 1;
-        int segmentPassed = 0;
-        int segmentCount = 0;
+            int segmentLength = 1;
+            int segmentPassed = 0;
+            int segmentCount = 0;
 
-        const int maxSteps = (r * 2 + 1) * (r * 2 + 1);
+            const int maxSteps = (r * 2 + 1) * (r * 2 + 1);
 
-        for (int i = 0; i < maxSteps; ++i) {
-            if (x * x + z * z <= r2) {
-                ChunkPosition coord { m_observerPosition.x + x, 0, m_observerPosition.z + z };
-                if (!m_chunks.contains(coord)) {
-                    RequestChunk(coord);
+            for (int i = 0; i < maxSteps; ++i) {
+                if (x * x + y * y + z * z <= r2) {
+                    ChunkPosition coord{ m_observerPosition.x + x, m_observerPosition.y + y, m_observerPosition.z + z };
+                    if (!m_chunks.contains(coord)) {
+                        RequestChunk(coord);
+                    }
                 }
-            }
 
-            x += dx;
-            z += dz;
+                x += dx;
+                z += dz;
 
-            segmentPassed++;
+                segmentPassed++;
 
-            if (segmentPassed == segmentLength) {
-                segmentPassed = 0;
+                if (segmentPassed == segmentLength) {
+                    segmentPassed = 0;
 
-                // rotate direction
-                int tmp = dx;
-                dx = -dz;
-                dz = tmp;
+                    int tmp = dx;
+                    dx = -dz;
+                    dz = tmp;
 
-                segmentCount++;
-                if (segmentCount % 2 == 0) {
-                    segmentLength++;
+                    segmentCount++;
+                    if (segmentCount % 2 == 0) {
+                        segmentLength++;
+                    }
                 }
             }
         }
@@ -168,6 +169,12 @@ namespace ProceduralWorld {
             m_pDensityComputeShader->GetShader()->SetConstIVec3("chunkCoord"_atom, position);
             m_pDensityComputeShader->Dispatch(m_densityComputeGroups, m_densityComputeGroups, m_densityComputeGroups);
             m_pDensityComputeShader->EndCompute();
+        }
+
+        m_chunks[position].densities.resize(densitiesCount);
+        if (m_pDensitySSBO->Map()) {
+            std::memcpy(m_chunks[position].densities.data(), m_pDensitySSBO->GetMappedData(), densitiesCount * sizeof(float_t));
+            m_pDensitySSBO->UnMap();
         }
     }
 
@@ -232,6 +239,91 @@ namespace ProceduralWorld {
         }
     }
 
+    void ChunkManager::GenerateChunk(const ChunkPosition& position) {
+        SR_TRACY_ZONE;
+
+        m_chunksToReload.Remove(position);
+
+        auto&& chunkInfo = m_chunks[position];
+        if (!chunkInfo.densitiesDirty) {
+            return;
+        }
+        chunkInfo.densitiesDirty = false;
+
+        auto&& pTransform = chunkInfo.pChunkObject->GetTransform().DynamicCast<SpaRcle::Utils::Transform3D>();
+        if (!pTransform) {
+            SR_ERROR("ChunkManager::GenerateChunk() : chunk object transform is not Transform3D!");
+            return;
+        }
+
+        pTransform->SetTranslation({
+            static_cast<float_t>(position.x * m_chunkSize),
+            static_cast<float_t>(position.y * m_chunkSize),
+            static_cast<float_t>(position.z * m_chunkSize)
+        });
+
+        chunkInfo.worldPosition = pTransform->GetGlobalTranslation();
+
+        const float_t scale = GetChunkScale();
+
+        const auto aabb = SpaRcle::Utils::Math::AABB(SpaRcle::Utils::Math::FVector3(), {
+            static_cast<float_t>(m_chunkSize),
+            static_cast<float_t>(m_chunkSize),
+            static_cast<float_t>(m_chunkSize)
+        });
+
+        pTransform->SetAABB(aabb);
+        pTransform->SetScale({ scale, scale, scale });
+
+        if (chunkInfo.densities.empty()) {
+            GenerateChunkDensity(position);
+        }
+        else {
+            if (m_pDensitySSBO->Map()) {
+                std::memcpy(m_pDensitySSBO->GetMappedData(), chunkInfo.densities.data(), chunkInfo.densities.size() * sizeof(float_t));
+                m_pDensitySSBO->Flush();
+                m_pDensitySSBO->UnMap();
+            }
+        }
+
+        GenerateGeometry();
+        ReadIndices();
+        ReadVertices();
+
+        auto&& pCollisionShape = chunkInfo.pChunkObject->GetComponent<SR_PTYPES_NS::CollisionShape>();
+        auto&& pProceduralMesh = chunkInfo.pChunkObject->GetComponent<SR_GTYPES_NS::ProceduralMesh>();
+        auto&& pRigidBody = chunkInfo.pChunkObject->GetComponent<SR_PTYPES_NS::Rigidbody>();
+
+        if (!pCollisionShape || !pProceduralMesh || !pRigidBody) {
+            SR_ERROR("ChunkManager::GenerateChunk() : chunk object must have CollisionShape and ProceduralMesh components!");
+            return;
+        }
+
+        if (m_vertices.empty()) {
+            pProceduralMesh->SetEnabled(false);
+            pCollisionShape->SetEnabled(false);
+            pRigidBody->SetEnabled(false);
+            return;
+        }
+
+        pProceduralMesh->SetEnabled(true);
+        pCollisionShape->SetEnabled(true);
+        pRigidBody->SetEnabled(true);
+
+        m_verticesPositions.resize(m_vertices.size());
+        std::ranges::transform(m_vertices, m_verticesPositions.begin(), [scale](const SR_GRAPH_NS::Vertices::StaticMeshVertex& vertex) {
+            return vertex.pos * scale;
+        });
+
+        SR_UTILS_NS::OptimizeVertices(m_verticesPositions, m_indices, m_indices.size() / 4, 1e-2f, m_optimizedIndices);
+
+        pCollisionShape->SwapCustomTriangleMeshVertices(m_verticesPositions);
+        pCollisionShape->SwapCustomTriangleMeshIndices(m_optimizedIndices);
+
+        pProceduralMesh->SwapIndices(m_indices);
+        pProceduralMesh->SwapIndexedVertices(m_vertices);
+    }
+
     void ChunkManager::GenerateChunks() {
         SR_TRACY_ZONE;
 
@@ -262,123 +354,13 @@ namespace ProceduralWorld {
         }
 
         pChunkObject->SetName("Chunk [{}, {}, {}]"_format(position.x, position.y, position.z));
-
-        auto&& pTransform = pChunkObject->GetTransform().DynamicCast<SpaRcle::Utils::Transform3D>();
-        if (!pTransform) {
-            SR_ERROR("ChunkManager::GenerateChunks() : chunk object transform is not Transform3D!");
-            return;
-        }
-
-        pTransform->SetTranslation({
-            static_cast<float_t>(position.x * m_chunkSize),
-            static_cast<float_t>(position.y * m_chunkSize),
-            static_cast<float_t>(position.z * m_chunkSize)
-        });
-
-        float_t scale = static_cast<float_t>(m_chunkSize) / static_cast<float_t>(m_densityCountAxis);
-        scale /= static_cast<float_t>(m_densityCountAxis - 2) / static_cast<float_t>(m_densityCountAxis);
-
-        const auto aabb = SpaRcle::Utils::Math::AABB(SpaRcle::Utils::Math::FVector3(), {
-            static_cast<float_t>(m_chunkSize),
-            static_cast<float_t>(m_chunkSize),
-            static_cast<float_t>(m_chunkSize)});
-
-        pTransform->SetAABB(aabb);
-        pTransform->SetScale({ scale, scale, scale });
-
-        GenerateChunkDensity(position);
-
-        GenerateGeometry();
-        ReadIndices();
-        ReadVertices();
-
-        if (auto&& pCollisionShape = pChunkObject->GetComponent<SR_PTYPES_NS::CollisionShape>()) {
-            m_verticesPositions.resize(m_vertices.size());
-            std::ranges::transform(m_vertices, m_verticesPositions.begin(), [scale](const SR_GRAPH_NS::Vertices::StaticMeshVertex& vertex) {
-                return vertex.pos * scale;
-            });
-
-            SR_UTILS_NS::OptimizeVertices(m_verticesPositions, m_indices, m_indices.size() / 4, 1e-2f, m_optimizedIndices);
-
-            pCollisionShape->SwapCustomTriangleMeshVertices(m_verticesPositions);
-            pCollisionShape->SwapCustomTriangleMeshIndices(m_optimizedIndices);
-        }
-        else {
-            SR_ERROR("ChunkManager::GenerateChunks() : chunk object does not have CollisionShape component!");
-        }
-
-        if (auto&& pProceduralMesh = pChunkObject->GetComponent<SR_GTYPES_NS::ProceduralMesh>()) {
-            pProceduralMesh->SwapIndices(m_indices);
-            pProceduralMesh->SwapIndexedVertices(m_vertices);
-        }
-        else {
-            SR_ERROR("ChunkManager::GenerateChunks() : chunk object does not have ProceduralMesh component!");
-        }
-
-        /*if (auto&& pCollisionShape = pChunkObject->GetComponent<SR_PTYPES_NS::CollisionShape>()) {
-            m_densities.resize(std::pow(m_densityCountAxis, 3));
-            m_solidDensities.resize(m_densities.size());
-
-            if (void* pData = m_pDensitySSBO->MapData()) {
-                std::memcpy(m_densities.data(), pData, sizeof(float_t) * m_densities.size());
-                m_pDensitySSBO->UnMap();
-            }
-
-            std::ranges::transform(m_densities, m_solidDensities.begin(), [isoLevel = m_isoLevel](float_t density) {
-                return static_cast<uint8_t>(density > isoLevel);
-            });
-
-            const int32_t padding = 0;
-            const int32_t maxAxis = static_cast<int32_t>(m_densityCountAxis) - padding;
-            const int32_t density = static_cast<int32_t>(m_densityCountAxis);
-
-            auto&& surface = BuildSurface(m_solidDensities, density, density, density,
-                padding, padding, padding,
-                maxAxis, maxAxis, maxAxis
-            );
-
-            auto&& boxes = BuildGreedyBoxes(m_solidDensities, surface, density, density, density,
-                padding, padding, padding,
-                maxAxis, maxAxis, maxAxis
-            );
-
-            const SR_MATH_NS::FVector3 chunkWorldPos(
-                static_cast<float_t>(position.x * static_cast<int32_t>(m_chunkSize)),
-                static_cast<float_t>(position.y * static_cast<int32_t>(m_chunkSize)),
-                static_cast<float_t>(position.z * static_cast<int32_t>(m_chunkSize))
-            );
-
-            for (auto&& box : boxes) {
-                const SR_MATH_NS::FVector3 greedySize = box.max - box.min;
-                const SR_MATH_NS::FVector3 greedyCenter = (box.min + box.max) * 0.5f;
-
-                const SR_MATH_NS::FVector3 centerOffset = greedyCenter * scale;
-                const SR_MATH_NS::FVector3 halfExtents = greedySize * 0.5f * scale;
-
-                box.min = centerOffset;
-                box.max = centerOffset + halfExtents;
-
-                //SR_UTILS_NS::DebugDraw::Instance().DrawCube(
-                //    SR_ID_INVALID,
-                //    (chunkWorldPos + centerOffset) + transform->GetTranslation(),
-                //    SR_MATH_NS::Quaternion::Identity(),
-                //    halfExtents,
-                //    SR_MATH_NS::FColor(255, 0, 0, 100),
-                //    30.f
-                //);
-            }
-
-            pCollisionShape->SwapBoxes(boxes);
-        }
-        else {
-            SR_ERROR("ChunkManager::GenerateChunks() : chunk object does not have CollisionShape component!");
-        }*/
-
         pChunkObject->SetEnabled(true);
 
-        ChunkInfo& chunkInfo = m_chunks[position];
+        auto&& chunkInfo = m_chunks[position];
         chunkInfo.position = position;
         chunkInfo.pChunkObject = pChunkObject;
+
+        GenerateChunk(position);
     }
 
     void ChunkManager::UnloadChunks(bool all) {
@@ -394,6 +376,7 @@ namespace ProceduralWorld {
                 || std::abs(position.z - m_observerPosition.z) > unloadRadius
             ) {
                 m_chunksToUnload.emplace_back(position);
+                m_chunksToReload.Remove(position);
             }
         }
 
@@ -410,6 +393,11 @@ namespace ProceduralWorld {
         }
     }
 
+    void ChunkManager::ReloadChunkAtPosition(const ChunkPosition& position) {
+        SR_TRACY_ZONE;
+        m_chunksToReload.Add(position);
+    }
+
     void ChunkManager::Update(float_t dt) {
         SR_TRACY_ZONE;
 
@@ -421,5 +409,33 @@ namespace ProceduralWorld {
 
         UpdateChunks();
         GenerateChunks();
+
+        while (!m_chunksToReload.empty()) {
+            GenerateChunk(m_chunksToReload.front());
+        }
+    }
+
+    float_t ChunkManager::GetChunkScale() const {
+        float_t scale = static_cast<float_t>(m_chunkSize) / static_cast<float_t>(m_densityCountAxis);
+        scale /= static_cast<float_t>(m_densityCountAxis - 2) / static_cast<float_t>(m_densityCountAxis);
+        return scale;
+    }
+
+    ChunkInfo* ChunkManager::GetChunk(const SR_MATH_NS::IVector3& position) {
+        auto&& pIt = m_chunks.find(position);
+        return pIt != m_chunks.end() ? &pIt->second : nullptr;
+    }
+
+    SR_MATH_NS::IVector3 ChunkManager::WorldToChunkPosition(const SR_MATH_NS::FVector3& worldPosition) const {
+        const float_t yOffset = transform->GetGlobalTranslation().y;
+        return SR_MATH_NS::IVector3(
+            static_cast<int32_t>(std::floor(worldPosition.x / m_chunkSize)),
+            static_cast<int32_t>(std::floor((worldPosition.y - yOffset) / m_chunkSize)),
+            static_cast<int32_t>(std::floor(worldPosition.z / m_chunkSize))
+        );
+    }
+
+    ChunkInfo* ChunkManager::GetChunkAtPosition(const SR_MATH_NS::FVector3& position) {
+        return GetChunk(WorldToChunkPosition(position));
     }
 }

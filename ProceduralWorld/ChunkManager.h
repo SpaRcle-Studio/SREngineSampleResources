@@ -9,17 +9,29 @@
 #include <Utils/Types/FlatHashMap.h>
 
 namespace ProceduralWorld {
+    using ChunkPosition = SpaRcle::Utils::Math::IVector3;
+
+    struct ChunkInfo {
+        ChunkPosition position;
+        SR_MATH_NS::FVector3 worldPosition;
+        SpaRcle::Utils::GameObject::Ptr pChunkObject;
+        SR_HTYPES_NS::FastMemoryArray<float_t> densities;
+        bool densitiesDirty = true;
+    };
+
     class ChunkManager : public SpaRcle::Scripting::CppBehaviour {
         SR_CLASS()
         using Super = SpaRcle::Scripting::CppBehaviour;
-        using ChunkPosition = SpaRcle::Utils::Math::IVector3;
-        struct ChunkInfo {
-            ChunkPosition position;
-            SpaRcle::Utils::GameObject::Ptr pChunkObject;
-        };
     public:
         void Awake() override;
         void Update(float_t dt) override;
+        void ReloadChunkAtPosition(const ChunkPosition& position);
+
+        SR_NODISCARD ChunkInfo* GetChunk(const SR_MATH_NS::IVector3& position);
+        SR_NODISCARD ChunkInfo* GetChunkAtPosition(const SR_MATH_NS::FVector3& position);
+        SR_NODISCARD SR_MATH_NS::IVector3 WorldToChunkPosition(const SR_MATH_NS::FVector3& worldPosition) const;
+        SR_NODISCARD uint32_t GetDensitiesCountPerAxis() const { return m_densityCountAxis; }
+        SR_NODISCARD float_t GetChunkScale() const;
 
     private:
         void ReInit();
@@ -29,6 +41,7 @@ namespace ProceduralWorld {
         void GenerateChunks();
         void UnloadChunks(bool all);
 
+        void GenerateChunk(const ChunkPosition& position);
         void GenerateChunkDensity(const ChunkPosition& position);
         void GenerateGeometry();
         void ReadVertices();
@@ -57,6 +70,8 @@ namespace ProceduralWorld {
         uint8_t m_loadRadius = 5;
         /// @property @onChanged(ReloadChunks)
         uint8_t m_unloadRadius = 6;
+        /// @property @onChanged(ReloadChunks)
+        uint8_t m_worldHeight = 3;
 
         /// @property @onChanged(ReloadChunks)
         uint32_t m_densityCountAxis = 64;
@@ -79,7 +94,6 @@ namespace ProceduralWorld {
         SR_HTYPES_NS::FastMemoryArray<SR_MATH_NS::FVector3> m_verticesPositions;
         SR_HTYPES_NS::FastMemoryArray<uint32_t> m_optimizedIndices;
         SR_HTYPES_NS::FastMemoryArray<uint32_t> m_indices;
-        SR_HTYPES_NS::FastMemoryArray<float_t> m_densities;
         SR_HTYPES_NS::FastMemoryArray<uint8_t> m_solidDensities;
 
         SR_GTYPES_NS::ComputeShader::Ptr m_pMarchingComputeShader = nullptr;
@@ -90,11 +104,13 @@ namespace ProceduralWorld {
         SR_GRAPH_NS::SSBOInstance::Ptr m_pVerticesSSBO = nullptr;
         SR_GRAPH_NS::SSBOInstance::Ptr m_pIndicesSSBO = nullptr;
 
-        SpaRcle::Utils::Types::FlatHashMap<ChunkPosition, ChunkInfo> m_chunks;
+        SR_HTYPES_NS::FlatHashMap<ChunkPosition, ChunkInfo> m_chunks;
         std::vector<SpaRcle::Utils::GameObject::Ptr> m_chunksPools;
         ChunkPosition m_observerPosition;
         std::vector<ChunkPosition> m_chunksToLoad;
         std::vector<ChunkPosition> m_chunksToUnload;
+
+        SR_HTYPES_NS::SortedVector<ChunkPosition> m_chunksToReload;
 
     };
 }

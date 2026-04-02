@@ -23,6 +23,7 @@ namespace Samples {
         using Super = CppBehaviour;
     public:
         void Update(float_t dt) override;
+        void FixedUpdate() override;
 
     public:
         /// @property

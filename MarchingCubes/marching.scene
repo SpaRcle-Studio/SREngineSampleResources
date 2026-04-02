@@ -571,6 +571,21 @@ use tabs: true
 											11-i:32
 										10-v:vertexHashTableSize
 											11-i:800000
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:Behaviour
+								8-o:ptr
+									9-v:entityId
+										10-i:2992491200277361060
+									9-v:behaviourName
+										10-s:SphereCasting
+									9-o:data
+										10-o:chunkManager
+											11-v:entityId
+												12-i:4598300894262760187
+										10-v:hardness
+											11-f:0.17
 					5-v:name
 						6-s:Chunk manager
 					5-o:transform
@@ -932,7 +947,7 @@ use tabs: true
 								8-v:x
 									9-f:9.05797
 								8-v:y
-									9-f:-15.7324
+									9-f:-16.1906
 		2-k:i
 			3-o:d
 				4-v:type
@@ -1069,12 +1084,85 @@ use tabs: true
 										10-i:3284957035471819382
 									9-o:material
 										10-v:type
-											11-s:FileMaterial
+											11-s:UniqueMaterial
 										10-o:ptr
-											11-v:materialPath
-												12-s:Engine/Materials/default.mat
+											11-o:data
+												12-v:type
+													13-s:MaterialData
+												12-o:ptr
+													13-a:shaderDefines
+													13-o:defaultShader
+														14-v:shaderPath
+															15-s:Engine/Shaders/standard.srsl
+														14-a:uniforms
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:color
+																	17-v:type
+																		18-s:Vec4
+																	17-o:value
+																		18-v:x
+																			19-f:1
+																		18-v:y
+																			19-f:1
+																		18-v:z
+																			19-f:1
+																		18-v:w
+																			19-f:1
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:tiling
+																	17-v:type
+																		18-s:Vec2
+																	17-o:value
+																		18-v:x
+																			19-f:4
+																		18-v:y
+																			19-f:4
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:offset
+																	17-v:type
+																		18-s:Vec2
+																	17-o:value
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:specularSharpness
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:0.4
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:specularIntensity
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:1
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:shadowIntensity
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:1
+														14-a:samplers
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:diffuse
+																	17-v:type
+																		18-s:Sampler2D
+																	17-v:value
+																		18-s:Engine/Textures/grid_prototype.png
 									9-v:meshPath
-										10-s:Engine/Models/cube.obj
+										10-s:Engine/Models/cube_uv.obj
 					5-v:name
 						6-s:Cube
 					5-o:transform

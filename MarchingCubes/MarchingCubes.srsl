@@ -75,29 +75,37 @@ vec3 coordToWorld(ivec3 coord) {
     return (coord / (textureSize - 1.0) - 0.5) * planetSize;
 }
 
-vec3 calculateNormalAt(vec3 worldPos) {
-    //float epsilon = 1.0;
-    //float dx = GetDensityTrilinear(worldPos + vec3(epsilon, 0.0, 0.0)) -
-    //           GetDensityTrilinear(worldPos - vec3(epsilon, 0.0, 0.0));
-    //float dy = GetDensityTrilinear(worldPos + vec3(0.0, epsilon, 0.0)) -
-    //           GetDensityTrilinear(worldPos - vec3(0.0, epsilon, 0.0));
-    //float dz = GetDensityTrilinear(worldPos + vec3(0.0, 0.0, epsilon)) -
-    //           GetDensityTrilinear(worldPos - vec3(0.0, 0.0, epsilon));
-    //return normalize(vec3(dx, dy, dz));
+//vec3 calculateNormalAt(vec3 worldPos) {
+//    //float epsilon = 1.0;
+//    //float dx = GetDensityTrilinear(worldPos + vec3(epsilon, 0.0, 0.0)) -
+//    //           GetDensityTrilinear(worldPos - vec3(epsilon, 0.0, 0.0));
+//    //float dy = GetDensityTrilinear(worldPos + vec3(0.0, epsilon, 0.0)) -
+//    //           GetDensityTrilinear(worldPos - vec3(0.0, epsilon, 0.0));
+//    //float dz = GetDensityTrilinear(worldPos + vec3(0.0, 0.0, epsilon)) -
+//    //           GetDensityTrilinear(worldPos - vec3(0.0, 0.0, epsilon));
+//    //return normalize(vec3(dx, dy, dz));
+//}
 
+vec3 calculateNormalAt(vec3 worldPos) {
     float delta = 0.5;
     float dx = GetDensity(ivec3(worldPos + vec3(delta, 0, 0))) - GetDensity(ivec3(worldPos - vec3(delta, 0, 0)));
     float dy = GetDensity(ivec3(worldPos + vec3(0, delta, 0))) - GetDensity(ivec3(worldPos - vec3(0, delta, 0)));
     float dz = GetDensity(ivec3(worldPos + vec3(0, 0, delta))) - GetDensity(ivec3(worldPos - vec3(0, 0, delta)));
     return normalize(vec3(dx, dy, dz));
+
+    //float eps = 0.01; // маленький шаг в единицах worldPos
+    //float dx = GetDensityTrilinear(worldPos + vec3(eps,0,0)) - GetDensityTrilinear(worldPos - vec3(eps,0,0));
+    //float dy = GetDensityTrilinear(worldPos + vec3(0,eps,0)) - GetDensityTrilinear(worldPos - vec3(0,eps,0));
+    //float dz = GetDensityTrilinear(worldPos + vec3(0,0,eps)) - GetDensityTrilinear(worldPos - vec3(0,0,eps));
+    //return normalize(vec3(dx,dy,dz));
 }
 
-vec3 computeNormal(ivec3 coord) {
-    float dx = GetDensity(coord + ivec3(1, 0, 0)) - GetDensity(coord - ivec3(1, 0, 0));
-    float dy = GetDensity(coord + ivec3(0, 1, 0)) - GetDensity(coord - ivec3(0, 1, 0));
-    float dz = GetDensity(coord + ivec3(0, 0, 1)) - GetDensity(coord - ivec3(0, 0, 1));
-    return normalize(vec3(dx, dy, dz));
-}
+//vec3 computeNormal(ivec3 coord) {
+//    float dx = GetDensity(coord + ivec3(1, 0, 0)) - GetDensity(coord - ivec3(1, 0, 0));
+//    float dy = GetDensity(coord + ivec3(0, 1, 0)) - GetDensity(coord - ivec3(0, 1, 0));
+//    float dz = GetDensity(coord + ivec3(0, 0, 1)) - GetDensity(coord - ivec3(0, 0, 1));
+//    return normalize(vec3(dx, dy, dz));
+//}
 
 Vertex createVertex(ivec3 coordA, ivec3 coordB) {
     vec3 posA = coordToWorld(coordA);
@@ -106,13 +114,13 @@ Vertex createVertex(ivec3 coordA, ivec3 coordB) {
     float densityA = GetDensity(coordA);
     float densityB = GetDensity(coordB);
 
-    float t = clamp((isoLevel - densityA) / (densityB - densityA), 0.0, 1.0);
-    vec3 position = mix(posA, posB, t);
+    float densityT = clamp((isoLevel - densityA) / (densityB - densityA), 0.0, 1.0);
+    vec3 position = mix(posA, posB, densityT);
 
     Vertex vertex;
     vertex.position = position;
 
-    float textureScale = 10.0;
+    float textureScale = 50.0;
     vertex.uv = (position.xz / float(densityCountAxis - 2)) * textureScale;
 
     //vec3 normalA = computeNormal(coordA);
@@ -122,6 +130,23 @@ Vertex createVertex(ivec3 coordA, ivec3 coordB) {
     //vertex.normal = vec3(0, 1, 0);
 
     vertex.normal = -calculateNormalAt(position);  // минус для внешней нормали
+
+    //vec3 n = abs(vertex.normal);
+    //vec2 uvX = vertex.position.yz * textureScale;
+    //vec2 uvY = vertex.position.xz * textureScale;
+    //vec2 uvZ = vertex.position.xy * textureScale;
+    //vertex.uv = (uvX * n.x + uvY * n.y + uvZ * n.z) / (n.x + n.y + n.z);
+
+    //vec3 t;
+    //vec3 b;
+    //if (abs(vertex.normal.y) > 0.5) {
+    //    t = vec3(1,0,0);
+    //    b = vec3(0,0,1);
+    //} else {
+    //    t = normalize(vec3(vertex.normal.z,0,-vertex.normal.x));
+    //    b = cross(vertex.normal,t);
+    //}
+    //vertex.uv = vec2(dot(vertex.position,t), dot(vertex.position,b)) * textureScale;
 
     return vertex;
 }
