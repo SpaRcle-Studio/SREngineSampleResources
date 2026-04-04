@@ -37,7 +37,7 @@ use tabs: true
 													13-s:
 										10-o:defaultShader
 											11-v:shaderPath
-												12-s:Engine/Shaders/standard.srsl
+												12-s:Samples/MarchingCubes/triplanar.srsl
 											11-a:uniforms
 												12-k:i
 													13-o:d
@@ -96,11 +96,27 @@ use tabs: true
 														14-v:type
 															15-s:Vec2
 														14-o:value
+												12-k:i
+													13-o:d
+														14-v:id
+															15-s:textureScale
+														14-v:type
+															15-s:Float
+														14-v:value
+															15-f:0.5
 											11-a:samplers
 												12-k:i
 													13-o:d
 														14-v:id
-															15-s:diffuse
+															15-s:sandTex
+														14-v:type
+															15-s:Sampler2D
+														14-v:value
+															15-s:Samples/ProceduralWorld/T_YFSM_01_s.tga
+												12-k:i
+													13-o:d
+														14-v:id
+															15-s:soilTex
 														14-v:type
 															15-s:Sampler2D
 														14-v:value
@@ -108,11 +124,11 @@ use tabs: true
 												12-k:i
 													13-o:d
 														14-v:id
-															15-s:normal
+															15-s:stoneTex
 														14-v:type
 															15-s:Sampler2D
 														14-v:value
-															15-s:Samples/ProceduralWorld/TEX_MWAM_Grass_nrm.PNG
+															15-s:Samples/aerial_rocks_04_diff_4k.jpg
 			3-k:i
 				4-o:d
 					5-v:type

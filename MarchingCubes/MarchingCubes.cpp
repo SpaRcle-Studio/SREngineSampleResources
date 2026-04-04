@@ -184,7 +184,7 @@ namespace Samples {
             if (gameObject) {
                 if (auto&& pProceduralMesh = gameObject->GetComponent<SR_GTYPES_NS::ProceduralMesh>()) {
                     pProceduralMesh->SwapIndices(indices);
-                    pProceduralMesh->SwapIndexedVertices(vertices);
+                    pProceduralMesh->SetIndexedVertices(vertices.data(), vertices.size(), SR_GRAPH_NS::Vertices::VertexType::StaticMeshVertex);
                 }
                 else {
                     SR_WARN("MarchingCubes::GenerateMesh() : ProceduralMesh component not found on the GameObject! Mesh generation skipped.");

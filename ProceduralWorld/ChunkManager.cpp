@@ -15,11 +15,46 @@
 #include <Codegen/ChunkManager.generated.hpp>
 
 namespace ProceduralWorld {
-    struct alignas(16) Vertex {
-        alignas(16) SR_MATH_NS::FVector3 position;
-        alignas(16) SR_MATH_NS::FVector3 normal;
-        alignas(16) SR_MATH_NS::FVector2 uv;
+    struct Vertex {
+        SR_MATH_NS::FVector3 pos;
+        float pad0;
+        uint32_t materialID;
+        uint32_t materialID2;
+        float blend;
+        float pad1;
     };
+
+    void computeSmoothNormals(SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::TriplanarMeshVertex>& vertices, const SR_HTYPES_NS::FastMemoryArray<uint32_t>& indices) {
+        SR_TRACY_ZONE;
+
+        static SR_HTYPES_NS::FastMemoryArray<SR_MATH_NS::FVector3> localSums;
+        localSums.resize(vertices.size());
+        std::memset(localSums.data(), 0, localSums.size() * sizeof(SR_MATH_NS::FVector3));
+
+        // вычисляем нормали по треугольникам
+        auto range = std::views::iota(size_t(0), indices.size() / 3);
+        SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::Seq>(range.begin(), range.end(), [&](size_t t){
+            uint32_t ia = indices[t * 3 + 0];
+            uint32_t ib = indices[t * 3 + 1];
+            uint32_t ic = indices[t * 3 + 2];
+
+            SR_MATH_NS::FVector3 a = vertices[ia].pos;
+            SR_MATH_NS::FVector3 b = vertices[ib].pos;
+            SR_MATH_NS::FVector3 c = vertices[ic].pos;
+
+            SR_MATH_NS::FVector3 n = (SR_MATH_NS::FVector3::Cross(b - a, c - a)).Normalized();
+
+            localSums[ia] += n;
+            localSums[ib] += n;
+            localSums[ic] += n;
+        });
+
+        // объединяем локальные суммы
+        SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(vertices.begin(), vertices.end(), [&](auto& v){
+            size_t idx = &v - &vertices[0];
+            v.norm = localSums[idx].Normalized();
+        });
+    }
 
     void ChunkManager::Awake() {
         SR_TRACY_ZONE;
@@ -90,7 +125,6 @@ namespace ProceduralWorld {
         }
 
         SpaRcle::Utils::Math::FVector3 cameraPosition = pMainCamera->GetTransform()->GetTranslation();
-        cameraPosition.y = 0.f; // ignore height for chunk loading
 
         SpaRcle::Utils::Math::IVector3 currentChunkCoords = {
             static_cast<int32_t>(std::floor(cameraPosition.x / m_chunkSize)),
@@ -157,7 +191,7 @@ namespace ProceduralWorld {
             return;
         }
 
-        m_pDensitySSBO = SR_GRAPH_NS::SSBOInstance::Create<float_t>(densitiesCount, SR_GRAPH_NS::SSBOUsage::AutoPreferDevice, "densities");
+        m_pDensitySSBO = SR_GRAPH_NS::SSBOInstance::Create<Voxel>(densitiesCount, SR_GRAPH_NS::SSBOUsage::AutoPreferDevice, "voxels");
         m_pDensitySSBO->Memset(0);
 
         if (m_pDensityComputeShader->BeginCompute()) {
@@ -171,9 +205,9 @@ namespace ProceduralWorld {
             m_pDensityComputeShader->EndCompute();
         }
 
-        m_chunks[position].densities.resize(densitiesCount);
+        m_chunks[position].voxels.resize(densitiesCount);
         if (m_pDensitySSBO->Map()) {
-            std::memcpy(m_chunks[position].densities.data(), m_pDensitySSBO->GetMappedData(), densitiesCount * sizeof(float_t));
+            std::memcpy(m_chunks[position].voxels.data(), m_pDensitySSBO->GetMappedData(), densitiesCount * sizeof(Voxel));
             m_pDensitySSBO->UnMap();
         }
     }
@@ -226,10 +260,11 @@ namespace ProceduralWorld {
 
             SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(range.begin(), range.end(), [&](int index) {
                 const Vertex& vertex = pVertices[index];
-                m_vertices[index] = SR_GRAPH_NS::Vertices::StaticMeshVertex{
-                    .pos = vertex.position,
-                    .uv = vertex.uv,
-                    .norm = vertex.normal
+                m_vertices[index] = SR_GRAPH_NS::Vertices::TriplanarMeshVertex{
+                    .pos = vertex.pos,
+                    .materialId = vertex.materialID,
+                    .materialId2 = vertex.materialID2,
+                    .blend = vertex.blend
                 };
             });
 
@@ -245,10 +280,10 @@ namespace ProceduralWorld {
         m_chunksToReload.Remove(position);
 
         auto&& chunkInfo = m_chunks[position];
-        if (!chunkInfo.densitiesDirty) {
+        if (!chunkInfo.voxelsDirty) {
             return;
         }
-        chunkInfo.densitiesDirty = false;
+        chunkInfo.voxelsDirty = false;
 
         auto&& pTransform = chunkInfo.pChunkObject->GetTransform().DynamicCast<SpaRcle::Utils::Transform3D>();
         if (!pTransform) {
@@ -275,12 +310,12 @@ namespace ProceduralWorld {
         pTransform->SetAABB(aabb);
         pTransform->SetScale({ scale, scale, scale });
 
-        if (chunkInfo.densities.empty()) {
+        if (chunkInfo.voxels.empty()) {
             GenerateChunkDensity(position);
         }
         else {
             if (m_pDensitySSBO->Map()) {
-                std::memcpy(m_pDensitySSBO->GetMappedData(), chunkInfo.densities.data(), chunkInfo.densities.size() * sizeof(float_t));
+                std::memcpy(m_pDensitySSBO->GetMappedData(), chunkInfo.voxels.data(), chunkInfo.voxels.size() * sizeof(Voxel));
                 m_pDensitySSBO->Flush();
                 m_pDensitySSBO->UnMap();
             }
@@ -289,6 +324,8 @@ namespace ProceduralWorld {
         GenerateGeometry();
         ReadIndices();
         ReadVertices();
+
+        computeSmoothNormals(m_vertices, m_indices);
 
         auto&& pCollisionShape = chunkInfo.pChunkObject->GetComponent<SR_PTYPES_NS::CollisionShape>();
         auto&& pProceduralMesh = chunkInfo.pChunkObject->GetComponent<SR_GTYPES_NS::ProceduralMesh>();
@@ -299,7 +336,14 @@ namespace ProceduralWorld {
             return;
         }
 
-        if (m_vertices.empty()) {
+        m_verticesPositions.resize(m_vertices.size());
+        std::ranges::transform(m_vertices, m_verticesPositions.begin(), [scale](const auto& vertex) {
+            return vertex.pos * scale;
+        });
+
+        SR_UTILS_NS::OptimizeVertices(m_verticesPositions, m_indices, m_indices.size() / 4, 1e-2f, m_optimizedIndices);
+
+        if (m_verticesPositions.empty()) {
             pProceduralMesh->SetEnabled(false);
             pCollisionShape->SetEnabled(false);
             pRigidBody->SetEnabled(false);
@@ -310,18 +354,11 @@ namespace ProceduralWorld {
         pCollisionShape->SetEnabled(true);
         pRigidBody->SetEnabled(true);
 
-        m_verticesPositions.resize(m_vertices.size());
-        std::ranges::transform(m_vertices, m_verticesPositions.begin(), [scale](const SR_GRAPH_NS::Vertices::StaticMeshVertex& vertex) {
-            return vertex.pos * scale;
-        });
-
-        SR_UTILS_NS::OptimizeVertices(m_verticesPositions, m_indices, m_indices.size() / 4, 1e-2f, m_optimizedIndices);
-
         pCollisionShape->SwapCustomTriangleMeshVertices(m_verticesPositions);
         pCollisionShape->SwapCustomTriangleMeshIndices(m_optimizedIndices);
 
         pProceduralMesh->SwapIndices(m_indices);
-        pProceduralMesh->SwapIndexedVertices(m_vertices);
+        pProceduralMesh->SetIndexedVertices(m_vertices.data(), m_vertices.size(), SR_GRAPH_NS::Vertices::VertexType::TriplanarMeshVertex);
     }
 
     void ChunkManager::GenerateChunks() {

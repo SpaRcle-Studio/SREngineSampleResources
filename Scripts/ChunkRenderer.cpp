@@ -48,7 +48,7 @@ namespace Samples {
 
             RebuildVerticesAndIndices();
 
-            pMesh->SwapIndexedVertices(vertices);
+            pMesh->SetIndexedVertices(vertices.data(), vertices.size(), SR_GRAPH_NS::Vertices::VertexType::StaticMeshVertex);
             pMesh->SwapIndices(indices);
         }
 

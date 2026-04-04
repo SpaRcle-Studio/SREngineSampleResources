@@ -11,12 +11,19 @@
 namespace ProceduralWorld {
     using ChunkPosition = SpaRcle::Utils::Math::IVector3;
 
+    struct Voxel {
+        float density;        // текущая плотность
+        uint32_t materialID;  // основной материал
+        uint32_t materialID2; // дополнительный материал
+        float blend;         // смешивание между материалами
+    };
+
     struct ChunkInfo {
         ChunkPosition position;
         SR_MATH_NS::FVector3 worldPosition;
         SpaRcle::Utils::GameObject::Ptr pChunkObject;
-        SR_HTYPES_NS::FastMemoryArray<float_t> densities;
-        bool densitiesDirty = true;
+        SR_HTYPES_NS::FastMemoryArray<Voxel> voxels;
+        bool voxelsDirty = true;
     };
 
     class ChunkManager : public SpaRcle::Scripting::CppBehaviour {
@@ -70,8 +77,6 @@ namespace ProceduralWorld {
         uint8_t m_loadRadius = 5;
         /// @property @onChanged(ReloadChunks)
         uint8_t m_unloadRadius = 6;
-        /// @property @onChanged(ReloadChunks)
-        uint8_t m_worldHeight = 3;
 
         /// @property @onChanged(ReloadChunks)
         uint32_t m_densityCountAxis = 64;
@@ -90,7 +95,7 @@ namespace ProceduralWorld {
         uint32_t m_vertexHashTableSize = 65536;
 
     private:
-        SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::StaticMeshVertex> m_vertices;
+        SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::TriplanarMeshVertex> m_vertices;
         SR_HTYPES_NS::FastMemoryArray<SR_MATH_NS::FVector3> m_verticesPositions;
         SR_HTYPES_NS::FastMemoryArray<uint32_t> m_optimizedIndices;
         SR_HTYPES_NS::FastMemoryArray<uint32_t> m_indices;

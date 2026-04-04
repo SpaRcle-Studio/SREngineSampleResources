@@ -208,7 +208,7 @@ namespace Samples {
                     vertex.norm = detailVertex.normal;
                 }
 
-                pProceduralMesh->SwapIndexedVertices(vertices);
+                pProceduralMesh->SetIndexedVertices(vertices.data(), vertices.size(), SR_GRAPH_NS::Vertices::VertexType::StaticMeshVertex);
                 m_computeShader->GetPipeline()->UnMapSSBO(verticesSSBO);
             }
 

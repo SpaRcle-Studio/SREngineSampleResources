@@ -39,13 +39,15 @@ namespace ProceduralWorld {
                     if (distSquared < eraseRadiusSquared) {
                         const uint32_t index = z * densityPerAxis * densityPerAxis + y * densityPerAxis + x;
                         const float_t dist = sqrt(distSquared); // sqrt только для формулы снижения плотности
-                        const float_t previousDensity = chunk.densities[index];
 
-                        chunk.densities[index] -= (eraseRadius - dist) * hardness;
-                        chunk.densities[index] = std::max(chunk.densities[index], -1.0f);
+                        float_t& density = chunk.voxels[index].density;
+                        const float_t previousDensity = density;
 
-                        if (!SR_MATH_NS::IsEquals(previousDensity, chunk.densities[index])) {
-                            chunk.densitiesDirty = true;
+                        density -= (eraseRadius - dist) * hardness;
+                        density = std::max(density, -1.0f);
+
+                        if (!SR_MATH_NS::IsEquals(previousDensity, chunk.voxels[index].density)) {
+                            chunk.voxelsDirty = true;
                             affected = true;
                         }
                     }
