@@ -31,13 +31,13 @@ use tabs: true
 						6-o:ptr
 							7-o:quaternion
 								8-v:x
-									9-f:0.289999
+									9-f:-0.210025
 								8-v:y
-									9-f:-0.546288
+									9-f:-0.750268
 								8-v:z
-									9-f:0.209154
+									9-f:0.56025
 								8-v:w
-									9-f:0.757446
+									9-f:-0.281261
 		2-k:i
 			3-o:d
 				4-v:type
@@ -1301,3 +1301,27 @@ use tabs: true
 									9-f:5
 								8-v:z
 									9-f:5
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:3676954971324704518
+					5-v:name
+						6-s:Grass
+					5-v:layer
+						6-s:Transparent
+					5-v:prefab
+						6-s:Samples/Grass/Grass.prefab
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:9.08869
+								8-v:y
+									9-f:-17.0195
+								8-v:z
+									9-f:-0.417788

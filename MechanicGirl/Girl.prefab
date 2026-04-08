@@ -3224,7 +3224,7 @@ use tabs: true
 																										26-v:type
 																											27-s:Float
 																										26-v:value
-																											27-f:0.1
+																											27-f:1
 																								24-k:i
 																									25-o:d
 																										26-v:id
@@ -3554,7 +3554,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:0.3
+																															31-f:1
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -3935,7 +3935,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:0.3
+																															31-f:1
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -4062,7 +4062,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:0.4
+																															31-f:1
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -4316,7 +4316,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:0.2
+																															31-f:1
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -4589,7 +4589,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:0.1
+																															31-f:1
 																												28-k:i
 																													29-o:d
 																														30-v:id

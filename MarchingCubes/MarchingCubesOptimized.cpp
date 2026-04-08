@@ -200,16 +200,16 @@ namespace Samples {
                 uint32_t uniqueVerticesCount = *reinterpret_cast<uint32_t*>(pData);
                 SR_LOG("MarchingCubes::DebugReadSSBO() : uniqueVerticesCount = {}", uniqueVerticesCount);
 
-                vertices.resize(uniqueVerticesCount);
-                for (uint32_t i = 0; i < uniqueVerticesCount; ++i) {
-                    auto& vertex = vertices[i];
-                    auto& detailVertex = reinterpret_cast<Vertex*>(reinterpret_cast<uint8_t*>(pData) + sizeof(uint32_t) * 4)[i];
-                    vertex.pos = detailVertex.position;
-                    vertex.norm = detailVertex.normal;
-                }
+                //vertices.resize(uniqueVerticesCount);
+                //for (uint32_t i = 0; i < uniqueVerticesCount; ++i) {
+                //    auto& vertex = vertices[i];
+                //    auto& detailVertex = reinterpret_cast<Vertex*>(reinterpret_cast<uint8_t*>(pData) + sizeof(uint32_t) * 4)[i];
+                //    vertex.pos = detailVertex.position;
+                //    vertex.norm = detailVertex.normal;
+                //}
 
-                pProceduralMesh->SetIndexedVertices(vertices.data(), vertices.size(), SR_GRAPH_NS::Vertices::VertexType::StaticMeshVertex);
-                m_computeShader->GetPipeline()->UnMapSSBO(verticesSSBO);
+                //pProceduralMesh->SetIndexedVertices(vertices.data(), vertices.size(), SR_GRAPH_NS::Vertices::VertexType::StaticMeshVertex);
+                //m_computeShader->GetPipeline()->UnMapSSBO(verticesSSBO);
             }
 
             //uint32_t trianglesCount = *reinterpret_cast<uint32_t*>(pData);
@@ -248,7 +248,7 @@ namespace Samples {
         int32_t vertexCacheSSBO = SR_ID_INVALID;
 
         SR_HTYPES_NS::FastMemoryArray<uint32_t> indices;
-        SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::StaticMeshVertex> vertices;
+        //SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::StaticMeshVertex> vertices;
 
         /// @property
         uint32_t numPointsPerAxis = 10;

@@ -24,11 +24,11 @@ namespace ProceduralWorld {
         float pad1;
     };
 
-    void computeSmoothNormals(SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::TriplanarMeshVertex>& vertices, const SR_HTYPES_NS::FastMemoryArray<uint32_t>& indices) {
+    void computeSmoothNormals(SR_UTILS_NS::VertexDataBuffer& vertices, const SR_HTYPES_NS::FastMemoryArray<uint32_t>& indices) {
         SR_TRACY_ZONE;
 
         static SR_HTYPES_NS::FastMemoryArray<SR_MATH_NS::FVector3> localSums;
-        localSums.resize(vertices.size());
+        localSums.resize(vertices.GetVertexCount());
         std::memset(localSums.data(), 0, localSums.size() * sizeof(SR_MATH_NS::FVector3));
 
         // вычисляем нормали по треугольникам
@@ -38,9 +38,9 @@ namespace ProceduralWorld {
             uint32_t ib = indices[t * 3 + 1];
             uint32_t ic = indices[t * 3 + 2];
 
-            SR_MATH_NS::FVector3 a = vertices[ia].pos;
-            SR_MATH_NS::FVector3 b = vertices[ib].pos;
-            SR_MATH_NS::FVector3 c = vertices[ic].pos;
+            SR_MATH_NS::FVector3 a = *(SR_MATH_NS::FVector3*)vertices.GetVertex(ia, SR_UTILS_NS::VertexAttribute::Position);
+            SR_MATH_NS::FVector3 b = *(SR_MATH_NS::FVector3*)vertices.GetVertex(ib, SR_UTILS_NS::VertexAttribute::Position);
+            SR_MATH_NS::FVector3 c = *(SR_MATH_NS::FVector3*)vertices.GetVertex(ic, SR_UTILS_NS::VertexAttribute::Position);
 
             SR_MATH_NS::FVector3 n = (SR_MATH_NS::FVector3::Cross(b - a, c - a)).Normalized();
 
@@ -50,9 +50,12 @@ namespace ProceduralWorld {
         });
 
         // объединяем локальные суммы
-        SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(vertices.begin(), vertices.end(), [&](auto& v){
-            size_t idx = &v - &vertices[0];
-            v.norm = localSums[idx].Normalized();
+        range = std::views::iota(size_t(0), vertices.GetVertexCount());
+        SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(range.begin(), range.end(), [&](uint32_t index){
+            SR_MATH_NS::FVector3 normal = localSums[index].Normalized();
+            SR_MATH_NS::FVector3 tangent = SR_MATH_NS::FVector3::Cross(normal, SR_MATH_NS::FVector3(0, 1, 0)).Normalized();
+            vertices.SetVertex(index, SR_UTILS_NS::VertexAttribute::Normal, &normal);
+            vertices.SetVertex(index, SR_UTILS_NS::VertexAttribute::Tangent, &tangent);
         });
     }
 
@@ -254,18 +257,24 @@ namespace ProceduralWorld {
 
         if (auto&& pVertices = reinterpret_cast<Vertex*>(m_pVerticesSSBO->MapData())) {
             const uint32_t verticesCount = m_pVerticesSSBO->GetCounter();
-            m_vertices.resize(verticesCount);
+            m_vertices.Allocate(verticesCount);
+            m_vertices.SetLayout(SR_UTILS_NS::VertexLayoutDescription()
+                .AddAttribute(SR_UTILS_NS::VertexAttribute::Position, SR_UTILS_NS::VertexAttributeFormat::Float32, 3)
+                .AddAttribute(SR_UTILS_NS::VertexAttribute::Normal, SR_UTILS_NS::VertexAttributeFormat::Float32, 3)
+                .AddAttribute(SR_UTILS_NS::VertexAttribute::Tangent, SR_UTILS_NS::VertexAttributeFormat::Float32, 4)
+                .AddAttribute(SR_UTILS_NS::VertexAttribute::MaterialID0, SR_UTILS_NS::VertexAttributeFormat::UInt32, 1)
+                .AddAttribute(SR_UTILS_NS::VertexAttribute::MaterialID1, SR_UTILS_NS::VertexAttributeFormat::UInt32, 1)
+                .AddAttribute(SR_UTILS_NS::VertexAttribute::BlendFactor, SR_UTILS_NS::VertexAttributeFormat::Float32, 1)
+            );
 
             auto&& range = std::views::iota(0, static_cast<int>(verticesCount));
 
             SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(range.begin(), range.end(), [&](int index) {
                 const Vertex& vertex = pVertices[index];
-                m_vertices[index] = SR_GRAPH_NS::Vertices::TriplanarMeshVertex{
-                    .pos = vertex.pos,
-                    .materialId = vertex.materialID,
-                    .materialId2 = vertex.materialID2,
-                    .blend = vertex.blend
-                };
+                m_vertices.SetVertex(index, SR_UTILS_NS::VertexAttribute::Position, &vertex.pos);
+                m_vertices.SetVertex(index, SR_UTILS_NS::VertexAttribute::MaterialID0, &vertex.materialID);
+                m_vertices.SetVertex(index, SR_UTILS_NS::VertexAttribute::MaterialID1, &vertex.materialID2);
+                m_vertices.SetVertex(index, SR_UTILS_NS::VertexAttribute::BlendFactor, &vertex.blend);
             });
 
             m_pVerticesSSBO->ResetCounter();
@@ -336,9 +345,11 @@ namespace ProceduralWorld {
             return;
         }
 
-        m_verticesPositions.resize(m_vertices.size());
-        std::ranges::transform(m_vertices, m_verticesPositions.begin(), [scale](const auto& vertex) {
-            return vertex.pos * scale;
+        m_verticesPositions.resize(m_vertices.GetVertexCount());
+        auto&& positionsRange = std::views::iota(0, static_cast<int>(m_vertices.GetVertexCount()));
+        std::ranges::transform(positionsRange, m_verticesPositions.begin(), [&](uint32_t index) {
+            SR_MATH_NS::FVector3 pos = *(SR_MATH_NS::FVector3*)m_vertices.GetVertex(index, SR_UTILS_NS::VertexAttribute::Position);
+            return pos * scale;
         });
 
         SR_UTILS_NS::OptimizeVertices(m_verticesPositions, m_indices, m_indices.size() / 4, 1e-2f, m_optimizedIndices);
@@ -358,7 +369,7 @@ namespace ProceduralWorld {
         pCollisionShape->SwapCustomTriangleMeshIndices(m_optimizedIndices);
 
         pProceduralMesh->SwapIndices(m_indices);
-        pProceduralMesh->SetIndexedVertices(m_vertices.data(), m_vertices.size(), SR_GRAPH_NS::Vertices::VertexType::TriplanarMeshVertex);
+        pProceduralMesh->SetIndexedVertices(m_vertices);
     }
 
     void ChunkManager::GenerateChunks() {

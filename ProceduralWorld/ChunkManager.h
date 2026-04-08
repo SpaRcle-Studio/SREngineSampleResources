@@ -95,7 +95,7 @@ namespace ProceduralWorld {
         uint32_t m_vertexHashTableSize = 65536;
 
     private:
-        SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::TriplanarMeshVertex> m_vertices;
+        SR_UTILS_NS::VertexDataBuffer m_vertices;
         SR_HTYPES_NS::FastMemoryArray<SR_MATH_NS::FVector3> m_verticesPositions;
         SR_HTYPES_NS::FastMemoryArray<uint32_t> m_optimizedIndices;
         SR_HTYPES_NS::FastMemoryArray<uint32_t> m_indices;

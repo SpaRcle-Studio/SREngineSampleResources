@@ -44,12 +44,12 @@ namespace Samples {
             RegenerateChunkData();
             PreCalcBlockMeshes();
 
-            vertices.resize(totalSides * 6);
+            //vertices.resize(totalSides * 6);
             //indices.resize(totalSides * 4);
 
             RebuildVerticesAndIndices();
 
-            pMesh->SetIndexedVertices(vertices.data(), vertices.size(), SR_GRAPH_NS::Vertices::VertexType::StaticMeshVertex);
+            //pMesh->SetIndexedVertices(vertices.data(), vertices.size(), SR_GRAPH_NS::Vertices::VertexType::StaticMeshVertex);
             //pMesh->SwapIndices(indices);
         }
 
@@ -104,13 +104,13 @@ namespace Samples {
                         continue;
                     }
 
-                    AddFace(
-                        pos.x + face.originOffset.x,
-                        pos.y + face.originOffset.y,
-                        pos.z + face.originOffset.z,
-                        face.normal, face.offsetU, face.offsetV,
-                        vertices.data() + baseIndex
-                    );
+                    //AddFace(
+                    //    pos.x + face.originOffset.x,
+                    //    pos.y + face.originOffset.y,
+                    //    pos.z + face.originOffset.z,
+                    //    face.normal, face.offsetU, face.offsetV,
+                    //    vertices.data() + baseIndex
+                    //);
 
                     baseIndex += 6;
                 }
@@ -138,46 +138,46 @@ namespace Samples {
             });
         }
 
-        SR_FORCE_INLINE void SR_FASTCALL AddFace(
-            uint32_t x, uint32_t y, uint32_t z,
-            const SR_MATH_NS::FVector3& normal,
-            const SR_MATH_NS::FVector3& offsetU,
-            const SR_MATH_NS::FVector3& offsetV,
-            SR_GRAPH_NS::Vertices::StaticMeshVertexAligned* pVertices
-        ) {
-            constexpr static SR_MATH_NS::FVector2 uvs[4] = { {0, 0}, {0, 1}, {1, 0}, {1, 1} };
-            const SR_MATH_NS::FVector3 origin(static_cast<float_t>(x), static_cast<float_t>(y), static_cast<float_t>(z));
-
-            pVertices[0] = { origin,                     0.f, uvs[0], {}, normal };
-            pVertices[1] = { origin + offsetV,           0.f, uvs[1], {}, normal };
-            pVertices[2] = { origin + offsetU,           0.f, uvs[2], {}, normal };
-
-            pVertices[3] = { origin + offsetV,           0.f, uvs[1], {}, normal };
-            pVertices[4] = { origin + offsetU + offsetV, 0.f, uvs[3], {}, normal };
-            pVertices[5] = { origin + offsetU,           0.f, uvs[2], {}, normal };
-
-            /*pVertices[0] = { origin,                     0.f, uvs[0], {}, normal };
-            pVertices[1] = { origin + offsetV,           0.f, uvs[1], {}, normal };
-            pVertices[2] = { origin + offsetU,           0.f, uvs[2], {}, normal };
-            pVertices[3] = { origin + offsetU + offsetV, 0.f, uvs[3], {}, normal };*/
-
-            //pIndices[0] = baseIndex + 0;
-            //pIndices[1] = baseIndex + 1;
-            //pIndices[2] = baseIndex + 2;
-            //pIndices[3] = baseIndex + 3;
-
-            /*pVertices[0] = { origin,                     uvs[0], normal };
-            pVertices[1] = { origin + offsetV,           uvs[1], normal };
-            pVertices[2] = { origin + offsetU,           uvs[2], normal };
-            pVertices[3] = { origin + offsetU + offsetV, uvs[3], normal };
-
-            pIndices[0] = baseIndex + 0;
-            pIndices[1] = baseIndex + 1;
-            pIndices[2] = baseIndex + 2;
-            pIndices[3] = baseIndex + 1;
-            pIndices[4] = baseIndex + 3;
-            pIndices[5] = baseIndex + 2;*/
-        }
+//        SR_FORCE_INLINE void SR_FASTCALL AddFace(
+//            uint32_t x, uint32_t y, uint32_t z,
+//            const SR_MATH_NS::FVector3& normal,
+//            const SR_MATH_NS::FVector3& offsetU,
+//            const SR_MATH_NS::FVector3& offsetV,
+//            SR_GRAPH_NS::Vertices::StaticMeshVertexAligned* pVertices
+//        ) {
+//            constexpr static SR_MATH_NS::FVector2 uvs[4] = { {0, 0}, {0, 1}, {1, 0}, {1, 1} };
+//            const SR_MATH_NS::FVector3 origin(static_cast<float_t>(x), static_cast<float_t>(y), static_cast<float_t>(z));
+//
+//            pVertices[0] = { origin,                     0.f, uvs[0], {}, normal };
+//            pVertices[1] = { origin + offsetV,           0.f, uvs[1], {}, normal };
+//            pVertices[2] = { origin + offsetU,           0.f, uvs[2], {}, normal };
+//
+//            pVertices[3] = { origin + offsetV,           0.f, uvs[1], {}, normal };
+//            pVertices[4] = { origin + offsetU + offsetV, 0.f, uvs[3], {}, normal };
+//            pVertices[5] = { origin + offsetU,           0.f, uvs[2], {}, normal };
+//
+//            /*pVertices[0] = { origin,                     0.f, uvs[0], {}, normal };
+//            pVertices[1] = { origin + offsetV,           0.f, uvs[1], {}, normal };
+//            pVertices[2] = { origin + offsetU,           0.f, uvs[2], {}, normal };
+//            pVertices[3] = { origin + offsetU + offsetV, 0.f, uvs[3], {}, normal };*/
+//
+//            //pIndices[0] = baseIndex + 0;
+//            //pIndices[1] = baseIndex + 1;
+//            //pIndices[2] = baseIndex + 2;
+//            //pIndices[3] = baseIndex + 3;
+//
+//            /*pVertices[0] = { origin,                     uvs[0], normal };
+//            pVertices[1] = { origin + offsetV,           uvs[1], normal };
+//            pVertices[2] = { origin + offsetU,           uvs[2], normal };
+//            pVertices[3] = { origin + offsetU + offsetV, uvs[3], normal };
+//
+//            pIndices[0] = baseIndex + 0;
+//            pIndices[1] = baseIndex + 1;
+//            pIndices[2] = baseIndex + 2;
+//            pIndices[3] = baseIndex + 1;
+//            pIndices[4] = baseIndex + 3;
+//            pIndices[5] = baseIndex + 2;*/
+//        }
 
         BlockInfo& GetBlock(uint32_t x, uint32_t y, uint32_t z) {
             if (x >= size.x || y >= size.y || z >= size.z) SR_UNLIKELY_ATTRIBUTE {
@@ -200,7 +200,7 @@ namespace Samples {
         }
 
     private:
-        SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::StaticMeshVertexAligned> vertices;
+        //SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::StaticMeshVertexAligned> vertices;
         SR_HTYPES_NS::FastMemoryArray<uint32_t> indices;
         bool isDirty = true;
 

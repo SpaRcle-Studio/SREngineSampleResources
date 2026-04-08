@@ -152,18 +152,18 @@ namespace Samples {
 
             if (auto&& pVertices = reinterpret_cast<Vertex*>(pVerticesSSBO->MapData())) {
                 const uint32_t verticesCount = pVerticesSSBO->GetCounter();
-                vertices.resize(verticesCount);
+                ///vertices.resize(verticesCount);
 
                 auto&& range = std::views::iota(0, static_cast<int>(verticesCount));
 
-                SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(range.begin(), range.end(), [&](int index) {
-                    const Vertex& vertex = pVertices[index];
-                    vertices[index] = SR_GRAPH_NS::Vertices::StaticMeshVertex{
-                        .pos = vertex.position,
-                        .uv = vertex.uv,
-                        .norm = vertex.normal
-                    };
-                });
+                //SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(range.begin(), range.end(), [&](int index) {
+                //    const Vertex& vertex = pVertices[index];
+                //    vertices[index] = SR_GRAPH_NS::Vertices::StaticMeshVertex{
+                //        .pos = vertex.position,
+                //        .uv = vertex.uv,
+                //        .norm = vertex.normal
+                //    };
+                //});
 
                 pVerticesSSBO->ResetCounter();
                 pVerticesSSBO->FlushCounter();
@@ -181,15 +181,15 @@ namespace Samples {
             ReadIndices();
             ReadVertices();
 
-            if (gameObject) {
-                if (auto&& pProceduralMesh = gameObject->GetComponent<SR_GTYPES_NS::ProceduralMesh>()) {
-                    pProceduralMesh->SwapIndices(indices);
-                    pProceduralMesh->SetIndexedVertices(vertices.data(), vertices.size(), SR_GRAPH_NS::Vertices::VertexType::StaticMeshVertex);
-                }
-                else {
-                    SR_WARN("MarchingCubes::GenerateMesh() : ProceduralMesh component not found on the GameObject! Mesh generation skipped.");
-                }
-            }
+            //if (gameObject) {
+            //    if (auto&& pProceduralMesh = gameObject->GetComponent<SR_GTYPES_NS::ProceduralMesh>()) {
+            //        pProceduralMesh->SwapIndices(indices);
+            //        pProceduralMesh->SetIndexedVertices(vertices.data(), vertices.size(), SR_GRAPH_NS::Vertices::VertexType::StaticMeshVertex);
+            //    }
+            //    else {
+            //        SR_WARN("MarchingCubes::GenerateMesh() : ProceduralMesh component not found on the GameObject! Mesh generation skipped.");
+            //    }
+            //}
         }
 
         void Update(float_t dt) override {
@@ -222,7 +222,7 @@ namespace Samples {
         }
 
     private:
-        SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::StaticMeshVertex> vertices;
+        //SR_HTYPES_NS::FastMemoryArray<SR_GRAPH_NS::Vertices::StaticMeshVertex> vertices;
         SR_HTYPES_NS::FastMemoryArray<uint32_t> indices;
 
         bool isDirty = true;

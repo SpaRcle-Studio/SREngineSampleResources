@@ -56,9 +56,9 @@ vec4 getMaterialColor(uint matId) {
 }
 
 vec4 triplanarMaterial() {
-    vec4 cA = getMaterialColor(MATERIAL_ID);
-    vec4 cB = getMaterialColor(MATERIAL_ID2);
-    return mix(cA, cB, BLEND);
+    vec4 cA = getMaterialColor(MATERIAL_ID0);
+    vec4 cB = getMaterialColor(MATERIAL_ID1);
+    return mix(cA, cB, BLEND_FACTOR);
 }
 
 //vec4 sampleTriplanar(vec3 worldPos, vec3 normal) {
