@@ -51,7 +51,7 @@ namespace ProceduralWorld {
 
         // объединяем локальные суммы
         range = std::views::iota(size_t(0), vertices.GetVertexCount());
-        SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(range.begin(), range.end(), [&](uint32_t index){
+        SR_UTILS_NS::ForEach<SR_UTILS_NS::ExecutionPolicy::ParUnSeq>(range.begin(), range.end(), [&](size_t index){
             SR_MATH_NS::FVector3 normal = localSums[index].Normalized();
             SR_MATH_NS::FVector3 tangent = SR_MATH_NS::FVector3::Cross(normal, SR_MATH_NS::FVector3(0, 1, 0)).Normalized();
             vertices.SetVertex(index, SR_UTILS_NS::VertexAttribute::Normal, &normal);

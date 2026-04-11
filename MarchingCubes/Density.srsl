@@ -79,6 +79,10 @@ float fbm(vec3 p) {
     return v;
 }
 
+float fbm2(vec2 p) {
+    return fbm(vec3(p.x, p.y, 0.0));
+}
+
 float ridged(vec3 p)
 {
     float n = perlinNoise(p);
@@ -86,35 +90,82 @@ float ridged(vec3 p)
     return n * n;
 }
 
-[[THREADS(8, 8, 8)]]
-void compute() {
-    ivec3 voxelPos = ivec3(GLOBAL_INVOCATION_ID.xyz);
+/// ivec3 chunkCoord - координаты чанка в мире (могут быть отрицательными)
+Voxel CalculateVoxel(float density, vec3 worldPos, vec3 noisePos) {
+    Voxel voxel;
+    voxel.density = density;
 
-    if (any(greaterThanEqual(voxelPos, ivec3(densityCountAxis)))) {
-       return;
+    float height = worldPos.y - 16.0;
+
+    // === БИОМ ===
+    float biome = fbm2(noisePos.xz * 0.02) * 0.5 + 0.5;
+
+    // 0 → пустыня
+    // 1 → нормальный/горный регион
+
+    // === ДОП. ВАРИАЦИЯ ===
+    float variation = fbm(noisePos * 0.1);
+
+    // === ВЫСОТНЫЕ ФАКТОРЫ ===
+    float sandLevel = 18.0 + biome * 10.0 + variation * 2.0;
+    float rockLevel = 35.0 + variation * 5.0;
+
+    // === ГЛУБИНА (ВАЖНО) ===
+    float underground = clamp(density / 10.0, 0.0, 1.0);
+
+    // === ВЕСА МАТЕРИАЛОВ ===
+    float sand = 0.0;
+    float grass = 0.0;
+    float rock = 0.0;
+
+    // --- песок ---
+    sand = 1.0 - smoothstep(sandLevel - 3.0, sandLevel + 3.0, height);
+    sand *= (1.0 - biome); // песок только в "пустынных" регионах
+
+    // --- трава ---
+    float grassZone = smoothstep(sandLevel - 2.0, sandLevel + 4.0, height) *
+                      (1.0 - smoothstep(rockLevel - 5.0, rockLevel + 5.0, height));
+
+    grass = grassZone * (1.0 - underground);
+
+    // --- камень ---
+    rock = underground; // под землей всегда камень
+
+    // плюс горы
+    float mountainFactor = smoothstep(30.0, 60.0, height);
+    rock = max(rock, mountainFactor);
+
+    // === НОРМАЛИЗАЦИЯ ===
+    vec3 weights = vec3(grass, rock, sand);
+    weights /= max(dot(weights, vec3(1.0)), 0.0001);
+
+    // === ПЕРЕГОН В ТВОЮ СХЕМУ (костыль, но ок) ===
+    if (weights.x > weights.y && weights.x > weights.z)
+    {
+        voxel.materialID = 0;
+        voxel.materialID2 = (weights.y > weights.z) ? 1 : 2;
+        voxel.blend = max(weights.y, weights.z);
+    }
+    else if (weights.y > weights.z)
+    {
+        voxel.materialID = 1;
+        voxel.materialID2 = (weights.x > weights.z) ? 0 : 2;
+        voxel.blend = max(weights.x, weights.z);
+    }
+    else
+    {
+        voxel.materialID = 2;
+        voxel.materialID2 = (weights.x > weights.y) ? 0 : 1;
+        voxel.blend = max(weights.x, weights.y);
     }
 
-    int index = voxelPos.x
-             + voxelPos.y * densityCountAxis
-             + voxelPos.z * densityCountAxis * densityCountAxis;
+    return voxel;
+}
 
-    // Глобальная мировая позиция
-    vec3 world = vec3(voxelPos + chunkCoord * (densityCountAxis - 2));
-    world.y += 32.0; // смещение, чтобы не было артефактов на границах чанков
+Voxel CalculateVoxelMaterial(float density, vec3 noisePos) {
+    Voxel voxel;
+    voxel.density = density;
 
-    vec3 noisePos = world * (max((noiseScale - isoLevel), 0.0) / 100.0);
-
-    float continents = fbm(noisePos * 0.01);
-    float hills = fbm(noisePos * 0.1) * 20.0;
-    float mountains = ridged(noisePos * 0.05) * 60.0;
-
-    float terrainHeight = 20.0 + hills + mountains * continents;
-    float density = terrainHeight - world.y;
-    voxels[index].density = density;
-
-    // ----------------------
-    // Материалы
-    // ----------------------
     float matSoil   = smoothstep(0.0, 8.0, density) * fbm(noisePos * 0.2); // земля ближе к поверхности
     float matStone  = smoothstep(-10.0, 5.0, -density) * ridged(noisePos * 0.1); // камень под землёй
     float matSand   = smoothstep(5.0, 12.0, density) * fbm(noisePos * 0.3); // песок на поверхности
@@ -145,9 +196,39 @@ void compute() {
     // пересчёт blend относительно первого материала
     float blend = wB / (wA + wB + 1e-6);
 
-    voxels[index].materialID   = uint(matA);
-    voxels[index].materialID2  = uint(matB);
-    voxels[index].blend        = blend;
+    voxel.materialID   = uint(matA);
+    voxel.materialID2  = uint(matB);
+    voxel.blend        = blend;
+
+    return voxel;
+}
+
+[[THREADS(8, 8, 8)]]
+void compute() {
+    ivec3 voxelPos = ivec3(GLOBAL_INVOCATION_ID.xyz);
+
+    if (any(greaterThanEqual(voxelPos, ivec3(densityCountAxis)))) {
+       return;
+    }
+
+    int index = voxelPos.x
+             + voxelPos.y * densityCountAxis
+             + voxelPos.z * densityCountAxis * densityCountAxis;
+
+    // Глобальная мировая позиция
+    vec3 world = vec3(voxelPos + chunkCoord * (densityCountAxis - 2));
+    world.y += 32.0; // смещение, чтобы не было артефактов на границах чанков
+
+    vec3 noisePos = world * (max((noiseScale - isoLevel), 0.0) / 100.0);
+
+    float continents = fbm(noisePos * 0.01);
+    float hills = fbm(noisePos * 0.1) * 20.0;
+    float mountains = ridged(noisePos * 0.05) * 60.0;
+
+    float terrainHeight = 20.0 + hills + mountains * continents;
+    float density = terrainHeight - world.y;
+
+    voxels[index] = CalculateVoxel(density, world, noisePos);
 
     // ----------------------
     // Сглаживание материалов по соседям

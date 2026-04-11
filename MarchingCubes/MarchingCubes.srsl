@@ -94,20 +94,18 @@ Vertex createVertex(ivec3 coordA, ivec3 coordB) {
     Voxel voxelB = GetVoxel(coordB);
 
     float densityT = clamp((isoLevel - voxelA.density) / (voxelB.density - voxelA.density), 0.0, 1.0);
-    float blend = mix(voxelA.blend, voxelB.blend, densityT);
 
     Vertex vertex;
     vertex.position = mix(posA, posB, densityT);
 
-    uint matA = (blend < 0.5) ? voxelA.materialID : voxelB.materialID;
-    uint matB = (blend < 0.5) ? voxelA.materialID2 : voxelB.materialID2;
+    // выбираем доминирующий воксель по позиции
+    Voxel v = (densityT < 0.5) ? voxelA : voxelB;
 
-    if (voxelA.materialID == voxelB.materialID) { matA = voxelA.materialID; }
-    if (voxelA.materialID2 == voxelB.materialID2) { matB = voxelA.materialID2; }
+    vertex.materialID = v.materialID;
+    vertex.materialID2 = v.materialID2;
 
-    vertex.materialID = matA;
-    vertex.materialID2 = matB;
-    vertex.blend = blend;
+    // blend интерполируем отдельно
+    vertex.blend = mix(voxelA.blend, voxelB.blend, densityT);
 
     return vertex;
 }
