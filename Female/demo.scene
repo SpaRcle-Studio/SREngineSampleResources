@@ -1518,8 +1518,6 @@ use tabs: true
 																	17-f:1
 																16-v:y
 																	17-f:1
-									9-v:isEnabled
-										10-b:false
 									9-v:layer
 										10-s:UI
 									9-o:transform
@@ -3788,14 +3786,14 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:803.5
+									9-f:730.5
 								8-v:y
-									9-f:462
+									9-f:508.5
 							7-o:size
 								8-v:x
-									9-f:1607
+									9-f:1461
 								8-v:y
-									9-f:924
+									9-f:1017
 							7-o:anchors
 								8-o:min
 								8-o:max
