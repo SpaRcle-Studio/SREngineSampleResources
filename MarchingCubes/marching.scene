@@ -1325,3 +1325,33 @@ use tabs: true
 									9-f:-16.8688
 								8-v:z
 									9-f:-0.417788
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:2349029938144430702
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:ParticleEmitter
+								8-o:ptr
+									9-v:entityId
+										10-i:2336425139696565936
+									9-o:material
+										10-v:type
+											11-s:UniqueMaterial
+										10-o:ptr
+											11-o:data
+												12-v:type
+													13-s:MaterialData
+												12-o:ptr
+													13-a:shaderDefines
+					5-v:name
+						6-s:New GameObject
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
