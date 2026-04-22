@@ -1390,6 +1390,8 @@ use tabs: true
 																	17-f:1
 																16-v:y
 																	17-f:1
+									9-v:isEnabled
+										10-b:false
 									9-v:layer
 										10-s:UI
 									9-o:transform
@@ -3658,14 +3660,14 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:725.5
+									9-f:761.5
 								8-v:y
-									9-f:508.5
+									9-f:480
 							7-o:size
 								8-v:x
-									9-f:1451
+									9-f:1523
 								8-v:y
-									9-f:1017
+									9-f:960
 							7-o:anchors
 								8-o:min
 								8-o:max
@@ -3684,6 +3686,9 @@ use tabs: true
 								8-o:ptr
 									9-v:entityId
 										10-i:3425324025154736329
+									9-o:renderParameters
+										10-a:includeLayers
+										10-a:excludeLayers
 						6-k:i
 							7-o:d
 								8-v:type
@@ -3860,6 +3865,9 @@ use tabs: true
 								8-o:ptr
 									9-v:entityId
 										10-i:3659237248921321047
+									9-o:renderParameters
+										10-a:includeLayers
+										10-a:excludeLayers
 					5-v:name
 						6-s:Camera
 					5-v:isEnabled
@@ -3885,6 +3893,9 @@ use tabs: true
 										10-i:2411826560778551855
 									9-v:renderTechnique
 										10-s:Engine/Render/DebugShadows.srtech
+									9-o:renderParameters
+										10-a:includeLayers
+										10-a:excludeLayers
 					5-v:name
 						6-s:Camera
 					5-v:isEnabled
@@ -3910,6 +3921,9 @@ use tabs: true
 										10-i:3215482487057794732
 									9-v:renderTechnique
 										10-s:Engine/Render/Render.srptech
+									9-o:renderParameters
+										10-a:includeLayers
+										10-a:excludeLayers
 						6-k:i
 							7-o:d
 								8-v:type
@@ -4042,9 +4056,21 @@ use tabs: true
 								8-o:ptr
 									9-v:entityId
 										10-i:2487055581209525447
-									9-v:shaderPath
-										10-s:Engine/Shaders/skybox-procedural.srsl
+									9-o:material
+										10-v:type
+											11-s:UniqueMaterial
+										10-o:ptr
+											11-o:data
+												12-v:type
+													13-s:MaterialData
+												12-o:ptr
+													13-a:shaderDefines
+													13-o:defaultShader
+														14-v:shaderPath
+															15-s:Engine/Shaders/skybox-procedural.srsl
 					5-v:name
+						6-s:Skybox
+					5-v:layer
 						6-s:Skybox
 					5-o:transform
 						6-v:type
@@ -4424,6 +4450,9 @@ use tabs: true
 						6-v:type
 							7-s:Transform3D
 						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:-0.105276
 		2-k:i
 			3-o:d
 				4-v:type
@@ -4567,10 +4596,32 @@ use tabs: true
 														14-i:4589826879933733238
 													13-v:priority
 														14-i:-1
-													13-v:renderTechnique
-														14-s:Engine/Render/Empty.srtech
-													13-v:type
-														14-s:Offscreen
+													13-o:renderParameters
+														14-a:includeLayers
+														14-a:excludeLayers
+															15-k:i
+																16-v:d
+																	17-s:Mirror
+														14-o:postProcess
+															15-v:has
+																16-b:true
+															15-v:value
+																16-b:false
+														14-o:hdr
+															15-v:has
+																16-b:true
+															15-v:value
+																16-b:false
+														14-o:autoExposure
+															15-v:has
+																16-b:true
+															15-v:value
+																16-b:false
+														14-o:colorBufferQuality
+															15-v:has
+																16-b:true
+															15-v:value
+																16-s:None
 									9-v:name
 										10-s:Video camera
 									9-o:transform
@@ -4649,6 +4700,38 @@ use tabs: true
 																		18-f:1
 									9-v:name
 										10-s:RT
+									9-v:isEnabled
+										10-b:false
+									9-o:transform
+										10-v:type
+											11-s:Transform3D
+										10-o:ptr
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:GameObject
+								8-o:ptr
+									9-v:entityId
+										10-i:4013089597388911639
+									9-a:components
+										10-k:i
+											11-o:d
+												12-v:type
+													13-s:RenderTarget
+												12-o:ptr
+													13-v:entityId
+														14-i:3800426946391206247
+													13-v:name
+														14-s:MirrorRT
+													13-v:mode
+														14-s:CameraShare
+													13-o:camera
+														14-v:entityId
+															15-i:4589826879933733238
+													13-v:frameBufferName
+														14-s:SceneView
+									9-v:name
+										10-s:RT 2
 									9-o:transform
 										10-v:type
 											11-s:Transform3D

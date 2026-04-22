@@ -31,13 +31,13 @@ use tabs: true
 						6-o:ptr
 							7-o:quaternion
 								8-v:x
-									9-f:-0.210025
+									9-f:0.165065
 								8-v:y
-									9-f:-0.750268
+									9-f:0.826379
 								8-v:z
-									9-f:0.56025
+									9-f:-0.440318
 								8-v:w
-									9-f:-0.281261
+									9-f:0.309793
 		2-k:i
 			3-o:d
 				4-v:type
@@ -650,6 +650,7 @@ use tabs: true
 										10-i:3077876435324521093
 									9-v:near
 										10-f:1
+									9-o:renderParameters
 						6-k:i
 							7-o:d
 								8-v:type
