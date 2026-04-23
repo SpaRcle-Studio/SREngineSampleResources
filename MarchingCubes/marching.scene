@@ -53,8 +53,18 @@ use tabs: true
 								8-o:ptr
 									9-v:entityId
 										10-i:3518179792232274713
-									9-v:shaderPath
-										10-s:Engine/Shaders/skybox-procedural.srsl
+									9-o:material
+										10-v:type
+											11-s:UniqueMaterial
+										10-o:ptr
+											11-o:data
+												12-v:type
+													13-s:MaterialData
+												12-o:ptr
+													13-a:shaderDefines
+													13-o:defaultShader
+														14-v:shaderPath
+															15-s:Engine/Shaders/skybox-procedural.srsl
 					5-v:name
 						6-s:Skybox
 					5-o:transform
@@ -651,6 +661,8 @@ use tabs: true
 									9-v:near
 										10-f:1
 									9-o:renderParameters
+										10-a:includeLayers
+										10-a:excludeLayers
 						6-k:i
 							7-o:d
 								8-v:type

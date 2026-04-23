@@ -4617,11 +4617,37 @@ use tabs: true
 																16-b:true
 															15-v:value
 																16-b:false
+														14-o:shadowsQuality
+															15-v:has
+																16-b:true
+															15-v:value
+																16-s:Low
 														14-o:colorBufferQuality
 															15-v:has
 																16-b:true
 															15-v:value
 																16-s:None
+														14-o:multisampling
+															15-v:has
+																16-b:true
+															15-v:value
+																16-b:false
+														14-o:screenSize
+															15-v:has
+																16-b:true
+															15-o:value
+																16-v:x
+																	17-i:300
+																16-v:y
+																	17-i:200
+														14-o:screenScale
+															15-v:has
+																16-b:true
+															15-o:value
+																16-v:x
+																	17-f:0.5
+																16-v:y
+																	17-f:0.5
 									9-v:name
 										10-s:Video camera
 									9-o:transform
@@ -4732,6 +4758,33 @@ use tabs: true
 														14-s:SceneView
 									9-v:name
 										10-s:RT 2
+									9-o:transform
+										10-v:type
+											11-s:Transform3D
+										10-o:ptr
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:GameObject
+								8-o:ptr
+									9-v:entityId
+										10-i:4486088312556816244
+									9-a:components
+										10-k:i
+											11-o:d
+												12-v:type
+													13-s:RenderTarget
+												12-o:ptr
+													13-v:entityId
+														14-i:4357932516225506536
+													13-v:name
+														14-s:PixelArt
+													13-v:mode
+														14-s:Custom
+									9-v:name
+										10-s:Render Target
+									9-v:isEnabled
+										10-b:false
 									9-o:transform
 										10-v:type
 											11-s:Transform3D
