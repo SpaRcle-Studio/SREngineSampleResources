@@ -266,6 +266,135 @@ use tabs: true
 										10-s:Box3D
 					5-v:name
 						6-s:Cube
+					5-a:children
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:GameObject
+								8-o:ptr
+									9-v:entityId
+										10-i:3239077030425055969
+									9-a:components
+										10-k:i
+											11-o:d
+												12-v:type
+													13-s:Mesh3D
+												12-o:ptr
+													13-v:entityId
+														14-i:4332411079168428864
+													13-o:material
+														14-v:type
+															15-s:UniqueMaterial
+														14-o:ptr
+															15-o:data
+																16-v:type
+																	17-s:MaterialData
+																16-o:ptr
+																	17-a:shaderDefines
+																	17-o:defaultShader
+																		18-v:shaderPath
+																			19-s:Engine/Shaders/standard.srsl
+																		18-a:uniforms
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:color
+																					21-v:type
+																						22-s:Vec4
+																					21-o:value
+																						22-v:x
+																							23-f:1
+																						22-v:y
+																							23-f:1
+																						22-v:z
+																							23-f:1
+																						22-v:w
+																							23-f:1
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:tiling
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																						22-v:x
+																							23-f:50
+																						22-v:y
+																							23-f:50
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:offset
+																					21-v:type
+																						22-s:Vec2
+																					21-o:value
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:specularSharpness
+																					21-v:type
+																						22-s:Float
+																					21-v:value
+																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:specularIntensity
+																					21-v:type
+																						22-s:Float
+																					21-v:value
+																						22-f:0
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:shadowIntensity
+																					21-v:type
+																						22-s:Float
+																					21-v:value
+																						22-f:1
+																		18-a:samplers
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:diffuse
+																					21-v:type
+																						22-s:Sampler2D
+																					21-v:value
+																						22-s:Engine/Textures/grid_prototype.png
+													13-v:meshPath
+														14-s:Engine/Models/cube_uv.obj
+										10-k:i
+											11-o:d
+												12-v:type
+													13-s:Rigidbody3D
+												12-o:ptr
+													13-v:entityId
+														14-i:3358533910985836272
+													13-v:isStatic
+														14-b:true
+													13-v:useGravity
+														14-b:false
+										10-k:i
+											11-o:d
+												12-v:type
+													13-s:CollisionShape
+												12-o:ptr
+													13-v:entityId
+														14-i:3094726147646127625
+													13-o:rigidbody
+														14-v:entityId
+															15-i:3358533910985836272
+													13-v:type
+														14-s:Box3D
+									9-v:name
+										10-s:Cube
+									9-o:transform
+										10-v:type
+											11-s:Transform3D
+										10-o:ptr
+											11-o:translation
+												12-v:x
+													13-f:-1.999
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
@@ -1207,11 +1336,11 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:-17.1353
+									9-f:15.7667
 								8-v:y
 									9-f:8.45568
 								8-v:z
-									9-f:2.99436
+									9-f:-18.1726
 		2-k:i
 			3-o:d
 				4-v:type
@@ -4073,10 +4202,10 @@ use tabs: true
 																						22-k:i
 																							23-o:d
 																								24-v:type
-																									25-s:Text
+																									25-s:TextMesh
 																								24-o:ptr
 																									25-v:entityId
-																										26-i:3926388035941908190
+																										26-i:4003424925142313019
 																									25-o:material
 																										26-v:type
 																											27-s:UniqueMaterial
@@ -4088,7 +4217,7 @@ use tabs: true
 																													29-a:shaderDefines
 																													29-o:defaultShader
 																														30-v:shaderPath
-																															31-s:Engine/Shaders/UI/text.srsl
+																															31-s:Engine/Shaders/UI/text-mesh.srsl
 																														30-a:uniforms
 																															31-k:i
 																																32-o:d
@@ -4103,12 +4232,26 @@ use tabs: true
 																																			35-f:1
 																																		34-v:z
 																																			35-f:1
+																														30-a:samplers
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:diffuse
+																																	33-v:type
+																																		34-s:Sampler2D
+																																	33-v:value
+																																		34-s:FontAtlas/0/MTSDF/0
+																									25-o:font
+																										26-v:id
+																											27-s:Engine/Fonts/Default.font
 																									25-v:text
 																										26-s:Health
-																									25-v:font
-																										26-s:Engine/Fonts/CalibriL.ttf
 																									25-v:fontSize
-																										26-i:25
+																										26-f:32
+																									25-v:horizontalAlignment
+																										26-s:Center
+																									25-v:verticalAlignment
+																										26-s:Middle
 																					21-v:name
 																						22-s:Text
 																					21-o:transform
@@ -4120,11 +4263,6 @@ use tabs: true
 																									25-f:29.7
 																								24-v:y
 																									25-f:100
-																							23-o:offsetMin
-																								24-v:x
-																									25-f:112.9
-																								24-v:y
-																									25-f:10.2
 																							23-o:anchors
 																								24-o:min
 																								24-o:max
@@ -4311,10 +4449,10 @@ use tabs: true
 																						22-k:i
 																							23-o:d
 																								24-v:type
-																									25-s:Text
+																									25-s:TextMesh
 																								24-o:ptr
 																									25-v:entityId
-																										26-i:2920812650154507283
+																										26-i:3542293406315555968
 																									25-o:material
 																										26-v:type
 																											27-s:UniqueMaterial
@@ -4326,7 +4464,7 @@ use tabs: true
 																													29-a:shaderDefines
 																													29-o:defaultShader
 																														30-v:shaderPath
-																															31-s:Engine/Shaders/UI/text.srsl
+																															31-s:Engine/Shaders/UI/text-mesh.srsl
 																														30-a:uniforms
 																															31-k:i
 																																32-o:d
@@ -4341,12 +4479,26 @@ use tabs: true
 																																			35-f:1
 																																		34-v:z
 																																			35-f:1
+																														30-a:samplers
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:diffuse
+																																	33-v:type
+																																		34-s:Sampler2D
+																																	33-v:value
+																																		34-s:FontAtlas/0/MTSDF/0
+																									25-o:font
+																										26-v:id
+																											27-s:Engine/Fonts/Default.font
 																									25-v:text
 																										26-s:Stamina
-																									25-v:font
-																										26-s:Engine/Fonts/CalibriL.ttf
 																									25-v:fontSize
-																										26-i:25
+																										26-f:32
+																									25-v:horizontalAlignment
+																										26-s:Center
+																									25-v:verticalAlignment
+																										26-s:Middle
 																					21-v:name
 																						22-s:Text
 																					21-o:transform
@@ -4358,11 +4510,6 @@ use tabs: true
 																									25-f:29.7
 																								24-v:y
 																									25-f:100
-																							23-o:offsetMin
-																								24-v:x
-																									25-f:104.1
-																								24-v:y
-																									25-f:10.2
 																							23-o:anchors
 																								24-o:min
 																								24-o:max
@@ -4549,10 +4696,10 @@ use tabs: true
 																						22-k:i
 																							23-o:d
 																								24-v:type
-																									25-s:Text
+																									25-s:TextMesh
 																								24-o:ptr
 																									25-v:entityId
-																										26-i:3200595042731885535
+																										26-i:3466032469441596576
 																									25-o:material
 																										26-v:type
 																											27-s:UniqueMaterial
@@ -4564,7 +4711,7 @@ use tabs: true
 																													29-a:shaderDefines
 																													29-o:defaultShader
 																														30-v:shaderPath
-																															31-s:Engine/Shaders/UI/text.srsl
+																															31-s:Engine/Shaders/UI/text-mesh.srsl
 																														30-a:uniforms
 																															31-k:i
 																																32-o:d
@@ -4579,12 +4726,26 @@ use tabs: true
 																																			35-f:1
 																																		34-v:z
 																																			35-f:1
+																														30-a:samplers
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:diffuse
+																																	33-v:type
+																																		34-s:Sampler2D
+																																	33-v:value
+																																		34-s:FontAtlas/0/MTSDF/0
+																									25-o:font
+																										26-v:id
+																											27-s:Engine/Fonts/Default.font
 																									25-v:text
 																										26-s:Hunger
-																									25-v:font
-																										26-s:Engine/Fonts/CalibriL.ttf
 																									25-v:fontSize
-																										26-i:25
+																										26-f:32
+																									25-v:horizontalAlignment
+																										26-s:Center
+																									25-v:verticalAlignment
+																										26-s:Middle
 																					21-v:name
 																						22-s:Text
 																					21-o:transform
@@ -4596,11 +4757,6 @@ use tabs: true
 																									25-f:29.7
 																								24-v:y
 																									25-f:100
-																							23-o:offsetMin
-																								24-v:x
-																									25-f:108.8
-																								24-v:y
-																									25-f:5
 																							23-o:anchors
 																								24-o:min
 																								24-o:max
@@ -4787,10 +4943,10 @@ use tabs: true
 																						22-k:i
 																							23-o:d
 																								24-v:type
-																									25-s:Text
+																									25-s:TextMesh
 																								24-o:ptr
 																									25-v:entityId
-																										26-i:3533832451280266030
+																										26-i:3117651306665319760
 																									25-o:material
 																										26-v:type
 																											27-s:UniqueMaterial
@@ -4802,7 +4958,7 @@ use tabs: true
 																													29-a:shaderDefines
 																													29-o:defaultShader
 																														30-v:shaderPath
-																															31-s:Engine/Shaders/UI/text.srsl
+																															31-s:Engine/Shaders/UI/text-mesh.srsl
 																														30-a:uniforms
 																															31-k:i
 																																32-o:d
@@ -4817,14 +4973,26 @@ use tabs: true
 																																			35-f:1
 																																		34-v:z
 																																			35-f:1
+																														30-a:samplers
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:diffuse
+																																	33-v:type
+																																		34-s:Sampler2D
+																																	33-v:value
+																																		34-s:FontAtlas/0/MTSDF/0
+																									25-o:font
+																										26-v:id
+																											27-s:Engine/Fonts/Default.font
 																									25-v:text
-																										26-m:2
-Hydration
-
-																									25-v:font
-																										26-s:Engine/Fonts/CalibriL.ttf
+																										26-s:Hydration
 																									25-v:fontSize
-																										26-i:25
+																										26-f:32
+																									25-v:horizontalAlignment
+																										26-s:Center
+																									25-v:verticalAlignment
+																										26-s:Middle
 																					21-v:name
 																						22-s:Text
 																					21-o:transform
@@ -4836,11 +5004,6 @@ Hydration
 																									25-f:29.7
 																								24-v:y
 																									25-f:100
-																							23-o:offsetMin
-																								24-v:x
-																									25-f:91.2
-																								24-v:y
-																									25-f:5
 																							23-o:anchors
 																								24-o:min
 																								24-o:max
@@ -4998,10 +5161,10 @@ Hydration
 														14-k:i
 															15-o:d
 																16-v:type
-																	17-s:Text
+																	17-s:TextMesh
 																16-o:ptr
 																	17-v:entityId
-																		18-i:3380528083594580985
+																		18-i:4146020110082743615
 																	17-o:material
 																		18-v:type
 																			19-s:UniqueMaterial
@@ -5013,7 +5176,7 @@ Hydration
 																					21-a:shaderDefines
 																					21-o:defaultShader
 																						22-v:shaderPath
-																							23-s:Engine/Shaders/UI/text.srsl
+																							23-s:Engine/Shaders/UI/text-mesh.srsl
 																						22-a:uniforms
 																							23-k:i
 																								24-o:d
@@ -5028,21 +5191,39 @@ Hydration
 																											27-f:1
 																										26-v:z
 																											27-f:1
+																						22-a:samplers
+																							23-k:i
+																								24-o:d
+																									25-v:id
+																										26-s:diffuse
+																									25-v:type
+																										26-s:Sampler2D
+																									25-v:value
+																										26-s:FontAtlas/0/MTSDF/0
+																	17-o:font
+																		18-v:id
+																			19-s:Engine/Fonts/Default.font
 																	17-v:text
 																		18-s:Button
-																	17-v:font
-																		18-s:Engine/Fonts/CalibriL.ttf
 																	17-v:fontSize
-																		18-i:30
+																		18-f:42
+																	17-v:horizontalAlignment
+																		18-s:Center
+																	17-v:verticalAlignment
+																		18-s:Middle
 													13-v:name
 														14-s:Text
 													13-o:transform
 														14-v:type
 															15-s:TransformRect
 														14-o:ptr
-															15-o:translation
-																16-v:y
-																	17-f:35.9
+															15-o:anchors
+																16-o:min
+																16-o:max
+																	17-v:x
+																		18-f:1
+																	17-v:y
+																		18-f:1
 															15-v:localPriority
 																16-i:1
 										10-k:i
@@ -5246,6 +5427,8 @@ Hydration
 																		18-f:1
 																	17-v:y
 																		18-f:1
+									9-v:isEnabled
+										10-b:false
 									9-o:transform
 										10-v:type
 											11-s:TransformRect
@@ -5255,16 +5438,6 @@ Hydration
 													13-f:372.7
 												12-v:y
 													13-f:50
-											11-o:anchors
-												12-o:min
-													13-v:y
-														14-f:1
-												12-o:max
-													13-v:y
-														14-f:1
-											11-o:pivot
-												12-v:y
-													13-f:1
 											11-v:localPriority
 												12-i:1
 						6-k:i
@@ -5856,6 +6029,8 @@ for the evil queen and jack
 														14-f:63
 									9-v:name
 										10-s:UI Element
+									9-v:isEnabled
+										10-b:false
 									9-o:transform
 										10-v:type
 											11-s:TransformRect
@@ -5880,14 +6055,14 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:849.5
+									9-f:679.5
 								8-v:y
-									9-f:500
+									9-f:488
 							7-o:size
 								8-v:x
-									9-f:1699
+									9-f:1359
 								8-v:y
-									9-f:1000
+									9-f:976
 							7-o:anchors
 								8-o:min
 								8-o:max
@@ -6058,7 +6233,7 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:-7.64593
+									9-f:9.52341
 								8-v:y
 									9-f:10
 								8-v:z
@@ -6650,11 +6825,11 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:-1.44286
+									9-f:19.5758
 								8-v:y
 									9-f:1.03514
 								8-v:z
-									9-f:8.84472
+									9-f:8.4181
 		2-k:i
 			3-o:d
 				4-v:type
@@ -7023,3 +7198,395 @@ for the evil queen and jack
 									9-f:2.05104
 								8-v:z
 									9-f:-3.36454
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:4469675454182998496
+					5-v:name
+						6-s:Garage/garaje
+					5-a:children
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:GameObject
+								8-o:ptr
+									9-v:entityId
+										10-i:3527599138252632683
+									9-v:name
+										10-s:Object001_$AssimpFbx$_Translation
+									9-a:children
+										10-k:i
+											11-o:d
+												12-v:type
+													13-s:GameObject
+												12-o:ptr
+													13-v:entityId
+														14-i:2834481749512454003
+													13-v:name
+														14-s:Object001_$AssimpFbx$_PreRotation
+													13-a:children
+														14-k:i
+															15-o:d
+																16-v:type
+																	17-s:GameObject
+																16-o:ptr
+																	17-v:entityId
+																		18-i:3845986980041752899
+																	17-v:name
+																		18-s:Object001_$AssimpFbx$_Scaling
+																	17-a:children
+																		18-k:i
+																			19-o:d
+																				20-v:type
+																					21-s:GameObject
+																				20-o:ptr
+																					21-v:entityId
+																						22-i:2656671261393899035
+																					21-a:components
+																						22-k:i
+																							23-o:d
+																								24-v:type
+																									25-s:Mesh3D
+																								24-o:ptr
+																									25-v:entityId
+																										26-i:3803514162679037204
+																									25-o:material
+																										26-v:type
+																											27-s:UniqueMaterial
+																										26-o:ptr
+																											27-o:data
+																												28-v:type
+																													29-s:MaterialData
+																												28-o:ptr
+																													29-a:shaderDefines
+																													29-o:defaultShader
+																														30-v:shaderPath
+																															31-s:Engine/Shaders/standard.srsl
+																														30-a:uniforms
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:color
+																																	33-v:type
+																																		34-s:Vec4
+																																	33-o:value
+																																		34-v:x
+																																			35-f:1
+																																		34-v:y
+																																			35-f:1
+																																		34-v:z
+																																			35-f:1
+																																		34-v:w
+																																			35-f:1
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:tiling
+																																	33-v:type
+																																		34-s:Vec2
+																																	33-o:value
+																																		34-v:x
+																																			35-f:1
+																																		34-v:y
+																																			35-f:1
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:offset
+																																	33-v:type
+																																		34-s:Vec2
+																																	33-o:value
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:specularSharpness
+																																	33-v:type
+																																		34-s:Float
+																																	33-v:value
+																																		34-f:1
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:specularIntensity
+																																	33-v:type
+																																		34-s:Float
+																																	33-v:value
+																																		34-f:1
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:shadowIntensity
+																																	33-v:type
+																																		34-s:Float
+																																	33-v:value
+																																		34-f:1
+																														30-a:samplers
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:diffuse
+																																	33-v:type
+																																		34-s:Sampler2D
+																																	33-v:value
+																																		34-s:Samples/Garage/garage.jpg
+																									25-v:frustumCullingType
+																										26-s:None
+																									25-v:meshPath
+																										26-s:Samples/Garage/garaje.fbx
+																					21-v:name
+																						22-s:Object001
+																					21-o:transform
+																						22-v:type
+																							23-s:Transform3D
+																						22-o:ptr
+																	17-o:transform
+																		18-v:type
+																			19-s:Transform3D
+																		18-o:ptr
+																			19-o:scale
+																				20-v:x
+																					21-f:1.16171
+																				20-v:y
+																					21-f:1.07199
+																				20-v:z
+																					21-f:0.97676
+													13-o:transform
+														14-v:type
+															15-s:Transform3D
+														14-o:ptr
+															15-o:quaternion
+																16-v:x
+																	17-f:0.707107
+																16-v:w
+																	17-f:0.707107
+									9-o:transform
+										10-v:type
+											11-s:Transform3D
+										10-o:ptr
+											11-o:translation
+												12-v:x
+													13-f:-0.0032708
+												12-v:y
+													13-f:0.000156319
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:-49.5408
+								8-v:y
+									9-f:-0.0353976
+								8-v:z
+									9-f:-12.438
+							7-o:quaternion
+								8-v:y
+									9-f:0.707107
+								8-v:w
+									9-f:0.707107
+							7-o:scale
+								8-v:x
+									9-f:2.25
+								8-v:y
+									9-f:2.25
+								8-v:z
+									9-f:2.25
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:3868270111858623774
+					5-v:name
+						6-s:Garage/garaje
+					5-a:children
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:GameObject
+								8-o:ptr
+									9-v:entityId
+										10-i:4387635167981277719
+									9-v:name
+										10-s:Object001_$AssimpFbx$_Translation
+									9-a:children
+										10-k:i
+											11-o:d
+												12-v:type
+													13-s:GameObject
+												12-o:ptr
+													13-v:entityId
+														14-i:3797568810015487030
+													13-v:name
+														14-s:Object001_$AssimpFbx$_PreRotation
+													13-a:children
+														14-k:i
+															15-o:d
+																16-v:type
+																	17-s:GameObject
+																16-o:ptr
+																	17-v:entityId
+																		18-i:2762245536988280596
+																	17-v:name
+																		18-s:Object001_$AssimpFbx$_Scaling
+																	17-a:children
+																		18-k:i
+																			19-o:d
+																				20-v:type
+																					21-s:GameObject
+																				20-o:ptr
+																					21-v:entityId
+																						22-i:3348048723365250735
+																					21-a:components
+																						22-k:i
+																							23-o:d
+																								24-v:type
+																									25-s:Mesh3D
+																								24-o:ptr
+																									25-v:entityId
+																										26-i:2948377164503582146
+																									25-o:material
+																										26-v:type
+																											27-s:UniqueMaterial
+																										26-o:ptr
+																											27-o:data
+																												28-v:type
+																													29-s:MaterialData
+																												28-o:ptr
+																													29-a:shaderDefines
+																													29-o:defaultShader
+																														30-v:shaderPath
+																															31-s:Engine/Shaders/standard.srsl
+																														30-a:uniforms
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:color
+																																	33-v:type
+																																		34-s:Vec4
+																																	33-o:value
+																																		34-v:x
+																																			35-f:1
+																																		34-v:y
+																																			35-f:1
+																																		34-v:z
+																																			35-f:1
+																																		34-v:w
+																																			35-f:1
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:tiling
+																																	33-v:type
+																																		34-s:Vec2
+																																	33-o:value
+																																		34-v:x
+																																			35-f:1
+																																		34-v:y
+																																			35-f:1
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:offset
+																																	33-v:type
+																																		34-s:Vec2
+																																	33-o:value
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:specularSharpness
+																																	33-v:type
+																																		34-s:Float
+																																	33-v:value
+																																		34-f:1
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:specularIntensity
+																																	33-v:type
+																																		34-s:Float
+																																	33-v:value
+																																		34-f:1
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:shadowIntensity
+																																	33-v:type
+																																		34-s:Float
+																																	33-v:value
+																																		34-f:1
+																														30-a:samplers
+																															31-k:i
+																																32-o:d
+																																	33-v:id
+																																		34-s:diffuse
+																																	33-v:type
+																																		34-s:Sampler2D
+																																	33-v:value
+																																		34-s:Samples/Garage/garage.jpg
+																									25-v:frustumCullingType
+																										26-s:None
+																									25-v:meshPath
+																										26-s:Samples/Garage/garaje.fbx
+																					21-v:name
+																						22-s:Object001
+																					21-o:transform
+																						22-v:type
+																							23-s:Transform3D
+																						22-o:ptr
+																	17-o:transform
+																		18-v:type
+																			19-s:Transform3D
+																		18-o:ptr
+																			19-o:scale
+																				20-v:x
+																					21-f:1.16171
+																				20-v:y
+																					21-f:1.07199
+																				20-v:z
+																					21-f:0.97676
+													13-o:transform
+														14-v:type
+															15-s:Transform3D
+														14-o:ptr
+															15-o:quaternion
+																16-v:x
+																	17-f:0.707107
+																16-v:w
+																	17-f:0.707107
+									9-o:transform
+										10-v:type
+											11-s:Transform3D
+										10-o:ptr
+											11-o:translation
+												12-v:x
+													13-f:-0.0032708
+												12-v:y
+													13-f:0.000156319
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:x
+									9-f:-50.3148
+								8-v:y
+									9-f:-0.035397
+								8-v:z
+									9-f:23.8518
+							7-o:quaternion
+								8-v:y
+									9-f:0.707107
+								8-v:w
+									9-f:0.707107
+							7-o:scale
+								8-v:x
+									9-f:2.25
+								8-v:y
+									9-f:2.25
+								8-v:z
+									9-f:2.25
