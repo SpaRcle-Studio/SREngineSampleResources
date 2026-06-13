@@ -22,6 +22,8 @@ void fragment() {
     vec3 maybe_unused_sssColor = vec3(0.0);
     vec3 emissionValue = vec3(0.0);
     float roughnessValue = 1.0;
+    float aoValue = 1.0;
+    float metallicValue = 0.0;
 
 #ifdef SR_DEFINE_USE_CASCADED_SHADOW_MAP
     vec3 shadowColor = CalculateShadow(
@@ -31,7 +33,7 @@ void fragment() {
         maybe_unused_specularSharpness,
         maybe_unused_specularIntensity,
         maybe_unused_shadowIntensity,
-        roughnessValue,
+        roughnessValue, aoValue, metallicValue,
         maybe_unused_sssIntensity,
         maybe_unused_sssColor,
         emissionValue

@@ -3254,6 +3254,22 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0.5
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:normalStrength
+																										26-v:type
+																											27-s:Float
+																										26-v:value
+																											27-f:1.5
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:roughnessIntensity
+																										26-v:type
+																											27-s:Float
+																										26-v:value
+																											27-f:1
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -3417,6 +3433,22 @@ use tabs: true
 																											27-s:Float
 																										26-v:value
 																											27-f:0.5
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:normalStrength
+																										26-v:type
+																											27-s:Float
+																										26-v:value
+																											27-f:1
+																								24-k:i
+																									25-o:d
+																										26-v:id
+																											27-s:roughnessIntensity
+																										26-v:type
+																											27-s:Float
+																										26-v:value
+																											27-f:1
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -3563,6 +3595,22 @@ use tabs: true
 																															31-s:Float
 																														30-v:value
 																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:normalStrength
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:roughnessIntensity
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -3686,6 +3734,22 @@ use tabs: true
 																													29-o:d
 																														30-v:id
 																															31-s:shadowIntensity
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:normalStrength
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:2
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:roughnessIntensity
 																														30-v:type
 																															31-s:Float
 																														30-v:value
@@ -3817,6 +3881,22 @@ use tabs: true
 																															31-s:Float
 																														30-v:value
 																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:normalStrength
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:roughnessIntensity
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -3940,6 +4020,22 @@ use tabs: true
 																													29-o:d
 																														30-v:id
 																															31-s:shadowIntensity
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:normalStrength
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:roughnessIntensity
 																														30-v:type
 																															31-s:Float
 																														30-v:value
@@ -4071,6 +4167,22 @@ use tabs: true
 																															31-s:Float
 																														30-v:value
 																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:normalStrength
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:2
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:roughnessIntensity
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -4194,6 +4306,22 @@ use tabs: true
 																													29-o:d
 																														30-v:id
 																															31-s:shadowIntensity
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:normalStrength
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:2
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:roughnessIntensity
 																														30-v:type
 																															31-s:Float
 																														30-v:value
@@ -4325,6 +4453,22 @@ use tabs: true
 																															31-s:Float
 																														30-v:value
 																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:normalStrength
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:roughnessIntensity
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -4448,6 +4592,22 @@ use tabs: true
 																													29-o:d
 																														30-v:id
 																															31-s:shadowIntensity
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:normalStrength
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:2
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:roughnessIntensity
 																														30-v:type
 																															31-s:Float
 																														30-v:value
@@ -4619,6 +4779,22 @@ use tabs: true
 																															31-s:Float
 																														30-v:value
 																															31-f:0.5
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:normalStrength
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1.5
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:roughnessIntensity
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -5445,6 +5621,22 @@ use tabs: true
 																															31-s:Float
 																														30-v:value
 																															31-f:0.5
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:normalStrength
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
+																												28-k:i
+																													29-o:d
+																														30-v:id
+																															31-s:roughnessIntensity
+																														30-v:type
+																															31-s:Float
+																														30-v:value
+																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
