@@ -82,6 +82,7 @@ use tabs: true
 									9-o:ptr
 										10-v:entityId
 											11-i:4418714626861726369
+										10-o:rig
 										10-o:skeleton
 											11-v:meshPath
 												12-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
@@ -124,6 +125,7 @@ use tabs: true
 									9-o:ptr
 										10-v:entityId
 											11-i:4470386431556299157
+										10-o:rig
 										10-o:skeleton
 											11-v:meshPath
 												12-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
