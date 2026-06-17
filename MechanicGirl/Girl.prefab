@@ -81,14 +81,25 @@ use tabs: true
 										10-s:Skeleton
 									9-o:ptr
 										10-v:entityId
-											11-i:4418714626861726369
+											11-i:4023226607076117340
 										10-o:rig
 										10-o:skeleton
 											11-v:meshPath
 												12-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
-										10-o:boneHierarchy
-											11-v:meshId
-												12-i:-1
+							7-k:i
+								8-o:d
+									9-v:type
+										10-s:Skeleton
+									9-o:ptr
+										10-v:entityId
+											11-i:4418714626861726369
+										10-o:parent
+											11-v:entityId
+												12-i:4023226607076117340
+										10-o:rig
+										10-o:skeleton
+											11-v:meshPath
+												12-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
 							7-k:i
 								8-o:d
 									9-v:type
@@ -98,7 +109,7 @@ use tabs: true
 											11-i:3994431057642410439
 										10-o:skeleton
 											11-v:entityId
-												12-i:4418714626861726369
+												12-i:4023226607076117340
 										10-v:graph
 											11-s:Samples/MechanicGirl/Animations/girl.animator
 										10-a:IKSystems
@@ -118,20 +129,6 @@ use tabs: true
 												12-o:d
 													13-v:entityId
 														14-i:2827530084496414689
-							7-k:i
-								8-o:d
-									9-v:type
-										10-s:Skeleton
-									9-o:ptr
-										10-v:entityId
-											11-i:4470386431556299157
-										10-o:rig
-										10-o:skeleton
-											11-v:meshPath
-												12-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
-										10-o:boneHierarchy
-											11-v:meshPath
-												12-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 						6-v:tag
 							7-s:Player
 						6-v:name
@@ -3307,7 +3304,7 @@ use tabs: true
 																											27-s:Samples/MechanicGirl/T_BODY_SSS.PNG
 																		18-o:skeleton
 																			19-v:entityId
-																				20-i:4418714626861726369
+																				20-i:4023226607076117340
 																		18-v:meshPath
 																			19-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 															15-k:i
@@ -3486,7 +3483,7 @@ use tabs: true
 																											27-s:Samples/MechanicGirl/T_BODY_SSS.PNG
 																		18-o:skeleton
 																			19-v:entityId
-																				20-i:4418714626861726369
+																				20-i:4023226607076117340
 																		18-v:meshPath
 																			19-s:Samples/MechanicGirl/SK_MechanicGirl_Nude.FBX
 														14-v:name
@@ -3640,7 +3637,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_MECHANICGIRL_CLOTHES_Roughness.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4470386431556299157
+																								24-i:4418714626861726369
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MECHANICGIRL_GLOVES.FBX
 																			19-k:i
@@ -3783,7 +3780,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_MECHANICGIRL_CLOTHES_Roughness.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4470386431556299157
+																								24-i:4418714626861726369
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MECHANICGIRL_PANTS.FBX
 																			19-k:i
@@ -3926,7 +3923,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_MECHANICGIRL_CLOTHES_Roughness.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4470386431556299157
+																								24-i:4418714626861726369
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MECHANICGIRL_SCARF.FBX
 																			19-k:i
@@ -4069,7 +4066,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_MECHANICGIRL_SHOES_Roughness.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4470386431556299157
+																								24-i:4418714626861726369
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MECHANICGIRL_SHOES.FBX
 																			19-k:i
@@ -4212,7 +4209,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_MECHANICGIRL_CLOTHES_Roughness.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4470386431556299157
+																								24-i:4418714626861726369
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
 																			19-k:i
@@ -4355,7 +4352,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_MECHANICGIRL_CLOTHES_Roughness.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4470386431556299157
+																								24-i:4418714626861726369
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MECHANICGIRL_ELBOWS.FBX
 																			19-k:i
@@ -4498,7 +4495,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_MECHANICGIRL_CLOTHES_Roughness.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4470386431556299157
+																								24-i:4418714626861726369
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MECHANICGIRL_BELT.FBX
 																			19-k:i
@@ -4641,7 +4638,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_MECHANICGIRL_CLOTHES_Roughness.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4470386431556299157
+																								24-i:4418714626861726369
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MECHANICGIRL_SHIRT.FBX
 																		18-v:name
@@ -4832,7 +4829,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_HEAD_F_Roughness.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4418714626861726369
+																								24-i:4023226607076117340
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 																						22-v:meshId
@@ -4964,7 +4961,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_EYES_Emissive_01.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4418714626861726369
+																								24-i:4023226607076117340
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 																						22-v:meshId
@@ -5096,7 +5093,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_EYES_Emissive_01.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4418714626861726369
+																								24-i:4023226607076117340
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 																						22-v:meshId
@@ -5343,7 +5340,7 @@ use tabs: true
 																																			35-s:Samples/MechanicGirl/Hair/Straight/T_HAIR_STRAIGHT_normal.PNG
 																										26-o:skeleton
 																											27-v:entityId
-																												28-i:4418714626861726369
+																												28-i:4023226607076117340
 																										26-v:meshPath
 																											27-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 																										26-v:meshId
@@ -5475,7 +5472,7 @@ use tabs: true
 																																			35-s:Samples/MechanicGirl/T_LASHES_05.PNG
 																										26-o:skeleton
 																											27-v:entityId
-																												28-i:4418714626861726369
+																												28-i:4023226607076117340
 																										26-v:meshPath
 																											27-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 																										26-v:meshId
@@ -5498,7 +5495,7 @@ use tabs: true
 																		18-s:GameObject
 																	17-o:ptr
 																		18-v:entityId
-																			19-i:3673573683234362953
+																			19-i:4600642245397750101
 																		18-a:components
 																			19-k:i
 																				20-o:d
@@ -5506,7 +5503,7 @@ use tabs: true
 																						22-s:SkinnedMesh
 																					21-o:ptr
 																						22-v:entityId
-																							23-i:2897723970613079035
+																							23-i:3252958179739356866
 																						22-o:material
 																							23-v:type
 																								24-s:UniqueMaterial
@@ -5593,7 +5590,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:0.1
+																															31-f:1
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -5630,7 +5627,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:1
+																															31-f:1.5
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -5674,7 +5671,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_HEAD_F_Roughness.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4418714626861726369
+																								24-i:4023226607076117340
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 																						22-v:meshId
@@ -5685,7 +5682,7 @@ use tabs: true
 																						22-s:SkinnedMesh
 																					21-o:ptr
 																						22-v:entityId
-																							23-i:2460329919666446696
+																							23-i:4019357596839998358
 																						22-o:material
 																							23-v:type
 																								24-s:UniqueMaterial
@@ -5774,11 +5771,11 @@ use tabs: true
 																															31-s:Vec3
 																														30-o:value
 																															31-v:x
-																																32-f:1.4
+																																32-f:1.9
 																															31-v:y
 																																32-f:1
 																															31-v:z
-																																32-f:1
+																																32-f:1.4
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -5786,7 +5783,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:1
+																															31-f:0.3
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -5806,7 +5803,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_EYES_Emissive_01.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4418714626861726369
+																								24-i:4023226607076117340
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 																						22-v:meshId
@@ -5817,7 +5814,7 @@ use tabs: true
 																						22-s:SkinnedMesh
 																					21-o:ptr
 																						22-v:entityId
-																							23-i:3301305092525577889
+																							23-i:4327747880448408618
 																						22-o:material
 																							23-v:type
 																								24-s:UniqueMaterial
@@ -5906,11 +5903,11 @@ use tabs: true
 																															31-s:Vec3
 																														30-o:value
 																															31-v:x
-																																32-f:1.4
+																																32-f:1.9
 																															31-v:y
 																																32-f:1
 																															31-v:z
-																																32-f:1
+																																32-f:1.4
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -5918,7 +5915,7 @@ use tabs: true
 																														30-v:type
 																															31-s:Float
 																														30-v:value
-																															31-f:1
+																															31-f:0.3
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -5938,7 +5935,7 @@ use tabs: true
 																															31-s:Samples/MechanicGirl/T_EYES_Emissive_01.PNG
 																						22-o:skeleton
 																							23-v:entityId
-																								24-i:4418714626861726369
+																								24-i:4023226607076117340
 																						22-v:meshPath
 																							23-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 																						22-v:meshId
@@ -5952,7 +5949,7 @@ use tabs: true
 																						22-s:GameObject
 																					21-o:ptr
 																						22-v:entityId
-																							23-i:3180568057289638535
+																							23-i:2787997640120012502
 																						22-a:components
 																							23-k:i
 																								24-o:d
@@ -5960,7 +5957,7 @@ use tabs: true
 																										26-s:SkinnedMesh
 																									25-o:ptr
 																										26-v:entityId
-																											27-i:3307589403347741813
+																											27-i:3072440131701516417
 																										26-o:material
 																											27-v:type
 																												28-s:UniqueMaterial
@@ -6185,7 +6182,7 @@ use tabs: true
 																																			35-s:Samples/MechanicGirl/Hair/Straight/T_HAIR_STRAIGHT_normal.PNG
 																										26-o:skeleton
 																											27-v:entityId
-																												28-i:4418714626861726369
+																												28-i:4023226607076117340
 																										26-v:meshPath
 																											27-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 																										26-v:meshId
@@ -6193,7 +6190,7 @@ use tabs: true
 																						22-v:name
 																							23-s:Transparent1
 																						22-v:layer
-																							23-s:Shadow
+																							23-s:Transparent
 																						22-o:transform
 																							23-v:type
 																								24-s:Transform3D
@@ -6204,7 +6201,7 @@ use tabs: true
 																						22-s:GameObject
 																					21-o:ptr
 																						22-v:entityId
-																							23-i:3966042363349748722
+																							23-i:3371250194133334621
 																						22-a:components
 																							23-k:i
 																								24-o:d
@@ -6212,7 +6209,7 @@ use tabs: true
 																										26-s:SkinnedMesh
 																									25-o:ptr
 																										26-v:entityId
-																											27-i:3857694399486747120
+																											27-i:2552986905903622499
 																										26-o:material
 																											27-v:type
 																												28-s:UniqueMaterial
@@ -6281,7 +6278,7 @@ use tabs: true
 																																		34-v:type
 																																			35-s:Float
 																																		34-v:value
-																																			35-f:1
+																																			35-f:0
 																																32-k:i
 																																	33-o:d
 																																		34-v:id
@@ -6289,7 +6286,7 @@ use tabs: true
 																																		34-v:type
 																																			35-s:Float
 																																		34-v:value
-																																			35-f:1
+																																			35-f:0
 																																32-k:i
 																																	33-o:d
 																																		34-v:id
@@ -6317,7 +6314,7 @@ use tabs: true
 																																			35-s:Samples/MechanicGirl/T_LASHES_05.PNG
 																										26-o:skeleton
 																											27-v:entityId
-																												28-i:4418714626861726369
+																												28-i:4023226607076117340
 																										26-v:meshPath
 																											27-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 																										26-v:meshId
@@ -6325,7 +6322,7 @@ use tabs: true
 																						22-v:name
 																							23-s:Transparent2
 																						22-v:layer
-																							23-s:Shadow
+																							23-s:TransparentSecond
 																						22-o:transform
 																							23-v:type
 																								24-s:Transform3D

@@ -1,0 +1,19 @@
+sra format
+use tabs: true
+0-r:Root
+	1-o:asset
+		2-v:type
+			3-s:AnimationClip
+		2-o:ptr
+			3-v:clipName
+				4-s:Unreal Take
+			3-v:clipPath
+				4-s:Samples/MechanicGirl/Animations/AS_UE5_MF_Walk_Fwd.fbx
+			3-o:rig
+			3-o:skeleton
+				4-v:meshPath
+					5-s:Samples/MechanicGirl/SK_MechanicGirl_Nude.FBX
+			3-a:excludedBones
+				4-k:i
+					5-v:d
+						6-s:root
