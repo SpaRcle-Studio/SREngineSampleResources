@@ -65,4 +65,4 @@ use tabs: true
 															15-v:resetOnPlay
 																16-b:true
 															15-v:animation
-																16-s:Samples/Animations/Mechanic Girl.animation
+																16-s:Samples/Animations/Skinning Test Retarget 2.animation
