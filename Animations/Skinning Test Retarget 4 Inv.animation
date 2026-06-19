@@ -12,7 +12,3 @@ use tabs: true
 			3-o:rig
 				4-v:id
 					5-s:Engine/Rig/FortniteHumanoid.rig
-			3-a:excludedBones
-				4-k:i
-					5-v:d
-						6-s:root
