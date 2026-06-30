@@ -8452,12 +8452,12 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:622
+									9-f:672.5
 								8-v:y
-									9-f:468.5
+									9-f:507.5
 							7-o:size
 								8-v:x
-									9-f:1194.88
+									9-f:1192.61
 								8-v:y
 									9-f:900
 							7-o:anchors
@@ -8465,11 +8465,11 @@ for the evil queen and jack
 								8-o:max
 							7-o:scale
 								8-v:x
-									9-f:1.04111
+									9-f:1.12778
 								8-v:y
-									9-f:1.04111
+									9-f:1.12778
 								8-v:z
-									9-f:1.04111
+									9-f:1.12778
 		2-k:i
 			3-o:d
 				4-v:type
@@ -10164,12 +10164,6 @@ for the evil queen and jack
 													13-o:rig
 														14-v:id
 															15-s:Engine/Rig/Mixamo.rig
-													13-o:skeleton
-														14-v:meshPath
-															15-s:Samples/Animations/Grabbing Ammo.fbx
-													13-o:boneHierarchy
-														14-v:meshId
-															15-i:-1
 										10-k:i
 											11-o:d
 												12-v:type
@@ -11888,9 +11882,6 @@ for the evil queen and jack
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/Animations/Grabbing Ammo.fbx
-													13-o:boneHierarchy
-														14-v:meshId
-															15-i:-1
 										10-k:i
 											11-o:d
 												12-v:type
@@ -13608,12 +13599,6 @@ for the evil queen and jack
 													13-o:rig
 														14-v:id
 															15-s:Engine/Rig/FortniteHumanoid.rig
-													13-o:skeleton
-														14-v:meshPath
-															15-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
-													13-o:boneHierarchy
-														14-v:meshId
-															15-i:-1
 										10-k:i
 											11-o:d
 												12-v:type
@@ -13637,9 +13622,6 @@ for the evil queen and jack
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
-													13-o:boneHierarchy
-														14-v:meshPath
-															15-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
 									9-v:tag
 										10-s:Player
 									9-v:name
@@ -19876,7 +19858,51 @@ for the evil queen and jack
 											11-o:quaternion
 												12-v:y
 													13-f:1
+					5-v:isEnabled
+						6-b:false
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
 						6-o:ptr
+		2-k:i
+			3-o:d
+				4-v:type
+					5-s:GameObject
+				4-o:ptr
+					5-v:entityId
+						6-i:3972774985147603685
+					5-a:components
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:ParticleEmitter
+								8-o:ptr
+									9-v:entityId
+										10-i:3748860673432807120
+									9-o:material
+										10-v:type
+											11-s:UniqueMaterial
+										10-o:ptr
+											11-o:data
+												12-v:type
+													13-s:MaterialData
+												12-o:ptr
+													13-a:shaderDefines
+													13-o:defaultShader
+														14-v:shaderPath
+															15-s:Engine/Shaders/Particle/particle.srsl
+									9-v:meshPath
+										10-s:Samples/Big Dick stand alone model 1.obj
+									9-v:meshId
+										10-i:1
+					5-v:name
+						6-s:Particle Emitter
+					5-v:layer
+						6-s:Particles
+					5-o:transform
+						6-v:type
+							7-s:Transform3D
+						6-o:ptr
+							7-o:translation
+								8-v:y
+									9-f:7.10417

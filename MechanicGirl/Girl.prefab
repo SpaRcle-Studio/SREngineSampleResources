@@ -6190,7 +6190,7 @@ use tabs: true
 																						22-v:name
 																							23-s:Transparent1
 																						22-v:layer
-																							23-s:Transparent
+																							23-s:Shadow
 																						22-o:transform
 																							23-v:type
 																								24-s:Transform3D
@@ -6322,7 +6322,7 @@ use tabs: true
 																						22-v:name
 																							23-s:Transparent2
 																						22-v:layer
-																							23-s:TransparentSecond
+																							23-s:Shadow
 																						22-o:transform
 																							23-v:type
 																								24-s:Transform3D
