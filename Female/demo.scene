@@ -8452,12 +8452,12 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:672.5
+									9-f:675
 								8-v:y
-									9-f:507.5
+									9-f:461
 							7-o:size
 								8-v:x
-									9-f:1192.61
+									9-f:1317.79
 								8-v:y
 									9-f:900
 							7-o:anchors
@@ -8465,11 +8465,11 @@ for the evil queen and jack
 								8-o:max
 							7-o:scale
 								8-v:x
-									9-f:1.12778
+									9-f:1.02444
 								8-v:y
-									9-f:1.12778
+									9-f:1.02444
 								8-v:z
-									9-f:1.12778
+									9-f:1.02444
 		2-k:i
 			3-o:d
 				4-v:type
@@ -10174,6 +10174,7 @@ for the evil queen and jack
 													13-o:skeleton
 														14-v:entityId
 															15-i:3010999322985161812
+													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget.animator
 									9-v:name
@@ -11892,6 +11893,7 @@ for the evil queen and jack
 													13-o:skeleton
 														14-v:entityId
 															15-i:2553820283783125019
+													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test.animator
 									9-v:name
@@ -13609,6 +13611,7 @@ for the evil queen and jack
 													13-o:skeleton
 														14-v:entityId
 															15-i:3890122269266234250
+													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget.animator
 										10-k:i
