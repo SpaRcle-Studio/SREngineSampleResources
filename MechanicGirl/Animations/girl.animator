@@ -26,6 +26,11 @@ use tabs: true
 													13-b:true
 												12-v:targetNodeIndex
 													13-i:1
+									9-o:editorPosition
+										10-v:x
+											11-f:488
+										10-v:y
+											11-f:194
 						6-k:i
 							7-o:d
 								8-v:type
@@ -44,6 +49,11 @@ use tabs: true
 													13-b:true
 												12-v:targetNodeIndex
 													13-i:3
+									9-o:editorPosition
+										10-v:x
+											11-f:104
+										10-v:y
+											11-f:194
 									9-v:blendFactor
 										10-f:0
 						6-k:i
@@ -51,6 +61,11 @@ use tabs: true
 								8-v:type
 									9-s:AnimationGraphNodeStateMachine
 								8-o:ptr
+									9-o:editorPosition
+										10-v:x
+											11-f:-415
+										10-v:y
+											11-f:100
 									9-o:stateMachine
 										10-v:type
 											11-s:AnimationStateMachine
@@ -67,6 +82,11 @@ use tabs: true
 														14-o:ptr
 															15-v:stateName
 																16-s:AnimationEntryPointState
+															15-o:editorPosition
+																16-v:x
+																	17-f:-320
+																16-v:y
+																	17-f:320
 															15-a:transitions
 																16-k:i
 																	17-o:d
@@ -81,7 +101,12 @@ use tabs: true
 															15-s:AnimationClipState
 														14-o:ptr
 															15-v:stateName
-																16-s:Unreal Take
+																16-s:Idle
+															15-o:editorPosition
+																16-v:x
+																	17-f:-320
+																16-v:y
+																	17-f:128
 															15-v:resetOnPlay
 																16-b:true
 															15-a:transitions
@@ -149,7 +174,12 @@ use tabs: true
 															15-s:AnimationClipState
 														14-o:ptr
 															15-v:stateName
-																16-s:AnimationClipState
+																16-s:Walk
+															15-o:editorPosition
+																16-v:x
+																	17-f:-560
+																16-v:y
+																	17-f:-96
 															15-v:resetOnPlay
 																16-b:true
 															15-a:transitions
@@ -215,7 +245,12 @@ use tabs: true
 															15-s:AnimationClipState
 														14-o:ptr
 															15-v:stateName
-																16-s:AnimationClipState
+																16-s:Run
+															15-o:editorPosition
+																16-v:x
+																	17-f:-128
+																16-v:y
+																	17-f:-96
 															15-v:resetOnPlay
 																16-b:true
 															15-a:transitions
@@ -280,6 +315,11 @@ use tabs: true
 								8-v:type
 									9-s:AnimationGraphNodeStateMachine
 								8-o:ptr
+									9-o:editorPosition
+										10-v:x
+											11-f:-414
+										10-v:y
+											11-f:218
 									9-o:stateMachine
 										10-v:type
 											11-s:AnimationStateMachine
@@ -296,6 +336,11 @@ use tabs: true
 														14-o:ptr
 															15-v:stateName
 																16-s:AnimationEntryPointState
+															15-o:editorPosition
+																16-v:x
+																	17-f:-160
+																16-v:y
+																	17-f:256
 															15-v:resetOnPlay
 																16-b:true
 															15-a:transitions
@@ -313,6 +358,11 @@ use tabs: true
 														14-o:ptr
 															15-v:stateName
 																16-s:AnimationClipState
+															15-o:editorPosition
+																16-v:x
+																	17-f:-144
+																16-v:y
+																	17-f:16
 															15-v:resetOnPlay
 																16-b:true
 															15-a:transitions
@@ -340,6 +390,11 @@ use tabs: true
 														14-o:ptr
 															15-v:stateName
 																16-s:AnimationClipState
+															15-o:editorPosition
+																16-v:x
+																	17-f:112
+																16-v:y
+																	17-f:-176
 															15-v:resetOnPlay
 																16-b:true
 															15-a:transitions
@@ -369,6 +424,11 @@ use tabs: true
 														14-o:ptr
 															15-v:stateName
 																16-s:AnimationClipState
+															15-o:editorPosition
+																16-v:x
+																	17-f:-384
+																16-v:y
+																	17-f:-176
 															15-v:resetOnPlay
 																16-b:true
 															15-a:transitions

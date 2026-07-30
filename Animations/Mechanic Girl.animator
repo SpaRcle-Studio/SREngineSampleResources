@@ -26,11 +26,21 @@ use tabs: true
 													13-b:true
 												12-v:targetNodeIndex
 													13-i:1
+									9-o:editorPosition
+										10-v:x
+											11-f:312
+										10-v:y
+											11-f:66
 						6-k:i
 							7-o:d
 								8-v:type
 									9-s:AnimationGraphNodeStateMachine
 								8-o:ptr
+									9-o:editorPosition
+										10-v:x
+											11-f:-72
+										10-v:y
+											11-f:66
 									9-o:stateMachine
 										10-v:type
 											11-s:AnimationStateMachine
@@ -47,6 +57,11 @@ use tabs: true
 														14-o:ptr
 															15-v:stateName
 																16-s:AnimationEntryPointState
+															15-o:editorPosition
+																16-v:x
+																	17-f:-48
+																16-v:y
+																	17-f:176
 															15-a:transitions
 																16-k:i
 																	17-o:d

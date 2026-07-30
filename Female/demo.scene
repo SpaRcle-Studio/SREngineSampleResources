@@ -8452,12 +8452,12 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:675
+									9-f:719.5
 								8-v:y
-									9-f:461
+									9-f:472
 							7-o:size
 								8-v:x
-									9-f:1317.79
+									9-f:1371.93
 								8-v:y
 									9-f:900
 							7-o:anchors
@@ -8465,11 +8465,11 @@ for the evil queen and jack
 								8-o:max
 							7-o:scale
 								8-v:x
-									9-f:1.02444
+									9-f:1.04889
 								8-v:y
-									9-f:1.02444
+									9-f:1.04889
 								8-v:z
-									9-f:1.02444
+									9-f:1.04889
 		2-k:i
 			3-o:d
 				4-v:type
@@ -10174,7 +10174,6 @@ for the evil queen and jack
 													13-o:skeleton
 														14-v:entityId
 															15-i:3010999322985161812
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget.animator
 									9-v:name
@@ -11879,7 +11878,6 @@ for the evil queen and jack
 												12-o:ptr
 													13-v:entityId
 														14-i:2553820283783125019
-													13-o:rig
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/Animations/Grabbing Ammo.fbx
@@ -11893,7 +11891,6 @@ for the evil queen and jack
 													13-o:skeleton
 														14-v:entityId
 															15-i:2553820283783125019
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test.animator
 									9-v:name
@@ -13611,7 +13608,6 @@ for the evil queen and jack
 													13-o:skeleton
 														14-v:entityId
 															15-i:3890122269266234250
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget.animator
 										10-k:i
@@ -13621,7 +13617,6 @@ for the evil queen and jack
 												12-o:ptr
 													13-v:entityId
 														14-i:3652521185989951496
-													13-o:rig
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
@@ -19898,8 +19893,174 @@ for the evil queen and jack
 										10-s:Samples/Big Dick stand alone model 1.obj
 									9-v:meshId
 										10-i:1
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:ReflectionTestComponent
+								8-o:ptr
+									9-v:entityId
+										10-i:3555613914693504801
+									9-o:associative
+										10-a:associativeMapAtom
+											11-k:item
+												12-v:first
+													13-s:23432455
+												12-v:second
+													13-i:0
+											11-k:item
+												12-v:first
+													13-s:234324
+												12-v:second
+													13-i:5
+											11-k:item
+												12-v:first
+													13-s:
+												12-v:second
+													13-i:17
+										10-a:associativeMapString
+											11-k:item
+												12-v:first
+													13-s:
+												12-v:second
+													13-i:0
+											11-k:item
+												12-v:first
+													13-s:44
+												12-v:second
+													13-i:0
+											11-k:item
+												12-v:first
+													13-s:44фывфыв
+												12-v:second
+													13-i:0
+											11-k:item
+												12-v:first
+													13-s:44фывфывadsas
+												12-v:second
+													13-i:0
+										10-a:associativeMap2
+											11-k:item
+												12-v:first
+													13-i:0
+												12-v:second
+													13-s:[]][p5345erfer
+										10-a:associativeMap33
+											11-k:item
+												12-v:first
+													13-s:Unknown
+												12-v:second
+													13-i:0
+											11-k:item
+												12-v:first
+													13-s:Windows
+												12-v:second
+													13-i:0
+											11-k:item
+												12-v:first
+													13-s:Linux
+												12-v:second
+													13-i:0
+											11-k:item
+												12-v:first
+													13-s:Android
+												12-v:second
+													13-i:0
+											11-k:item
+												12-v:first
+													13-s:MacOS
+												12-v:second
+													13-i:0
+											11-k:item
+												12-v:first
+													13-s:Emscripten
+												12-v:second
+													13-i:0
+											11-k:item
+												12-v:first
+													13-s:IOS
+												12-v:second
+													13-i:0
+										10-a:associativeMap3
+											11-k:item
+												12-v:first
+													13-s:Unknown
+												12-v:second
+													13-s:
+											11-k:item
+												12-v:first
+													13-s:Windows
+												12-v:second
+													13-s:
+											11-k:item
+												12-v:first
+													13-s:Linux
+												12-v:second
+													13-s:
+											11-k:item
+												12-v:first
+													13-s:Android
+												12-v:second
+													13-s:
+											11-k:item
+												12-v:first
+													13-s:MacOS
+												12-v:second
+													13-s:
+											11-k:item
+												12-v:first
+													13-s:Emscripten
+												12-v:second
+													13-s:
+											11-k:item
+												12-v:first
+													13-s:IOS
+												12-v:second
+													13-s:
+										10-a:associativeMap4
+											11-k:item
+												12-v:first
+													13-s:Unknown
+												12-v:second
+													13-s:
+											11-k:item
+												12-v:first
+													13-s:Windows
+												12-v:second
+													13-s:
+											11-k:item
+												12-v:first
+													13-s:Linux
+												12-v:second
+													13-s:
+											11-k:item
+												12-v:first
+													13-s:Android
+												12-v:second
+													13-s:
+											11-k:item
+												12-v:first
+													13-s:MacOS
+												12-v:second
+													13-s:
+											11-k:item
+												12-v:first
+													13-s:Emscripten
+												12-v:second
+													13-s:
+											11-k:item
+												12-v:first
+													13-s:IOS
+												12-v:second
+													13-s:
+									9-o:size
+									9-o:size2
+										10-o:width
+										10-o:height
+									9-a:bitSet
 					5-v:name
 						6-s:Particle Emitter
+					5-v:isEnabled
+						6-b:false
 					5-v:layer
 						6-s:Particles
 					5-o:transform

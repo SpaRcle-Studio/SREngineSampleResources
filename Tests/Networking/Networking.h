@@ -10,6 +10,7 @@
 
 #include <Utils/ECS/GameObject.h>
 #include <Utils/ECS/Transform3D.h>
+#include <Utils/Types/String.h>
 
 namespace Samples {
     /// @category(Game)
@@ -31,7 +32,7 @@ namespace Samples {
 
         /// @property
         /// @category(Network)
-        std::string hostAddress = "127.0.0.1";
+        SR_UTILS_NS::String hostAddress = "127.0.0.1";
 
         /// @property
         /// @category(Network)

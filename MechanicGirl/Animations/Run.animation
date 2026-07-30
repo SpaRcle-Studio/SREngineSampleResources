@@ -10,9 +10,8 @@ use tabs: true
 			3-v:clipPath
 				4-s:Samples/MechanicGirl/Animations/AS_UE5_MF_Run_Fwd.fbx
 			3-o:rig
-			3-o:skeleton
-				4-v:meshPath
-					5-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
+				4-v:id
+					5-s:Engine/Rig/FortniteHumanoid.rig
 			3-a:excludedBones
 				4-k:i
 					5-v:d

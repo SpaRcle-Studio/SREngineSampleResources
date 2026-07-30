@@ -26,11 +26,21 @@ use tabs: true
 													13-b:true
 												12-v:targetNodeIndex
 													13-i:1
+									9-o:editorPosition
+										10-v:x
+											11-f:408
+										10-v:y
+											11-f:66
 						6-k:i
 							7-o:d
 								8-v:type
 									9-s:AnimationGraphNodeStateMachine
 								8-o:ptr
+									9-o:editorPosition
+										10-v:x
+											11-f:-40
+										10-v:y
+											11-f:66
 									9-o:stateMachine
 										10-v:type
 											11-s:AnimationStateMachine

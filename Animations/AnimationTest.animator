@@ -28,9 +28,9 @@ use tabs: true
 													13-i:1
 									9-o:editorPosition
 										10-v:x
-											11-f:376
+											11-f:284
 										10-v:y
-											11-f:98
+											11-f:116
 						6-k:i
 							7-o:d
 								8-v:type
@@ -38,9 +38,9 @@ use tabs: true
 								8-o:ptr
 									9-o:editorPosition
 										10-v:x
-											11-f:-40
+											11-f:-223
 										10-v:y
-											11-f:98
+											11-f:116
 									9-o:stateMachine
 										10-v:type
 											11-s:AnimationStateMachine
@@ -57,101 +57,80 @@ use tabs: true
 														14-o:ptr
 															15-v:stateName
 																16-s:AnimationEntryPointState
-															15-a:transitions
-																16-k:i
-																	17-o:d
-																		18-v:type
-																			19-s:AnimationStateTransition
-																		18-o:ptr
-																			19-v:targetIndex
-																				20-i:1
-																16-k:i
-																	17-o:d
-																		18-v:type
-																			19-s:AnimationStateTransition
-																		18-o:ptr
-																			19-v:targetIndex
-																				20-i:4
-												12-k:i
-													13-o:d
-														14-v:type
-															15-s:AnimationClipState
-														14-o:ptr
-															15-v:stateName
-																16-s:Unreal Take
 															15-o:editorPosition
 																16-v:x
-																	17-f:-208
-															15-v:resetOnPlay
-																16-b:true
-															15-v:animation
-																16-s:Samples/MechanicGirl/Animations/Grabbing ammo.animation
-												12-k:i
-													13-o:d
-														14-v:type
-															15-s:AnimationClipState
-														14-o:ptr
-															15-v:stateName
-																16-s:AnimationClipState
-															15-o:editorPosition
-																16-v:x
-																	17-f:-1507
+																	17-f:400
 																16-v:y
-																	17-f:-1052
+																	17-f:256
 												12-k:i
 													13-o:d
 														14-v:type
 															15-s:AnimationClipState
 														14-o:ptr
 															15-v:stateName
-																16-s:AnimationClipState
+																16-s:Walk
 															15-o:editorPosition
 																16-v:x
 																	17-f:-224
 																16-v:y
-																	17-f:192
-															15-a:transitions
-																16-k:i
-																	17-o:d
-																		18-v:type
-																			19-s:AnimationStateTransition
-																		18-o:ptr
-																			19-v:targetIndex
-																				20-i:0
-																16-k:i
-																	17-o:d
-																		18-v:type
-																			19-s:AnimationStateTransition
-																		18-o:ptr
-																			19-v:targetIndex
-																				20-i:4
+																	17-f:176
 												12-k:i
 													13-o:d
 														14-v:type
-															15-s:AnimationClipState
+															15-s:AnimationNoneState
 														14-o:ptr
 															15-v:stateName
-																16-s:AnimationClipState
-															15-o:editorPosition
-																16-v:y
-																	17-f:208
-															15-a:transitions
-																16-k:i
-																	17-o:d
-																		18-v:type
-																			19-s:AnimationStateTransition
-																		18-o:ptr
-																			19-v:targetIndex
-																				20-i:5
-												12-k:i
-													13-o:d
-														14-v:type
-															15-s:AnimationClipState
-														14-o:ptr
-															15-v:stateName
-																16-s:AnimationClipState
+																16-s:Main
 															15-o:editorPosition
 																16-v:x
-																	17-f:-128
+																	17-f:80
+																16-v:y
+																	17-f:256
+												12-k:i
+													13-o:d
+														14-v:type
+															15-s:AnimationClipState
+														14-o:ptr
+															15-v:stateName
+																16-s:Run
+															15-o:editorPosition
+																16-v:x
+																	17-f:-224
+																16-v:y
+																	17-f:256
+												12-k:i
+													13-o:d
+														14-v:type
+															15-s:AnimationClipState
+														14-o:ptr
+															15-v:stateName
+																16-s:Idle
+															15-o:editorPosition
+																16-v:x
+																	17-f:-224
+																16-v:y
+																	17-f:96
+												12-k:i
+													13-o:d
+														14-v:type
+															15-s:AnimationClipState
+														14-o:ptr
+															15-v:stateName
+																16-s:Jump
+															15-o:editorPosition
+																16-v:x
+																	17-f:-224
 																16-v:y
 																	17-f:336
+												12-k:i
+													13-o:d
+														14-v:type
+															15-s:AnimationClipState
+														14-o:ptr
+															15-v:stateName
+																16-s:Land
+															15-o:editorPosition
+																16-v:x
+																	17-f:-224
+																16-v:y
+																	17-f:416
