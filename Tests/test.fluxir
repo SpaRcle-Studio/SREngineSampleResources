@@ -1,0 +1,41 @@
+registers 16
+
+consts
+    Arithmetic.float = 1.0
+    Arithmetic.float = 2.0
+    /*Object.ShadowQualityPreset =*/
+    String.String = Hello, World!
+    Enum.PlatformType = Windows
+    /*Container.SharedPtr[Object.RenderSettings] =
+    Container.Pair[String.String, Arithmetic.float] =
+    MathVector.float(3) =*/
+endconsts
+
+storage
+    Arithmetic.float = 0.0
+endstorage
+
+Test:
+    pop %1
+    call Math.Compare $0 $1
+
+    br br_0_true
+    jmp br_0_end
+
+br_0_true:
+    call Debug.Print %1
+    jmp br_0_end
+
+br_0_end:
+
+    ret
+
+Main:
+    call Math.Add $0 $1
+    call Debug.Print %0
+    call Debug.Print $2
+    cp %0 %1
+    cp %0 @0
+    push %1
+    jmp Test
+    ret

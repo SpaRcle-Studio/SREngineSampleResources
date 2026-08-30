@@ -880,6 +880,14 @@ use tabs: true
 																		18-s:Float
 																	17-v:value
 																		18-f:1
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:normalStrength
+																	17-v:type
+																		18-s:Float
+																	17-v:value
+																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -1362,6 +1370,8 @@ use tabs: true
 													13-s:MaterialData
 												12-o:ptr
 													13-a:shaderDefines
+									9-v:meshId
+										10-i:-1
 					5-v:name
 						6-s:New GameObject
 					5-o:transform

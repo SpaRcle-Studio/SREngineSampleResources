@@ -1,0 +1,35 @@
+registers 16
+
+consts
+    String.String = {"Root":{"string":"Hello World from Flux!"}}
+    Enum.DebugLogType = {"Root":{"enum":"Script"}}
+    Arithmetic.bool = {"Root":{"bool":true}}
+    Arithmetic.bool = {"Root":{"bool":false}}
+    Arithmetic.float = {"Root":{"float":110.1}}
+    Arithmetic.float = {"Root":{"float":0.0}}
+endconsts
+
+storage
+    Object.Component =
+    String.String = {"Root":{"string":"Hello World from Flux Storage!"}}
+endstorage
+
+Start:
+    call Debug.Print @1 $1
+    call Debug.Warn $0
+    call Debug.Log $0
+    cp $0 %0
+    call StringUtils.Reverse %0
+    call StringUtils.ToLower %0
+    call Debug.Print %0 $1
+    ret
+
+Update:
+    //call Component.SetEnabled @0 $3
+    //call GameObject.SetEnabled %0 $3
+
+    call Component.GetGameObject @0
+    call GameObject.GetTransform %0
+    call Transform.RotateXYZ %0 $5 $4 $5
+
+    ret

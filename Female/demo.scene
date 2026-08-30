@@ -264,6 +264,19 @@ use tabs: true
 											11-i:2339071504085736563
 									9-v:type
 										10-s:Box3D
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:FluxComponent
+								8-o:ptr
+									9-v:entityId
+										10-i:3538371056002890141
+									9-v:isEnabled
+										10-b:false
+									9-o:graph
+										10-v:id
+											11-s:Samples/Tests/FluxTest.flux
+									9-a:variables
 					5-v:name
 						6-s:Cube
 					5-a:children

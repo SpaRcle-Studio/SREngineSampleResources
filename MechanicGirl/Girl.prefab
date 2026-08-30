@@ -21,6 +21,8 @@ use tabs: true
 					5-o:ptr
 						6-v:entityId
 							7-i:2848937959677828995
+						6-v:isEnabled
+							7-b:false
 						6-v:behaviourName
 							7-s:GirlController
 						6-o:data
@@ -64,6 +66,83 @@ use tabs: true
 								8-f:1
 							7-v:height
 								8-f:2
+			3-k:i
+				4-o:d
+					5-v:type
+						6-s:FluxComponent
+					5-o:ptr
+						6-v:entityId
+							7-i:2575667240282636620
+						6-o:graph
+							7-v:id
+								8-s:Samples/MechanicGirl/Scripts/Controller.flux
+						6-a:variables
+							7-k:item
+								8-v:first
+									9-s:WalkSpeed
+								8-o:second
+									9-v:typeInfo
+										10-s:Arithmetic.float
+									9-v:float
+										10-f:4
+							7-k:item
+								8-v:first
+									9-s:Camera
+								8-o:second
+									9-v:typeInfo
+										10-s:Object.EntityRefDynamic
+									9-v:entityId
+										10-i:3774519921700400542
+									9-v:typeName
+										10-s:GameObject
+							7-k:item
+								8-v:first
+									9-s:RunSpeed
+								8-o:second
+									9-v:typeInfo
+										10-s:Arithmetic.float
+									9-v:float
+										10-f:10
+							7-k:item
+								8-v:first
+									9-s:Animator
+								8-o:second
+									9-v:typeInfo
+										10-s:Object.EntityRefDynamic
+									9-v:entityId
+										10-i:3994431057642410439
+									9-v:typeName
+										10-s:Animator
+							7-k:item
+								8-v:first
+									9-s:HeadModel
+								8-o:second
+									9-v:typeInfo
+										10-s:Object.EntityRefDynamic
+									9-v:entityId
+										10-i:4291032275102761000
+									9-v:typeName
+										10-s:GameObject
+							7-k:item
+								8-v:first
+									9-s:HeadBone
+								8-o:second
+									9-v:typeInfo
+										10-s:Object.EntityRefDynamic
+									9-v:entityId
+										10-i:3649400130990012633
+									9-v:typeName
+										10-s:GameObject
+							7-k:item
+								8-v:first
+									9-s:Body
+								8-o:second
+									9-v:typeInfo
+										10-s:Object.EntityRefDynamic
+									9-v:entityId
+										10-i:4576157519027742504
+									9-v:typeName
+										10-s:GameObject
 		2-v:name
 			3-s:Girl
 		2-a:children
@@ -82,7 +161,6 @@ use tabs: true
 									9-o:ptr
 										10-v:entityId
 											11-i:4023226607076117340
-										10-o:rig
 										10-o:skeleton
 											11-v:meshPath
 												12-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
@@ -96,7 +174,6 @@ use tabs: true
 										10-o:parent
 											11-v:entityId
 												12-i:4023226607076117340
-										10-o:rig
 										10-o:skeleton
 											11-v:meshPath
 												12-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
@@ -110,8 +187,6 @@ use tabs: true
 										10-o:skeleton
 											11-v:entityId
 												12-i:4023226607076117340
-										10-v:graph
-											11-s:Samples/MechanicGirl/Animations/girl.animator
 										10-a:IKSystems
 											11-k:i
 												12-o:d
@@ -129,6 +204,8 @@ use tabs: true
 												12-o:d
 													13-v:entityId
 														14-i:2827530084496414689
+										10-v:graph
+											11-s:Samples/MechanicGirl/Animations/girl.animator
 						6-v:tag
 							7-s:Player
 						6-v:name
