@@ -8465,12 +8465,12 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:719.5
+									9-f:767.5
 								8-v:y
-									9-f:472
+									9-f:480.5
 							7-o:size
 								8-v:x
-									9-f:1371.93
+									9-f:1437.57
 								8-v:y
 									9-f:900
 							7-o:anchors
@@ -8478,11 +8478,11 @@ for the evil queen and jack
 								8-o:max
 							7-o:scale
 								8-v:x
-									9-f:1.04889
+									9-f:1.06778
 								8-v:y
-									9-f:1.04889
+									9-f:1.06778
 								8-v:z
-									9-f:1.04889
+									9-f:1.06778
 		2-k:i
 			3-o:d
 				4-v:type
@@ -9088,11 +9088,11 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:-1.44286
+									9-f:-7.00379
 								8-v:y
 									9-f:1.03514
 								8-v:z
-									9-f:5.07341
+									9-f:5.04697
 		2-k:i
 			3-o:d
 				4-v:type
@@ -9943,6 +9943,9 @@ for the evil queen and jack
 									9-v:entityId
 										10-i:3231750618489452023
 									9-o:associative
+										10-a:associativeSetPlatformType
+										10-a:associativeIntSet
+										10-a:associativeSetAtom
 										10-a:associativeMapAtom
 											11-k:item
 												12-v:first
@@ -10029,7 +10032,6 @@ for the evil queen and jack
 											11-f:0.15
 										10-v:y
 											11-f:0.08
-									9-o:size
 									9-o:size2
 										10-o:width
 											11-v:v
@@ -19914,6 +19916,9 @@ for the evil queen and jack
 									9-v:entityId
 										10-i:3555613914693504801
 									9-o:associative
+										10-a:associativeSetPlatformType
+										10-a:associativeIntSet
+										10-a:associativeSetAtom
 										10-a:associativeMapAtom
 											11-k:item
 												12-v:first
@@ -20065,10 +20070,6 @@ for the evil queen and jack
 													13-s:IOS
 												12-v:second
 													13-s:
-									9-o:size
-									9-o:size2
-										10-o:width
-										10-o:height
 									9-a:bitSet
 					5-v:name
 						6-s:Particle Emitter

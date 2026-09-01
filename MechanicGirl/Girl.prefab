@@ -17,43 +17,6 @@ use tabs: true
 			3-k:i
 				4-o:d
 					5-v:type
-						6-s:Behaviour
-					5-o:ptr
-						6-v:entityId
-							7-i:2848937959677828995
-						6-v:isEnabled
-							7-b:false
-						6-v:behaviourName
-							7-s:GirlController
-						6-o:data
-							7-o:characterController
-								8-v:entityId
-									9-i:2495413186136658263
-							7-o:animator
-								8-v:entityId
-									9-i:3994431057642410439
-							7-o:headObject
-								8-v:entityId
-									9-i:3649400130990012633
-							7-o:headModel
-								8-v:entityId
-									9-i:4291032275102761000
-							7-o:bodyRoot
-								8-v:entityId
-									9-i:4576157519027742504
-							7-o:cameraObject
-								8-v:entityId
-									9-i:3774519921700400542
-							7-o:cameraOffset
-								8-v:y
-									9-f:-0.2
-							7-v:cameraShakeSpeed
-								8-f:0.03
-							7-v:cameraPitchLimit
-								8-f:75
-			3-k:i
-				4-o:d
-					5-v:type
 						6-s:CharacterController
 					5-o:ptr
 						6-v:entityId

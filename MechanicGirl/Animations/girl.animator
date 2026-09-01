@@ -10,6 +10,21 @@ use tabs: true
 					5-s:AnimationGraph
 				4-o:ptr
 					5-a:boolTable
+						6-k:item
+							7-v:first
+								8-s:Walk
+							7-v:second
+								8-b:false
+						6-k:item
+							7-v:first
+								8-s:Run
+							7-v:second
+								8-b:false
+						6-k:item
+							7-v:first
+								8-s:Idle
+							7-v:second
+								8-b:true
 					5-a:intTable
 					5-a:floatTable
 					5-a:stringTable
@@ -51,9 +66,9 @@ use tabs: true
 													13-i:3
 									9-o:editorPosition
 										10-v:x
-											11-f:104
+											11-f:102
 										10-v:y
-											11-f:194
+											11-f:186
 									9-v:blendFactor
 										10-f:0
 						6-k:i
@@ -63,7 +78,7 @@ use tabs: true
 								8-o:ptr
 									9-o:editorPosition
 										10-v:x
-											11-f:-415
+											11-f:-421
 										10-v:y
 											11-f:100
 									9-o:stateMachine
@@ -95,6 +110,9 @@ use tabs: true
 																		18-o:ptr
 																			19-v:targetIndex
 																				20-i:1
+																			19-o:exitTime
+																				20-v:exitTime
+																					21-f:0
 												12-k:i
 													13-o:d
 														14-v:type
@@ -131,13 +149,11 @@ use tabs: true
 																										26-s:Walk
 																									25-v:value
 																										26-b:true
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:AnimationStateConditionExitTime
-																								24-o:ptr
-																									25-v:exitTime
-																										26-f:0
+																			19-o:exitTime
+																				20-v:duration
+																					21-f:0.15
+																				20-v:exitTime
+																					21-f:0
 																16-k:i
 																	17-o:d
 																		18-v:type
@@ -159,13 +175,9 @@ use tabs: true
 																										26-s:Run
 																									25-v:value
 																										26-b:true
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:AnimationStateConditionExitTime
-																								24-o:ptr
-																									25-v:exitTime
-																										26-f:0
+																			19-o:exitTime
+																				20-v:exitTime
+																					21-f:0
 															15-v:animation
 																16-s:Samples/MechanicGirl/Animations/Idle.animation
 												12-k:i
@@ -201,14 +213,14 @@ use tabs: true
 																									25-s:AnimationStateConditionBool
 																								24-o:ptr
 																									25-v:variableName
-																										26-s:Walk
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:AnimationStateConditionExitTime
-																								24-o:ptr
-																									25-v:exitTime
-																										26-f:0
+																										26-s:Idle
+																									25-v:value
+																										26-b:true
+																			19-o:exitTime
+																				20-v:duration
+																					21-f:0.15
+																				20-v:exitTime
+																					21-f:0
 																16-k:i
 																	17-o:d
 																		18-v:type
@@ -230,13 +242,9 @@ use tabs: true
 																										26-s:Run
 																									25-v:value
 																										26-b:true
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:AnimationStateConditionExitTime
-																								24-o:ptr
-																									25-v:exitTime
-																										26-f:0
+																			19-o:exitTime
+																				20-v:exitTime
+																					21-f:0
 															15-v:animation
 																16-s:Samples/MechanicGirl/Animations/Walk.animation
 												12-k:i
@@ -272,14 +280,12 @@ use tabs: true
 																									25-s:AnimationStateConditionBool
 																								24-o:ptr
 																									25-v:variableName
-																										26-s:Run
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:AnimationStateConditionExitTime
-																								24-o:ptr
-																									25-v:exitTime
-																										26-f:0
+																										26-s:Idle
+																									25-v:value
+																										26-b:true
+																			19-o:exitTime
+																				20-v:exitTime
+																					21-f:0
 																16-k:i
 																	17-o:d
 																		18-v:type
@@ -301,13 +307,9 @@ use tabs: true
 																										26-s:Walk
 																									25-v:value
 																										26-b:true
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:AnimationStateConditionExitTime
-																								24-o:ptr
-																									25-v:exitTime
-																										26-f:0
+																			19-o:exitTime
+																				20-v:exitTime
+																					21-f:0
 															15-v:animation
 																16-s:Samples/MechanicGirl/Animations/Run.animation
 						6-k:i
@@ -351,6 +353,7 @@ use tabs: true
 																		18-o:ptr
 																			19-v:targetIndex
 																				20-i:1
+																			19-o:exitTime
 												12-k:i
 													13-o:d
 														14-v:type
@@ -373,14 +376,7 @@ use tabs: true
 																		18-o:ptr
 																			19-v:targetIndex
 																				20-i:2
-																			19-o:condition
-																				20-v:type
-																					21-s:AnimationStateConditionExitTime
-																				20-o:ptr
-																					21-v:duration
-																						22-f:0.35
-																					21-v:exitTime
-																						22-f:0.5
+																			19-o:exitTime
 															15-v:animation
 																16-s:Samples/MechanicGirl/Animations/Jump.animation
 												12-k:i
@@ -405,16 +401,11 @@ use tabs: true
 																		18-o:ptr
 																			19-v:targetIndex
 																				20-i:3
-																			19-o:condition
-																				20-v:type
-																					21-s:AnimationStateConditionExitTime
-																				20-o:ptr
-																					21-v:duration
-																						22-f:0
-																					21-v:exitTime
-																						22-f:0.5
-																					21-v:hasExitTime
-																						22-b:false
+																			19-o:exitTime
+																				20-v:duration
+																					21-f:0
+																				20-v:exitTime
+																					21-f:1
 															15-v:animation
 																16-s:Samples/MechanicGirl/Animations/Fall.animation
 												12-k:i
@@ -439,13 +430,6 @@ use tabs: true
 																		18-o:ptr
 																			19-v:targetIndex
 																				20-i:1
-																			19-o:condition
-																				20-v:type
-																					21-s:AnimationStateConditionExitTime
-																				20-o:ptr
-																					21-v:duration
-																						22-f:0
-																					21-v:exitTime
-																						22-f:1
+																			19-o:exitTime
 															15-v:animation
 																16-s:Samples/MechanicGirl/Animations/Land.animation
