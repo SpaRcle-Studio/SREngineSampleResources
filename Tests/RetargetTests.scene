@@ -111,7 +111,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:3010999322985161812
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget 2.animator
 									9-v:name
@@ -1816,7 +1815,6 @@ use tabs: true
 												12-o:ptr
 													13-v:entityId
 														14-i:2553820283783125019
-													13-o:rig
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/Animations/Grabbing Ammo.fbx
@@ -1830,7 +1828,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:2553820283783125019
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test.animator
 									9-v:name
@@ -3548,7 +3545,6 @@ use tabs: true
 													13-o:parent
 														14-v:entityId
 															15-i:4023226607076117340
-													13-o:rig
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
@@ -3562,7 +3558,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:4023226607076117340
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Mechanic Girl.animator
 									9-v:tag
@@ -9826,7 +9821,6 @@ use tabs: true
 													13-o:parent
 														14-v:entityId
 															15-i:3073363557613727660
-													13-o:rig
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
@@ -9840,7 +9834,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:3073363557613727660
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget 2.animator
 									9-v:tag
@@ -16091,7 +16084,6 @@ use tabs: true
 												12-o:ptr
 													13-v:entityId
 														14-i:4498050092058328225
-													13-o:rig
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
@@ -16105,7 +16097,6 @@ use tabs: true
 													13-o:parent
 														14-v:entityId
 															15-i:4498050092058328225
-													13-o:rig
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
@@ -16119,7 +16110,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:4498050092058328225
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Mechanic Girl Original.animator
 									9-v:tag
@@ -22383,7 +22373,6 @@ use tabs: true
 													13-o:parent
 														14-v:entityId
 															15-i:4555948076093415398
-													13-o:rig
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
@@ -22397,7 +22386,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:4555948076093415398
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget 2.animator
 									9-v:tag
@@ -28661,7 +28649,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:2969547788214946925
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget.animator
 									9-v:name
@@ -32048,7 +32035,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:3324848976090077787
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget 2.animator
 									9-v:name
@@ -39955,7 +39941,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:3895190316009516445
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget.animator
 									9-v:name
@@ -46302,7 +46287,6 @@ use tabs: true
 																	17-o:skeleton
 																		18-v:entityId
 																			19-i:3153770176110902118
-																	17-o:clip
 																	17-v:graph
 																		18-s:Samples/Animations/Skinning Test Retarget.animator
 													13-v:name
@@ -52673,7 +52657,6 @@ use tabs: true
 													13-o:parent
 														14-v:entityId
 															15-i:3373002351965329349
-													13-o:rig
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
@@ -52689,7 +52672,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:3373002351965329349
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget 4 Inv.animator
 									9-v:tag
@@ -58960,7 +58942,6 @@ use tabs: true
 																	17-o:skeleton
 																		18-v:entityId
 																			19-i:2427976445750115334
-																	17-o:clip
 																	17-v:graph
 																		18-s:Samples/Animations/Skinning Test Retarget 2.animator
 													13-v:name
@@ -60663,7 +60644,6 @@ use tabs: true
 																16-o:ptr
 																	17-v:entityId
 																		18-i:3496563350658487111
-																	17-o:rig
 																	17-o:skeleton
 																		18-v:meshPath
 																			19-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
@@ -60677,7 +60657,6 @@ use tabs: true
 																	17-o:parent
 																		18-v:entityId
 																			19-i:3496563350658487111
-																	17-o:rig
 																	17-o:skeleton
 																		18-v:meshPath
 																			19-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
@@ -60691,7 +60670,6 @@ use tabs: true
 																	17-o:skeleton
 																		18-v:entityId
 																			19-i:3496563350658487111
-																	17-o:clip
 																	17-v:graph
 																		18-s:Samples/Animations/Mechanic Girl Grabbing ammo.animator
 													13-v:tag
@@ -77420,7 +77398,6 @@ use tabs: true
 													13-o:parent
 														14-v:entityId
 															15-i:2662408882194598732
-													13-o:rig
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
@@ -83712,7 +83689,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:4497113027022451501
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget 2.animator
 									9-v:name
@@ -86449,7 +86425,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:3108608547674676194
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget 2.animator
 									9-v:name
@@ -94184,7 +94159,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:2380522337205160400
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget 2.animator
 									9-v:name
@@ -100545,7 +100519,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:2474113601931777359
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget 2.animator
 									9-v:name
@@ -103560,7 +103533,6 @@ use tabs: true
 													13-o:parent
 														14-v:entityId
 															15-i:3755001711067283612
-													13-o:rig
 													13-o:skeleton
 														14-v:meshPath
 															15-s:Samples/MechanicGirl/SK_MECHANICGIRL_TOP.FBX
@@ -103574,7 +103546,6 @@ use tabs: true
 													13-o:skeleton
 														14-v:entityId
 															15-i:3755001711067283612
-													13-o:clip
 													13-v:graph
 														14-s:Samples/Animations/Skinning Test Retarget 2.animator
 									9-v:tag
@@ -109810,8 +109781,6 @@ use tabs: true
 													13-f:4
 												12-v:z
 													13-f:-4
-					5-v:isEnabled
-						6-b:false
 					5-o:transform
 						6-v:type
 							7-s:Transform3D

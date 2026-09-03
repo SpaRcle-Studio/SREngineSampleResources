@@ -2,7 +2,7 @@ sra format
 use tabs: true
 0-r:Root
 	1-v:entityId
-		2-i:-1
+		2-i:3954847762873013726
 	1-o:logic
 		2-v:type
 			3-s:ScenePrefabLogic
@@ -91,14 +91,6 @@ use tabs: true
 												12-k:i
 													13-o:d
 														14-v:id
-															15-s:ambientIntensity
-														14-v:type
-															15-s:Float
-														14-v:value
-															15-f:0.8
-												12-k:i
-													13-o:d
-														14-v:id
 															15-s:shadowIntensity
 														14-v:type
 															15-s:Float
@@ -107,11 +99,11 @@ use tabs: true
 												12-k:i
 													13-o:d
 														14-v:id
-															15-s:diffuseMin
+															15-s:normalStrength
 														14-v:type
 															15-s:Float
 														14-v:value
-															15-f:0
+															15-f:1
 											11-a:samplers
 												12-k:i
 													13-o:d
@@ -272,6 +264,162 @@ use tabs: true
 								8-f:0.03
 							7-v:z
 								8-f:0.233
+			3-k:i
+				4-o:d
+					5-v:type
+						6-s:CollisionShape
+					5-o:ptr
+						6-v:entityId
+							7-i:3144762193281932055
+						6-o:rigidbody
+							7-v:entityId
+								8-i:3241980241933028887
+						6-v:type
+							7-s:Box3D
+						6-o:center
+							7-v:x
+								8-f:0.201
+							7-v:y
+								8-f:0.7
+							7-v:z
+								8-f:-0.098
+						6-o:bounds
+							7-v:x
+								8-f:0.241
+							7-v:y
+								8-f:0.03
+							7-v:z
+								8-f:0.058
+			3-k:i
+				4-o:d
+					5-v:type
+						6-s:CollisionShape
+					5-o:ptr
+						6-v:entityId
+							7-i:2764543660072215024
+						6-o:rigidbody
+							7-v:entityId
+								8-i:3241980241933028887
+						6-v:type
+							7-s:Box3D
+						6-o:center
+							7-v:x
+								8-f:0.201
+							7-v:y
+								8-f:0.813
+							7-v:z
+								8-f:-0.215
+						6-o:bounds
+							7-v:x
+								8-f:0.241
+							7-v:y
+								8-f:0.03
+							7-v:z
+								8-f:0.058
+			3-k:i
+				4-o:d
+					5-v:type
+						6-s:CollisionShape
+					5-o:ptr
+						6-v:entityId
+							7-i:4119017118069301351
+						6-o:rigidbody
+							7-v:entityId
+								8-i:3241980241933028887
+						6-v:type
+							7-s:Box3D
+						6-o:center
+							7-v:x
+								8-f:0.201
+							7-v:y
+								8-f:0.932
+							7-v:z
+								8-f:-0.335
+						6-o:bounds
+							7-v:x
+								8-f:0.241
+							7-v:y
+								8-f:0.03
+							7-v:z
+								8-f:0.058
+			3-k:i
+				4-o:d
+					5-v:type
+						6-s:CollisionShape
+					5-o:ptr
+						6-v:entityId
+							7-i:2894517441890486971
+						6-o:rigidbody
+							7-v:entityId
+								8-i:3241980241933028887
+						6-v:type
+							7-s:Box3D
+						6-o:center
+							7-v:x
+								8-f:0.201
+							7-v:y
+								8-f:1.052
+							7-v:z
+								8-f:-0.455
+						6-o:bounds
+							7-v:x
+								8-f:0.241
+							7-v:y
+								8-f:0.03
+							7-v:z
+								8-f:0.058
+			3-k:i
+				4-o:d
+					5-v:type
+						6-s:CollisionShape
+					5-o:ptr
+						6-v:entityId
+							7-i:4480976854724520004
+						6-o:rigidbody
+							7-v:entityId
+								8-i:3241980241933028887
+						6-v:type
+							7-s:Box3D
+						6-o:center
+							7-v:x
+								8-f:0.201
+							7-v:y
+								8-f:1.169
+							7-v:z
+								8-f:-0.585
+						6-o:bounds
+							7-v:x
+								8-f:0.241
+							7-v:y
+								8-f:0.03
+							7-v:z
+								8-f:0.058
+			3-k:i
+				4-o:d
+					5-v:type
+						6-s:CollisionShape
+					5-o:ptr
+						6-v:entityId
+							7-i:2812177070008044566
+						6-o:rigidbody
+							7-v:entityId
+								8-i:3241980241933028887
+						6-v:type
+							7-s:Box3D
+						6-o:center
+							7-v:x
+								8-f:0.201
+							7-v:y
+								8-f:1.289
+							7-v:z
+								8-f:-0.701
+						6-o:bounds
+							7-v:x
+								8-f:0.241
+							7-v:y
+								8-f:0.03
+							7-v:z
+								8-f:0.058
 		2-v:name
 			3-s:Stair
 		2-o:transform

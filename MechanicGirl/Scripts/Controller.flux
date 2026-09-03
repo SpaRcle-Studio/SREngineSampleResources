@@ -1153,9 +1153,9 @@ use tabs: true
 								8-s:Evaluate
 							7-o:position
 								8-v:x
-									9-f:-786
+									9-f:-340
 								8-v:y
-									9-f:4740
+									9-f:4766
 							7-v:callableObject
 								8-s:MathUtils
 							7-v:callableFunction
@@ -1166,9 +1166,9 @@ use tabs: true
 								8-s:Evaluate
 							7-o:position
 								8-v:x
-									9-f:-498
+									9-f:-52
 								8-v:y
-									9-f:4740
+									9-f:4766
 							7-v:callableObject
 								8-s:MathUtils
 							7-v:callableFunction
@@ -1179,9 +1179,9 @@ use tabs: true
 								8-s:Constant
 							7-o:position
 								8-v:x
-									9-f:-784
+									9-f:-338
 								8-v:y
-									9-f:4836
+									9-f:4862
 							7-o:constant
 								8-v:typeInfo
 									9-s:Arithmetic.float
@@ -1193,9 +1193,9 @@ use tabs: true
 								8-s:Evaluate
 							7-o:position
 								8-v:x
-									9-f:-146
+									9-f:300
 								8-v:y
-									9-f:4570
+									9-f:4596
 							7-v:callableObject
 								8-s:MathUtils
 							7-v:callableFunction
@@ -1208,7 +1208,7 @@ use tabs: true
 								8-v:x
 									9-f:-566
 								8-v:y
-									9-f:3695
+									9-f:3439
 							7-o:constant
 								8-v:typeInfo
 									9-s:String.StringAtom
@@ -1222,7 +1222,7 @@ use tabs: true
 								8-v:x
 									9-f:-338
 								8-v:y
-									9-f:3668
+									9-f:3412
 							7-v:callableObject
 								8-s:FluxComponent
 							7-v:callableFunction
@@ -1233,7 +1233,7 @@ use tabs: true
 								8-s:Invoke
 							7-o:position
 								8-v:x
-									9-f:446
+									9-f:942
 								8-v:y
 									9-f:3910
 							7-v:callableObject
@@ -1246,7 +1246,7 @@ use tabs: true
 								8-s:Constant
 							7-o:position
 								8-v:x
-									9-f:174
+									9-f:670
 								8-v:y
 									9-f:4084
 							7-o:constant
@@ -1260,7 +1260,7 @@ use tabs: true
 								8-s:Invoke
 							7-o:position
 								8-v:x
-									9-f:718
+									9-f:1214
 								8-v:y
 									9-f:3910
 							7-v:callableObject
@@ -1273,7 +1273,7 @@ use tabs: true
 								8-s:Constant
 							7-o:position
 								8-v:x
-									9-f:478
+									9-f:974
 								8-v:y
 									9-f:4084
 							7-o:constant
@@ -1287,9 +1287,9 @@ use tabs: true
 								8-s:Evaluate
 							7-o:position
 								8-v:x
-									9-f:190
+									9-f:636
 								8-v:y
-									9-f:4724
+									9-f:4750
 							7-v:callableObject
 								8-s:MathUtils
 							7-v:callableFunction
@@ -1300,9 +1300,9 @@ use tabs: true
 								8-s:Evaluate
 							7-o:position
 								8-v:x
-									9-f:-242
+									9-f:204
 								8-v:y
-									9-f:4868
+									9-f:4894
 							7-v:callableObject
 								8-s:MathUtils
 							7-v:callableFunction
@@ -1313,9 +1313,9 @@ use tabs: true
 								8-s:Evaluate
 							7-o:position
 								8-v:x
-									9-f:-100
+									9-f:-114
 								8-v:y
-									9-f:3780
+									9-f:3422
 							7-v:callableObject
 								8-s:EntityRefDynamic
 							7-v:callableFunction
@@ -1328,9 +1328,9 @@ use tabs: true
 								8-s:Animator
 							7-o:position
 								8-v:x
-									9-f:158
+									9-f:206
 								8-v:y
-									9-f:3908
+									9-f:3546
 					5-k:i
 						6-o:d
 							7-v:type
@@ -1365,7 +1365,7 @@ use tabs: true
 								8-v:x
 									9-f:-593
 								8-v:y
-									9-f:3604
+									9-f:3348
 							7-v:callableObject
 								8-s:FluxUtils
 							7-v:callableFunction
@@ -1544,9 +1544,9 @@ use tabs: true
 								8-s:Evaluate
 							7-o:position
 								8-v:x
-									9-f:-548
+									9-f:-102
 								8-v:y
-									9-f:4932
+									9-f:4958
 							7-v:callableObject
 								8-s:Input
 							7-v:callableFunction
@@ -1557,9 +1557,9 @@ use tabs: true
 								8-s:Constant
 							7-o:position
 								8-v:x
-									9-f:-796
+									9-f:-350
 								8-v:y
-									9-f:4932
+									9-f:4958
 							7-o:constant
 								8-v:typeInfo
 									9-s:Enum.KeyCode
@@ -2284,7 +2284,7 @@ use tabs: true
 								8-s:Invoke
 							7-o:position
 								8-v:x
-									9-f:990
+									9-f:1486
 								8-v:y
 									9-f:3910
 							7-v:callableObject
@@ -2297,7 +2297,7 @@ use tabs: true
 								8-s:Constant
 							7-o:position
 								8-v:x
-									9-f:750
+									9-f:1246
 								8-v:y
 									9-f:4084
 							7-o:constant
@@ -2311,7 +2311,7 @@ use tabs: true
 								8-s:Evaluate
 							7-o:position
 								8-v:x
-									9-f:494
+									9-f:990
 								8-v:y
 									9-f:4202
 							7-v:callableObject
@@ -2324,9 +2324,150 @@ use tabs: true
 								8-s:Evaluate
 							7-o:position
 								8-v:x
-									9-f:720
+									9-f:1216
 								8-v:y
 									9-f:4202
+							7-v:callableObject
+								8-s:MathUtils
+							7-v:callableFunction
+								8-s:BoolNot
+					5-k:i
+						6-o:d
+							7-v:type
+								8-s:Branch
+							7-o:position
+								8-v:x
+									9-f:156
+								8-v:y
+									9-f:3908
+					5-k:i
+						6-o:d
+							7-v:type
+								8-s:Constant
+							7-o:position
+								8-v:x
+									9-f:-290
+								8-v:y
+									9-f:4420
+							7-o:constant
+								8-v:typeInfo
+									9-s:Enum.KeyCode
+								8-v:enum
+									9-s:Space
+					5-k:i
+						6-o:d
+							7-v:type
+								8-s:Evaluate
+							7-o:position
+								8-v:x
+									9-f:-66
+								8-v:y
+									9-f:4420
+							7-v:callableObject
+								8-s:Input
+							7-v:callableFunction
+								8-s:GetKeyDown
+					5-k:i
+						6-o:d
+							7-v:type
+								8-s:Invoke
+							7-o:position
+								8-v:x
+									9-f:428
+								8-v:y
+									9-f:3828
+							7-v:callableObject
+								8-s:Animator
+							7-v:callableFunction
+								8-s:FastForwardState
+					5-k:i
+						6-o:d
+							7-v:type
+								8-s:Constant
+							7-o:position
+								8-v:x
+									9-f:270.131
+								8-v:y
+									9-f:4129.32
+							7-o:constant
+								8-v:typeInfo
+									9-s:String.StringAtom
+								8-v:atom
+									9-s:Jump
+					5-k:i
+						6-o:d
+							7-v:type
+								8-s:Evaluate
+							7-o:position
+								8-v:x
+									9-f:-1091.82
+								8-v:y
+									9-f:3703.62
+							7-v:callableObject
+								8-s:CharacterController
+							7-v:callableFunction
+								8-s:IsGrounded
+					5-k:i
+						6-o:d
+							7-v:type
+								8-s:WriteVariable
+							7-v:name
+								8-s:VerticalVelocity
+							7-o:position
+								8-v:x
+									9-f:670
+								8-v:y
+									9-f:3828
+					5-k:i
+						6-o:d
+							7-v:type
+								8-s:Constant
+							7-o:position
+								8-v:x
+									9-f:430
+								8-v:y
+									9-f:3732
+							7-o:constant
+								8-v:typeInfo
+									9-s:Arithmetic.float
+								8-v:float
+									9-f:5
+					5-k:i
+						6-o:d
+							7-v:type
+								8-s:Invoke
+							7-o:position
+								8-v:x
+									9-f:1806
+								8-v:y
+									9-f:3910
+							7-v:callableObject
+								8-s:Animator
+							7-v:callableFunction
+								8-s:SetBool
+					5-k:i
+						6-o:d
+							7-v:type
+								8-s:Constant
+							7-o:position
+								8-v:x
+									9-f:1566
+								8-v:y
+									9-f:4084
+							7-o:constant
+								8-v:typeInfo
+									9-s:String.StringAtom
+								8-v:atom
+									9-s:Falling
+					5-k:i
+						6-o:d
+							7-v:type
+								8-s:Evaluate
+							7-o:position
+								8-v:x
+									9-f:1324
+								8-v:y
+									9-f:3604
 							7-v:callableObject
 								8-s:MathUtils
 							7-v:callableFunction
@@ -2745,14 +2886,6 @@ use tabs: true
 					5-k:i
 						6-o:d
 							7-v:sourceNode
-								8-i:57
-							7-v:targetNode
-								8-i:56
-							7-v:targetPin
-								8-i:1
-					5-k:i
-						6-o:d
-							7-v:sourceNode
 								8-i:56
 							7-v:targetNode
 								8-i:58
@@ -3107,18 +3240,6 @@ use tabs: true
 					5-k:i
 						6-o:d
 							7-v:sourceNode
-								8-i:58
-							7-v:targetNode
-								8-i:102
-					5-k:i
-						6-o:d
-							7-v:sourceNode
-								8-i:64
-							7-v:targetNode
-								8-i:102
-					5-k:i
-						6-o:d
-							7-v:sourceNode
 								8-i:94
 							7-v:targetNode
 								8-i:101
@@ -3142,12 +3263,6 @@ use tabs: true
 								8-i:2
 							7-v:targetPin
 								8-i:1
-					5-k:i
-						6-o:d
-							7-v:sourceNode
-								8-i:102
-							7-v:targetNode
-								8-i:95
 					5-k:i
 						6-o:d
 							7-v:sourceNode
@@ -3218,12 +3333,6 @@ use tabs: true
 								8-i:1
 							7-v:sourcePin
 								8-i:2
-					5-k:i
-						6-o:d
-							7-v:sourceNode
-								8-i:1
-							7-v:targetNode
-								8-i:6
 					5-k:i
 						6-o:d
 							7-v:sourceNode
@@ -3919,11 +4028,155 @@ use tabs: true
 					5-k:i
 						6-o:d
 							7-v:sourceNode
+								8-i:58
+							7-v:targetNode
+								8-i:181
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:182
+							7-v:targetNode
+								8-i:183
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:183
+							7-v:targetNode
+								8-i:181
+							7-v:targetPin
+								8-i:1
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:181
+							7-v:targetNode
+								8-i:184
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:64
+							7-v:targetNode
+								8-i:95
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:181
+							7-v:targetNode
+								8-i:95
+							7-v:sourcePin
+								8-i:1
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:102
+							7-v:targetNode
+								8-i:184
+							7-v:sourcePin
+								8-i:2
+							7-v:targetPin
+								8-i:1
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:185
+							7-v:targetNode
+								8-i:184
+							7-v:targetPin
+								8-i:2
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:102
+							7-v:targetNode
+								8-i:6
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:1
+							7-v:targetNode
+								8-i:102
+					5-k:i
+						6-o:d
+							7-v:sourceNode
 								8-i:176
 							7-v:targetNode
 								8-i:35
 							7-v:sourcePin
 								8-i:1
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:186
+							7-v:targetNode
+								8-i:56
+							7-v:targetPin
+								8-i:1
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:1
+							7-v:targetNode
+								8-i:186
+							7-v:sourcePin
+								8-i:2
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:184
+							7-v:targetNode
+								8-i:187
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:187
+							7-v:targetNode
+								8-i:95
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:188
+							7-v:targetNode
+								8-i:187
+							7-v:targetPin
+								8-i:1
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:190
+							7-v:targetNode
+								8-i:189
+							7-v:targetPin
+								8-i:2
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:177
+							7-v:targetNode
+								8-i:189
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:102
+							7-v:targetNode
+								8-i:189
+							7-v:sourcePin
+								8-i:2
+							7-v:targetPin
+								8-i:1
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:186
+							7-v:targetNode
+								8-i:191
+					5-k:i
+						6-o:d
+							7-v:sourceNode
+								8-i:191
+							7-v:targetNode
+								8-i:189
+							7-v:targetPin
+								8-i:3
 				4-a:variables
 					5-k:item
 						6-v:first

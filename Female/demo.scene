@@ -8465,12 +8465,12 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:767.5
+									9-f:727.5
 								8-v:y
-									9-f:480.5
+									9-f:279
 							7-o:size
 								8-v:x
-									9-f:1437.57
+									9-f:2346.77
 								8-v:y
 									9-f:900
 							7-o:anchors
@@ -8478,11 +8478,11 @@ for the evil queen and jack
 								8-o:max
 							7-o:scale
 								8-v:x
-									9-f:1.06778
+									9-f:0.62
 								8-v:y
-									9-f:1.06778
+									9-f:0.62
 								8-v:z
-									9-f:1.06778
+									9-f:0.62
 		2-k:i
 			3-o:d
 				4-v:type
@@ -9090,9 +9090,9 @@ for the evil queen and jack
 								8-v:x
 									9-f:-7.00379
 								8-v:y
-									9-f:1.03514
+									9-f:4.26649
 								8-v:z
-									9-f:5.04697
+									9-f:6.67026
 		2-k:i
 			3-o:d
 				4-v:type

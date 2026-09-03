@@ -24,11 +24,13 @@ use tabs: true
 						6-o:config
 							7-o:offset
 								8-v:y
-									9-f:2
+									9-f:2.13
 							7-v:radius
 								8-f:1
 							7-v:height
 								8-f:2
+							7-v:groundProbeOffset
+								8-f:-0.99
 			3-k:i
 				4-o:d
 					5-v:type

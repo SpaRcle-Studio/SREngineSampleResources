@@ -138,18 +138,18 @@ namespace Samples {
                 return;
             }
 
-            auto&& pGraph = pAnimator->GetGraph();
-            if (!pGraph) {
-                SR_ERROR("Graph is not set");
-                return;
-            }
+            //auto&& pGraph = pAnimator->GetGraph();
+            //if (!pGraph) {
+            //    SR_ERROR("Graph is not set");
+            //    return;
+            //}
 
-            pGraph->SetBool("IsThreaten", SR_UTILS_NS::Input::Instance().GetKeyDown(SR_UTILS_NS::KeyCode::F));
+            //pGraph->SetBool("IsThreaten", SR_UTILS_NS::Input::Instance().GetKeyDown(SR_UTILS_NS::KeyCode::F));
 
-            if (!pGraph->IsStateActive("Dummy058|Dummy058|Threaten")) {
-                MoveControl(pGraph);
-                RotateControl(pGraph);
-            }
+            //if (!pGraph->IsStateActive("Dummy058|Dummy058|Threaten")) {
+            //    MoveControl(pGraph);
+            //    RotateControl(pGraph);
+            //}
 
             AnimateCamera();
         }
