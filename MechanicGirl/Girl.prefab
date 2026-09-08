@@ -126,9 +126,9 @@ use tabs: true
 									9-o:ptr
 										10-v:entityId
 											11-i:4023226607076117340
-										10-o:skeleton
-											11-v:meshPath
-												12-s:Samples/MechanicGirl/SK_MechanicGirl_03.FBX
+										10-o:rig
+											11-v:id
+												12-s:Engine/Rig/FortniteHumanoid.rig
 							7-k:i
 								8-o:d
 									9-v:type
@@ -6777,6 +6777,13 @@ use tabs: true
 										10-o:renderParameters
 											11-a:includeLayers
 											11-a:excludeLayers
+							7-k:i
+								8-o:d
+									9-v:type
+										10-s:AudioListener
+									9-o:ptr
+										10-v:entityId
+											11-i:3552667943011947516
 						6-v:name
 							7-s:Camera
 						6-o:transform

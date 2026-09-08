@@ -83,7 +83,7 @@ use tabs: true
 								8-o:ptr
 									9-o:editorPosition
 										10-v:x
-											11-f:-421
+											11-f:-405
 										10-v:y
 											11-f:100
 									9-o:stateMachine
@@ -139,32 +139,6 @@ use tabs: true
 																			19-s:AnimationStateTransition
 																		18-o:ptr
 																			19-v:targetIndex
-																				20-i:2
-																			19-o:condition
-																				20-v:type
-																					21-s:AnimationStateConditionAnd
-																				20-o:ptr
-																					21-a:conditions
-																						22-k:i
-																							23-o:d
-																								24-v:type
-																									25-s:AnimationStateConditionBool
-																								24-o:ptr
-																									25-v:variableName
-																										26-s:Walk
-																									25-v:value
-																										26-b:true
-																			19-o:exitTime
-																				20-v:duration
-																					21-f:0.15
-																				20-v:exitTime
-																					21-f:0
-																16-k:i
-																	17-o:d
-																		18-v:type
-																			19-s:AnimationStateTransition
-																		18-o:ptr
-																			19-v:targetIndex
 																				20-i:3
 																			19-o:condition
 																				20-v:type
@@ -181,6 +155,26 @@ use tabs: true
 																									25-v:value
 																										26-b:true
 																			19-o:exitTime
+																				20-v:exitTime
+																					21-f:0
+																16-k:i
+																	17-o:d
+																		18-v:type
+																			19-s:AnimationStateTransition
+																		18-o:ptr
+																			19-v:targetIndex
+																				20-i:7
+																			19-o:condition
+																				20-v:type
+																					21-s:AnimationStateConditionBool
+																				20-o:ptr
+																					21-v:variableName
+																						22-s:Walk
+																					21-v:value
+																						22-b:true
+																			19-o:exitTime
+																				20-v:duration
+																					21-f:0.1
 																				20-v:exitTime
 																					21-f:0
 															15-v:animation
@@ -289,6 +283,8 @@ use tabs: true
 																									25-v:value
 																										26-b:true
 																			19-o:exitTime
+																				20-v:duration
+																					21-f:0.15
 																				20-v:exitTime
 																					21-f:0
 																16-k:i
@@ -452,6 +448,83 @@ use tabs: true
 																					21-f:0
 															15-v:animation
 																16-s:Samples/MechanicGirl/Animations/Fall.animation
+												12-k:i
+													13-o:d
+														14-v:type
+															15-s:AnimationClipState
+														14-o:ptr
+															15-v:stateName
+																16-s:Start Walking
+															15-o:editorPosition
+																16-v:x
+																	17-f:-656
+																16-v:y
+																	17-f:80
+															15-v:resetOnPlay
+																16-b:true
+															15-a:transitions
+																16-k:i
+																	17-o:d
+																		18-v:type
+																			19-s:AnimationStateTransition
+																		18-o:ptr
+																			19-v:targetIndex
+																				20-i:2
+																			19-o:condition
+																				20-v:type
+																					21-s:AnimationStateConditionBool
+																				20-o:ptr
+																					21-v:variableName
+																						22-s:Walk
+																					21-v:value
+																						22-b:true
+																			19-o:exitTime
+																				20-v:duration
+																					21-f:0.2
+																				20-v:exitTime
+																					21-f:0
+																16-k:i
+																	17-o:d
+																		18-v:type
+																			19-s:AnimationStateTransition
+																		18-o:ptr
+																			19-v:targetIndex
+																				20-i:1
+																			19-o:condition
+																				20-v:type
+																					21-s:AnimationStateConditionBool
+																				20-o:ptr
+																					21-v:variableName
+																						22-s:Idle
+																					21-v:value
+																						22-b:true
+																			19-o:exitTime
+																				20-v:duration
+																					21-f:0.1
+																				20-v:exitTime
+																					21-f:0
+																16-k:i
+																	17-o:d
+																		18-v:type
+																			19-s:AnimationStateTransition
+																		18-o:ptr
+																			19-v:targetIndex
+																				20-i:3
+																			19-o:condition
+																				20-v:type
+																					21-s:AnimationStateConditionBool
+																				20-o:ptr
+																					21-v:variableName
+																						22-s:Run
+																					21-v:value
+																						22-b:true
+																			19-o:exitTime
+																				20-v:duration
+																					21-f:0.15
+																				20-v:exitTime
+																					21-f:0
+															15-v:animation
+																16-s:Samples/MechanicGirl/Animations/Start Walking.animation
 						6-k:i
 							7-o:d
 								8-v:type
