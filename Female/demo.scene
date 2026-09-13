@@ -39,21 +39,6 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:tiling
 																	17-v:type
 																		18-s:Vec2
@@ -62,13 +47,6 @@ use tabs: true
 																			19-f:50
 																		18-v:y
 																			19-f:50
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
 															15-k:i
 																16-o:d
 																	17-v:id
@@ -85,14 +63,6 @@ use tabs: true
 																		18-s:Float
 																	17-v:value
 																		18-f:0
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -174,21 +144,6 @@ use tabs: true
 																			19-k:i
 																				20-o:d
 																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec4
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
-																						22-v:w
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
 																						22-s:tiling
 																					21-v:type
 																						22-s:Vec2
@@ -197,13 +152,6 @@ use tabs: true
 																							23-f:50
 																						22-v:y
 																							23-f:50
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:offset
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
 																			19-k:i
 																				20-o:d
 																					21-v:id
@@ -220,14 +168,6 @@ use tabs: true
 																						22-s:Float
 																					21-v:value
 																						22-f:0
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:shadowIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -313,63 +253,6 @@ use tabs: true
 														14-v:shaderPath
 															15-s:Engine/Shaders/standard.srsl
 														14-a:uniforms
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:tiling
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -441,63 +324,6 @@ use tabs: true
 														14-v:shaderPath
 															15-s:Engine/Shaders/standard.srsl
 														14-a:uniforms
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:tiling
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -569,63 +395,6 @@ use tabs: true
 														14-v:shaderPath
 															15-s:Engine/Shaders/standard.srsl
 														14-a:uniforms
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:tiling
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -697,63 +466,6 @@ use tabs: true
 														14-v:shaderPath
 															15-s:Engine/Shaders/standard.srsl
 														14-a:uniforms
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:tiling
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -825,63 +537,6 @@ use tabs: true
 														14-v:shaderPath
 															15-s:Engine/Shaders/standard.srsl
 														14-a:uniforms
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:tiling
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -985,63 +640,6 @@ use tabs: true
 														14-v:shaderPath
 															15-s:Engine/Shaders/standard.srsl
 														14-a:uniforms
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:tiling
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -1130,48 +728,6 @@ use tabs: true
 																			19-f:1000
 																		18-v:w
 																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:tiling
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -1808,21 +1364,6 @@ use tabs: true
 																														30-v:shaderPath
 																															31-s:Engine/Shaders/UI/sliced.srsl
 																														30-a:uniforms
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -1843,8 +1384,6 @@ use tabs: true
 																									25-f:20
 																								24-v:y
 																									25-f:20
-																							23-v:localPriority
-																								24-i:1
 																	17-o:transform
 																		18-v:type
 																			19-s:TransformRect
@@ -1868,8 +1407,6 @@ use tabs: true
 																					21-f:1
 																				20-v:y
 																					21-f:0.5
-																			19-v:localPriority
-																				20-i:1
 														14-k:i
 															15-o:d
 																16-v:type
@@ -1898,19 +1435,6 @@ use tabs: true
 																										26-v:shaderPath
 																											27-s:Engine/Shaders/UI/text.srsl
 																										26-a:uniforms
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:color
-																													29-v:type
-																														30-s:Vec3
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:1
-																														30-v:z
-																															31-f:1
 																					21-v:text
 																						22-s:Window
 																					21-v:font
@@ -1964,8 +1488,6 @@ use tabs: true
 																	17-f:0.5
 																16-v:y
 																	17-f:1
-															15-v:localPriority
-																16-i:1
 										10-k:i
 											11-o:d
 												12-v:type
@@ -1996,21 +1518,6 @@ use tabs: true
 																						22-v:shaderPath
 																							23-s:Engine/Shaders/UI/sliced.srsl
 																						22-a:uniforms
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:color
-																									25-v:type
-																										26-s:Vec4
-																									25-o:value
-																										26-v:x
-																											27-f:1
-																										26-v:y
-																											27-f:1
-																										26-v:z
-																											27-f:1
-																										26-v:w
-																											27-f:1
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -2270,8 +1777,6 @@ use tabs: true
 																			19-o:pivot
 																				20-v:x
 																					21-f:1
-																			19-v:localPriority
-																				20-i:1
 													13-o:transform
 														14-v:type
 															15-s:TransformRect
@@ -2298,8 +1803,6 @@ use tabs: true
 																		18-f:1
 																	17-v:y
 																		18-f:1
-															15-v:localPriority
-																16-i:1
 									9-v:isEnabled
 										10-b:false
 									9-o:transform
@@ -2331,8 +1834,6 @@ use tabs: true
 											11-o:pivot
 												12-v:y
 													13-f:1
-											11-v:localPriority
-												12-i:1
 						6-k:i
 							7-o:d
 								8-v:type
@@ -2541,8 +2042,6 @@ use tabs: true
 																		18-f:1
 																	17-v:y
 																		18-f:1
-															15-v:localPriority
-																16-i:1
 										10-k:i
 											11-o:d
 												12-v:type
@@ -2629,19 +2128,6 @@ use tabs: true
 																										26-v:shaderPath
 																											27-s:Engine/Shaders/UI/text.srsl
 																										26-a:uniforms
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:color
-																													29-v:type
-																														30-s:Vec3
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:1
-																														30-v:z
-																															31-f:1
 																					21-v:text
 																						22-s:1234
 																					21-v:font
@@ -2677,8 +2163,6 @@ use tabs: true
 																			19-o:pivot
 																				20-v:y
 																					21-f:1
-																			19-v:localPriority
-																				20-i:1
 														14-k:i
 															15-o:d
 																16-v:type
@@ -3244,8 +2728,6 @@ use tabs: true
 											11-o:pivot
 												12-v:y
 													13-f:0.5
-											11-v:localPriority
-												12-i:1
 						6-k:i
 							7-o:d
 								8-v:type
@@ -3428,8 +2910,6 @@ use tabs: true
 																					21-f:0.5
 																				20-v:y
 																					21-f:1
-																			19-v:localPriority
-																				20-i:1
 														14-k:i
 															15-o:d
 																16-v:type
@@ -3452,8 +2932,6 @@ use tabs: true
 																					21-f:372.7
 																				20-v:y
 																					21-f:50
-																			19-v:localPriority
-																				20-i:1
 													13-o:transform
 														14-v:type
 															15-s:TransformRect
@@ -3631,8 +3109,6 @@ use tabs: true
 																										26-f:0.565
 																									25-v:y
 																										26-f:1
-																							23-v:localPriority
-																								24-i:1
 																	17-o:transform
 																		18-v:type
 																			19-s:TransformRect
@@ -3838,8 +3314,6 @@ use tabs: true
 																										26-f:1
 																									25-v:y
 																										26-f:0.622
-																							23-v:localPriority
-																								24-i:1
 																	17-o:transform
 																		18-v:type
 																			19-s:TransformRect
@@ -4106,19 +3580,6 @@ use tabs: true
 																														30-v:shaderPath
 																															31-s:Engine/Shaders/UI/text-mesh.srsl
 																														30-a:uniforms
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec3
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -4157,8 +3618,6 @@ use tabs: true
 																										26-f:1
 																									25-v:y
 																										26-f:1
-																							23-v:localPriority
-																								24-i:1
 																	17-o:transform
 																		18-v:type
 																			19-s:TransformRect
@@ -4353,19 +3812,6 @@ use tabs: true
 																														30-v:shaderPath
 																															31-s:Engine/Shaders/UI/text-mesh.srsl
 																														30-a:uniforms
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec3
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -4404,8 +3850,6 @@ use tabs: true
 																										26-f:1
 																									25-v:y
 																										26-f:1
-																							23-v:localPriority
-																								24-i:1
 																	17-o:transform
 																		18-v:type
 																			19-s:TransformRect
@@ -4600,19 +4044,6 @@ use tabs: true
 																														30-v:shaderPath
 																															31-s:Engine/Shaders/UI/text-mesh.srsl
 																														30-a:uniforms
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec3
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -4651,8 +4082,6 @@ use tabs: true
 																										26-f:1
 																									25-v:y
 																										26-f:1
-																							23-v:localPriority
-																								24-i:1
 																	17-o:transform
 																		18-v:type
 																			19-s:TransformRect
@@ -4847,19 +4276,6 @@ use tabs: true
 																														30-v:shaderPath
 																															31-s:Engine/Shaders/UI/text-mesh.srsl
 																														30-a:uniforms
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec3
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -4898,8 +4314,6 @@ use tabs: true
 																										26-f:1
 																									25-v:y
 																										26-f:1
-																							23-v:localPriority
-																								24-i:1
 																	17-o:transform
 																		18-v:type
 																			19-s:TransformRect
@@ -5127,8 +4541,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -5209,8 +4621,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -5291,8 +4701,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -5373,8 +4781,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -5455,8 +4861,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																					21-o:transform
 																						22-v:type
 																							23-s:TransformRect
@@ -5578,8 +4982,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -5660,8 +5062,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -5742,8 +5142,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -5824,8 +5222,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -5906,8 +5302,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																					21-o:transform
 																						22-v:type
 																							23-s:TransformRect
@@ -6029,8 +5423,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -6111,8 +5503,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -6193,8 +5583,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -6275,8 +5663,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -6357,8 +5743,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																					21-o:transform
 																						22-v:type
 																							23-s:TransformRect
@@ -6480,8 +5864,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -6562,8 +5944,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -6644,8 +6024,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -6726,8 +6104,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -6808,8 +6184,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																					21-o:transform
 																						22-v:type
 																							23-s:TransformRect
@@ -6931,8 +6305,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -7013,8 +6385,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -7095,8 +6465,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -7177,8 +6545,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																						22-k:i
 																							23-o:d
 																								24-v:type
@@ -7259,8 +6625,6 @@ use tabs: true
 																											27-o:pivot
 																												28-v:y
 																													29-f:1
-																											27-v:localPriority
-																												28-i:1
 																					21-o:transform
 																						22-v:type
 																							23-s:TransformRect
@@ -7367,19 +6731,6 @@ use tabs: true
 																		18-v:shaderPath
 																			19-s:Engine/Shaders/UI/text.srsl
 																		18-a:uniforms
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec3
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
 													13-v:text
 														14-s:Text
 													13-v:font
@@ -7451,19 +6802,6 @@ use tabs: true
 																						22-v:shaderPath
 																							23-s:Engine/Shaders/UI/text-mesh.srsl
 																						22-a:uniforms
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:color
-																									25-v:type
-																										26-s:Vec3
-																									25-o:value
-																										26-v:x
-																											27-f:1
-																										26-v:y
-																											27-f:1
-																										26-v:z
-																											27-f:1
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -7497,8 +6835,6 @@ use tabs: true
 																		18-f:1
 																	17-v:y
 																		18-f:1
-															15-v:localPriority
-																16-i:1
 										10-k:i
 											11-o:d
 												12-v:type
@@ -7711,8 +7047,6 @@ use tabs: true
 													13-f:372.7
 												12-v:y
 													13-f:50
-											11-v:localPriority
-												12-i:1
 						6-k:i
 							7-o:d
 								8-v:type
@@ -7759,21 +7093,6 @@ use tabs: true
 																						22-v:shaderPath
 																							23-s:Engine/Shaders/UI/sliced.srsl
 																						22-a:uniforms
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:color
-																									25-v:type
-																										26-s:Vec4
-																									25-o:value
-																										26-v:x
-																											27-f:1
-																										26-v:y
-																											27-f:1
-																										26-v:z
-																											27-f:1
-																										26-v:w
-																											27-f:1
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -7901,19 +7220,6 @@ use tabs: true
 																						22-v:shaderPath
 																							23-s:Engine/Shaders/UI/text.srsl
 																						22-a:uniforms
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:color
-																									25-v:type
-																										26-s:Vec3
-																									25-o:value
-																										26-v:x
-																											27-f:1
-																										26-v:y
-																											27-f:1
-																										26-v:z
-																											27-f:1
 																	17-v:text
 																		18-s:Button
 																	17-v:font
@@ -7929,8 +7235,6 @@ use tabs: true
 															15-o:translation
 																16-v:y
 																	17-f:35.9
-															15-v:localPriority
-																16-i:1
 										10-k:i
 											11-o:d
 												12-v:type
@@ -8147,8 +7451,6 @@ use tabs: true
 												12-o:min
 												12-o:max
 											11-o:pivot
-											11-v:localPriority
-												12-i:1
 						6-k:i
 							7-o:d
 								8-v:type
@@ -8177,19 +7479,6 @@ use tabs: true
 																		18-v:shaderPath
 																			19-s:Engine/Shaders/UI/text-mesh.srsl
 																		18-a:uniforms
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec3
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -8262,19 +7551,6 @@ UWKurw TJ MSF
 																		18-v:shaderPath
 																			19-s:Engine/Shaders/UI/text-mesh.srsl
 																		18-a:uniforms
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec3
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -8328,12 +7604,12 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:651
+									9-f:676.5
 								8-v:y
-									9-f:390.5
+									9-f:414.5
 							7-o:size
 								8-v:x
-									9-f:1500.38
+									9-f:1468.88
 								8-v:y
 									9-f:900
 							7-o:anchors
@@ -8341,11 +7617,11 @@ for the evil queen and jack
 								8-o:max
 							7-o:scale
 								8-v:x
-									9-f:0.867778
+									9-f:0.921111
 								8-v:y
-									9-f:0.867778
+									9-f:0.921111
 								8-v:z
-									9-f:0.867778
+									9-f:0.921111
 		2-k:i
 			3-o:d
 				4-v:type
@@ -8377,21 +7653,6 @@ for the evil queen and jack
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:tiling
 																	17-v:type
 																		18-s:Vec2
@@ -8400,37 +7661,6 @@ for the evil queen and jack
 																			19-f:10
 																		18-v:y
 																			19-f:10
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -8751,48 +7981,6 @@ for the evil queen and jack
 																			19-f:1
 																		18-v:w
 																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:tiling
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -8833,7 +8021,7 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:-7.00379
+									9-f:-4.944
 								8-v:y
 									9-f:4.26649
 								8-v:z
@@ -8905,24 +8093,6 @@ for the evil queen and jack
 																	17-o:value
 																		18-v:w
 																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:tiling
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
 															15-k:i
 																16-o:d
 																	17-v:id
@@ -9055,21 +8225,6 @@ for the evil queen and jack
 																			19-k:i
 																				20-o:d
 																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec4
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
-																						22-v:w
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
 																						22-s:tiling
 																					21-v:type
 																						22-s:Vec2
@@ -9078,37 +8233,6 @@ for the evil queen and jack
 																							23-f:-1
 																						22-v:y
 																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:offset
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularSharpness
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:shadowIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -9402,63 +8526,6 @@ for the evil queen and jack
 																		18-v:shaderPath
 																			19-s:Engine/Shaders/standard.srsl
 																		18-a:uniforms
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec4
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
-																						22-v:w
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:tiling
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:offset
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularSharpness
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:shadowIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -9556,63 +8623,6 @@ for the evil queen and jack
 																		18-v:shaderPath
 																			19-s:Engine/Shaders/standard.srsl
 																		18-a:uniforms
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:color
-																					21-v:type
-																						22-s:Vec4
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																						22-v:z
-																							23-f:1
-																						22-v:w
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:tiling
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																						22-v:x
-																							23-f:1
-																						22-v:y
-																							23-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:offset
-																					21-v:type
-																						22-s:Vec2
-																					21-o:value
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularSharpness
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:specularIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
-																			19-k:i
-																				20-o:d
-																					21-v:id
-																						22-s:shadowIntensity
-																					21-v:type
-																						22-s:Float
-																					21-v:value
-																						22-f:1
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -9972,63 +8982,6 @@ for the evil queen and jack
 																						22-v:shaderPath
 																							23-s:Engine/Shaders/standard.srsl
 																						22-a:uniforms
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:color
-																									25-v:type
-																										26-s:Vec4
-																									25-o:value
-																										26-v:x
-																											27-f:1
-																										26-v:y
-																											27-f:1
-																										26-v:z
-																											27-f:1
-																										26-v:w
-																											27-f:1
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:tiling
-																									25-v:type
-																										26-s:Vec2
-																									25-o:value
-																										26-v:x
-																											27-f:1
-																										26-v:y
-																											27-f:1
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:offset
-																									25-v:type
-																										26-s:Vec2
-																									25-o:value
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:specularSharpness
-																									25-v:type
-																										26-s:Float
-																									25-v:value
-																										26-f:1
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:specularIntensity
-																									25-v:type
-																										26-s:Float
-																									25-v:value
-																										26-f:1
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:shadowIntensity
-																									25-v:type
-																										26-s:Float
-																									25-v:value
-																										26-f:1
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -11689,63 +10642,6 @@ for the evil queen and jack
 																						22-v:shaderPath
 																							23-s:Engine/Shaders/standard.srsl
 																						22-a:uniforms
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:color
-																									25-v:type
-																										26-s:Vec4
-																									25-o:value
-																										26-v:x
-																											27-f:1
-																										26-v:y
-																											27-f:1
-																										26-v:z
-																											27-f:1
-																										26-v:w
-																											27-f:1
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:tiling
-																									25-v:type
-																										26-s:Vec2
-																									25-o:value
-																										26-v:x
-																											27-f:1
-																										26-v:y
-																											27-f:1
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:offset
-																									25-v:type
-																										26-s:Vec2
-																									25-o:value
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:specularSharpness
-																									25-v:type
-																										26-s:Float
-																									25-v:value
-																										26-f:1
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:specularIntensity
-																									25-v:type
-																										26-s:Float
-																									25-v:value
-																										26-f:1
-																							23-k:i
-																								24-o:d
-																									25-v:id
-																										26-s:shadowIntensity
-																									25-v:type
-																										26-s:Float
-																									25-v:value
-																										26-f:1
 																						22-a:samplers
 																							23-k:i
 																								24-o:d
@@ -16429,97 +15325,11 @@ for the evil queen and jack
 																											27-k:i
 																												28-o:d
 																													29-v:id
-																														30-s:color
-																													29-v:type
-																														30-s:Vec4
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:1
-																														30-v:z
-																															31-f:1
-																														30-v:w
-																															31-f:1
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:tiling
-																													29-v:type
-																														30-s:Vec2
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:1
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:offset
-																													29-v:type
-																														30-s:Vec2
-																													29-o:value
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:specularSharpness
-																													29-v:type
-																														30-s:Float
-																													29-v:value
-																														30-f:1
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:specularIntensity
-																													29-v:type
-																														30-s:Float
-																													29-v:value
-																														30-f:1
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:shadowIntensity
-																													29-v:type
-																														30-s:Float
-																													29-v:value
-																														30-f:1
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:sssColor
-																													29-v:type
-																														30-s:Vec3
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:0.35
-																														30-v:z
-																															31-f:0.25
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:sssIntensity
-																													29-v:type
-																														30-s:Float
-																													29-v:value
-																														30-f:0.5
-																											27-k:i
-																												28-o:d
-																													29-v:id
 																														30-s:normalStrength
 																													29-v:type
 																														30-s:Float
 																													29-v:value
 																														30-f:1.5
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:roughnessIntensity
-																													29-v:type
-																														30-s:Float
-																													29-v:value
-																														30-f:1
 																										26-a:samplers
 																											27-k:i
 																												28-o:d
@@ -16608,97 +15418,11 @@ for the evil queen and jack
 																											27-k:i
 																												28-o:d
 																													29-v:id
-																														30-s:color
-																													29-v:type
-																														30-s:Vec4
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:1
-																														30-v:z
-																															31-f:1
-																														30-v:w
-																															31-f:1
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:tiling
-																													29-v:type
-																														30-s:Vec2
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:1
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:offset
-																													29-v:type
-																														30-s:Vec2
-																													29-o:value
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:specularSharpness
-																													29-v:type
-																														30-s:Float
-																													29-v:value
-																														30-f:1
-																											27-k:i
-																												28-o:d
-																													29-v:id
 																														30-s:specularIntensity
 																													29-v:type
 																														30-s:Float
 																													29-v:value
 																														30-f:0.1
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:shadowIntensity
-																													29-v:type
-																														30-s:Float
-																													29-v:value
-																														30-f:1
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:sssColor
-																													29-v:type
-																														30-s:Vec3
-																													29-o:value
-																														30-v:x
-																															31-f:1
-																														30-v:y
-																															31-f:0.35
-																														30-v:z
-																															31-f:0.25
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:sssIntensity
-																													29-v:type
-																														30-s:Float
-																													29-v:value
-																														30-f:0.5
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:normalStrength
-																													29-v:type
-																														30-s:Float
-																													29-v:value
-																														30-f:1
-																											27-k:i
-																												28-o:d
-																													29-v:id
-																														30-s:roughnessIntensity
-																													29-v:type
-																														30-s:Float
-																													29-v:value
-																														30-f:1
 																										26-a:samplers
 																											27-k:i
 																												28-o:d
@@ -16788,79 +15512,6 @@ for the evil queen and jack
 																														30-v:shaderPath
 																															31-s:Engine/Shaders/standard.srsl
 																														30-a:uniforms
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:normalStrength
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:roughnessIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -16934,76 +15585,11 @@ for the evil queen and jack
 																															31-k:i
 																																32-o:d
 																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
 																																		34-s:normalStrength
 																																	33-v:type
 																																		34-s:Float
 																																	33-v:value
 																																		34-f:2
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:roughnessIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -17074,79 +15660,6 @@ for the evil queen and jack
 																														30-v:shaderPath
 																															31-s:Engine/Shaders/standard.srsl
 																														30-a:uniforms
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:normalStrength
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:roughnessIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -17217,79 +15730,6 @@ for the evil queen and jack
 																														30-v:shaderPath
 																															31-s:Engine/Shaders/standard.srsl
 																														30-a:uniforms
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:normalStrength
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:roughnessIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -17363,76 +15803,11 @@ for the evil queen and jack
 																															31-k:i
 																																32-o:d
 																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
 																																		34-s:normalStrength
 																																	33-v:type
 																																		34-s:Float
 																																	33-v:value
 																																		34-f:2
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:roughnessIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -17506,76 +15881,11 @@ for the evil queen and jack
 																															31-k:i
 																																32-o:d
 																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
 																																		34-s:normalStrength
 																																	33-v:type
 																																		34-s:Float
 																																	33-v:value
 																																		34-f:2
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:roughnessIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -17646,79 +15956,6 @@ for the evil queen and jack
 																														30-v:shaderPath
 																															31-s:Engine/Shaders/standard.srsl
 																														30-a:uniforms
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:normalStrength
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:roughnessIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -17792,76 +16029,11 @@ for the evil queen and jack
 																															31-k:i
 																																32-o:d
 																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
 																																		34-s:normalStrength
 																																	33-v:type
 																																		34-s:Float
 																																	33-v:value
 																																		34-f:2
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:roughnessIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -17954,97 +16126,11 @@ for the evil queen and jack
 																															31-k:i
 																																32-o:d
 																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:sssColor
-																																	33-v:type
-																																		34-s:Vec3
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:0.35
-																																		34-v:z
-																																			35-f:0.25
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:sssIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:0.5
-																															31-k:i
-																																32-o:d
-																																	33-v:id
 																																		34-s:normalStrength
 																																	33-v:type
 																																		34-s:Float
 																																	33-v:value
 																																		34-f:1.5
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:roughnessIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -18115,63 +16201,6 @@ for the evil queen and jack
 																														30-v:shaderPath
 																															31-s:Engine/Shaders/standard.srsl
 																														30-a:uniforms
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																															31-k:i
 																																32-o:d
 																																	33-v:id
@@ -18247,63 +16276,6 @@ for the evil queen and jack
 																														30-v:shaderPath
 																															31-s:Engine/Shaders/standard.srsl
 																														30-a:uniforms
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																															31-k:i
 																																32-o:d
 																																	33-v:id
@@ -18418,24 +16390,6 @@ for the evil queen and jack
 																																			35-k:i
 																																				36-o:d
 																																					37-v:id
-																																						38-s:tiling
-																																					37-v:type
-																																						38-s:Vec2
-																																					37-o:value
-																																						38-v:x
-																																							39-f:1
-																																						38-v:y
-																																							39-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:offset
-																																					37-v:type
-																																						38-s:Vec2
-																																					37-o:value
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
 																																						38-s:alphaThreshold
 																																					37-v:type
 																																						38-s:Float
@@ -18455,51 +16409,11 @@ for the evil queen and jack
 																																			35-k:i
 																																				36-o:d
 																																					37-v:id
-																																						38-s:hairColorStrength
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:0.5
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
 																																						38-s:rootDarken
 																																					37-v:type
 																																						38-s:Float
 																																					37-v:value
 																																						38-f:0.3
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:depthShadowStrength
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:0.4
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:specularIntensity
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:windSpeed
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:windStrength
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:1
 																																		34-a:samplers
 																																			35-k:i
 																																				36-o:d
@@ -18650,39 +16564,6 @@ for the evil queen and jack
 																																			35-k:i
 																																				36-o:d
 																																					37-v:id
-																																						38-s:color
-																																					37-v:type
-																																						38-s:Vec4
-																																					37-o:value
-																																						38-v:x
-																																							39-f:1
-																																						38-v:y
-																																							39-f:1
-																																						38-v:z
-																																							39-f:1
-																																						38-v:w
-																																							39-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:tiling
-																																					37-v:type
-																																						38-s:Vec2
-																																					37-o:value
-																																						38-v:x
-																																							39-f:1
-																																						38-v:y
-																																							39-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:offset
-																																					37-v:type
-																																						38-s:Vec2
-																																					37-o:value
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
 																																						38-s:specularSharpness
 																																					37-v:type
 																																						38-s:Float
@@ -18692,22 +16573,6 @@ for the evil queen and jack
 																																				36-o:d
 																																					37-v:id
 																																						38-s:specularIntensity
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:0
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:shadowIntensity
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:alphaThreshold
 																																					37-v:type
 																																						38-s:Float
 																																					37-v:value
@@ -18796,97 +16661,11 @@ for the evil queen and jack
 																															31-k:i
 																																32-o:d
 																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
 																																		34-s:specularIntensity
 																																	33-v:type
 																																		34-s:Float
 																																	33-v:value
 																																		34-f:0.1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:sssColor
-																																	33-v:type
-																																		34-s:Vec3
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:0.35
-																																		34-v:z
-																																			35-f:0.25
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:sssIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:0.5
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:normalStrength
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:roughnessIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -18960,63 +16739,6 @@ for the evil queen and jack
 																															31-k:i
 																																32-o:d
 																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
 																																		34-s:emissionColor
 																																	33-v:type
 																																		34-s:Vec3
@@ -19027,14 +16749,6 @@ for the evil queen and jack
 																																			35-f:1
 																																		34-v:z
 																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:emissionIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -19092,63 +16806,6 @@ for the evil queen and jack
 																															31-k:i
 																																32-o:d
 																																	33-v:id
-																																		34-s:color
-																																	33-v:type
-																																		34-s:Vec4
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																																		34-v:z
-																																			35-f:1
-																																		34-v:w
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:tiling
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																																		34-v:x
-																																			35-f:1
-																																		34-v:y
-																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:offset
-																																	33-v:type
-																																		34-s:Vec2
-																																	33-o:value
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularSharpness
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:specularIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:shadowIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
 																																		34-s:emissionColor
 																																	33-v:type
 																																		34-s:Vec3
@@ -19159,14 +16816,6 @@ for the evil queen and jack
 																																			35-f:1
 																																		34-v:z
 																																			35-f:1
-																															31-k:i
-																																32-o:d
-																																	33-v:id
-																																		34-s:emissionIntensity
-																																	33-v:type
-																																		34-s:Float
-																																	33-v:value
-																																		34-f:1
 																														30-a:samplers
 																															31-k:i
 																																32-o:d
@@ -19260,24 +16909,6 @@ for the evil queen and jack
 																																			35-k:i
 																																				36-o:d
 																																					37-v:id
-																																						38-s:tiling
-																																					37-v:type
-																																						38-s:Vec2
-																																					37-o:value
-																																						38-v:x
-																																							39-f:1
-																																						38-v:y
-																																							39-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:offset
-																																					37-v:type
-																																						38-s:Vec2
-																																					37-o:value
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
 																																						38-s:alphaThreshold
 																																					37-v:type
 																																						38-s:Float
@@ -19297,51 +16928,11 @@ for the evil queen and jack
 																																			35-k:i
 																																				36-o:d
 																																					37-v:id
-																																						38-s:hairColorStrength
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:0.5
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
 																																						38-s:rootDarken
 																																					37-v:type
 																																						38-s:Float
 																																					37-v:value
 																																						38-f:0.3
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:depthShadowStrength
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:0.4
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:specularIntensity
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:windSpeed
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:windStrength
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:1
 																																		34-a:samplers
 																																			35-k:i
 																																				36-o:d
@@ -19489,71 +17080,6 @@ for the evil queen and jack
 																																		34-v:shaderPath
 																																			35-s:Engine/Shaders/standard.srsl
 																																		34-a:uniforms
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:color
-																																					37-v:type
-																																						38-s:Vec4
-																																					37-o:value
-																																						38-v:x
-																																							39-f:1
-																																						38-v:y
-																																							39-f:1
-																																						38-v:z
-																																							39-f:1
-																																						38-v:w
-																																							39-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:tiling
-																																					37-v:type
-																																						38-s:Vec2
-																																					37-o:value
-																																						38-v:x
-																																							39-f:1
-																																						38-v:y
-																																							39-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:offset
-																																					37-v:type
-																																						38-s:Vec2
-																																					37-o:value
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:specularSharpness
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:specularIntensity
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:shadowIntensity
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:1
-																																			35-k:i
-																																				36-o:d
-																																					37-v:id
-																																						38-s:alphaThreshold
-																																					37-v:type
-																																						38-s:Float
-																																					37-v:value
-																																						38-f:0
 																																		34-a:samplers
 																																			35-k:i
 																																				36-o:d
