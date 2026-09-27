@@ -108,6 +108,15 @@ use tabs: true
 										10-i:4576157519027742504
 									9-v:typeName
 										10-s:GameObject
+			3-k:i
+				4-o:d
+					5-v:type
+						6-s:TerrainGrassBender
+					5-o:ptr
+						6-v:entityId
+							7-i:3965471622352746794
+						6-v:radius
+							7-f:1.5
 		2-v:name
 			3-s:Girl
 		2-a:children
@@ -3220,97 +3229,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:color
-																										26-v:type
-																											27-s:Vec4
-																										26-o:value
-																											27-v:x
-																												28-f:1
-																											27-v:y
-																												28-f:1
-																											27-v:z
-																												28-f:1
-																											27-v:w
-																												28-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:tiling
-																										26-v:type
-																											27-s:Vec2
-																										26-o:value
-																											27-v:x
-																												28-f:1
-																											27-v:y
-																												28-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:offset
-																										26-v:type
-																											27-s:Vec2
-																										26-o:value
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:specularSharpness
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:specularIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:shadowIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:sssColor
-																										26-v:type
-																											27-s:Vec3
-																										26-o:value
-																											27-v:x
-																												28-f:1
-																											27-v:y
-																												28-f:0.35
-																											27-v:z
-																												28-f:0.25
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:sssIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0.5
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:normalStrength
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:1.5
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:roughnessIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -3399,97 +3322,11 @@ use tabs: true
 																								24-k:i
 																									25-o:d
 																										26-v:id
-																											27-s:color
-																										26-v:type
-																											27-s:Vec4
-																										26-o:value
-																											27-v:x
-																												28-f:1
-																											27-v:y
-																												28-f:1
-																											27-v:z
-																												28-f:1
-																											27-v:w
-																												28-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:tiling
-																										26-v:type
-																											27-s:Vec2
-																										26-o:value
-																											27-v:x
-																												28-f:1
-																											27-v:y
-																												28-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:offset
-																										26-v:type
-																											27-s:Vec2
-																										26-o:value
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:specularSharpness
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
 																											27-s:specularIntensity
 																										26-v:type
 																											27-s:Float
 																										26-v:value
 																											27-f:0.1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:shadowIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:sssColor
-																										26-v:type
-																											27-s:Vec3
-																										26-o:value
-																											27-v:x
-																												28-f:1
-																											27-v:y
-																												28-f:0.35
-																											27-v:z
-																												28-f:0.25
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:sssIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:0.5
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:normalStrength
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
-																								24-k:i
-																									25-o:d
-																										26-v:id
-																											27-s:roughnessIntensity
-																										26-v:type
-																											27-s:Float
-																										26-v:value
-																											27-f:1
 																							23-a:samplers
 																								24-k:i
 																									25-o:d
@@ -3579,79 +3416,6 @@ use tabs: true
 																											27-v:shaderPath
 																												28-s:Engine/Shaders/standard.srsl
 																											27-a:uniforms
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:normalStrength
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:roughnessIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -3725,76 +3489,11 @@ use tabs: true
 																												28-k:i
 																													29-o:d
 																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
 																															31-s:normalStrength
 																														30-v:type
 																															31-s:Float
 																														30-v:value
 																															31-f:2
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:roughnessIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -3865,79 +3564,6 @@ use tabs: true
 																											27-v:shaderPath
 																												28-s:Engine/Shaders/standard.srsl
 																											27-a:uniforms
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:normalStrength
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:roughnessIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -4008,79 +3634,6 @@ use tabs: true
 																											27-v:shaderPath
 																												28-s:Engine/Shaders/standard.srsl
 																											27-a:uniforms
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:normalStrength
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:roughnessIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -4154,76 +3707,11 @@ use tabs: true
 																												28-k:i
 																													29-o:d
 																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
 																															31-s:normalStrength
 																														30-v:type
 																															31-s:Float
 																														30-v:value
 																															31-f:2
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:roughnessIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -4297,76 +3785,11 @@ use tabs: true
 																												28-k:i
 																													29-o:d
 																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
 																															31-s:normalStrength
 																														30-v:type
 																															31-s:Float
 																														30-v:value
 																															31-f:2
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:roughnessIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -4437,79 +3860,6 @@ use tabs: true
 																											27-v:shaderPath
 																												28-s:Engine/Shaders/standard.srsl
 																											27-a:uniforms
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:normalStrength
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:roughnessIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -4583,76 +3933,11 @@ use tabs: true
 																												28-k:i
 																													29-o:d
 																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
 																															31-s:normalStrength
 																														30-v:type
 																															31-s:Float
 																														30-v:value
 																															31-f:2
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:roughnessIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -4745,97 +4030,11 @@ use tabs: true
 																												28-k:i
 																													29-o:d
 																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:sssColor
-																														30-v:type
-																															31-s:Vec3
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:0.35
-																															31-v:z
-																																32-f:0.25
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:sssIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:0.5
-																												28-k:i
-																													29-o:d
-																														30-v:id
 																															31-s:normalStrength
 																														30-v:type
 																															31-s:Float
 																														30-v:value
 																															31-f:1.5
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:roughnessIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -4906,63 +4105,6 @@ use tabs: true
 																											27-v:shaderPath
 																												28-s:Engine/Shaders/standard.srsl
 																											27-a:uniforms
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -5038,63 +4180,6 @@ use tabs: true
 																											27-v:shaderPath
 																												28-s:Engine/Shaders/standard.srsl
 																											27-a:uniforms
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -5209,24 +4294,6 @@ use tabs: true
 																																32-k:i
 																																	33-o:d
 																																		34-v:id
-																																			35-s:tiling
-																																		34-v:type
-																																			35-s:Vec2
-																																		34-o:value
-																																			35-v:x
-																																				36-f:1
-																																			35-v:y
-																																				36-f:1
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:offset
-																																		34-v:type
-																																			35-s:Vec2
-																																		34-o:value
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
 																																			35-s:alphaThreshold
 																																		34-v:type
 																																			35-s:Float
@@ -5246,51 +4313,11 @@ use tabs: true
 																																32-k:i
 																																	33-o:d
 																																		34-v:id
-																																			35-s:hairColorStrength
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:0.5
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
 																																			35-s:rootDarken
 																																		34-v:type
 																																			35-s:Float
 																																		34-v:value
 																																			35-f:0.3
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:depthShadowStrength
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:0.4
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:specularIntensity
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:1
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:windSpeed
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:1
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:windStrength
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:1
 																															31-a:samplers
 																																32-k:i
 																																	33-o:d
@@ -5441,39 +4468,6 @@ use tabs: true
 																																32-k:i
 																																	33-o:d
 																																		34-v:id
-																																			35-s:color
-																																		34-v:type
-																																			35-s:Vec4
-																																		34-o:value
-																																			35-v:x
-																																				36-f:1
-																																			35-v:y
-																																				36-f:1
-																																			35-v:z
-																																				36-f:1
-																																			35-v:w
-																																				36-f:1
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:tiling
-																																		34-v:type
-																																			35-s:Vec2
-																																		34-o:value
-																																			35-v:x
-																																				36-f:1
-																																			35-v:y
-																																				36-f:1
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:offset
-																																		34-v:type
-																																			35-s:Vec2
-																																		34-o:value
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
 																																			35-s:specularSharpness
 																																		34-v:type
 																																			35-s:Float
@@ -5483,22 +4477,6 @@ use tabs: true
 																																	33-o:d
 																																		34-v:id
 																																			35-s:specularIntensity
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:0
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:shadowIntensity
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:1
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:alphaThreshold
 																																		34-v:type
 																																			35-s:Float
 																																		34-v:value
@@ -5587,97 +4565,11 @@ use tabs: true
 																												28-k:i
 																													29-o:d
 																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:sssColor
-																														30-v:type
-																															31-s:Vec3
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:0.35
-																															31-v:z
-																																32-f:0.25
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:sssIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:0.5
-																												28-k:i
-																													29-o:d
-																														30-v:id
 																															31-s:normalStrength
 																														30-v:type
 																															31-s:Float
 																														30-v:value
 																															31-f:1.5
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:roughnessIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																											27-a:samplers
 																												28-k:i
 																													29-o:d
@@ -5748,63 +4640,6 @@ use tabs: true
 																											27-v:shaderPath
 																												28-s:Engine/Shaders/standard.srsl
 																											27-a:uniforms
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -5880,63 +4715,6 @@ use tabs: true
 																											27-v:shaderPath
 																												28-s:Engine/Shaders/standard.srsl
 																											27-a:uniforms
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:color
-																														30-v:type
-																															31-s:Vec4
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																															31-v:z
-																																32-f:1
-																															31-v:w
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:tiling
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																															31-v:x
-																																32-f:1
-																															31-v:y
-																																32-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:offset
-																														30-v:type
-																															31-s:Vec2
-																														30-o:value
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularSharpness
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:specularIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
-																												28-k:i
-																													29-o:d
-																														30-v:id
-																															31-s:shadowIntensity
-																														30-v:type
-																															31-s:Float
-																														30-v:value
-																															31-f:1
 																												28-k:i
 																													29-o:d
 																														30-v:id
@@ -6051,24 +4829,6 @@ use tabs: true
 																																32-k:i
 																																	33-o:d
 																																		34-v:id
-																																			35-s:tiling
-																																		34-v:type
-																																			35-s:Vec2
-																																		34-o:value
-																																			35-v:x
-																																				36-f:1
-																																			35-v:y
-																																				36-f:1
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:offset
-																																		34-v:type
-																																			35-s:Vec2
-																																		34-o:value
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
 																																			35-s:alphaThreshold
 																																		34-v:type
 																																			35-s:Float
@@ -6088,51 +4848,11 @@ use tabs: true
 																																32-k:i
 																																	33-o:d
 																																		34-v:id
-																																			35-s:hairColorStrength
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:0.5
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
 																																			35-s:rootDarken
 																																		34-v:type
 																																			35-s:Float
 																																		34-v:value
 																																			35-f:0.3
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:depthShadowStrength
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:0.4
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:specularIntensity
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:1
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:windSpeed
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:1
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:windStrength
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:1
 																															31-a:samplers
 																																32-k:i
 																																	33-o:d
@@ -6283,39 +5003,6 @@ use tabs: true
 																																32-k:i
 																																	33-o:d
 																																		34-v:id
-																																			35-s:color
-																																		34-v:type
-																																			35-s:Vec4
-																																		34-o:value
-																																			35-v:x
-																																				36-f:1
-																																			35-v:y
-																																				36-f:1
-																																			35-v:z
-																																				36-f:1
-																																			35-v:w
-																																				36-f:1
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:tiling
-																																		34-v:type
-																																			35-s:Vec2
-																																		34-o:value
-																																			35-v:x
-																																				36-f:1
-																																			35-v:y
-																																				36-f:1
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:offset
-																																		34-v:type
-																																			35-s:Vec2
-																																		34-o:value
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
 																																			35-s:specularSharpness
 																																		34-v:type
 																																			35-s:Float
@@ -6325,22 +5012,6 @@ use tabs: true
 																																	33-o:d
 																																		34-v:id
 																																			35-s:specularIntensity
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:0
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:shadowIntensity
-																																		34-v:type
-																																			35-s:Float
-																																		34-v:value
-																																			35-f:1
-																																32-k:i
-																																	33-o:d
-																																		34-v:id
-																																			35-s:alphaThreshold
 																																		34-v:type
 																																			35-s:Float
 																																		34-v:value

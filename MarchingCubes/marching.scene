@@ -206,42 +206,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:specularIntensity
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:0
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -375,42 +344,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:specularIntensity
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:0
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -487,42 +425,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:specularIntensity
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:0
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -823,71 +730,6 @@ use tabs: true
 														14-v:shaderPath
 															15-s:Engine/Shaders/standard.srsl
 														14-a:uniforms
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:tiling
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularSharpness
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:normalStrength
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -1205,21 +1047,6 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:color
-																	17-v:type
-																		18-s:Vec4
-																	17-o:value
-																		18-v:x
-																			19-f:1
-																		18-v:y
-																			19-f:1
-																		18-v:z
-																			19-f:1
-																		18-v:w
-																			19-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:tiling
 																	17-v:type
 																		18-s:Vec2
@@ -1231,34 +1058,11 @@ use tabs: true
 															15-k:i
 																16-o:d
 																	17-v:id
-																		18-s:offset
-																	17-v:type
-																		18-s:Vec2
-																	17-o:value
-															15-k:i
-																16-o:d
-																	17-v:id
 																		18-s:specularSharpness
 																	17-v:type
 																		18-s:Float
 																	17-v:value
 																		18-f:0.4
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:specularIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
-															15-k:i
-																16-o:d
-																	17-v:id
-																		18-s:shadowIntensity
-																	17-v:type
-																		18-s:Float
-																	17-v:value
-																		18-f:1
 														14-a:samplers
 															15-k:i
 																16-o:d
@@ -1353,25 +1157,6 @@ use tabs: true
 				4-o:ptr
 					5-v:entityId
 						6-i:2349029938144430702
-					5-a:components
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:ParticleEmitter
-								8-o:ptr
-									9-v:entityId
-										10-i:2336425139696565936
-									9-o:material
-										10-v:type
-											11-s:UniqueMaterial
-										10-o:ptr
-											11-o:data
-												12-v:type
-													13-s:MaterialData
-												12-o:ptr
-													13-a:shaderDefines
-									9-v:meshId
-										10-i:-1
 					5-v:name
 						6-s:New GameObject
 					5-o:transform

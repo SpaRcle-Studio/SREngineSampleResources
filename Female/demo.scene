@@ -356,6 +356,8 @@ use tabs: true
 										10-s:Box3D
 					5-v:name
 						6-s:Cube
+					5-v:isEnabled
+						6-b:false
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
@@ -650,7 +652,9 @@ use tabs: true
 																	17-v:value
 																		18-s:Engine/Textures/grid_prototype.png
 									9-v:meshPath
-										10-s:Engine/Models/cube_uv.obj
+										10-s:Engine/Models/teapot.obj
+									9-v:meshId
+										10-i:1
 						6-k:i
 							7-o:d
 								8-v:type
@@ -7604,12 +7608,12 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:676.5
+									9-f:860
 								8-v:y
-									9-f:414.5
+									9-f:582
 							7-o:size
 								8-v:x
-									9-f:1468.88
+									9-f:1329.9
 								8-v:y
 									9-f:900
 							7-o:anchors
@@ -7617,11 +7621,11 @@ for the evil queen and jack
 								8-o:max
 							7-o:scale
 								8-v:x
-									9-f:0.921111
+									9-f:1.29333
 								8-v:y
-									9-f:0.921111
+									9-f:1.29333
 								8-v:z
-									9-f:0.921111
+									9-f:1.29333
 		2-k:i
 			3-o:d
 				4-v:type
@@ -7836,6 +7840,8 @@ for the evil queen and jack
 								8-o:ptr
 									9-v:entityId
 										10-i:2502440974941913315
+									9-v:isEnabled
+										10-b:false
 									9-v:sound
 										10-s:Samples/Sound/Ambience/nature-ambience.ogg
 									9-v:volume
@@ -8182,6 +8188,8 @@ for the evil queen and jack
 							7-o:translation
 								8-v:x
 									9-f:-6.95328
+								8-v:y
+									9-f:45.3945
 								8-v:z
 									9-f:1.77555
 		2-k:i
@@ -17154,204 +17162,12 @@ for the evil queen and jack
 					5-s:GameObject
 				4-o:ptr
 					5-v:entityId
-						6-i:3972774985147603685
-					5-a:components
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:ParticleEmitter
-								8-o:ptr
-									9-v:entityId
-										10-i:3748860673432807120
-									9-o:material
-										10-v:type
-											11-s:UniqueMaterial
-										10-o:ptr
-											11-o:data
-												12-v:type
-													13-s:MaterialData
-												12-o:ptr
-													13-a:shaderDefines
-													13-o:defaultShader
-														14-v:shaderPath
-															15-s:Engine/Shaders/Particle/particle.srsl
-									9-v:meshPath
-										10-s:Samples/Big Dick stand alone model 1.obj
-									9-v:meshId
-										10-i:1
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:ReflectionTestComponent
-								8-o:ptr
-									9-v:entityId
-										10-i:3555613914693504801
-									9-o:associative
-										10-a:associativeSetPlatformType
-										10-a:associativeIntSet
-										10-a:associativeSetAtom
-										10-a:associativeMapAtom
-											11-k:item
-												12-v:first
-													13-s:23432455
-												12-v:second
-													13-i:0
-											11-k:item
-												12-v:first
-													13-s:234324
-												12-v:second
-													13-i:5
-											11-k:item
-												12-v:first
-													13-s:
-												12-v:second
-													13-i:17
-										10-a:associativeMapString
-											11-k:item
-												12-v:first
-													13-s:
-												12-v:second
-													13-i:0
-											11-k:item
-												12-v:first
-													13-s:44
-												12-v:second
-													13-i:0
-											11-k:item
-												12-v:first
-													13-s:44фывфыв
-												12-v:second
-													13-i:0
-											11-k:item
-												12-v:first
-													13-s:44фывфывadsas
-												12-v:second
-													13-i:0
-										10-a:associativeMap2
-											11-k:item
-												12-v:first
-													13-i:0
-												12-v:second
-													13-s:[]][p5345erfer
-										10-a:associativeMap33
-											11-k:item
-												12-v:first
-													13-s:Unknown
-												12-v:second
-													13-i:0
-											11-k:item
-												12-v:first
-													13-s:Windows
-												12-v:second
-													13-i:0
-											11-k:item
-												12-v:first
-													13-s:Linux
-												12-v:second
-													13-i:0
-											11-k:item
-												12-v:first
-													13-s:Android
-												12-v:second
-													13-i:0
-											11-k:item
-												12-v:first
-													13-s:MacOS
-												12-v:second
-													13-i:0
-											11-k:item
-												12-v:first
-													13-s:Emscripten
-												12-v:second
-													13-i:0
-											11-k:item
-												12-v:first
-													13-s:IOS
-												12-v:second
-													13-i:0
-										10-a:associativeMap3
-											11-k:item
-												12-v:first
-													13-s:Unknown
-												12-v:second
-													13-s:
-											11-k:item
-												12-v:first
-													13-s:Windows
-												12-v:second
-													13-s:
-											11-k:item
-												12-v:first
-													13-s:Linux
-												12-v:second
-													13-s:
-											11-k:item
-												12-v:first
-													13-s:Android
-												12-v:second
-													13-s:
-											11-k:item
-												12-v:first
-													13-s:MacOS
-												12-v:second
-													13-s:
-											11-k:item
-												12-v:first
-													13-s:Emscripten
-												12-v:second
-													13-s:
-											11-k:item
-												12-v:first
-													13-s:IOS
-												12-v:second
-													13-s:
-										10-a:associativeMap4
-											11-k:item
-												12-v:first
-													13-s:Unknown
-												12-v:second
-													13-s:
-											11-k:item
-												12-v:first
-													13-s:Windows
-												12-v:second
-													13-s:
-											11-k:item
-												12-v:first
-													13-s:Linux
-												12-v:second
-													13-s:
-											11-k:item
-												12-v:first
-													13-s:Android
-												12-v:second
-													13-s:
-											11-k:item
-												12-v:first
-													13-s:MacOS
-												12-v:second
-													13-s:
-											11-k:item
-												12-v:first
-													13-s:Emscripten
-												12-v:second
-													13-s:
-											11-k:item
-												12-v:first
-													13-s:IOS
-												12-v:second
-													13-s:
-									9-a:bitSet
+						6-i:2578046280056427386
 					5-v:name
-						6-s:Particle Emitter
-					5-v:isEnabled
-						6-b:false
-					5-v:layer
-						6-s:Particles
+						6-s:Terrain
+					5-v:prefab
+						6-s:Engine/Prefabs/Terrain.prefab
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
 						6-o:ptr
-							7-o:translation
-								8-v:y
-									9-f:7.10417
