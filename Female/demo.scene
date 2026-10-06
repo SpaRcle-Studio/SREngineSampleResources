@@ -435,9 +435,9 @@ use tabs: true
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:-0.90059
+									9-f:1.69259
 								8-v:y
-									9-f:3.48417
+									9-f:0.996659
 								8-v:z
 									9-f:-13.0325
 		2-k:i
@@ -7795,6 +7795,8 @@ for the evil queen and jack
 										10-s:Engine/Models/sphere.obj
 					5-v:name
 						6-s:Sphere
+					5-v:isEnabled
+						6-b:false
 					5-v:layer
 						6-s:Transparent
 					5-o:transform
@@ -7816,25 +7818,6 @@ for the evil queen and jack
 					5-v:entityId
 						6-i:2446260512018402653
 					5-a:components
-						6-k:i
-							7-o:d
-								8-v:type
-									9-s:SkyboxComponent
-								8-o:ptr
-									9-v:entityId
-										10-i:2487055581209525447
-									9-o:material
-										10-v:type
-											11-s:UniqueMaterial
-										10-o:ptr
-											11-o:data
-												12-v:type
-													13-s:MaterialData
-												12-o:ptr
-													13-a:shaderDefines
-													13-o:defaultShader
-														14-v:shaderPath
-															15-s:Engine/Shaders/skybox-procedural.srsl
 						6-k:i
 							7-o:d
 								8-v:type
@@ -7870,6 +7853,10 @@ for the evil queen and jack
 								8-o:ptr
 									9-v:entityId
 										10-i:2429634755627868901
+									9-v:coverage
+										10-f:0.95
+									9-v:density
+										10-f:0.02
 						6-k:i
 							7-o:d
 								8-v:type
@@ -7879,6 +7866,34 @@ for the evil queen and jack
 										10-i:3625504072305462011
 									9-v:density
 										10-f:0.002
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:SkyboxComponent
+								8-o:ptr
+									9-v:entityId
+										10-i:4597983116955655271
+									9-o:material
+										10-v:type
+											11-s:UniqueMaterial
+										10-o:ptr
+											11-o:data
+												12-v:type
+													13-s:MaterialData
+												12-o:ptr
+													13-a:shaderDefines
+													13-o:defaultShader
+														14-v:shaderPath
+															15-s:Engine/Shaders/skybox-procedural.srsl
+														14-a:samplers
+															15-k:i
+																16-o:d
+																	17-v:id
+																		18-s:moonTexture
+																	17-v:type
+																		18-s:Sampler2D
+																	17-v:value
+																		18-s:Engine/Textures/moon.png
 					5-v:name
 						6-s:Skybox
 					5-v:layer
@@ -8047,9 +8062,9 @@ for the evil queen and jack
 								8-v:x
 									9-f:-4.944
 								8-v:y
-									9-f:4.26649
+									9-f:1.06446
 								8-v:z
-									9-f:6.67026
+									9-f:12.6632
 		2-k:i
 			3-o:d
 				4-v:type
@@ -8502,6 +8517,14 @@ for the evil queen and jack
 																		18-v:shaderPath
 																			19-s:Engine/Shaders/standard.srsl
 																		18-a:uniforms
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:specularIntensity
+																					21-v:type
+																						22-s:Float
+																					21-v:value
+																						22-f:0
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -8599,6 +8622,14 @@ for the evil queen and jack
 																		18-v:shaderPath
 																			19-s:Engine/Shaders/standard.srsl
 																		18-a:uniforms
+																			19-k:i
+																				20-o:d
+																					21-v:id
+																						22-s:specularIntensity
+																					21-v:type
+																						22-s:Float
+																					21-v:value
+																						22-f:0
 																		18-a:samplers
 																			19-k:i
 																				20-o:d
@@ -19012,6 +19043,8 @@ for the evil queen and jack
 								8-o:ptr
 									9-v:entityId
 										10-i:2880377775246653794
+									9-v:diskIntensity
+										10-f:25
 						6-k:i
 							7-o:d
 								8-v:type
@@ -19107,9 +19140,13 @@ for the evil queen and jack
 									9-f:0.12
 							7-o:quaternion
 								8-v:x
-									9-f:-0.422619
+									9-f:-0.655795
+								8-v:y
+									9-f:0.269083
 								8-v:z
-									9-f:0.906308
+									9-f:0.651232
+								8-v:w
+									9-f:0.270968
 		2-k:i
 			3-o:d
 				4-v:type
