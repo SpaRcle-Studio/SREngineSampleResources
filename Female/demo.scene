@@ -7600,6 +7600,8 @@ for the evil queen and jack
 													13-f:1000
 											11-v:localPriority
 												12-i:108
+					5-v:isEnabled
+						6-b:false
 					5-v:layer
 						6-s:UI
 					5-o:transform
@@ -7608,12 +7610,12 @@ for the evil queen and jack
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:842
+									9-f:796.5
 								8-v:y
 									9-f:553
 							7-o:size
 								8-v:x
-									9-f:1370.34
+									9-f:1296.29
 								8-v:y
 									9-f:900
 							7-o:anchors
@@ -7868,6 +7870,15 @@ for the evil queen and jack
 								8-o:ptr
 									9-v:entityId
 										10-i:2429634755627868901
+						6-k:i
+							7-o:d
+								8-v:type
+									9-s:VolumetricFog
+								8-o:ptr
+									9-v:entityId
+										10-i:3625504072305462011
+									9-v:density
+										10-f:0.002
 					5-v:name
 						6-s:Skybox
 					5-v:layer
@@ -17300,6 +17311,8 @@ for the evil queen and jack
 										10-v:type
 											11-s:Transform3D
 										10-o:ptr
+					5-v:isEnabled
+						6-b:false
 					5-o:transform
 						6-v:type
 							7-s:Transform3D
@@ -17322,8 +17335,6 @@ for the evil queen and jack
 							7-o:translation
 								8-v:x
 									9-f:-6.95328
-								8-v:y
-									9-f:47.2014
 								8-v:z
 									9-f:1.77555
 		2-k:i
@@ -19096,13 +19107,9 @@ for the evil queen and jack
 									9-f:0.12
 							7-o:quaternion
 								8-v:x
-									9-f:0.316522
-								8-v:y
-									9-f:0.600538
+									9-f:-0.422619
 								8-v:z
-									9-f:-0.678784
-								8-v:w
-									9-f:0.280036
+									9-f:0.906308
 		2-k:i
 			3-o:d
 				4-v:type
