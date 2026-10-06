@@ -1,7 +1,8 @@
 sra format
+use tabs: true
 0-r:Root
 	1-v:entityId
-		2-i:-1
+		2-i:3747024630488250896
 	1-o:logic
 		2-v:type
 			3-s:SceneAssetLogic
@@ -24,19 +25,6 @@ sra format
 										10-i:2609107334133799760
 									9-v:isStatic
 										10-b:true
-									9-o:shape
-										10-v:type
-											11-s:CollisionShape
-										10-o:ptr
-											11-v:type
-												12-s:Plane3D
-											11-o:bounds
-												12-v:x
-													13-f:1.000000
-												12-v:y
-													13-f:1.000000
-												12-v:z
-													13-f:1.000000
 						6-k:i
 							7-o:d
 								8-v:type
@@ -62,11 +50,11 @@ sra format
 						6-o:ptr
 							7-o:scale
 								8-v:x
-									9-f:20.000000
+									9-f:20
 								8-v:y
-									9-f:1.000000
+									9-f:1
 								8-v:z
-									9-f:20.000000
+									9-f:20
 		2-k:i
 			3-o:d
 				4-v:type
@@ -84,9 +72,9 @@ sra format
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:-7.003961
+									9-f:-7.00396
 								8-v:z
-									9-f:4.541386
+									9-f:4.54139
 		2-k:i
 			3-o:d
 				4-v:type
@@ -102,19 +90,6 @@ sra format
 								8-o:ptr
 									9-v:entityId
 										10-i:2875030765264485913
-									9-o:shape
-										10-v:type
-											11-s:CollisionShape
-										10-o:ptr
-											11-v:type
-												12-s:Sphere3D
-											11-o:bounds
-												12-v:x
-													13-f:1.000000
-												12-v:y
-													13-f:1.000000
-												12-v:z
-													13-f:1.000000
 						6-k:i
 							7-o:d
 								8-v:type
@@ -137,9 +112,16 @@ sra format
 								8-o:ptr
 									9-v:entityId
 										10-i:4193520828818589059
-									9-v:platformType
-										10-s:Windows
-									9-o:data
+									9-o:associative
+										10-a:associativeSetPlatformType
+										10-a:associativeIntSet
+										10-a:associativeSetAtom
+										10-a:associativeMapAtom
+										10-a:associativeMapString
+										10-a:associativeMap2
+										10-a:associativeMap33
+										10-a:associativeMap3
+										10-a:associativeMap4
 									9-o:logic
 										10-v:type
 											11-s:ReflectionTestComponentLogicComplex
@@ -162,7 +144,7 @@ sra format
 														14-i:-20
 											11-o:complexVector
 												12-v:x
-													13-f:14.000000
+													13-f:14
 											11-o:other
 												12-v:type
 													13-s:ReflectionTestComponentLogicComplex
@@ -180,40 +162,39 @@ sra format
 											11-o:d
 									9-o:position
 										10-v:x
-											11-f:0.150000
+											11-f:0.15
 										10-v:y
-											11-f:0.100000
+											11-f:0.1
 									9-o:6d
 										10-v:x
-											11-f:0.190000
+											11-f:0.19
 										10-v:y
-											11-f:0.040000
+											11-f:0.04
 										10-v:w
-											11-f:0.090000
+											11-f:0.09
 										10-v:v
-											11-f:0.090000
+											11-f:0.09
 									9-o:2d
 										10-v:x
-											11-f:7.000000
-									9-o:size
+											11-f:7
 									9-o:size2
 										10-o:width
 											11-v:v
-												12-f:32.000000
+												12-f:32
 											11-v:metric
 												12-s:Percent
 										10-o:height
 											11-v:v
-												12-f:21.000000
+												12-f:21
 											11-v:metric
 												12-s:Percent
 									9-a:test
 										10-k:i
 											11-v:d
-												12-f:0.000000
+												12-f:0
 										10-k:i
 											11-v:d
-												12-f:0.000000
+												12-f:0
 									9-a:test4
 										10-k:i
 											11-a:d
@@ -247,8 +228,7 @@ sra format
 									9-a:testSize2
 										10-k:i
 											11-o:d
-												12-o:width
-												12-o:height
+									9-a:bitSet
 					5-v:name
 						6-s:Sphere
 					5-o:transform
@@ -257,11 +237,11 @@ sra format
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:6.034869
+									9-f:6.03487
 								8-v:y
-									9-f:2.984537
+									9-f:2.98454
 								8-v:z
-									9-f:1.270034
+									9-f:1.27003
 		2-k:i
 			3-o:d
 				4-v:type
@@ -277,19 +257,6 @@ sra format
 								8-o:ptr
 									9-v:entityId
 										10-i:3617449021601147165
-									9-o:shape
-										10-v:type
-											11-s:CollisionShape
-										10-o:ptr
-											11-v:type
-												12-s:Sphere3D
-											11-o:bounds
-												12-v:x
-													13-f:1.000000
-												12-v:y
-													13-f:1.000000
-												12-v:z
-													13-f:1.000000
 						6-k:i
 							7-o:d
 								8-v:type
@@ -315,9 +282,9 @@ sra format
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:3.261795
+									9-f:3.2618
 								8-v:y
-									9-f:5.653492
+									9-f:5.65349
 		2-k:i
 			3-o:d
 				4-v:type
@@ -333,19 +300,6 @@ sra format
 								8-o:ptr
 									9-v:entityId
 										10-i:3190196421964012705
-									9-o:shape
-										10-v:type
-											11-s:CollisionShape
-										10-o:ptr
-											11-v:type
-												12-s:Box3D
-											11-o:bounds
-												12-v:x
-													13-f:1.000000
-												12-v:y
-													13-f:1.000000
-												12-v:z
-													13-f:1.000000
 						6-k:i
 							7-o:d
 								8-v:type
@@ -368,23 +322,17 @@ sra format
 								8-o:ptr
 									9-v:entityId
 										10-i:3374659283479041043
-									9-v:platformType
-										10-s:Windows
-									9-o:data
-									9-o:size
-									9-o:size2
-										10-o:width
-										10-o:height
-									9-a:test3
-										10-k:i
-											11-v:d
-												12-i:1
-										10-k:i
-											11-v:d
-												12-i:2
-										10-k:i
-											11-v:d
-												12-i:3
+									9-o:associative
+										10-a:associativeSetPlatformType
+										10-a:associativeIntSet
+										10-a:associativeSetAtom
+										10-a:associativeMapAtom
+										10-a:associativeMapString
+										10-a:associativeMap2
+										10-a:associativeMap33
+										10-a:associativeMap3
+										10-a:associativeMap4
+									9-a:bitSet
 					5-v:name
 						6-s:Cube
 					5-o:transform
@@ -393,11 +341,11 @@ sra format
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:3.155170
+									9-f:3.15517
 								8-v:y
-									9-f:1.769462
+									9-f:1.76946
 								8-v:z
-									9-f:5.010290
+									9-f:5.01029
 		2-k:i
 			3-o:d
 				4-v:type
@@ -417,9 +365,9 @@ sra format
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:14.389116
+									9-f:14.3891
 								8-v:z
-									9-f:-10.270822
+									9-f:-10.2708
 		2-k:i
 			3-o:d
 				4-v:type
@@ -453,67 +401,7 @@ sra format
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
-																	17-o:default
-																		18-v:shader
-																			19-s:Engine/Shaders/CascadedShadowMap/spatial.srsl
-																		18-o:data
-																			19-a:uniforms
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:color
-																						22-v:type
-																							23-s:Vec4
-																						22-o:value
-																							23-v:x
-																								24-f:1.000000
-																							23-v:y
-																								24-f:1.000000
-																							23-v:z
-																								24-f:1.000000
-																							23-v:w
-																								24-f:1.000000
-																			19-a:samplers
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:diffuse
-																						22-v:type
-																							23-s:Sampler2D
-																						22-v:value
-																							23-s:Engine/Textures/default_improved.png
-																	17-a:stages
-																		18-k:stage
-																			19-v:id
-																				20-s:Shadow
-																			19-v:shader
-																				20-s:Engine/Shaders/CascadedShadowMap/spatial.srsl
-																			19-o:data
-																				20-a:uniforms
-																					21-k:i
-																						22-o:d
-																							23-v:id
-																								24-s:color
-																							23-v:type
-																								24-s:Vec4
-																							23-o:value
-																								24-v:x
-																									25-f:1.000000
-																								24-v:y
-																									25-f:1.000000
-																								24-v:z
-																									25-f:1.000000
-																								24-v:w
-																									25-f:1.000000
-																				20-a:samplers
-																					21-k:i
-																						22-o:d
-																							23-v:id
-																								24-s:diffuse
-																							23-v:type
-																								24-s:Sampler2D
-																							23-v:value
-																								24-s:Engine/Textures/default_improved.png
+																	17-a:shaderDefines
 													13-v:meshPath
 														14-s:Engine/Models/teapot.obj
 													13-v:meshId
@@ -533,67 +421,7 @@ sra format
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
-																	17-o:default
-																		18-v:shader
-																			19-s:Engine/Shaders/CascadedShadowMap/spatial.srsl
-																		18-o:data
-																			19-a:uniforms
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:color
-																						22-v:type
-																							23-s:Vec4
-																						22-o:value
-																							23-v:x
-																								24-f:1.000000
-																							23-v:y
-																								24-f:1.000000
-																							23-v:z
-																								24-f:1.000000
-																							23-v:w
-																								24-f:1.000000
-																			19-a:samplers
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:diffuse
-																						22-v:type
-																							23-s:Sampler2D
-																						22-v:value
-																							23-s:Engine/Textures/default_improved.png
-																	17-a:stages
-																		18-k:stage
-																			19-v:id
-																				20-s:Shadow
-																			19-v:shader
-																				20-s:Engine/Shaders/CascadedShadowMap/spatial.srsl
-																			19-o:data
-																				20-a:uniforms
-																					21-k:i
-																						22-o:d
-																							23-v:id
-																								24-s:color
-																							23-v:type
-																								24-s:Vec4
-																							23-o:value
-																								24-v:x
-																									25-f:1.000000
-																								24-v:y
-																									25-f:1.000000
-																								24-v:z
-																									25-f:1.000000
-																								24-v:w
-																									25-f:1.000000
-																				20-a:samplers
-																					21-k:i
-																						22-o:d
-																							23-v:id
-																								24-s:diffuse
-																							23-v:type
-																								24-s:Sampler2D
-																							23-v:value
-																								24-s:Engine/Textures/default_improved.png
+																	17-a:shaderDefines
 													13-v:meshPath
 														14-s:Engine/Models/teapot.obj
 									9-v:name
@@ -610,7 +438,7 @@ sra format
 								8-v:y
 									9-f:0.556174
 								8-v:z
-									9-f:5.708028
+									9-f:5.70803
 		2-k:i
 			3-o:d
 				4-v:type
@@ -626,19 +454,6 @@ sra format
 								8-o:ptr
 									9-v:entityId
 										10-i:3201891351247877619
-									9-o:shape
-										10-v:type
-											11-s:CollisionShape
-										10-o:ptr
-											11-v:type
-												12-s:Box3D
-											11-o:bounds
-												12-v:x
-													13-f:1.000000
-												12-v:y
-													13-f:1.000000
-												12-v:z
-													13-f:1.000000
 						6-k:i
 							7-o:d
 								8-v:type
@@ -662,11 +477,11 @@ sra format
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:-5.420795
+									9-f:-5.42079
 								8-v:y
-									9-f:1.950484
+									9-f:1.95048
 								8-v:z
-									9-f:4.436547
+									9-f:4.43655
 							7-o:quaternion
 								8-v:x
 									9-f:0.034899
@@ -689,6 +504,9 @@ sra format
 										10-i:3192905282459000103
 									9-v:renderTechnique
 										10-s:Engine/Configs/MainRenderTechnique.xml
+									9-o:renderParameters
+										10-a:includeLayers
+										10-a:excludeLayers
 						6-k:i
 							7-o:d
 								8-v:type
@@ -704,9 +522,9 @@ sra format
 						6-o:ptr
 							7-o:translation
 								8-v:y
-									9-f:3.652818
+									9-f:3.65282
 								8-v:z
-									9-f:-6.080600
+									9-f:-6.0806
 		2-k:i
 			3-o:d
 				4-v:type
@@ -722,688 +540,7 @@ sra format
 								8-o:ptr
 									9-v:entityId
 										10-i:3820993646585982811
-									9-o:rootBone
-										10-v:type
-											11-s:Bone
-										10-o:ptr
-											11-v:name
-												12-s:RootNode
-											11-a:bones
-												12-k:i
-													13-o:d
-														14-v:type
-															15-s:Bone
-														14-o:ptr
-															15-v:name
-																16-s:Armature
-															15-a:bones
-																16-k:i
-																	17-o:d
-																		18-v:type
-																			19-s:Bone
-																		18-o:ptr
-																			19-v:name
-																				20-s:mixamorig:Hips
-																			19-a:bones
-																				20-k:i
-																					21-o:d
-																						22-v:type
-																							23-s:Bone
-																						22-o:ptr
-																							23-v:name
-																								24-s:mixamorig:Spine
-																							23-a:bones
-																								24-k:i
-																									25-o:d
-																										26-v:type
-																											27-s:Bone
-																										26-o:ptr
-																											27-v:name
-																												28-s:mixamorig:Spine1
-																											27-a:bones
-																												28-k:i
-																													29-o:d
-																														30-v:type
-																															31-s:Bone
-																														30-o:ptr
-																															31-v:name
-																																32-s:mixamorig:Spine2
-																															31-a:bones
-																																32-k:i
-																																	33-o:d
-																																		34-v:type
-																																			35-s:Bone
-																																		34-o:ptr
-																																			35-v:name
-																																				36-s:mixamorig:Neck
-																																			35-a:bones
-																																				36-k:i
-																																					37-o:d
-																																						38-v:type
-																																							39-s:Bone
-																																						38-o:ptr
-																																							39-v:name
-																																								40-s:mixamorig:Head
-																																							39-a:bones
-																																								40-k:i
-																																									41-o:d
-																																										42-v:type
-																																											43-s:Bone
-																																										42-o:ptr
-																																											43-v:name
-																																												44-s:mixamorig:HeadTop_End
-																																											43-a:bones
-																																												44-k:i
-																																													45-o:d
-																																														46-v:type
-																																															47-s:Bone
-																																														46-o:ptr
-																																															47-v:name
-																																																48-s:mixamorig:HeadTop_End_end
-																																32-k:i
-																																	33-o:d
-																																		34-v:type
-																																			35-s:Bone
-																																		34-o:ptr
-																																			35-v:name
-																																				36-s:mixamorig:LeftShoulder
-																																			35-a:bones
-																																				36-k:i
-																																					37-o:d
-																																						38-v:type
-																																							39-s:Bone
-																																						38-o:ptr
-																																							39-v:name
-																																								40-s:mixamorig:LeftArm
-																																							39-a:bones
-																																								40-k:i
-																																									41-o:d
-																																										42-v:type
-																																											43-s:Bone
-																																										42-o:ptr
-																																											43-v:name
-																																												44-s:mixamorig:LeftForeArm
-																																											43-a:bones
-																																												44-k:i
-																																													45-o:d
-																																														46-v:type
-																																															47-s:Bone
-																																														46-o:ptr
-																																															47-v:name
-																																																48-s:mixamorig:LeftHand
-																																															47-a:bones
-																																																48-k:i
-																																																	49-o:d
-																																																		50-v:type
-																																																			51-s:Bone
-																																																		50-o:ptr
-																																																			51-v:name
-																																																				52-s:mixamorig:LeftHandThumb1
-																																																			51-a:bones
-																																																				52-k:i
-																																																					53-o:d
-																																																						54-v:type
-																																																							55-s:Bone
-																																																						54-o:ptr
-																																																							55-v:name
-																																																								56-s:mixamorig:LeftHandThumb2
-																																																							55-a:bones
-																																																								56-k:i
-																																																									57-o:d
-																																																										58-v:type
-																																																											59-s:Bone
-																																																										58-o:ptr
-																																																											59-v:name
-																																																												60-s:mixamorig:LeftHandThumb3
-																																																											59-a:bones
-																																																												60-k:i
-																																																													61-o:d
-																																																														62-v:type
-																																																															63-s:Bone
-																																																														62-o:ptr
-																																																															63-v:name
-																																																																64-s:mixamorig:LeftHandThumb4
-																																																															63-a:bones
-																																																																64-k:i
-																																																																	65-o:d
-																																																																		66-v:type
-																																																																			67-s:Bone
-																																																																		66-o:ptr
-																																																																			67-v:name
-																																																																				68-s:mixamorig:LeftHandThumb4_end
-																																																48-k:i
-																																																	49-o:d
-																																																		50-v:type
-																																																			51-s:Bone
-																																																		50-o:ptr
-																																																			51-v:name
-																																																				52-s:mixamorig:LeftHandIndex1
-																																																			51-a:bones
-																																																				52-k:i
-																																																					53-o:d
-																																																						54-v:type
-																																																							55-s:Bone
-																																																						54-o:ptr
-																																																							55-v:name
-																																																								56-s:mixamorig:LeftHandIndex2
-																																																							55-a:bones
-																																																								56-k:i
-																																																									57-o:d
-																																																										58-v:type
-																																																											59-s:Bone
-																																																										58-o:ptr
-																																																											59-v:name
-																																																												60-s:mixamorig:LeftHandIndex3
-																																																											59-a:bones
-																																																												60-k:i
-																																																													61-o:d
-																																																														62-v:type
-																																																															63-s:Bone
-																																																														62-o:ptr
-																																																															63-v:name
-																																																																64-s:mixamorig:LeftHandIndex4
-																																																															63-a:bones
-																																																																64-k:i
-																																																																	65-o:d
-																																																																		66-v:type
-																																																																			67-s:Bone
-																																																																		66-o:ptr
-																																																																			67-v:name
-																																																																				68-s:mixamorig:LeftHandIndex4_end
-																																																48-k:i
-																																																	49-o:d
-																																																		50-v:type
-																																																			51-s:Bone
-																																																		50-o:ptr
-																																																			51-v:name
-																																																				52-s:mixamorig:LeftHandMiddle1
-																																																			51-a:bones
-																																																				52-k:i
-																																																					53-o:d
-																																																						54-v:type
-																																																							55-s:Bone
-																																																						54-o:ptr
-																																																							55-v:name
-																																																								56-s:mixamorig:LeftHandMiddle2
-																																																							55-a:bones
-																																																								56-k:i
-																																																									57-o:d
-																																																										58-v:type
-																																																											59-s:Bone
-																																																										58-o:ptr
-																																																											59-v:name
-																																																												60-s:mixamorig:LeftHandMiddle3
-																																																											59-a:bones
-																																																												60-k:i
-																																																													61-o:d
-																																																														62-v:type
-																																																															63-s:Bone
-																																																														62-o:ptr
-																																																															63-v:name
-																																																																64-s:mixamorig:LeftHandMiddle4
-																																																															63-a:bones
-																																																																64-k:i
-																																																																	65-o:d
-																																																																		66-v:type
-																																																																			67-s:Bone
-																																																																		66-o:ptr
-																																																																			67-v:name
-																																																																				68-s:mixamorig:LeftHandMiddle4_end
-																																																48-k:i
-																																																	49-o:d
-																																																		50-v:type
-																																																			51-s:Bone
-																																																		50-o:ptr
-																																																			51-v:name
-																																																				52-s:mixamorig:LeftHandRing1
-																																																			51-a:bones
-																																																				52-k:i
-																																																					53-o:d
-																																																						54-v:type
-																																																							55-s:Bone
-																																																						54-o:ptr
-																																																							55-v:name
-																																																								56-s:mixamorig:LeftHandRing2
-																																																							55-a:bones
-																																																								56-k:i
-																																																									57-o:d
-																																																										58-v:type
-																																																											59-s:Bone
-																																																										58-o:ptr
-																																																											59-v:name
-																																																												60-s:mixamorig:LeftHandRing3
-																																																											59-a:bones
-																																																												60-k:i
-																																																													61-o:d
-																																																														62-v:type
-																																																															63-s:Bone
-																																																														62-o:ptr
-																																																															63-v:name
-																																																																64-s:mixamorig:LeftHandRing4
-																																																															63-a:bones
-																																																																64-k:i
-																																																																	65-o:d
-																																																																		66-v:type
-																																																																			67-s:Bone
-																																																																		66-o:ptr
-																																																																			67-v:name
-																																																																				68-s:mixamorig:LeftHandRing4_end
-																																																48-k:i
-																																																	49-o:d
-																																																		50-v:type
-																																																			51-s:Bone
-																																																		50-o:ptr
-																																																			51-v:name
-																																																				52-s:mixamorig:LeftHandPinky1
-																																																			51-a:bones
-																																																				52-k:i
-																																																					53-o:d
-																																																						54-v:type
-																																																							55-s:Bone
-																																																						54-o:ptr
-																																																							55-v:name
-																																																								56-s:mixamorig:LeftHandPinky2
-																																																							55-a:bones
-																																																								56-k:i
-																																																									57-o:d
-																																																										58-v:type
-																																																											59-s:Bone
-																																																										58-o:ptr
-																																																											59-v:name
-																																																												60-s:mixamorig:LeftHandPinky3
-																																																											59-a:bones
-																																																												60-k:i
-																																																													61-o:d
-																																																														62-v:type
-																																																															63-s:Bone
-																																																														62-o:ptr
-																																																															63-v:name
-																																																																64-s:mixamorig:LeftHandPinky4
-																																																															63-a:bones
-																																																																64-k:i
-																																																																	65-o:d
-																																																																		66-v:type
-																																																																			67-s:Bone
-																																																																		66-o:ptr
-																																																																			67-v:name
-																																																																				68-s:mixamorig:LeftHandPinky4_end
-																																32-k:i
-																																	33-o:d
-																																		34-v:type
-																																			35-s:Bone
-																																		34-o:ptr
-																																			35-v:name
-																																				36-s:mixamorig:RightShoulder
-																																			35-a:bones
-																																				36-k:i
-																																					37-o:d
-																																						38-v:type
-																																							39-s:Bone
-																																						38-o:ptr
-																																							39-v:name
-																																								40-s:mixamorig:RightArm
-																																							39-a:bones
-																																								40-k:i
-																																									41-o:d
-																																										42-v:type
-																																											43-s:Bone
-																																										42-o:ptr
-																																											43-v:name
-																																												44-s:mixamorig:RightForeArm
-																																											43-a:bones
-																																												44-k:i
-																																													45-o:d
-																																														46-v:type
-																																															47-s:Bone
-																																														46-o:ptr
-																																															47-v:name
-																																																48-s:mixamorig:RightHand
-																																															47-a:bones
-																																																48-k:i
-																																																	49-o:d
-																																																		50-v:type
-																																																			51-s:Bone
-																																																		50-o:ptr
-																																																			51-v:name
-																																																				52-s:mixamorig:RightHandThumb1
-																																																			51-a:bones
-																																																				52-k:i
-																																																					53-o:d
-																																																						54-v:type
-																																																							55-s:Bone
-																																																						54-o:ptr
-																																																							55-v:name
-																																																								56-s:mixamorig:RightHandThumb2
-																																																							55-a:bones
-																																																								56-k:i
-																																																									57-o:d
-																																																										58-v:type
-																																																											59-s:Bone
-																																																										58-o:ptr
-																																																											59-v:name
-																																																												60-s:mixamorig:RightHandThumb3
-																																																											59-a:bones
-																																																												60-k:i
-																																																													61-o:d
-																																																														62-v:type
-																																																															63-s:Bone
-																																																														62-o:ptr
-																																																															63-v:name
-																																																																64-s:mixamorig:RightHandThumb4
-																																																															63-a:bones
-																																																																64-k:i
-																																																																	65-o:d
-																																																																		66-v:type
-																																																																			67-s:Bone
-																																																																		66-o:ptr
-																																																																			67-v:name
-																																																																				68-s:mixamorig:RightHandThumb4_end
-																																																48-k:i
-																																																	49-o:d
-																																																		50-v:type
-																																																			51-s:Bone
-																																																		50-o:ptr
-																																																			51-v:name
-																																																				52-s:mixamorig:RightHandIndex1
-																																																			51-a:bones
-																																																				52-k:i
-																																																					53-o:d
-																																																						54-v:type
-																																																							55-s:Bone
-																																																						54-o:ptr
-																																																							55-v:name
-																																																								56-s:mixamorig:RightHandIndex2
-																																																							55-a:bones
-																																																								56-k:i
-																																																									57-o:d
-																																																										58-v:type
-																																																											59-s:Bone
-																																																										58-o:ptr
-																																																											59-v:name
-																																																												60-s:mixamorig:RightHandIndex3
-																																																											59-a:bones
-																																																												60-k:i
-																																																													61-o:d
-																																																														62-v:type
-																																																															63-s:Bone
-																																																														62-o:ptr
-																																																															63-v:name
-																																																																64-s:mixamorig:RightHandIndex4
-																																																															63-a:bones
-																																																																64-k:i
-																																																																	65-o:d
-																																																																		66-v:type
-																																																																			67-s:Bone
-																																																																		66-o:ptr
-																																																																			67-v:name
-																																																																				68-s:mixamorig:RightHandIndex4_end
-																																																48-k:i
-																																																	49-o:d
-																																																		50-v:type
-																																																			51-s:Bone
-																																																		50-o:ptr
-																																																			51-v:name
-																																																				52-s:mixamorig:RightHandMiddle1
-																																																			51-a:bones
-																																																				52-k:i
-																																																					53-o:d
-																																																						54-v:type
-																																																							55-s:Bone
-																																																						54-o:ptr
-																																																							55-v:name
-																																																								56-s:mixamorig:RightHandMiddle2
-																																																							55-a:bones
-																																																								56-k:i
-																																																									57-o:d
-																																																										58-v:type
-																																																											59-s:Bone
-																																																										58-o:ptr
-																																																											59-v:name
-																																																												60-s:mixamorig:RightHandMiddle3
-																																																											59-a:bones
-																																																												60-k:i
-																																																													61-o:d
-																																																														62-v:type
-																																																															63-s:Bone
-																																																														62-o:ptr
-																																																															63-v:name
-																																																																64-s:mixamorig:RightHandMiddle4
-																																																															63-a:bones
-																																																																64-k:i
-																																																																	65-o:d
-																																																																		66-v:type
-																																																																			67-s:Bone
-																																																																		66-o:ptr
-																																																																			67-v:name
-																																																																				68-s:mixamorig:RightHandMiddle4_end
-																																																48-k:i
-																																																	49-o:d
-																																																		50-v:type
-																																																			51-s:Bone
-																																																		50-o:ptr
-																																																			51-v:name
-																																																				52-s:mixamorig:RightHandRing1
-																																																			51-a:bones
-																																																				52-k:i
-																																																					53-o:d
-																																																						54-v:type
-																																																							55-s:Bone
-																																																						54-o:ptr
-																																																							55-v:name
-																																																								56-s:mixamorig:RightHandRing2
-																																																							55-a:bones
-																																																								56-k:i
-																																																									57-o:d
-																																																										58-v:type
-																																																											59-s:Bone
-																																																										58-o:ptr
-																																																											59-v:name
-																																																												60-s:mixamorig:RightHandRing3
-																																																											59-a:bones
-																																																												60-k:i
-																																																													61-o:d
-																																																														62-v:type
-																																																															63-s:Bone
-																																																														62-o:ptr
-																																																															63-v:name
-																																																																64-s:mixamorig:RightHandRing4
-																																																															63-a:bones
-																																																																64-k:i
-																																																																	65-o:d
-																																																																		66-v:type
-																																																																			67-s:Bone
-																																																																		66-o:ptr
-																																																																			67-v:name
-																																																																				68-s:mixamorig:RightHandRing4_end
-																																																48-k:i
-																																																	49-o:d
-																																																		50-v:type
-																																																			51-s:Bone
-																																																		50-o:ptr
-																																																			51-v:name
-																																																				52-s:mixamorig:RightHandPinky1
-																																																			51-a:bones
-																																																				52-k:i
-																																																					53-o:d
-																																																						54-v:type
-																																																							55-s:Bone
-																																																						54-o:ptr
-																																																							55-v:name
-																																																								56-s:mixamorig:RightHandPinky2
-																																																							55-a:bones
-																																																								56-k:i
-																																																									57-o:d
-																																																										58-v:type
-																																																											59-s:Bone
-																																																										58-o:ptr
-																																																											59-v:name
-																																																												60-s:mixamorig:RightHandPinky3
-																																																											59-a:bones
-																																																												60-k:i
-																																																													61-o:d
-																																																														62-v:type
-																																																															63-s:Bone
-																																																														62-o:ptr
-																																																															63-v:name
-																																																																64-s:mixamorig:RightHandPinky4
-																																																															63-a:bones
-																																																																64-k:i
-																																																																	65-o:d
-																																																																		66-v:type
-																																																																			67-s:Bone
-																																																																		66-o:ptr
-																																																																			67-v:name
-																																																																				68-s:mixamorig:RightHandPinky4_end
-																				20-k:i
-																					21-o:d
-																						22-v:type
-																							23-s:Bone
-																						22-o:ptr
-																							23-v:name
-																								24-s:mixamorig:LeftUpLeg
-																							23-a:bones
-																								24-k:i
-																									25-o:d
-																										26-v:type
-																											27-s:Bone
-																										26-o:ptr
-																											27-v:name
-																												28-s:mixamorig:LeftLeg
-																											27-a:bones
-																												28-k:i
-																													29-o:d
-																														30-v:type
-																															31-s:Bone
-																														30-o:ptr
-																															31-v:name
-																																32-s:mixamorig:LeftFoot
-																															31-a:bones
-																																32-k:i
-																																	33-o:d
-																																		34-v:type
-																																			35-s:Bone
-																																		34-o:ptr
-																																			35-v:name
-																																				36-s:mixamorig:LeftToeBase
-																																			35-a:bones
-																																				36-k:i
-																																					37-o:d
-																																						38-v:type
-																																							39-s:Bone
-																																						38-o:ptr
-																																							39-v:name
-																																								40-s:mixamorig:LeftToe_End
-																																							39-a:bones
-																																								40-k:i
-																																									41-o:d
-																																										42-v:type
-																																											43-s:Bone
-																																										42-o:ptr
-																																											43-v:name
-																																												44-s:mixamorig:LeftToe_End_end
-																				20-k:i
-																					21-o:d
-																						22-v:type
-																							23-s:Bone
-																						22-o:ptr
-																							23-v:name
-																								24-s:mixamorig:RightUpLeg
-																							23-a:bones
-																								24-k:i
-																									25-o:d
-																										26-v:type
-																											27-s:Bone
-																										26-o:ptr
-																											27-v:name
-																												28-s:mixamorig:RightLeg
-																											27-a:bones
-																												28-k:i
-																													29-o:d
-																														30-v:type
-																															31-s:Bone
-																														30-o:ptr
-																															31-v:name
-																																32-s:mixamorig:RightFoot
-																															31-a:bones
-																																32-k:i
-																																	33-o:d
-																																		34-v:type
-																																			35-s:Bone
-																																		34-o:ptr
-																																			35-v:name
-																																				36-s:mixamorig:RightToeBase
-																																			35-a:bones
-																																				36-k:i
-																																					37-o:d
-																																						38-v:type
-																																							39-s:Bone
-																																						38-o:ptr
-																																							39-v:name
-																																								40-s:mixamorig:RightToe_End
-																																							39-a:bones
-																																								40-k:i
-																																									41-o:d
-																																										42-v:type
-																																											43-s:Bone
-																																										42-o:ptr
-																																											43-v:name
-																																												44-s:mixamorig:RightToe_End_end
-												12-k:i
-													13-o:d
-														14-v:type
-															15-s:Bone
-														14-o:ptr
-															15-v:name
-																16-s:Body
-												12-k:i
-													13-o:d
-														14-v:type
-															15-s:Bone
-														14-o:ptr
-															15-v:name
-																16-s:Hair
-												12-k:i
-													13-o:d
-														14-v:type
-															15-s:Bone
-														14-o:ptr
-															15-v:name
-																16-s:Eyes
-												12-k:i
-													13-o:d
-														14-v:type
-															15-s:Bone
-														14-o:ptr
-															15-v:name
-																16-s:Eyelashes
-												12-k:i
-													13-o:d
-														14-v:type
-															15-s:Bone
-														14-o:ptr
-															15-v:name
-																16-s:Gloves
-												12-k:i
-													13-o:d
-														14-v:type
-															15-s:Bone
-														14-o:ptr
-															15-v:name
-																16-s:Shoes
-												12-k:i
-													13-o:d
-														14-v:type
-															15-s:Bone
-														14-o:ptr
-															15-v:name
-																16-s:Bottoms
-												12-k:i
-													13-o:d
-														14-v:type
-															15-s:Bone
-														14-o:ptr
-															15-v:name
-																16-s:Tops
+									9-o:skeleton
 						6-k:i
 							7-o:d
 								8-v:type
@@ -1411,8 +548,6 @@ sra format
 								8-o:ptr
 									9-v:entityId
 										10-i:4009827698912231177
-									9-v:graph
-										10-s:Samples/Liza/Animator.xml
 					5-v:name
 						6-s:Liza/Liza
 					5-a:children
@@ -1439,46 +574,7 @@ sra format
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
-																	17-o:default
-																		18-v:shader
-																			19-s:Engine/Shaders/CascadedShadowMap/skinned.srsl
-																		18-o:data
-																			19-a:uniforms
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:color
-																						22-v:type
-																							23-s:Vec4
-																						22-o:value
-																							23-v:x
-																								24-f:1.000000
-																							23-v:y
-																								24-f:1.000000
-																							23-v:z
-																								24-f:1.000000
-																							23-v:w
-																								24-f:1.000000
-																			19-a:samplers
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:diffuse
-																						22-v:type
-																							23-s:Sampler2D
-																						22-v:value
-																							23-s:Engine/Textures/default_improved.png
-																	17-a:stages
-													13-o:skeleton
-														14-a:path
-															15-k:i
-																16-o:d
-															15-k:i
-																16-o:d
-																	17-v:name
-																		18-s:Skeleton
-																	17-v:action
-																		18-s:Action_Component
+																	17-a:shaderDefines
 													13-v:meshPath
 														14-s:Samples/Liza/Liza.fbx
 													13-v:meshId
@@ -1512,46 +608,7 @@ sra format
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
-																	17-o:default
-																		18-v:shader
-																			19-s:Engine/Shaders/CascadedShadowMap/skinned.srsl
-																		18-o:data
-																			19-a:uniforms
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:color
-																						22-v:type
-																							23-s:Vec4
-																						22-o:value
-																							23-v:x
-																								24-f:1.000000
-																							23-v:y
-																								24-f:1.000000
-																							23-v:z
-																								24-f:1.000000
-																							23-v:w
-																								24-f:1.000000
-																			19-a:samplers
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:diffuse
-																						22-v:type
-																							23-s:Sampler2D
-																						22-v:value
-																							23-s:Engine/Textures/default_improved.png
-																	17-a:stages
-													13-o:skeleton
-														14-a:path
-															15-k:i
-																16-o:d
-															15-k:i
-																16-o:d
-																	17-v:name
-																		18-s:Skeleton
-																	17-v:action
-																		18-s:Action_Component
+																	17-a:shaderDefines
 													13-v:meshPath
 														14-s:Samples/Liza/Liza.fbx
 													13-v:meshId
@@ -1585,46 +642,7 @@ sra format
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
-																	17-o:default
-																		18-v:shader
-																			19-s:Engine/Shaders/CascadedShadowMap/skinned.srsl
-																		18-o:data
-																			19-a:uniforms
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:color
-																						22-v:type
-																							23-s:Vec4
-																						22-o:value
-																							23-v:x
-																								24-f:1.000000
-																							23-v:y
-																								24-f:1.000000
-																							23-v:z
-																								24-f:1.000000
-																							23-v:w
-																								24-f:1.000000
-																			19-a:samplers
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:diffuse
-																						22-v:type
-																							23-s:Sampler2D
-																						22-v:value
-																							23-s:Engine/Textures/default_improved.png
-																	17-a:stages
-													13-o:skeleton
-														14-a:path
-															15-k:i
-																16-o:d
-															15-k:i
-																16-o:d
-																	17-v:name
-																		18-s:Skeleton
-																	17-v:action
-																		18-s:Action_Component
+																	17-a:shaderDefines
 													13-v:meshPath
 														14-s:Samples/Liza/Liza.fbx
 													13-v:meshId
@@ -1658,46 +676,7 @@ sra format
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
-																	17-o:default
-																		18-v:shader
-																			19-s:Engine/Shaders/CascadedShadowMap/skinned.srsl
-																		18-o:data
-																			19-a:uniforms
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:color
-																						22-v:type
-																							23-s:Vec4
-																						22-o:value
-																							23-v:x
-																								24-f:1.000000
-																							23-v:y
-																								24-f:1.000000
-																							23-v:z
-																								24-f:1.000000
-																							23-v:w
-																								24-f:1.000000
-																			19-a:samplers
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:diffuse
-																						22-v:type
-																							23-s:Sampler2D
-																						22-v:value
-																							23-s:Engine/Textures/default_improved.png
-																	17-a:stages
-													13-o:skeleton
-														14-a:path
-															15-k:i
-																16-o:d
-															15-k:i
-																16-o:d
-																	17-v:name
-																		18-s:Skeleton
-																	17-v:action
-																		18-s:Action_Component
+																	17-a:shaderDefines
 													13-v:meshPath
 														14-s:Samples/Liza/Liza.fbx
 													13-v:meshId
@@ -1731,46 +710,7 @@ sra format
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
-																	17-o:default
-																		18-v:shader
-																			19-s:Engine/Shaders/CascadedShadowMap/skinned.srsl
-																		18-o:data
-																			19-a:uniforms
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:color
-																						22-v:type
-																							23-s:Vec4
-																						22-o:value
-																							23-v:x
-																								24-f:1.000000
-																							23-v:y
-																								24-f:1.000000
-																							23-v:z
-																								24-f:1.000000
-																							23-v:w
-																								24-f:1.000000
-																			19-a:samplers
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:diffuse
-																						22-v:type
-																							23-s:Sampler2D
-																						22-v:value
-																							23-s:Engine/Textures/default_improved.png
-																	17-a:stages
-													13-o:skeleton
-														14-a:path
-															15-k:i
-																16-o:d
-															15-k:i
-																16-o:d
-																	17-v:name
-																		18-s:Skeleton
-																	17-v:action
-																		18-s:Action_Component
+																	17-a:shaderDefines
 													13-v:meshPath
 														14-s:Samples/Liza/Liza.fbx
 													13-v:meshId
@@ -1804,46 +744,7 @@ sra format
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
-																	17-o:default
-																		18-v:shader
-																			19-s:Engine/Shaders/CascadedShadowMap/skinned.srsl
-																		18-o:data
-																			19-a:uniforms
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:color
-																						22-v:type
-																							23-s:Vec4
-																						22-o:value
-																							23-v:x
-																								24-f:1.000000
-																							23-v:y
-																								24-f:1.000000
-																							23-v:z
-																								24-f:1.000000
-																							23-v:w
-																								24-f:1.000000
-																			19-a:samplers
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:diffuse
-																						22-v:type
-																							23-s:Sampler2D
-																						22-v:value
-																							23-s:Engine/Textures/default_improved.png
-																	17-a:stages
-													13-o:skeleton
-														14-a:path
-															15-k:i
-																16-o:d
-															15-k:i
-																16-o:d
-																	17-v:name
-																		18-s:Skeleton
-																	17-v:action
-																		18-s:Action_Component
+																	17-a:shaderDefines
 													13-v:meshPath
 														14-s:Samples/Liza/Liza.fbx
 													13-v:meshId
@@ -1877,46 +778,7 @@ sra format
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
-																	17-o:default
-																		18-v:shader
-																			19-s:Engine/Shaders/CascadedShadowMap/skinned.srsl
-																		18-o:data
-																			19-a:uniforms
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:color
-																						22-v:type
-																							23-s:Vec4
-																						22-o:value
-																							23-v:x
-																								24-f:1.000000
-																							23-v:y
-																								24-f:1.000000
-																							23-v:z
-																								24-f:1.000000
-																							23-v:w
-																								24-f:1.000000
-																			19-a:samplers
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:diffuse
-																						22-v:type
-																							23-s:Sampler2D
-																						22-v:value
-																							23-s:Engine/Textures/default_improved.png
-																	17-a:stages
-													13-o:skeleton
-														14-a:path
-															15-k:i
-																16-o:d
-															15-k:i
-																16-o:d
-																	17-v:name
-																		18-s:Skeleton
-																	17-v:action
-																		18-s:Action_Component
+																	17-a:shaderDefines
 													13-v:meshPath
 														14-s:Samples/Liza/Liza.fbx
 													13-v:meshId
@@ -1950,46 +812,7 @@ sra format
 																16-v:type
 																	17-s:MaterialData
 																16-o:ptr
-																	17-o:default
-																		18-v:shader
-																			19-s:Engine/Shaders/CascadedShadowMap/skinned.srsl
-																		18-o:data
-																			19-a:uniforms
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:color
-																						22-v:type
-																							23-s:Vec4
-																						22-o:value
-																							23-v:x
-																								24-f:1.000000
-																							23-v:y
-																								24-f:1.000000
-																							23-v:z
-																								24-f:1.000000
-																							23-v:w
-																								24-f:1.000000
-																			19-a:samplers
-																				20-k:i
-																					21-o:d
-																						22-v:id
-																							23-s:diffuse
-																						22-v:type
-																							23-s:Sampler2D
-																						22-v:value
-																							23-s:Engine/Textures/default_improved.png
-																	17-a:stages
-													13-o:skeleton
-														14-a:path
-															15-k:i
-																16-o:d
-															15-k:i
-																16-o:d
-																	17-v:name
-																		18-s:Skeleton
-																	17-v:action
-																		18-s:Action_Component
+																	17-a:shaderDefines
 													13-v:meshPath
 														14-s:Samples/Liza/Liza.fbx
 									9-v:name
@@ -2109,9 +932,9 @@ sra format
 																																		34-o:ptr
 																																			35-o:translation
 																																				36-v:y
-																																					37-f:0.085360
+																																					37-f:0.08536
 																																				36-v:z
-																																					37-f:-0.028300
+																																					37-f:-0.0283
 																													29-o:transform
 																														30-v:type
 																															31-s:Transform3D
@@ -2123,7 +946,7 @@ sra format
 																																32-v:x
 																																	33-f:-0.068374
 																																32-v:w
-																																	33-f:0.997660
+																																	33-f:0.99766
 																										26-k:i
 																											27-o:d
 																												28-v:type
@@ -2242,7 +1065,7 @@ sra format
 																																																								56-v:x
 																																																									57-f:-0.039749
 																																																								56-v:w
-																																																									57-f:0.999210
+																																																									57-f:0.99921
 																																																	49-o:transform
 																																																		50-v:type
 																																																			51-s:Transform3D
@@ -2270,9 +1093,9 @@ sra format
 																																																	49-f:-0.013397
 																																															47-o:quaternion
 																																																48-v:x
-																																																	49-f:-0.135100
+																																																	49-f:-0.1351
 																																																48-v:y
-																																																	49-f:-0.036850
+																																																	49-f:-0.03685
 																																																48-v:z
 																																																	49-f:0.260555
 																																																48-v:w
@@ -2339,7 +1162,7 @@ sra format
 																																																										58-o:ptr
 																																																											59-o:translation
 																																																												60-v:x
-																																																													61-f:0.000033
+																																																													61-f:3.3e-05
 																																																												60-v:y
 																																																													61-f:0.026735
 																																																					53-o:transform
@@ -2360,7 +1183,7 @@ sra format
 																																																		50-o:ptr
 																																																			51-o:translation
 																																																				52-v:x
-																																																					53-f:-0.000042
+																																																					53-f:-4.2e-05
 																																																				52-v:y
 																																																					53-f:0.031856
 																																																			51-o:quaternion
@@ -2376,14 +1199,14 @@ sra format
 																																																48-v:x
 																																																	49-f:-0.029345
 																																																48-v:y
-																																																	49-f:0.111780
+																																																	49-f:0.11178
 																																																48-v:z
 																																																	49-f:-0.000408
 																																															47-o:quaternion
 																																																48-v:x
 																																																	49-f:-0.060579
 																																																48-v:y
-																																																	49-f:-0.002470
+																																																	49-f:-0.00247
 																																																48-v:z
 																																																	49-f:0.040668
 																																																48-v:w
@@ -2450,7 +1273,7 @@ sra format
 																																																										58-o:ptr
 																																																											59-o:translation
 																																																												60-v:x
-																																																													61-f:0.000019
+																																																													61-f:1.9e-05
 																																																												60-v:y
 																																																													61-f:0.029054
 																																																					53-o:transform
@@ -2459,7 +1282,7 @@ sra format
 																																																						54-o:ptr
 																																																							55-o:translation
 																																																								56-v:x
-																																																									57-f:0.000044
+																																																									57-f:4.4e-05
 																																																								56-v:y
 																																																									57-f:0.032038
 																																																							55-o:quaternion
@@ -2473,12 +1296,12 @@ sra format
 																																																		50-o:ptr
 																																																			51-o:translation
 																																																				52-v:x
-																																																					53-f:-0.000064
+																																																					53-f:-6.4e-05
 																																																				52-v:y
 																																																					53-f:0.033999
 																																																			51-o:quaternion
 																																																				52-v:x
-																																																					53-f:-0.030410
+																																																					53-f:-0.03041
 																																																				52-v:w
 																																																					53-f:0.999538
 																																													45-o:transform
@@ -2494,11 +1317,11 @@ sra format
 																																																	49-f:0.001376
 																																															47-o:quaternion
 																																																48-v:x
-																																																	49-f:-0.015970
+																																																	49-f:-0.01597
 																																																48-v:y
-																																																	49-f:0.000020
+																																																	49-f:2e-05
 																																																48-v:z
-																																																	49-f:-0.001280
+																																																	49-f:-0.00128
 																																																48-v:w
 																																																	49-f:0.999872
 																																										42-k:i
@@ -2563,7 +1386,7 @@ sra format
 																																																										58-o:ptr
 																																																											59-o:translation
 																																																												60-v:x
-																																																													61-f:0.000031
+																																																													61-f:3.1e-05
 																																																												60-v:y
 																																																													61-f:0.025574
 																																																					53-o:transform
@@ -2572,7 +1395,7 @@ sra format
 																																																						54-o:ptr
 																																																							55-o:translation
 																																																								56-v:x
-																																																									57-f:0.000011
+																																																									57-f:1.1e-05
 																																																								56-v:y
 																																																									57-f:0.027863
 																																																							55-o:quaternion
@@ -2586,7 +1409,7 @@ sra format
 																																																		50-o:ptr
 																																																			51-o:translation
 																																																				52-v:x
-																																																					53-f:-0.000042
+																																																					53-f:-4.2e-05
 																																																				52-v:y
 																																																					53-f:0.030325
 																																																			51-o:quaternion
@@ -2607,13 +1430,13 @@ sra format
 																																																	49-f:0.002631
 																																															47-o:quaternion
 																																																48-v:x
-																																																	49-f:-0.024980
+																																																	49-f:-0.02498
 																																																48-v:y
 																																																	49-f:0.000731
 																																																48-v:z
 																																																	49-f:-0.029253
 																																																48-v:w
-																																																	49-f:0.999260
+																																																	49-f:0.99926
 																																										42-k:i
 																																											43-o:d
 																																												44-v:type
@@ -2676,7 +1499,7 @@ sra format
 																																																										58-o:ptr
 																																																											59-o:translation
 																																																												60-v:x
-																																																													61-f:-0.000100
+																																																													61-f:-0.0001
 																																																												60-v:y
 																																																													61-f:0.022753
 																																																					53-o:transform
@@ -2685,9 +1508,9 @@ sra format
 																																																						54-o:ptr
 																																																							55-o:translation
 																																																								56-v:x
-																																																									57-f:0.000022
+																																																									57-f:2.2e-05
 																																																								56-v:y
-																																																									57-f:0.024810
+																																																									57-f:0.02481
 																																																							55-o:quaternion
 																																																								56-v:x
 																																																									57-f:0.041558
@@ -2699,14 +1522,14 @@ sra format
 																																																		50-o:ptr
 																																																			51-o:translation
 																																																				52-v:x
-																																																					53-f:0.000078
+																																																					53-f:7.8e-05
 																																																				52-v:y
 																																																					53-f:0.030395
 																																																			51-o:quaternion
 																																																				52-v:x
 																																																					53-f:0.007746
 																																																				52-v:w
-																																																					53-f:0.999970
+																																																					53-f:0.99997
 																																													45-o:transform
 																																														46-v:type
 																																															47-s:Transform3D
@@ -2754,7 +1577,7 @@ sra format
 																																								40-v:x
 																																									41-f:0.000806
 																																								40-v:y
-																																									41-f:0.000063
+																																									41-f:6.3e-05
 																																								40-v:z
 																																									41-f:0.077998
 																																								40-v:w
@@ -2774,7 +1597,7 @@ sra format
 																																				36-v:z
 																																					37-f:-0.017926
 																																				36-v:w
-																																					37-f:0.992140
+																																					37-f:0.99214
 																													29-o:transform
 																														30-v:type
 																															31-s:Transform3D
@@ -2899,7 +1722,7 @@ sra format
 																																																												60-v:x
 																																																													61-f:-0.000925
 																																																												60-v:y
-																																																													61-f:0.030450
+																																																													61-f:0.03045
 																																																					53-o:transform
 																																																						54-v:type
 																																																							55-s:Transform3D
@@ -2920,7 +1743,7 @@ sra format
 																																																		50-o:ptr
 																																																			51-o:translation
 																																																				52-v:x
-																																																					53-f:0.001210
+																																																					53-f:0.00121
 																																																				52-v:y
 																																																					53-f:0.040194
 																																																			51-o:quaternion
@@ -2947,7 +1770,7 @@ sra format
 																																																48-v:z
 																																																	49-f:-0.248631
 																																																48-v:w
-																																																	49-f:0.957240
+																																																	49-f:0.95724
 																																										42-k:i
 																																											43-o:d
 																																												44-v:type
@@ -3010,7 +1833,7 @@ sra format
 																																																										58-o:ptr
 																																																											59-o:translation
 																																																												60-v:x
-																																																													61-f:-0.000040
+																																																													61-f:-4e-05
 																																																												60-v:y
 																																																													61-f:0.027632
 																																																					53-o:transform
@@ -3019,7 +1842,7 @@ sra format
 																																																						54-o:ptr
 																																																							55-o:translation
 																																																								56-v:x
-																																																									57-f:0.000022
+																																																									57-f:2.2e-05
 																																																								56-v:y
 																																																									57-f:0.030067
 																																																							55-o:quaternion
@@ -3033,12 +1856,12 @@ sra format
 																																																		50-o:ptr
 																																																			51-o:translation
 																																																				52-v:x
-																																																					53-f:0.000018
+																																																					53-f:1.8e-05
 																																																				52-v:y
 																																																					53-f:0.031736
 																																																			51-o:quaternion
 																																																				52-v:x
-																																																					53-f:0.001650
+																																																					53-f:0.00165
 																																																				52-v:w
 																																																					53-f:0.999999
 																																													45-o:transform
@@ -3058,7 +1881,7 @@ sra format
 																																																48-v:y
 																																																	49-f:0.002828
 																																																48-v:z
-																																																	49-f:-0.056290
+																																																	49-f:-0.05629
 																																																48-v:w
 																																																	49-f:0.997152
 																																										42-k:i
@@ -3123,7 +1946,7 @@ sra format
 																																																										58-o:ptr
 																																																											59-o:translation
 																																																												60-v:x
-																																																													61-f:-0.000029
+																																																													61-f:-2.9e-05
 																																																												60-v:y
 																																																													61-f:0.027761
 																																																					53-o:transform
@@ -3132,12 +1955,12 @@ sra format
 																																																						54-o:ptr
 																																																							55-o:translation
 																																																								56-v:x
-																																																									57-f:-0.000058
+																																																									57-f:-5.8e-05
 																																																								56-v:y
 																																																									57-f:0.031382
 																																																							55-o:quaternion
 																																																								56-v:x
-																																																									57-f:0.006200
+																																																									57-f:0.0062
 																																																								56-v:w
 																																																									57-f:0.999981
 																																																	49-o:transform
@@ -3146,7 +1969,7 @@ sra format
 																																																		50-o:ptr
 																																																			51-o:translation
 																																																				52-v:x
-																																																					53-f:0.000087
+																																																					53-f:8.7e-05
 																																																				52-v:y
 																																																					53-f:0.034006
 																																																			51-o:quaternion
@@ -3169,7 +1992,7 @@ sra format
 																																																48-v:x
 																																																	49-f:0.026139
 																																																48-v:y
-																																																	49-f:0.000082
+																																																	49-f:8.2e-05
 																																																48-v:z
 																																																	49-f:0.003148
 																																																48-v:w
@@ -3236,7 +2059,7 @@ sra format
 																																																										58-o:ptr
 																																																											59-o:translation
 																																																												60-v:x
-																																																													61-f:0.000061
+																																																													61-f:6.1e-05
 																																																												60-v:y
 																																																													61-f:0.027216
 																																																					53-o:transform
@@ -3245,7 +2068,7 @@ sra format
 																																																						54-o:ptr
 																																																							55-o:translation
 																																																								56-v:x
-																																																									57-f:-0.000019
+																																																									57-f:-1.9e-05
 																																																								56-v:y
 																																																									57-f:0.028877
 																																																							55-o:quaternion
@@ -3259,9 +2082,9 @@ sra format
 																																																		50-o:ptr
 																																																			51-o:translation
 																																																				52-v:x
-																																																					53-f:-0.000042
+																																																					53-f:-4.2e-05
 																																																				52-v:y
-																																																					53-f:0.029730
+																																																					53-f:0.02973
 																																																			51-o:quaternion
 																																																				52-v:x
 																																																					53-f:0.005507
@@ -3282,7 +2105,7 @@ sra format
 																																																48-v:x
 																																																	49-f:-0.002087
 																																																48-v:y
-																																																	49-f:-0.000077
+																																																	49-f:-7.7e-05
 																																																48-v:z
 																																																	49-f:0.037021
 																																																48-v:w
@@ -3342,7 +2165,7 @@ sra format
 																																																														62-o:ptr
 																																																															63-o:translation
 																																																																64-v:y
-																																																																	65-f:0.023540
+																																																																	65-f:0.02354
 																																																									57-o:transform
 																																																										58-v:type
 																																																											59-s:Transform3D
@@ -3393,11 +2216,11 @@ sra format
 																																																48-v:x
 																																																	49-f:0.000997
 																																																48-v:y
-																																																	49-f:0.000087
+																																																	49-f:8.7e-05
 																																																48-v:z
 																																																	49-f:0.086513
 																																																48-v:w
-																																																	49-f:0.996250
+																																																	49-f:0.99625
 																																									41-o:transform
 																																										42-v:type
 																																											43-s:Transform3D
@@ -3409,11 +2232,11 @@ sra format
 																																												44-v:x
 																																													45-f:-0.086605
 																																												44-v:y
-																																													45-f:0.001340
+																																													45-f:0.00134
 																																												44-v:z
-																																													45-f:0.042620
+																																													45-f:0.04262
 																																												44-v:w
-																																													45-f:0.995330
+																																													45-f:0.99533
 																																					37-o:transform
 																																						38-v:type
 																																							39-s:Transform3D
@@ -3425,7 +2248,7 @@ sra format
 																																								40-v:x
 																																									41-f:0.001212
 																																								40-v:y
-																																									41-f:-0.000094
+																																									41-f:-9.4e-05
 																																								40-v:z
 																																									41-f:-0.077586
 																																								40-v:w
@@ -3445,7 +2268,7 @@ sra format
 																																				36-v:z
 																																					37-f:0.026643
 																																				36-v:w
-																																					37-f:0.991810
+																																					37-f:0.99181
 																													29-o:transform
 																														30-v:type
 																															31-s:Transform3D
@@ -3459,7 +2282,7 @@ sra format
 																																	33-f:0.001815
 																															31-o:quaternion
 																																32-v:x
-																																	33-f:0.552500
+																																	33-f:0.5525
 																																32-v:y
 																																	33-f:-0.436169
 																																32-v:z
@@ -3486,14 +2309,14 @@ sra format
 																		18-o:ptr
 																			19-o:translation
 																				20-v:y
-																					21-f:0.090640
+																					21-f:0.09064
 																				20-v:z
 																					21-f:0.012483
 																			19-o:quaternion
 																				20-v:x
 																					21-f:0.068373
 																				20-v:w
-																					21-f:0.997660
+																					21-f:0.99766
 														14-k:i
 															15-o:d
 																16-v:type
@@ -3582,7 +2405,7 @@ sra format
 																																32-v:z
 																																	33-f:0.009357
 																																32-v:w
-																																	33-f:0.943410
+																																	33-f:0.94341
 																									25-o:transform
 																										26-v:type
 																											27-s:Transform3D
@@ -3596,7 +2419,7 @@ sra format
 																												28-v:y
 																													29-f:0.047479
 																												28-v:z
-																													29-f:0.025130
+																													29-f:0.02513
 																												28-v:w
 																													29-f:0.882559
 																					21-o:transform
@@ -3612,7 +2435,7 @@ sra format
 																								24-v:y
 																									25-f:0.000162
 																								24-v:z
-																									25-f:-0.004140
+																									25-f:-0.00414
 																								24-v:w
 																									25-f:0.999218
 																	17-o:transform
@@ -3628,7 +2451,7 @@ sra format
 																					21-f:-0.000528
 																			19-o:quaternion
 																				20-v:x
-																					21-f:-0.000066
+																					21-f:-6.6e-05
 																				20-v:y
 																					21-f:0.055723
 																				20-v:z
@@ -3769,11 +2592,11 @@ sra format
 																					21-f:-0.005156
 																			19-o:quaternion
 																				20-v:x
-																					21-f:-0.000074
+																					21-f:-7.4e-05
 																				20-v:y
 																					21-f:-0.062566
 																				20-v:z
-																					21-f:-0.998040
+																					21-f:-0.99804
 																				20-v:w
 																					21-f:0.001185
 													13-o:transform
@@ -3797,11 +2620,11 @@ sra format
 						6-o:ptr
 							7-o:scale
 								8-v:x
-									9-f:2.000000
+									9-f:2
 								8-v:y
-									9-f:2.000000
+									9-f:2
 								8-v:z
-									9-f:2.000000
+									9-f:2
 		2-k:i
 			3-o:d
 				4-v:type
@@ -3817,19 +2640,6 @@ sra format
 								8-o:ptr
 									9-v:entityId
 										10-i:4275055335281596846
-									9-o:shape
-										10-v:type
-											11-s:CollisionShape
-										10-o:ptr
-											11-v:type
-												12-s:Sphere3D
-											11-o:bounds
-												12-v:x
-													13-f:1.000000
-												12-v:y
-													13-f:1.000000
-												12-v:z
-													13-f:1.000000
 						6-k:i
 							7-o:d
 								8-v:type
@@ -3853,6 +2663,6 @@ sra format
 						6-o:ptr
 							7-o:translation
 								8-v:y
-									9-f:3.519693
+									9-f:3.51969
 								8-v:z
-									9-f:10.377628
+									9-f:10.3776

@@ -75,7 +75,7 @@ namespace ProceduralWorld {
         const SR_MATH_NS::FVector3 direction = pMainCamera->GetTransform()->Forward();
 
         const float_t maxDistance = 1000.f;
-        std::optional<SR_UTILS_NS::RaycastHit> hit = SR_PHYSICS_NS::Raycast3D::Instance().CastSingle(start, direction, maxDistance);
+        auto&& hit = SR_PHYSICS_NS::RayCast3D::Instance().CastSingle(start, direction, maxDistance);
         if (!hit) {
             return;
         }

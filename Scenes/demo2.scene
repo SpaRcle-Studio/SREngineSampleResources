@@ -1,4 +1,5 @@
 sra format
+use tabs: true
 0-r:Root
 	1-v:entityId
 		2-i:3419282619237300091
@@ -22,19 +23,6 @@ sra format
 								8-o:ptr
 									9-v:entityId
 										10-i:3024261046805672511
-									9-o:shape
-										10-v:type
-											11-s:CollisionShape
-										10-o:ptr
-											11-v:type
-												12-s:Box3D
-											11-o:bounds
-												12-v:x
-													13-f:1.000000
-												12-v:y
-													13-f:1.000000
-												12-v:z
-													13-f:1.000000
 						6-k:i
 							7-o:d
 								8-v:type
@@ -58,11 +46,11 @@ sra format
 						6-o:ptr
 							7-o:translation
 								8-v:x
-									9-f:4.090208
+									9-f:4.09021
 								8-v:y
-									9-f:1.930737
+									9-f:1.93074
 								8-v:z
-									9-f:3.240140
+									9-f:3.24014
 		2-k:i
 			3-o:d
 				4-v:type
@@ -78,19 +66,6 @@ sra format
 								8-o:ptr
 									9-v:entityId
 										10-i:3208044957067910386
-									9-o:shape
-										10-v:type
-											11-s:CollisionShape
-										10-o:ptr
-											11-v:type
-												12-s:Sphere3D
-											11-o:bounds
-												12-v:x
-													13-f:1.000000
-												12-v:y
-													13-f:1.000000
-												12-v:z
-													13-f:1.000000
 						6-k:i
 							7-o:d
 								8-v:type
@@ -114,6 +89,6 @@ sra format
 						6-o:ptr
 							7-o:translation
 								8-v:y
-									9-f:1.188994
+									9-f:1.18899
 								8-v:z
-									9-f:-2.242589
+									9-f:-2.24259

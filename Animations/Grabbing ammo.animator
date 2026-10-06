@@ -28,9 +28,9 @@ use tabs: true
 													13-i:1
 									9-o:editorPosition
 										10-v:x
-											11-f:392
+											11-f:360
 										10-v:y
-											11-f:66
+											11-f:50
 						6-k:i
 							7-o:d
 								8-v:type
@@ -38,9 +38,9 @@ use tabs: true
 								8-o:ptr
 									9-o:editorPosition
 										10-v:x
-											11-f:-56
+											11-f:-117
 										10-v:y
-											11-f:66
+											11-f:36
 									9-o:stateMachine
 										10-v:type
 											11-s:AnimationStateMachine
@@ -59,9 +59,9 @@ use tabs: true
 																16-s:AnimationEntryPointState
 															15-o:editorPosition
 																16-v:x
-																	17-f:-16
+																	17-f:32
 																16-v:y
-																	17-f:176
+																	17-f:128
 															15-a:transitions
 																16-k:i
 																	17-o:d
@@ -81,4 +81,4 @@ use tabs: true
 															15-v:resetOnPlay
 																16-b:true
 															15-v:animation
-																16-s:Samples/MechanicGirl/Animations/Grabbing ammo.animation
+																16-s:Samples/Animations/Grabbing ammo.animation
